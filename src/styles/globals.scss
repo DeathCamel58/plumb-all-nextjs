@@ -11,6 +11,7 @@ $theme-color-4: #0c2050;
   .text-theme-#{$number} {
     color: $color;
   }
+
   .hover\:text-theme-#{$number} {
     &:hover {
       @media (hover: hover) {
@@ -18,9 +19,20 @@ $theme-color-4: #0c2050;
       }
     }
   }
+
   .background-theme-#{$number} {
     background-color: $color;
   }
+
+  $opacity: 0;
+  @while $opacity < 1 {
+    .background-theme-#{$number}\/#{$opacity * 100} {
+      background-color: rgba($color, $opacity);
+    }
+
+    $opacity: $opacity + 0.1;
+  }
+
   .hover\:background-theme-#{$number} {
     &:hover {
       @media (hover: hover) {
@@ -28,6 +40,7 @@ $theme-color-4: #0c2050;
       }
     }
   }
+
   .border-theme-#{$number} {
     border-color: $color;
   }

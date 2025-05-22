@@ -129,7 +129,7 @@ export default function Home() {
               We have tons of experience with water heaters, shower, septic tanks, and more!
             </p>
             <Link
-              href="residential"
+              href="/residential"
               className="inline-block mt-3 border border-white text-white px-4 py-1 rounded hover:bg-white hover:text-theme-3 transition text-sm"
             >
               Details
@@ -142,7 +142,7 @@ export default function Home() {
               If you want for a plumber for grease traps, commercial heaters, or something else, we’re here.
             </p>
             <Link
-              href="commercial"
+              href="/commercial"
               className="inline-block mt-3 border border-white text-white px-4 py-1 rounded hover:bg-white hover:text-theme-3 transition text-sm"
             >
               Details

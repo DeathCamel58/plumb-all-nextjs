@@ -7,7 +7,7 @@ import Image from 'next/image'
 const menuItems = [
   { label: 'Home', url: '/' },
   { label: 'Services', url: '/services' },
-  { label: 'About', url: '/about' },
+  { label: 'About', url: '/about-our-process' },
   { label: 'Contact', url: '/contact' },
 ]
 
