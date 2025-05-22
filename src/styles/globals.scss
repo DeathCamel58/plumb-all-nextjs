@@ -1,0 +1,40 @@
+@use "tailwindcss";
+@use "pages/home";
+
+$theme-color-0: #4cd8ff;
+$theme-color-1: #27aae1;
+$theme-color-2: #2190cf;
+$theme-color-3: #1b75bc;
+$theme-color-4: #0c2050;
+
+@mixin theme-color($number, $color) {
+  .text-theme-#{$number} {
+    color: $color;
+  }
+  .hover\:text-theme-#{$number} {
+    &:hover {
+      @media (hover: hover) {
+        color: $color;
+      }
+    }
+  }
+  .background-theme-#{$number} {
+    background-color: $color;
+  }
+  .hover\:background-theme-#{$number} {
+    &:hover {
+      @media (hover: hover) {
+        background-color: $color;
+      }
+    }
+  }
+  .border-theme-#{$number} {
+    border-color: $color;
+  }
+}
+
+@include theme-color(0, $theme-color-0);
+@include theme-color(1, $theme-color-1);
+@include theme-color(2, $theme-color-2);
+@include theme-color(3, $theme-color-3);
+@include theme-color(4, $theme-color-4);

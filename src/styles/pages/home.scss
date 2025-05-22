@@ -1,0 +1,27 @@
+.home-pipes-bg {
+  background-image: url('/images/pipes.jpeg');
+}
+
+.home-contact-form {
+  background-image: url('/images/formbg.jpg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+@keyframes home-spin {
+  from {
+    transform:rotate(0deg);
+  }
+  to {
+    transform:rotate(360deg);
+  }
+}
+
+.home-animate-spin-slow {
+  animation-name: home-spin;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}

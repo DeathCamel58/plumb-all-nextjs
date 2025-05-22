@@ -1,6 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Plumb-All Website
 
-## Getting Started
+This is the official website for Plumb-All, Atlanta's premier plumbing and septic service provider.
+The website is built using [Next.js](https://nextjs.org), a React framework for production.
+
+## About Plumb-All
+
+Plumb-All is a full-service plumbing and septic company serving the Metro-Atlanta area. We pride ourselves on:
+
+- **Comprehensive Services**: We handle both plumbing and septic systems, eliminating the need to call multiple companies
+- **Experienced Professionals**: Our team has worked on hundreds of households and commercial properties
+- **Award-Winning Service**: Recognized as one of the best plumbers in Fayetteville by Expertise.com
+- **Industry Membership**: Proud member of the Plumbing Heating Cooling Contractors Association
+- **Customer Satisfaction**: We prioritize quality work and happy customers
+
+## Services
+
+- **Residential Plumbing**: Water heaters, showers, toilets, drain cleaning, and more
+- **Commercial Plumbing**: Grease traps, commercial water heaters, floor drains
+- **Septic Systems**: Field line repair, baffle-T installs, hydro jetting
+- **Installation & Maintenance**: New system installations and maintenance of existing systems
+
+## Website Features
+
+- Responsive design for all devices
+- Service information sections
+- Testimonials from satisfied customers
+- Contact form for customer inquiries
+- Service comparison table
+
+## Development Information
+
+### Getting Started
 
 First, run the development server:
 
@@ -16,21 +46,27 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can start editing the pages by modifying files in the `src/app` directory.
+The pages auto-update as you edit the files.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Technologies Used
 
-## Learn More
+- **Next.js**: React framework for building the user interface
+- **Tailwind CSS**: For styling components
+- **React Icons**: For UI icons
+- **SCSS**: For additional styling capabilities
 
-To learn more about Next.js, take a look at the following resources:
+### Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `src/app`: Main application pages
+- `src/components`: Reusable React components
+- `src/styles`: Global and component-specific styles
+- `public`: Static assets like images and icons
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contact Information
 
-## Deploy on Vercel
+For plumbing and septic services, contact Plumb-All:
+- Phone: (844) 758-6225 or (770) 914-3877
+- Website: [plumb-all.com](https://plumb-all.com)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+For website development inquiries, please contact the website administrator.
