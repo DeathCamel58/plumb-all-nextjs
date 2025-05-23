@@ -131,6 +131,7 @@ export default function Contact() {
                 alt="Plumb-All Service Vans"
                 fill
                 className="object-cover object-center"
+                priority
               />
             </div>
             <h3 className="text-2xl font-semibold mb-4">Need Immediate Assistance?</h3>
@@ -158,7 +159,7 @@ export default function Contact() {
             Discover how we approach each project with meticulous attention to detail and a commitment to excellence. Our systematic process ensures quality results every time.
           </p>
           <Link
-            href="/about-our-process/"
+            href="/about-our-process"
             className="inline-block background-theme-1 text-white px-6 py-3 rounded shadow hover:background-theme-2 transition"
           >
             Explore Our Process

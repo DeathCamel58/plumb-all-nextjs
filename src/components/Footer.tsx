@@ -59,7 +59,7 @@ const Footer = () => {
             so that you can get your problem fixed ASAP.
             <br />
             We&#39;re located in{' '}
-            <Link href="/expert-plumbing-services-in-atlanta-ga" className="text-theme-0 hover:text-theme-1 hover:underline">
+            <Link href="/services/expert-plumbing-services-in-atlanta-ga" className="text-theme-0 hover:text-theme-1 hover:underline">
               Jonesboro, Georgia
             </Link>
             , so we&#39;re always nearby.{' '}

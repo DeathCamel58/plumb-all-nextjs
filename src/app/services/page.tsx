@@ -10,27 +10,27 @@ import { FaClock, FaTruck, FaWrench, FaTools, FaShieldAlt, FaCheckCircle, FaHome
 const residentialServices = [
   {
     title: "Plumbing Repair",
-    path: "/plumbing-repair/",
+    path: "/services/plumbing-repair",
     description: "Fast, reliable repairs for leaks, clogs, broken pipes, and other common household plumbing issues. We diagnose and fix problems correctly the first time.",
   },
   {
     title: "Drain Cleaning",
-    path: "/drain-cleaning/",
+    path: "/services/drain-cleaning",
     description: "Professional drain cleaning services using advanced techniques like hydro jetting and sectional machine cleaning to remove even the toughest clogs.",
   },
   {
     title: "Leak Detection",
-    path: "/leak-detection/",
+    path: "/services/leak-detection",
     description: "State-of-the-art equipment to locate hidden leaks in walls, floors, and underground pipes before they cause extensive damage to your property.",
   },
   {
     title: "Water Heater Services",
-    path: "/services/water-heater-replacement/",
+    path: "/services/water-heater-replacement",
     description: "Installation, repair, and maintenance of traditional and tankless water heaters to ensure reliable hot water for your home.",
   },
   {
     title: "Emergency Plumbing",
-    path: "/emergencies/",
+    path: "/services/emergencies",
     description: "24/7 emergency response for urgent plumbing issues like burst pipes, major leaks, or sewer backups that require immediate attention.",
   },
 ];
@@ -38,22 +38,22 @@ const residentialServices = [
 const septicServices = [
   {
     title: "Septic Tank Pumping",
-    path: "/septic-tank-pumping/",
+    path: "/services/septic-tank-pumping",
     description: "Regular pumping to remove accumulated solids and prevent system failure, extending the life of your septic system.",
   },
   {
     title: "Septic Drain Field Repair",
-    path: "/septicrepair/",
+    path: "/services/septicrepair",
     description: "Expert repair of failing drain fields to restore proper function and prevent costly system replacements.",
   },
   {
     title: "Alternative Septic Solutions",
-    path: "/alternative-septic/",
+    path: "/services/alternative-septic",
     description: "Specialized systems for challenging soil conditions, including high-clay soils, shallow bedrock, or failed perc tests.",
   },
   {
     title: "Eljen Septic Systems",
-    path: "/eljen-septic/",
+    path: "/services/eljen-septic",
     description: "Installation and maintenance of Eljen GSF systems, an innovative alternative for properties with difficult soil conditions.",
   },
 ];
@@ -61,17 +61,17 @@ const septicServices = [
 const commercialServices = [
   {
     title: "Commercial Plumbing",
-    path: "/commercial-plumbing/",
+    path: "/services/commercial",
     description: "Comprehensive plumbing services for businesses, restaurants, retail spaces, and multi-unit properties.",
   },
   {
     title: "Plumbing Service Agreements",
-    path: "/plumbing-service-agreement/",
+    path: "/services/plumbing-service-agreement",
     description: "Customized maintenance plans that provide priority service, regular inspections, and discounted rates for businesses.",
   },
   {
     title: "Plumbing Installation",
-    path: "/plumbing-installation/",
+    path: "/services/plumbing-installation",
     description: "Professional installation of fixtures, pipes, and plumbing systems for new construction or renovation projects.",
   },
 ];
@@ -157,7 +157,9 @@ export default function Services() {
               <div className="w-12 h-12 rounded-full background-theme-3 flex items-center justify-center text-white mr-4">
                 <FaHome className="text-2xl" />
               </div>
-              <h3 className="text-2xl font-semibold">Residential Plumbing Services</h3>
+              <Link href="/services/residential">
+                <h3 className="text-2xl font-semibold">Residential Plumbing Services</h3>
+              </Link>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -199,7 +201,9 @@ export default function Services() {
               <div className="w-12 h-12 rounded-full background-theme-3 flex items-center justify-center text-white mr-4">
                 <FaBuilding className="text-2xl" />
               </div>
-              <h3 className="text-2xl font-semibold">Commercial Plumbing Services</h3>
+              <Link href="/services/commercial">
+                <h3 className="text-2xl font-semibold">Commercial Plumbing Services</h3>
+              </Link>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
