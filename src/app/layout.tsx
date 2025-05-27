@@ -1,21 +1,23 @@
-import type { Metadata } from "next";
 import "../styles/globals.scss";
 import Menu from "@/components/Menu";
 import Footer from "@/components/Footer";
 import React from "react";
-
-export const metadata: Metadata = {
-  title: "Plumb-All",
-  description: "Plumb-All's website",
-};
+import { GoogleTagManager } from '@next/third-parties/google'
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const env = process.env.NODE_ENV;
+
   return (
     <html lang="en">
+      { env === 'production' ?
+        <GoogleTagManager gtmId="GTM-M48PNMP" />
+        : null
+      }
+
       <body>
         <Menu />
 

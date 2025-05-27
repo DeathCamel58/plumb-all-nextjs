@@ -1,10 +1,50 @@
-'use client'
-
 import React from 'react';
 import Image from 'next/image';
 import { FaClock, FaTruck, FaWrench, FaTint, FaCheckCircle, FaPhoneAlt, FaTools, FaClipboardCheck, FaHandshake, FaStar, FaQuoteLeft } from 'react-icons/fa';
 import CTACall from "@/components/cta/CTACall";
 import Link from "next/link";
+import {Metadata} from "next";
+
+// Generate metadata for the page
+export async function generateMetadata(): Promise<Metadata> {
+  const finalTitle = 'Plumb-All: About Us';
+  const description = 'Our company has been serving South Atlanta since 2003, and our process and our values have always focused on quality workmanship and customer relationships.';
+
+  // Create URL for the dynamically generated OG image with title overlay
+  const ogImageUrl = '/api/og?title=news&image=/images/our-team.jpg';
+
+  const env = process.env.NODE_ENV;
+
+  return {
+    metadataBase: env === 'production' ? new URL('https://plumb-all.com') : new URL('http://127.0.0.1:3000'),
+    title: finalTitle,
+    description: description,
+    icons: {
+      icon: '/logo/icon.png'
+    },
+    openGraph: {
+      title: finalTitle,
+      description: description,
+      url: `/about-our-process`,
+      images: [
+        {
+          url: ogImageUrl,
+          width: 1200,
+          height: 630,
+          alt: 'Plumb-All Logo'
+        }
+      ],
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: finalTitle,
+      description: description,
+      images: [ogImageUrl],
+      site: '@PlumbAll'
+    }
+  };
+}
 
 // Testimonials data
 const testimonials = [
@@ -67,7 +107,7 @@ export default function AboutOurProcess() {
                 <p className="mb-3">
                   When you call Plumb-All, our friendly staff will gather information about your plumbing needs and schedule a convenient appointment time. For emergencies, we prioritize your call and dispatch a technician immediately.
                 </p>
-                <a href="tel:+17709413877" className="flex items-center text-white background-theme-1 text-white px-4 py-2 rounded shadow hover:background-theme-2 transition">
+                <a href="tel:+17709143877" className="flex items-center text-white background-theme-1 text-white px-4 py-2 rounded shadow hover:background-theme-2 transition">
                   <FaPhoneAlt className="mr-2" />
                   <span>Quick response guaranteed</span>
                 </a>

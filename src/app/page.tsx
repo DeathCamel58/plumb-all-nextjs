@@ -1,103 +1,54 @@
-'use client'
-
 import Image from "next/image";
-import {FaHome, FaBuilding, FaWrench, FaCog, FaCheck, FaTimes, FaStar, FaQuoteLeft, FaThumbsUp} from 'react-icons/fa';
-import React, {useEffect, useState} from "react";
+import {FaHome, FaBuilding, FaCheck, FaTimes, FaThumbsUp} from 'react-icons/fa';
+import React from "react";
 import ContactForm from "@/components/ContactForm";
 import Link from "next/link";
+import {Metadata} from "next";
+import HomeTabs from "@/components/HomeTabs";
+import HomeTestimonials from "@/components/HomeTestimonials";
 
-const tabs = [
-  {
-    id: 'household',
-    title: 'Household',
-    icon: <FaHome className="text-6xl text-theme-3 home-tabbed-icon" />,
-    content: (
-      <p className="text-lg">
-        Our team has worked on hundreds of households, day in, and day out. By choosing us,
-        you’re selecting the most friendly, dependable, and professional plumbers in the Metro-Atlanta
-        area. We have a quick response time because we’re local, and we are proud to stand behind the
-        work we’ve done.
-      </p>
-    ),
-  },
-  {
-    id: 'commercial',
-    title: 'Commercial',
-    icon: <FaBuilding className="text-6xl text-theme-3 home-tabbed-icon" />,
-    content: (
-      <p className="text-lg">
-        Having installed, maintained, and repaired countless grease traps, commercial water heaters,
-        and floor drains, we are the most experienced team to get your facility up and running! With the
-        fastest arrival times in the business, we can fix your plumbing before more issues occur, saving
-        you time and money.
-      </p>
-    ),
-  },
-  {
-    id: 'installation',
-    title: 'Installation',
-    icon: <FaWrench className="text-6xl text-theme-3 home-tabbed-icon" />,
-    content: (
-      <p className="text-lg">
-        If you don’t have a system that you need or want, we’d love to help. We have installed
-        showers, septic systems, alternative septic systems, grease traps, and much, much more. By calling
-        us, you’ll get your systems installed by the best in the field.
-      </p>
-    ),
-  },
-  {
-    id: 'maintenance',
-    title: 'Maintenance',
-    icon: <FaCog className="text-6xl text-theme-3 home-animate-spin-slow home-tabbed-icon" />,
-    content: (
-      <p className="text-lg">
-        If you’re having troubles with systems that are in your home or property, we can work on
-        them. We’ve cleaned out pipes, replaced water heaters, and helped prevent all kinds of plumbing
-        and septic issues. No matter how old the system, or who installed the system, we can help!
-      </p>
-    ),
-  },
-];
+// Generate metadata for the page
+export async function generateMetadata(): Promise<Metadata> {
+  const finalTitle = 'Plumb-All';
+  const description = 'Plumb-All\'s expert plumbers have been tackling all types of plumbing and septic problems in South Atlanta since 2003.';
 
-const testimonials = [
-  {
-    text: "Quick response. Work was done ahead of schedule. Very professional and dependable… We highly recommend them!",
-    author: "Elizabeth W.",
-    stars: 5,
-  },
-  {
-    text: "Randy and Zach worked in tandem, and completed a septic fix with precision, knowledge, and, above and beyond efforts like no other.",
-    author: "Lisa C.",
-    stars: 5,
-  },
-  {
-    text: "Customer service is excellent making the experience with Plumb-All enjoyable. I would recommend Plumb-All to everyone.",
-    author: "Valerie C.",
-    stars: 5,
-  },
-  {
-    text: "Quality workmanship speaks for itself. A very satisfied customer",
-    author: "Eleanor Donatto",
-    stars: 5,
-  },
-  {
-    text: "Stephen was excellent he did a terrific job on my leaky shower head that has been dripping for 3 days. He came in and fixed the job, he's a great handy man technician.",
-    author: "Fredrick Johnson",
-    stars: 5,
-  },
-];
+  // Create URL for the dynamically generated OG image with title overlay
+  const ogImageUrl = '/api/og?title=news&image=/images/formbg.jpg';
+
+  const env = process.env.NODE_ENV;
+
+  return {
+    metadataBase: env === 'production' ? new URL('https://plumb-all.com') : new URL('http://127.0.0.1:3000'),
+    title: finalTitle,
+    description: description,
+    icons: {
+      icon: '/logo/icon.png'
+    },
+    openGraph: {
+      title: finalTitle,
+      description: description,
+      url: `/`,
+      images: [
+        {
+          url: ogImageUrl,
+          width: 1200,
+          height: 630,
+          alt: 'Plumb-All Logo'
+        }
+      ],
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: finalTitle,
+      description: description,
+      images: [ogImageUrl],
+      site: '@PlumbAll'
+    }
+  };
+}
 
 export default function Home() {
-  const [activeTab, setActiveTab] = useState('household');
-  const [currentTestimonial, setCurrentTestimonial] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <div>
       <section className="w-full flex flex-col md:flex-row">
@@ -225,33 +176,7 @@ export default function Home() {
       </section>
 
       {/* Tabbed Section */}
-      <section className="w-full max-w-6xl mx-auto p-4 mt-12">
-        <nav className="flex flex-wrap gap-2 mb-6 justify-center">
-          {tabs.map((tab) => (
-            <button
-              key={tab.id}
-              onClick={() => setActiveTab(tab.id)}
-              className={`px-4 py-2 text-sm font-semibold rounded border ${
-                activeTab === tab.id
-                  ? 'background-theme-3 text-white border-blue-600'
-                  : 'text-theme-3 border-theme-3 hover:bg-blue-50'
-              }`}
-            >
-              {tab.title}
-            </button>
-          ))}
-        </nav>
-
-        <div className="bg-white rounded-lg shadow-md p-6 flex flex-col md:flex-row gap-6">
-          <div className="flex-shrink-0 text-center content-center">
-            {tabs.find((tab) => tab.id === activeTab)?.icon}
-          </div>
-          <div className="flex-1">
-            <h3 className="text-2xl font-bold mb-2">{tabs.find((tab) => tab.id === activeTab)?.title}</h3>
-            {tabs.find((tab) => tab.id === activeTab)?.content}
-          </div>
-        </div>
-      </section>
+      <HomeTabs />
 
       {/* Only One Call */}
       <section className="w-full max-w-6xl mx-auto px-4 mt-12">
@@ -314,41 +239,7 @@ export default function Home() {
       </section>
 
       {/* Reviews */}
-      <section className="w-full bg-white mt-12">
-        <div className="max-w-6xl mx-auto text-center px-4">
-          <h2 className="text-3xl font-bold mb-2">Clients’ Testimonials</h2>
-          <p className="text-gray-600 text-lg mb-10">Just a few words from our clients</p>
-
-          <div className="bg-gray-900 text-white rounded-lg shadow-md p-6 relative transition-all duration-700 min-h-48 content-center">
-            <blockquote className="text-lg italic leading-relaxed">
-              <FaQuoteLeft className="inline-block text-2xl mr-2 text-gray-400" />
-              {testimonials[currentTestimonial].text}
-            </blockquote>
-            <footer className="mt-4 text-sm text-gray-300 self-end">
-              — {testimonials[currentTestimonial].author}
-            </footer>
-            <div className="mt-2 text-yellow-400">
-              {Array.from({ length: testimonials[currentTestimonial].stars }).map((_, i) => (
-                <FaStar key={i} className="inline-block mr-1" />
-              ))}
-            </div>
-          </div>
-
-          {/* Indicators */}
-          <div className="flex justify-center mt-6 space-x-2">
-            {testimonials.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentTestimonial(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  currentTestimonial === index ? "bg-blue-500" : "bg-gray-400"
-                }`}
-                aria-label={`Go to testimonial ${index + 1}`}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
+      <HomeTestimonials />
 
       {/* Form */}
       <div className="w-full bg-white my-12 px-4">

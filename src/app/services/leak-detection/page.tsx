@@ -1,10 +1,50 @@
-'use client'
-
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import CTACall from '@/components/cta/CTACall';
 import { FaWrench, FaExclamationTriangle, FaWater } from 'react-icons/fa';
+import {Metadata} from "next";
+
+// Generate metadata for the page
+export async function generateMetadata(): Promise<Metadata> {
+  const finalTitle = 'Plumb-All: Leak Detection';
+  const description = 'Our leak detection services concentrate on speed and damage control. Leaking pipes can cause extensive damage, so if you suspect a leak, act quickly!';
+
+  // Create URL for the dynamically generated OG image with title overlay
+  const ogImageUrl = '/api/og?title=news&image=/images/spraying-pipe.jpg';
+
+  const env = process.env.NODE_ENV;
+
+  return {
+    metadataBase: env === 'production' ? new URL('https://plumb-all.com') : new URL('http://127.0.0.1:3000'),
+    title: finalTitle,
+    description: description,
+    icons: {
+      icon: '/logo/icon.png'
+    },
+    openGraph: {
+      title: finalTitle,
+      description: description,
+      url: `/services/leak-detection`,
+      images: [
+        {
+          url: ogImageUrl,
+          width: 1200,
+          height: 630,
+          alt: 'Plumb-All Logo'
+        }
+      ],
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: finalTitle,
+      description: description,
+      images: [ogImageUrl],
+      site: '@PlumbAll'
+    }
+  };
+}
 
 export default function LeakDetection() {
   return (
@@ -122,7 +162,7 @@ export default function LeakDetection() {
               </div>
               <h3 className="text-2xl font-semibold">Well Pumps</h3>
             </div>
-            <p className="mb-4 text-lg">If your home water supply is dependent on well water, we understand the frustration and urgency of a malfunctioning well pump. We&#39;re here to help. If you are experiencing any of the following symptoms, don&#39;t hesitate to <a href="tel:7705016787" className="text-theme-3 hover:underline">give us a call</a> to come out and investigate the issue.</p>
+            <p className="mb-4 text-lg">If your home water supply is dependent on well water, we understand the frustration and urgency of a malfunctioning well pump. We&#39;re here to help. If you are experiencing any of the following symptoms, don&#39;t hesitate to <a href="tel:+17709143877" className="text-theme-3 hover:underline">give us a call</a> to come out and investigate the issue.</p>
             <ul className="list-disc pl-5 space-y-2">
               <li>Short cycling pump</li>
               <li>Dirty water</li>

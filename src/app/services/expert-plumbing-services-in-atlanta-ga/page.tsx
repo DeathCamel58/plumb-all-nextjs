@@ -1,10 +1,51 @@
-'use client'
-
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import CTACall from '@/components/cta/CTACall';
 import { FaTools, FaWrench, FaPhoneAlt, FaClock, FaStar, FaCheck, FaMapMarkerAlt } from 'react-icons/fa';
+import {Metadata} from "next";
+import { GoogleMapsEmbed } from '@next/third-parties/google'
+
+// Generate metadata for the page
+export async function generateMetadata(): Promise<Metadata> {
+  const finalTitle = 'Plumb-All: Plumbers in Atlanta, Ga';
+  const description = 'At Plumb-All, we&#39;re your trusted local plumbing experts in Atlanta, Georgia. With years of experience serving the Atlanta community, we take pride in providing top-notch plumbing solutions for both residential and commercial needs.';
+
+  // Create URL for the dynamically generated OG image with title overlay
+  const ogImageUrl = '/api/og?title=news&image=/images/slab-leak.jpg';
+
+  const env = process.env.NODE_ENV;
+
+  return {
+    metadataBase: env === 'production' ? new URL('https://plumb-all.com') : new URL('http://127.0.0.1:3000'),
+    title: finalTitle,
+    description: description,
+    icons: {
+      icon: '/logo/icon.png'
+    },
+    openGraph: {
+      title: finalTitle,
+      description: description,
+      url: `/services/expert-plumbing-services-in-atlanta-ga`,
+      images: [
+        {
+          url: ogImageUrl,
+          width: 1200,
+          height: 630,
+          alt: 'Plumb-All Logo'
+        }
+      ],
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: finalTitle,
+      description: description,
+      images: [ogImageUrl],
+      site: '@PlumbAll'
+    }
+  };
+}
 
 export default function ExpertPlumbingAtlanta() {
   return (
@@ -151,15 +192,13 @@ export default function ExpertPlumbingAtlanta() {
             </p>
 
             <div className="mb-6">
-              <iframe
+              <GoogleMapsEmbed
+                apiKey="AIzaSyAdvsJphJWbjDOs7HWqOy1PXaOXgiMHXPk"
+                height={300}
                 width="100%"
-                height="300"
-                frameBorder="0"
-                referrerPolicy="no-referrer-when-downgrade"
-                src="https://maps.google.com/maps?q=Plumb-All,%20Jonesboro,%20Ga&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                allowFullScreen
-                className="border-0 rounded-lg"
-              ></iframe>
+                mode="place"
+                q="Plumb-All,+Jonesboro,%20Ga"
+              />
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">

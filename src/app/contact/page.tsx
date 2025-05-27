@@ -1,11 +1,51 @@
-'use client'
-
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaPhoneAlt, FaMapMarkerAlt, FaClock, FaEnvelope, FaTools, FaThumbsUp, FaHandshake } from 'react-icons/fa';
 import CTACall from '@/components/cta/CTACall';
 import ContactForm from '@/components/ContactForm';
+import {Metadata} from "next";
+
+// Generate metadata for the page
+export async function generateMetadata(): Promise<Metadata> {
+  const finalTitle = 'Plumb-All: Contact Us';
+  const description = 'Contact us with any of your questions or project ideas or sign up for our newsletter and get advice and deals right in your inbox. We love hearing from you.';
+
+  // Create URL for the dynamically generated OG image with title overlay
+  const ogImageUrl = '/api/og?title=news&image=/images/our-team.jpg';
+
+  const env = process.env.NODE_ENV;
+
+  return {
+    metadataBase: env === 'production' ? new URL('https://plumb-all.com') : new URL('http://127.0.0.1:3000'),
+    title: finalTitle,
+    description: description,
+    icons: {
+      icon: '/logo/icon.png'
+    },
+    openGraph: {
+      title: finalTitle,
+      description: description,
+      url: `/contact`,
+      images: [
+        {
+          url: ogImageUrl,
+          width: 1200,
+          height: 630,
+          alt: 'Plumb-All Logo'
+        }
+      ],
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: finalTitle,
+      description: description,
+      images: [ogImageUrl],
+      site: '@PlumbAll'
+    }
+  };
+}
 
 export default function Contact() {
   return (
@@ -43,7 +83,7 @@ export default function Contact() {
             <h3 className="text-xl font-semibold mb-2">Call Us</h3>
             <p className="mb-4">Need immediate assistance? Our team is ready to help!</p>
             <a
-              href="tel:+17709413877"
+              href="tel:+17709143877"
               className="inline-block font-bold background-theme-1 text-white px-6 py-3 rounded shadow hover:background-theme-2 transition"
             >
               (770) 914-3877

@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useState, FormEvent, ReactNode } from "react";
 
 // Custom React components
