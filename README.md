@@ -55,6 +55,7 @@ The pages auto-update as you edit the files.
 - **Tailwind CSS**: For styling components
 - **React Icons**: For UI icons
 - **SCSS**: For additional styling capabilities
+- **Cloudflare Works**: For hosting within Cloudflare's network
 
 ### Project Structure
 
@@ -68,5 +69,3 @@ The pages auto-update as you edit the files.
 For plumbing and septic services, contact Plumb-All:
 - Phone: (844) 758-6225 or (770) 914-3877
 - Website: [plumb-all.com](https://plumb-all.com)
-
-For website development inquiries, please contact the website administrator.
