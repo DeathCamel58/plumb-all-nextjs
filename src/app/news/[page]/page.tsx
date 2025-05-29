@@ -1,12 +1,22 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { getAllArticles } from './articles';
+import { getAllArticles } from '../articles';
 import { Metadata } from "next";
+import { notFound } from 'next/navigation';
+
+// Define Props type for the page
+type Props = {
+  params: Promise<{ page: string }>
+}
 
 // Generate metadata for the page
-export async function generateMetadata(): Promise<Metadata> {
-  const finalTitle = 'Plumb-All: News';
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { page } = await params;
+  const pageNumber = parseInt(page);
+  const finalTitle = pageNumber === 1
+    ? 'Plumb-All: News'
+    : `Plumb-All: News - Page ${pageNumber}`;
   const description = 'Plumb-All\'s blog and news posts';
 
   // Create URL for the dynamically generated OG image with title overlay
@@ -24,7 +34,7 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       title: finalTitle,
       description: description,
-      url: `/news`,
+      url: pageNumber === 1 ? `/news` : `/news/${pageNumber}`,
       images: [
         {
           url: ogImageUrl,
@@ -45,19 +55,42 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default async function News() {
+// Generate static paths for all paginated pages
+export async function generateStaticParams() {
+  const allArticles = await getAllArticles();
+  const postsPerPage = 12;
+  const totalPages = Math.ceil(allArticles.length / postsPerPage);
+
+  // Generate an array of page numbers from 1 to totalPages
+  return Array.from({ length: totalPages }, (_, i) => ({
+    page: (i + 1).toString()
+  }));
+}
+
+export default async function NewsPage({ params }: Props) {
+  const { page } = await params;
   const allArticles = await getAllArticles();
 
   // Pagination logic
   const postsPerPage = 12;
-  const currentPage = 1; // This is always the first page
+  const pageNumber = parseInt(page);
+
+  // Validate page number
+  if (isNaN(pageNumber) || pageNumber < 1) {
+    notFound();
+  }
 
   // Calculate total pages
   const totalPages = Math.ceil(allArticles.length / postsPerPage);
 
+  // If page number is greater than total pages and there are articles, return 404
+  if (pageNumber > totalPages && totalPages > 0) {
+    notFound();
+  }
+
   // Get articles for current page
-  const startIndex = 0; // First page starts at index 0
-  const endIndex = postsPerPage;
+  const startIndex = (pageNumber - 1) * postsPerPage;
+  const endIndex = startIndex + postsPerPage;
   const currentArticles = allArticles.slice(startIndex, endIndex);
 
   return (
@@ -103,7 +136,7 @@ export default async function News() {
                 <h3 className="text-xl font-semibold mb-3">{article.title}</h3>
                 <p className="text-gray-700 mb-4">{article.excerpt}</p>
                 <Link
-                  href={`/news/article/${article.slug}`}
+                  href={`/news/${article.slug}`}
                   className="inline-block background-theme-1 text-white px-4 py-2 rounded shadow hover:background-theme-2 transition"
                 >
                   Read More
@@ -116,6 +149,15 @@ export default async function News() {
         {/* Pagination Controls */}
         {totalPages > 1 && (
           <div className="flex justify-center items-center space-x-2 mb-16">
+            {pageNumber > 1 && (
+              <Link
+                href={pageNumber === 2 ? '/news' : `/news/${pageNumber - 1}`}
+                className="px-4 py-2 border rounded background-theme-1 text-white hover:background-theme-2 transition"
+              >
+                Previous
+              </Link>
+            )}
+
             <div className="flex space-x-1">
               {[...Array(totalPages)].map((_, i) => {
                 const pageNum = i + 1;
@@ -126,7 +168,7 @@ export default async function News() {
                     key={i}
                     href={pageUrl}
                     className={`px-3 py-1 border rounded ${
-                      currentPage === pageNum
+                      pageNumber === pageNum
                         ? 'background-theme-1 text-white'
                         : 'hover:background-theme-3 hover:text-white transition'
                     }`}
@@ -137,9 +179,9 @@ export default async function News() {
               })}
             </div>
 
-            {currentPage < totalPages && (
+            {pageNumber < totalPages && (
               <Link
-                href={`/news/2`}
+                href={`/news/${pageNumber + 1}`}
                 className="px-4 py-2 border rounded background-theme-1 text-white hover:background-theme-2 transition"
               >
                 Next

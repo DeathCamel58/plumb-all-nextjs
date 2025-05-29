@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { getAllArticles, getArticleBySlug, getRelatedArticles } from '../articles';
+import { getAllArticles, getArticleBySlug, getRelatedArticles } from '../../articles';
 import dynamic from 'next/dynamic';
 import { Metadata } from 'next';
 
@@ -87,7 +87,7 @@ export default async function ArticlePage({ params }: Props) {
   }
 
   // Dynamically import the article content component
-  const ArticleContent = dynamic(() => import(`../articles/${slug}`), {
+  const ArticleContent = dynamic(() => import(`../../articles/${slug}`), {
     loading: () => <p>Loading article content...</p>,
     ssr: true
   });
