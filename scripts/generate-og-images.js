@@ -43,9 +43,9 @@ export async function GET() {
         const buffer = await image.arrayBuffer();
         const filename = getOgImageFilename(config);
         const filePath = path.join(process.cwd(), 'public', 'og-images', filename);
-        
+
         await fs.writeFile(filePath, Buffer.from(buffer));
-        
+
         results.push({
           title: config.title,
           image: config.image,
@@ -81,9 +81,28 @@ export async function GET() {
     await fs.writeFile(tempScriptPath, tempScript);
     console.log('Created temporary API route for OG image generation');
 
-    // Start a Next.js dev server in the background
-    console.log('Starting Next.js dev server...');
+    // Start a Next.js dev server in the background with custom config
+    console.log('Starting Next.js dev server with custom config...');
     const serverProcess = exec('npx next dev --port 3333');
+
+    // Define function to kill the server process
+    const killServer = () => {
+      if (serverProcess && !serverProcess.killed) {
+        console.log('Terminating Next.js server...');
+        serverProcess.kill();
+      }
+    };
+
+    // Set up cleanup handlers
+    process.on('exit', killServer);
+    process.on('SIGINT', () => {
+      killServer();
+      process.exit(0);
+    });
+    process.on('SIGTERM', () => {
+      killServer();
+      process.exit(0);
+    });
 
     // Wait for the server to start
     console.log('Waiting for server to start...');
@@ -95,6 +114,8 @@ export async function GET() {
             if (onlineTestResult.status === 200) {
                 serverOnline = true;
                 console.log('\tServer online!');
+            } else {
+                console.log('\tServer still not online...');
             }
         } catch (e) {
             console.log('\tServer still not online...');
@@ -120,6 +141,8 @@ export async function GET() {
     await fs.rm(tempScriptDir, { recursive: true, force: true });
     console.log('Cleaned up temporary API route');
 
+    // Explicitly terminate the server
+    killServer();
     console.log('OG image generation complete!');
     process.exit(0);
   } catch (error) {
