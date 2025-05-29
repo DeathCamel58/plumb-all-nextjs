@@ -13,7 +13,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const description = 'Plumb-All\'s expert plumbers have been tackling all types of plumbing and septic problems in South Atlanta since 2003.';
 
   // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/api/og?title=news&image=/images/formbg.jpg';
+  const ogImageUrl = '/og-images/og-home-page-formbg.png';
 
   const env = process.env.NODE_ENV;
 

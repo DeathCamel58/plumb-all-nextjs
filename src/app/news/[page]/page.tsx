@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const description = 'Plumb-All\'s blog and news posts';
 
   // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/api/og?title=news&image=/images/pipes.jpg';
+  const ogImageUrl = '/og-images/og-news-pipes.png';
 
   const env = process.env.NODE_ENV;
 
@@ -136,7 +136,7 @@ export default async function NewsPage({ params }: Props) {
                 <h3 className="text-xl font-semibold mb-3">{article.title}</h3>
                 <p className="text-gray-700 mb-4">{article.excerpt}</p>
                 <Link
-                  href={`/news/${article.slug}`}
+                  href={`/news/article/${article.slug}`}
                   className="inline-block background-theme-1 text-white px-4 py-2 rounded shadow hover:background-theme-2 transition"
                 >
                   Read More

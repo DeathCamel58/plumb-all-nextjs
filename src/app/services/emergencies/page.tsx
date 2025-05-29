@@ -11,7 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const description = 'Pluming issues that need to be fixed ASAP? We&#039;re available 24/7 to fix your emergency plumbing needs. Licences and insured. Call us today at (844) 758-6225.';
 
   // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/api/og?title=news&image=/images/vans.jpg';
+  const ogImageUrl = '/og-images/og-emergency-services-vans.png';
 
   const env = process.env.NODE_ENV;
 

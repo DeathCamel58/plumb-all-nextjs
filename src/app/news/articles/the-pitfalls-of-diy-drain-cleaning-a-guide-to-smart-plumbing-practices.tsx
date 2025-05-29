@@ -10,7 +10,7 @@ export const metadata = {
   date: '2023-11-09',
   excerpt: 'Discover the pitfalls of DIY drain cleaning and why reaching for commercial drain cleaners may harm your pipes. Learn the art of smart plumbing practices and avoid common culprits for clogged drains. Your go-to resource for maintaining a smoothly flowing plumbing system.',
   image: '/images/hand-drain-cleaning.jpg',
-  path: `/news/${slug}`
+  path: `/news/article/${slug}`
 };
 
 // Article content component

@@ -9,7 +9,7 @@ export const metadata = {
   date: '2023-11-03',
   excerpt: 'Learn how to fix a running toilet and prevent water waste with our step-by-step guide. Discover common causes and solutions for a smoothly operating toilet.',
   image: '/images/toilet-flapper.jpg',
-  path: `/news/${slug}`
+  path: `/news/article/${slug}`
 };
 
 // Article content component

@@ -12,7 +12,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const description = 'At Plumb-All, we&#39;re your trusted local plumbing experts in Atlanta, Georgia. With years of experience serving the Atlanta community, we take pride in providing top-notch plumbing solutions for both residential and commercial needs.';
 
   // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/api/og?title=news&image=/images/slab-leak.jpg';
+  const ogImageUrl = '/og-images/og-expert-plumbers-in-atlanta-slab-leak.png';
 
   const env = process.env.NODE_ENV;
 

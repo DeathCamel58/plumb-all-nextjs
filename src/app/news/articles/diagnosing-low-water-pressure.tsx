@@ -9,7 +9,7 @@ export const metadata = {
   date: '2023-11-03',
   excerpt: 'When water pressure falls short, everyday tasks become challenging. Learn about common causes of low water pressure and how to diagnose issues in your household plumbing system.',
   image: '/images/dripping-faucet-2.jpg',
-  path: `/news/${slug}`
+  path: `/news/article/${slug}`
 };
 
 // Article content component

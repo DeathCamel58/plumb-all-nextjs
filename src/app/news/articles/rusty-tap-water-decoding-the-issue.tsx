@@ -10,7 +10,7 @@ export const metadata = {
   date: '2023-11-14',
   excerpt: 'Unlock the secrets behind rusty tap water with our insightful guide. From deciphering discoloration in both hot and cold faucets to pinpointing issues with your water heater or corroded pipes, Plumb-All’s expert advice has you covered. Discover practical solutions to ensure your water supply remains clear and reliable.',
   image: '/images/rusty-water.jpg',
-  path: `/news/${slug}`
+  path: `/news/article/${slug}`
 };
 
 // Article content component

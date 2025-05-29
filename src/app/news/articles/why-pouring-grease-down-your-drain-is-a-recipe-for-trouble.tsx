@@ -9,7 +9,7 @@ export const metadata = {
   date: '2023-11-13',
   excerpt: 'Discover why pouring grease down your kitchen sink can lead to plumbing disasters. Learn about the consequences of FOGs (Fats, Oils, and Grease) and how they can cause clogs, and find out practical tips for preventing and addressing these issues. Trust Plumb-All, with over 20 years of experience, to keep your plumbing in top shape.',
   image: '/images/sink-drain.jpg',
-  path: `/news/${slug}`
+  path: `/news/article/${slug}`
 };
 
 // Article content component

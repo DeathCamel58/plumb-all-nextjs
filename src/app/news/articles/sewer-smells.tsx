@@ -10,7 +10,7 @@ export const metadata = {
   date: '2021-08-31',
   excerpt: 'Sewer gas smells in your home can be dangerous, leading to health issues and potential fire hazards. Learn about the causes and solutions.',
   image: '/images/roof-vent.jpg',
-  path: `/news/${slug}`
+  path: `/news/article/${slug}`
 };
 
 // Article content component

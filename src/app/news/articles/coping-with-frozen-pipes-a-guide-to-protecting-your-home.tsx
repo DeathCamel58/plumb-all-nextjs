@@ -9,7 +9,7 @@ export const metadata = {
   date: '2023-12-01',
   excerpt: 'When temperatures plummet, your pipes are at risk. Learn how to identify, thaw, and prevent frozen pipes with our comprehensive guide, and discover when it\'s time to call in the Plumb-All professionals.',
   image: '/images/frozen-pipe.jpg',
-  path: `/news/${slug}`
+  path: `/news/article/${slug}`
 };
 
 // Article content component

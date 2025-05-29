@@ -9,7 +9,7 @@ export const metadata = {
   date: '2022-06-06',
   excerpt: 'Hydro Jetting refers to a method by which clogged drains, and sewer lines are cleaned. Using a hydro jetting machine, water is blasted into the drain lines at a fast speed and high pressure to clean drains and main sewer lines.',
   image: '/images/hydro-jetting-nozzle.jpg',
-  path: `/news/${slug}`
+  path: `/news/article/${slug}`
 };
 
 // Article content component

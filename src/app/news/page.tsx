@@ -10,7 +10,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const description = 'Plumb-All\'s blog and news posts';
 
   // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/api/og?title=news&image=/images/pipes.jpg';
+  const ogImageUrl = '/og-images/og-news-pipes.png';
 
   const env = process.env.NODE_ENV;
 

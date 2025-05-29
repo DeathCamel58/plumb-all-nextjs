@@ -9,7 +9,7 @@ export const metadata = {
   date: '2023-11-14',
   excerpt: "Discover how strategic plumbing upgrades can significantly increase your home's resale value. Learn about the 5 highest-ROI plumbing improvements, from whole-house water filtration to luxury touches that impress buyers. Get expert tips and a pre-sale plumbing checklist from Plumb-All's experienced professionals.",
   image: '/images/home-for-sale.jpg',
-  path: `/news/${slug}`
+  path: `/news/article/${slug}`
 };
 
 // Article content component

@@ -9,7 +9,7 @@ export const metadata = {
   date: '2023-11-03',
   excerpt: 'Discover the essential factors influencing water quality and how to maintain pure, safe water for your family. Explore insights and expert guidance on water quality, treatment, and plumbing maintenance.',
   image: '/images/running-faucet.jpg',
-  path: `/news/${slug}`
+  path: `/news/article/${slug}`
 };
 
 // Article content component

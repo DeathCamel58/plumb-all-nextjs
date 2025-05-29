@@ -11,7 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const description = 'We offer hydro jetting services to the Metro Atlanta Area. Jetting is an effective preventative maintenance that keeps your pipes running well.';
 
   // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/api/og?title=news&image=/images/hydro-jetting-nozzle.jpg';
+  const ogImageUrl = '/og-images/og-hydro-jetting-hydro-jetting-nozzle.png';
 
   const env = process.env.NODE_ENV;
 

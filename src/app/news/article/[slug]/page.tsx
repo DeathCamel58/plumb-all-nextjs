@@ -35,9 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const finalTitle = `Plumb-All: ${article.title}`;
 
   // Create URL for the dynamically generated OG image with title overlay
-  const encodedTitle = encodeURIComponent(article.title);
-  const encodedImage = encodeURIComponent(article.image);
-  const ogImageUrl = `/api/og?title=${encodedTitle}&image=${encodedImage}`;
+  const ogImageUrl = `/og-images/og-${slug}.png`;
   const dateTime = new Date(article.date).toISOString();
 
   const env = process.env.NODE_ENV;
@@ -52,7 +50,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: finalTitle,
       description: article.excerpt,
-      url: `/news/${slug}`,
+      url: `/news/article/${slug}`,
       images: [
         {
           url: ogImageUrl,
@@ -163,7 +161,7 @@ export default async function ArticlePage({ params }: Props) {
                       })}
                     </p>
                     <Link
-                      href={`/news/${relatedArticle.slug}`}
+                      href={`/news/article/${relatedArticle.slug}`}
                       className="text-theme-3 hover:underline"
                     >
                       Read More →

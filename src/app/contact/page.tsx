@@ -12,7 +12,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const description = 'Contact us with any of your questions or project ideas or sign up for our newsletter and get advice and deals right in your inbox. We love hearing from you.';
 
   // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/api/og?title=news&image=/images/our-team.jpg';
+  const ogImageUrl = '/og-images/og-contact-us-our-team.png';
 
   const env = process.env.NODE_ENV;
 

@@ -10,7 +10,7 @@ export const metadata = {
   date: '2021-09-02',
   excerpt: 'A couple of the most common questions we get asked are “What can I safely put down my drains with my septic tank?” and “How can I keep my septic system healthy for longer?” In this article, we’re going to dive into what is and isn’t safe to put down drains on a septic system.',
   image: '/images/septic-tank-diagram.jpg',
-  path: `/news/${slug}`
+  path: `/news/article/${slug}`
 };
 
 // Article content component

@@ -10,7 +10,7 @@ export const metadata = {
   date: '2022-05-03',
   excerpt: 'We’ve all dropped an item down a p-trap before. In this article we cover a couple techniques you can use to try to retrieve items lost down the drain.',
   image: '/images/sink-underside.jpg',
-  path: `/news/${slug}`
+  path: `/news/article/${slug}`
 };
 
 // Article content component

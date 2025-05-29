@@ -9,7 +9,7 @@ export const metadata = {
   date: '2022-10-17',
   excerpt: 'Regular septic maintenance is the greatest thing one can do to keep their septic system in good working order. Here’s how to maintain it.',
   image: '/images/septic-system-overview.jpg',
-  path: `/news/${slug}`
+  path: `/news/article/${slug}`
 };
 
 // Article content component

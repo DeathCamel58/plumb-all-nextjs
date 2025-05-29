@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
+    "prebuild": "node scripts/generate-og-images.js",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate-og": "node scripts/generate-og-images.js"
   },
   "dependencies": {
     "@next/third-parties": "^15.3.2",

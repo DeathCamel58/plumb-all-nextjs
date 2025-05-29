@@ -10,7 +10,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const description = 'The days of being worried about being able to pay up front for plumbing services are over. We offer Financing to help remove the financial burden of plumbing.';
 
   // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/api/og?title=financing&image=/logo/plumb-all-banner.png';
+  const ogImageUrl = '/og-images/og-financing-plumb-all-banner.png';
 
   const env = process.env.NODE_ENV;
 

@@ -11,7 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const description = 'Our top services include: septic drain field repair, plumbing installation & repair, alternative septic solutions, leak detection, and sewer line repair.';
 
   // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/api/og?title=news&image=/images/toilet-flapper.jpg';
+  const ogImageUrl = '/og-images/og-services-toilet-flapper.png';
 
   const env = process.env.NODE_ENV;
 

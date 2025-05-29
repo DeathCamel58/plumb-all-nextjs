@@ -9,7 +9,7 @@ export const metadata = {
   date: '2023-11-13',
   excerpt: 'Discover the pivotal signs indicating your water heater may need urgent attention. From significant temperature fluctuations to subtle hot water leaks, learn the crucial warning signals homeowners often overlook. Stay informed and safeguard your home’s plumbing integrity with our seasoned professionals.',
   image: '/images/water-heater.jpg',
-  path: `/news/${slug}`
+  path: `/news/article/${slug}`
 };
 
 // Article content component

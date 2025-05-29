@@ -10,7 +10,7 @@ export const metadata = {
   date: '2023-04-05',
   excerpt: 'Home insurance can cover fire, theft, and natural disasters. But does it cover plumbing issues? Learn what your policy may or may not cover.',
   image: '/images/spraying-pipe.jpg',
-  path: `/news/${slug}`
+  path: `/news/article/${slug}`
 };
 
 // Article content component

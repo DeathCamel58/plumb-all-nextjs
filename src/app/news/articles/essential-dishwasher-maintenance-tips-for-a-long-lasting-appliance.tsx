@@ -9,7 +9,7 @@ export const metadata = {
   date: '2023-11-22',
   excerpt: 'Discover expert tips to keep your dishwasher performing at its best! From inspecting seals to cleaning spray arm nozzles, our blog offers essential maintenance advice. Ensure a long-lasting appliance and say goodbye to unpleasant odors.',
   image: '/images/dishwasher.jpg',
-  path: `/news/${slug}`
+  path: `/news/article/${slug}`
 };
 
 // Article content component

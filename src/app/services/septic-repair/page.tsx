@@ -11,7 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const description = 'Septic drain fields are essentially eco-friendly drains for your septic system. They connect to your septic tank, and allow water to seep out into your yard.';
 
   // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/api/og?title=news&image=/images/septic-system-overview.jpg';
+  const ogImageUrl = '/og-images/og-septic-repair-septic-system-overview.png';
 
   const env = process.env.NODE_ENV;
 

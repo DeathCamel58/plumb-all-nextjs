@@ -10,7 +10,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const description = 'Many plumbers are stumped when it comes to Eljen Septic systems. Here at Plumb-All, we hold certifications to show that we can work on these.';
 
   // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/api/og?title=news&image=/images/septic-system-overview.jpg';
+  const ogImageUrl = '/og-images/og-eljen-septic-septic-system-overview.png';
 
   const env = process.env.NODE_ENV;
 

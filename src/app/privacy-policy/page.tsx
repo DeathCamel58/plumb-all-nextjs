@@ -8,7 +8,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const description = 'Learn about how we use your data and keep it safe!';
 
   // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/api/og?title=news&image=/images/our-team.jpg';
+  const ogImageUrl = '/og-images/og-privacy-policy-our-team.png';
 
   const env = process.env.NODE_ENV;
 

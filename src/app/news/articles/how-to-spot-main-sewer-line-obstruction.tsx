@@ -9,7 +9,7 @@ export const metadata = {
   date: '2023-11-01',
   excerpt: 'Learn how to detect a main sewer line obstruction early to avoid costly repairs. Discover the signs of a sewer line blockage and common issues, and find out if replacement is a cost-effective solution. Stay proactive and protect your home’s plumbing system.',
   image: '/images/roots-in-pipe.jpg',
-  path: `/news/${slug}`
+  path: `/news/article/${slug}`
 };
 
 // Article content component

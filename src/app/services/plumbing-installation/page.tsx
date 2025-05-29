@@ -11,7 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const description = 'As expert plumbers with years of experience in plumbing installation, we are trained to plan and install the best solution to your projects needs.';
 
   // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/api/og?title=news&image=/images/gray-pipes.jpg';
+  const ogImageUrl = '/og-images/og-plumbing-installation-gray-pipes.png';
 
   const env = process.env.NODE_ENV;
 

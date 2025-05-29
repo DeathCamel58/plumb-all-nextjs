@@ -11,7 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const description = 'Our experts show a high level of attention to detail, and utilize extensive educational and vocational expertise when determining the best repair solution.';
 
   // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/api/og?title=news&image=/images/spraying-pipe.jpg';
+  const ogImageUrl = '/og-images/og-plumbing-repair-spraying-pipe.png';
 
   const env = process.env.NODE_ENV;
 

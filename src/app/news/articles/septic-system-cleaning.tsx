@@ -11,7 +11,7 @@ export const metadata = {
   date: '2021-09-09',
   excerpt: 'What is a septic tank cleaning, and why do people get it cleaned instead of pumped? In this article, we strive to inform and educate about septic cleaning.',
   image: '/images/septic-install.jpg',
-  path: `/news/${slug}`
+  path: `/news/article/${slug}`
 };
 
 // Article content component

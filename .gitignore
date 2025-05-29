@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Opengraph Images
+/public/og-images
+/src/app/api/generate-og-temp

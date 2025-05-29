@@ -10,7 +10,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const description = 'Know the differences between the different types of alternative septic systems, and get information on how to best care for your system.';
 
   // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/api/og?title=news&image=/images/septic-system-overview.jpg';
+  const ogImageUrl = '/og-images/og-alternative-septic-septic-system-overview.png';
 
   const env = process.env.NODE_ENV;
 

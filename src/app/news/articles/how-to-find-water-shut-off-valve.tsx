@@ -10,7 +10,7 @@ export const metadata = {
   date: '2022-09-06',
   excerpt: 'Learn how to quickly locate your water shut off valve to prevent damage during plumbing emergencies. This essential knowledge can save you from costly water damage.',
   image: '/images/shut-off-valve.jpg',
-  path: `/news/${slug}`
+  path: `/news/article/${slug}`
 };
 
 // Article content component

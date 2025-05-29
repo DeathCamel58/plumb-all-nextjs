@@ -9,7 +9,7 @@ export const metadata = {
   date: '2021-09-17',
   excerpt: 'A garbage disposal does a great job at taking food waste, breaking it up, and getting it disposed of. Unfortunately, every time it’s used, small particles of food build up on the inside of it, and it eventually winds up with a stinky smell.',
   image: '/images/garbage-disposal.jpg',
-  path: `/news/${slug}`
+  path: `/news/article/${slug}`
 };
 
 // Article content component

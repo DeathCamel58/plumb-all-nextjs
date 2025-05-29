@@ -10,7 +10,7 @@ export const metadata = {
   date: '2019-07-17',
   excerpt: 'Although not all building’s plumbing systems make noticeable sounds, everyone has heard them before. Though these annoying sounds can come from anyone’s home, they’re more likely to occur from older homes. On this post, we’re going to dive into some of the more common plumbing sounds, some reasons as to why they occur, and if they have the potential to cause issues.',
   image: '/images/gray-pipes-2.jpg',
-  path: `/news/${slug}`
+  path: `/news/article/${slug}`
 };
 
 // Article content component

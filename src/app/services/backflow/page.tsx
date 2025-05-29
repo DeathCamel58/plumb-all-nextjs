@@ -11,7 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const description = 'Plumb-All is a certified backflow inspection company that specializes in annual inspections, repairs, and installation of backflow preventers required by your local water authority.';
 
   // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/api/og?title=news&image=/images/backflow.jpg';
+  const ogImageUrl = '/og-images/og-backflow-backflow.png';
 
   const env = process.env.NODE_ENV;
 

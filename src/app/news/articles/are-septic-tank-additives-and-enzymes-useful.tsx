@@ -9,7 +9,7 @@ export const metadata = {
   date: '2019-07-09',
   excerpt: 'As a company that specializes in plumbing and septic repair and installation, we get asked this question quite often. Most of the time, customers have heard that they should put additives and enzymes into their septic system regularly to keep everything running properly. Unfortunately, this isn’t the case.',
   image: '/images/septic-system-overview.jpg',
-  path: `/news/${slug}`
+  path: `/news/article/${slug}`
 };
 
 // Article content component

@@ -11,7 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const description = 'Discover the importance of septic tank pumping and its benefits for your system\'s longevity and efficiency. At Plumb-All, we offer professional septic tank pumping services in Jonesboro and surrounding areas.';
 
   // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/api/og?title=news&image=/images/septic-pumping.jpg';
+  const ogImageUrl = '/og-images/og-septic-tank-pumping-septic-pumping.png';
 
   const env = process.env.NODE_ENV;
 

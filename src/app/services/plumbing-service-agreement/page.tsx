@@ -11,7 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const description = 'Our ongoing plumbing service agreement keeps you better protected from costly and damaging plumbing emergencies with regular inspections and maintenance.';
 
   // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/api/og?title=news&image=/images/spraying-pipe.jpg';
+  const ogImageUrl = '/og-images/og-plumbing-service-agreement-spraying-pipe.png';
 
   const env = process.env.NODE_ENV;
 

@@ -9,7 +9,7 @@ export const metadata = {
   date: '2023-11-14',
   excerpt: "Discover essential plumbing tips for new homeowners with Plumb-All. From locating the water main to choosing the right plunger, our expert advice ensures you're equipped to handle common plumbing issues and prevent costly emergencies.",
   image: '/images/water-shut-off-valve.jpg',
-  path: `/news/${slug}`
+  path: `/news/article/${slug}`
 };
 
 // Article content component

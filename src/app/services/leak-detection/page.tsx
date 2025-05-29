@@ -11,7 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const description = 'Our leak detection services concentrate on speed and damage control. Leaking pipes can cause extensive damage, so if you suspect a leak, act quickly!';
 
   // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/api/og?title=news&image=/images/spraying-pipe.jpg';
+  const ogImageUrl = '/og-images/og-leak-detection-spraying-pipe.png';
 
   const env = process.env.NODE_ENV;
 

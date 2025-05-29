@@ -11,7 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const description = 'Need fast, professional drain cleaning in Metro Atlanta? Plumb-All in Jonesboro, GA, offers expert service, including hydro jetting and sectional machine cleaning. Call today for a free estimate!';
 
   // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/api/og?title=news&image=/images/drain-cleaning.jpg';
+  const ogImageUrl = '/og-images/og-drain-cleaning-drain-cleaning.png';
 
   const env = process.env.NODE_ENV;
 

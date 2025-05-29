@@ -11,7 +11,7 @@ export const metadata = {
   date: '2023-06-19',
   excerpt: 'Discover the importance of flushing your water heater for optimal performance and longevity. Learn how sediment buildup affects efficiency and how to perform this essential maintenance task.',
   image: '/images/flush-water-heater.jpg',
-  path: `/news/${slug}`
+  path: `/news/article/${slug}`
 };
 
 // Article content component

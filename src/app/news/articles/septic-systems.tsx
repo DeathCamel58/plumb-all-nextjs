@@ -9,7 +9,7 @@ export const metadata = {
   date: '2023-04-21',
   excerpt: 'Learn about the different types of septic systems available, including conventional and alternative systems, to make an informed decision for your home or business.',
   image: '/images/septic-install.jpg',
-  path: `/news/${slug}`
+  path: `/news/article/${slug}`
 };
 
 // Article content component

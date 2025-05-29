@@ -11,7 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const description = 'Our company has been serving South Atlanta since 2003, and our process and our values have always focused on quality workmanship and customer relationships.';
 
   // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/api/og?title=news&image=/images/our-team.jpg';
+  const ogImageUrl = '/og-images/og-about-us-our-team.png';
 
   const env = process.env.NODE_ENV;
 

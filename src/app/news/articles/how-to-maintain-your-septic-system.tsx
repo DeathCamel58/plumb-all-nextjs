@@ -9,7 +9,7 @@ export const metadata = {
   date: '2022-07-05',
   excerpt: 'Your septic system cleanly disposes of waste and is at the heart of your plumbing system. When cared for, it can last for years. Here’s how to maintain it.',
   image: '/images/eljen-install.jpg',
-  path: `/news/${slug}`
+  path: `/news/article/${slug}`
 };
 
 // Article content component
