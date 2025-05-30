@@ -117,7 +117,7 @@ export async function GET() {
             } else {
                 console.log('\tServer still not online...');
             }
-        } catch (e) {
+        } catch (err) {
             console.log('\tServer still not online...');
         }
     }

@@ -142,8 +142,3 @@ export function getOgImageFilename(params: OgImageParams): string {
   const imageSlug = params.image.split('/').pop()?.split('.')[0] || 'default';
   return `og-${titleSlug}-${imageSlug}.png`;
 }
-
-// Function to get the public path for a generated OG image
-export function getOgImagePublicPath(params: OgImageParams): string {
-  return `/og-images/${getOgImageFilename(params)}`;
-}

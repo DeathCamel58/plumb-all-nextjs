@@ -57,8 +57,7 @@ export default async function News() {
 
   // Get articles for current page
   const startIndex = 0; // First page starts at index 0
-  const endIndex = postsPerPage;
-  const currentArticles = allArticles.slice(startIndex, endIndex);
+  const currentArticles = allArticles.slice(startIndex, postsPerPage);
 
   return (
     <div className="min-h-screen">
