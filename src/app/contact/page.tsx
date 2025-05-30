@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaPhoneAlt, FaMapMarkerAlt, FaClock, FaEnvelope, FaTools, FaThumbsUp, FaHandshake } from 'react-icons/fa';
+import { FaPhoneAlt, FaMapMarkerAlt, FaCalendarAlt, FaEnvelope, FaTools, FaThumbsUp, FaHandshake } from 'react-icons/fa';
 import CTACall from '@/components/cta/CTACall';
 import ContactForm from '@/components/ContactForm';
 import {Metadata} from "next";
@@ -106,14 +106,16 @@ export default function Contact() {
 
           <div className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center text-center hover:shadow-lg transition-shadow">
             <div className="w-16 h-16 rounded-full background-theme-3 flex items-center justify-center text-white mb-4">
-              <FaClock className="text-2xl" />
+              <FaCalendarAlt className="text-2xl" />
             </div>
-            <h3 className="text-xl font-semibold mb-2">Business Hours</h3>
-            <p className="mb-4">We&#39;re available during these hours for scheduled appointments:</p>
-            <p className="text-theme-3 font-bold">
-              Monday – Friday<br />
-              8AM – 4PM
-            </p>
+            <h3 className="text-xl font-semibold mb-2">Schedule an Appointment</h3>
+            <p className="mb-4">Book your service appointment online at your convenience:</p>
+            <a
+              href="https://clienthub.getjobber.com/client_hubs/4015938f-cada-4cbe-9e0f-3fa27b028598/public/work_request/new?source=website"
+              className="inline-block font-bold background-theme-1 text-white px-6 py-3 rounded shadow hover:background-theme-2 transition"
+            >
+              Book Now
+            </a>
           </div>
         </div>
 
