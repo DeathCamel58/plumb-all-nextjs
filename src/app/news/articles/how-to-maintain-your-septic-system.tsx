@@ -1,5 +1,6 @@
 import React from 'react';
 import CTACall from "@/components/cta/CTACall";
+import Link from 'next/link';
 
 // Article metadata
 const slug = 'how-to-maintain-your-septic-system';
@@ -144,9 +145,9 @@ export default function ArticleContent() {
 
       <p className="mb-6">
         Although drain fields do not require much maintenance, the small pores in the drain field can get
-        clogged with biomat, and keep the drain field from working properly. <a
-        href="/when-is-hydro-jetting-needed/"
-        className="text-theme-1 hover:text-theme-2 transition">Hydro-jetting</a> can open these pores up
+        clogged with biomat, and keep the drain field from working properly. <Link
+        href="/news/article/when-is-hydro-jetting-needed/"
+        className="text-theme-1 hover:text-theme-2 transition">Hydro-jetting</Link> can open these pores up
         again to make sure that your septic tank is draining properly.
       </p>
 

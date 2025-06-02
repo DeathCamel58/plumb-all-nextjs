@@ -83,7 +83,7 @@ const septicServices = [
   },
   {
     title: "Septic Drain Field Repair",
-    path: "/services/septicrepair",
+    path: "/services/septic-repair",
     description: "Expert repair of failing drain fields to restore proper function and prevent costly system replacements.",
   },
   {

@@ -136,7 +136,7 @@ export default function ArticleContent() {
           <h3 className="text-lg font-semibold mb-2">Bathroom Drain Enemies</h3>
           <ul className="list-disc pl-5 space-y-1">
             <li>Hair (use drain covers to catch it)</li>
-            <li>&#34;Flushable&#34; wipes (<Link href="/news/are-flushable-wipes-safe-to-flush">they&#39;re not truly flushable</Link>)</li>
+            <li>&#34;Flushable&#34; wipes (<Link href="/news/article/are-flushable-wipes-safe-to-flush">they&#39;re not truly flushable</Link>)</li>
             <li>Feminine hygiene products</li>
             <li>Dental floss (can tangle around other debris)</li>
             <li>Cotton balls or Q-tips</li>

@@ -92,7 +92,7 @@ export default function ArticleContent() {
           <h2 className="text-2xl font-bold mb-4">Gurgling</h2>
 
           <p className="mb-4">
-            <Link href="/news/articles/plumbing-gurgling" className="text-theme-3 hover:underline">
+            <Link href="/news/article/plumbing-gurgling" className="text-theme-3 hover:underline">
               Gurgling
             </Link> can be caused by many different things, and we&#39;ll cover a few of the causes below.
           </p>

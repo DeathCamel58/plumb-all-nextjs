@@ -80,7 +80,7 @@ export default function ArticleContent() {
       <h2 className="text-2xl font-bold mt-8 mb-4">What About Septic Tank Maintenance?</h2>
 
       <p className="mb-6">
-        When most people talk about septic tank cleaning, they&#39;re usually referring to <Link href="/news/when-is-hydro-jetting-needed" className="text-theme-1 hover:text-theme-2 transition">Hydro-Jetting</Link>.
+        When most people talk about septic tank cleaning, they&#39;re usually referring to <Link href="/news/article/when-is-hydro-jetting-needed" className="text-theme-1 hover:text-theme-2 transition">Hydro-Jetting</Link>.
         This is the process of feeding a specialized pressure washer down the leach field pipes, and breaking
         up any debris and bio-mat that is blocking the holes in the pipe. By unblocking the holes in the leach
         field, we&#39;re able to fix issues where the liquid waste from the tank will not drain out.

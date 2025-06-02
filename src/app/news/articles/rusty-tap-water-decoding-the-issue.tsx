@@ -74,7 +74,7 @@ export default function ArticleContent() {
 
       <p className="mb-4">
         When rusty water is isolated to hot water faucets while cold water remains clear, your{" "}
-        <Link href="/news/warning-signs-that-your-water-heater-requires-attention" className="text-theme-1 hover:text-theme-2 transition">hot water heater</Link>{" "}
+        <Link href="/news/article/warning-signs-that-your-water-heater-requires-attention" className="text-theme-1 hover:text-theme-2 transition">hot water heater</Link>{" "}
         is the most likely culprit.
       </p>
 
@@ -96,7 +96,7 @@ export default function ArticleContent() {
       <div className="bg-yellow-50 p-4 rounded-lg mb-6 border-l-4 border-yellow-400">
         <p className="font-medium text-gray-700">
           <strong>Pro Tip:</strong> To resolve water heater discoloration, consider{" "}
-          <Link href="/news/flushing-your-water-heater" className="text-theme-1 hover:text-theme-2 transition">flushing your water heater</Link>{" "}
+          <Link href="/news/article/flushing-your-water-heater" className="text-theme-1 hover:text-theme-2 transition">flushing your water heater</Link>{" "}
           tank to eliminate sediment buildup. This simple maintenance task can extend your water heater&#39;s lifespan and improve water quality. If signs of corrosion are already present, seek guidance from a professional plumber.
         </p>
       </div>
