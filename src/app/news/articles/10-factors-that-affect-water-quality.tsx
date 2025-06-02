@@ -184,7 +184,7 @@ export default function ArticleContent() {
       <p className="mb-6">
         At Plumb-All Plumbing, we are committed to assisting you in preserving optimal water quality for your home.
         If you have inquiries about water quality or require professional plumbing services, please do not
-        hesitate to contact us at <a href="tel:+17709143877" className="text-theme-1 hover:text-theme-2 transition">(770) 270-3514</a>.
+        hesitate to contact us at <a href="tel:+17709143877" className="text-theme-1 hover:text-theme-2 transition">(770) 914-3877</a>.
       </p>
 
       <div className="bg-theme-4/10 p-6 rounded-lg mt-10 mb-8">

@@ -119,7 +119,7 @@ export default function ArticleContent() {
       </ul>
 
       <p className="mb-6">
-        At Plumb-All, we understand that plumbing emergencies don&#39;t wait for convenient times. Our team of licensed, bonded, and insured professionals is ready to assist with any plumbing issue, from minor repairs to major installations. Contact us online or call <a href="tel:+17709143877" className="text-theme-1 hover:text-theme-2 transition">(770) 270-3514</a> for prompt, reliable service. Your home&#39;s plumbing is our priority!
+        At Plumb-All, we understand that plumbing emergencies don&#39;t wait for convenient times. Our team of licensed, bonded, and insured professionals is ready to assist with any plumbing issue, from minor repairs to major installations. Contact us online or call <a href="tel:+17709143877" className="text-theme-1 hover:text-theme-2 transition">(770) 914-3877</a> for prompt, reliable service. Your home&#39;s plumbing is our priority!
       </p>
 
       <div className="bg-theme-4/10 p-6 rounded-lg mt-10 mb-8">

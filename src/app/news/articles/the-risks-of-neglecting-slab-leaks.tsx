@@ -113,7 +113,7 @@ export default function ArticleContent() {
       </p>
 
       <p className="mb-6">
-        For all your plumbing needs, reach out to Plumb-All. Call us at <a href="tel:+17709143877" className="text-theme-1 hover:text-theme-2 transition">(770) 270-3514</a> or contact us online to learn more about how our skilled plumbers can assist you. We are fully licensed, bonded, and insured, providing unparalleled service with transparent pricing and guaranteed workmanship. Contact us today!
+        For all your plumbing needs, reach out to Plumb-All. Call us at <a href="tel:+17709143877" className="text-theme-1 hover:text-theme-2 transition">(770) 914-3877</a> or contact us online to learn more about how our skilled plumbers can assist you. We are fully licensed, bonded, and insured, providing unparalleled service with transparent pricing and guaranteed workmanship. Contact us today!
       </p>
 
       <div className="bg-theme-4/10 p-6 rounded-lg mt-10 mb-8">

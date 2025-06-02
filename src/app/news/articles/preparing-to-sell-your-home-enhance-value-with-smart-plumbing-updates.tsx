@@ -124,7 +124,7 @@ export default function ArticleContent() {
       </p>
 
       <p className="mb-6">
-        Contact Plumb-All at <a href="tel:+17709143877" className="text-theme-1 hover:text-theme-2 transition">(770) 270-3514</a> or reach out to us online for a pre-sale plumbing consultation. Our licensed, bonded, and insured professionals provide transparent pricing, guaranteed workmanship, and the expertise to maximize your home&#39;s value through strategic plumbing improvements.
+        Contact Plumb-All at <a href="tel:+17709143877" className="text-theme-1 hover:text-theme-2 transition">(770) 914-3877</a> or reach out to us online for a pre-sale plumbing consultation. Our licensed, bonded, and insured professionals provide transparent pricing, guaranteed workmanship, and the expertise to maximize your home&#39;s value through strategic plumbing improvements.
       </p>
 
       <div className="bg-theme-4/10 p-6 rounded-lg mt-10 mb-8">

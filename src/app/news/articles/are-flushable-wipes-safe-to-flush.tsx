@@ -131,7 +131,7 @@ export default function ArticleContent() {
       <p className="mb-6">
         Plumb-All is always prepared to assist you, no matter the size of the clog.
         Our professional plumbers have specialized equipment designed specifically to remove wipe blockages without damaging your plumbing system.
-        For further information or to schedule an appointment, don&#39;t hesitate to call us at <a href="tel:+17709143877" className="text-theme-1 hover:text-theme-2 transition">(770) 270-3514</a>.
+        For further information or to schedule an appointment, don&#39;t hesitate to call us at <a href="tel:+17709143877" className="text-theme-1 hover:text-theme-2 transition">(770) 914-3877</a>.
       </p>
 
       <div className="bg-theme-4/10 p-6 rounded-lg mt-10 mb-8">

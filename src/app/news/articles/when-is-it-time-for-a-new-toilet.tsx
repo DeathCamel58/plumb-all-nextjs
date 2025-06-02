@@ -155,7 +155,7 @@ export default function ArticleContent() {
 
       <p className="mb-6">
         If any of these signs resonate with your situation, don&#39;t hesitate to reach out to Plumb-All for professional
-        guidance and top-notch toilet installation services. Contact Plumb-All today at <a href="tel:+17709143877" className="text-theme-1 hover:text-theme-2 transition">(770) 270-3514</a> to
+        guidance and top-notch toilet installation services. Contact Plumb-All today at <a href="tel:+17709143877" className="text-theme-1 hover:text-theme-2 transition">(770) 914-3877</a> to
         schedule a consultation and trust in our expertise to help you select and install a new toilet that will
         elevate your bathroom experience and deliver lasting performance.
       </p>

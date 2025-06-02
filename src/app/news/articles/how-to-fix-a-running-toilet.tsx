@@ -201,7 +201,7 @@ export default function ArticleContent() {
         and potential plumbing complications. By following the steps outlined in this guide, you can identify
         and resolve the most common causes of a running toilet. However, if you encounter any challenges or
         prefer professional assistance, don&#39;t hesitate to <a href="/contact/" className="text-theme-1 hover:text-theme-2 transition">get in touch</a> with
-        Plumb-All at <a href="tel:+17709143877" className="text-theme-1 hover:text-theme-2 transition">(770) 270-3514</a>. Our team of experts is ready to assist you in
+        Plumb-All at <a href="tel:+17709143877" className="text-theme-1 hover:text-theme-2 transition">(770) 914-3877</a>. Our team of experts is ready to assist you in
         resolving the issue and ensuring the efficient operation of your toilet.
       </p>
 

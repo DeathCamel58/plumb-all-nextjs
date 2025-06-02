@@ -102,7 +102,7 @@ export default function ArticleContent() {
       </ul>
 
       <p className="mb-6">
-        For all your plumbing concerns, Plumb-All is here to assist. Our experienced technicians can diagnose and repair dishwasher issues quickly and efficiently. Contact us online or give us a call at <a href="tel:+17709143877" className="text-theme-1 hover:text-theme-2 transition">(770) 270-3514</a> to learn more about our services. We take pride in being fully licensed, bonded, and insured, providing unparalleled service. Don&#39;t hesitate—give us a call today, and experience plumbing excellence!
+        For all your plumbing concerns, Plumb-All is here to assist. Our experienced technicians can diagnose and repair dishwasher issues quickly and efficiently. Contact us online or give us a call at <a href="tel:+17709143877" className="text-theme-1 hover:text-theme-2 transition">(770) 914-3877</a> to learn more about our services. We take pride in being fully licensed, bonded, and insured, providing unparalleled service. Don&#39;t hesitate—give us a call today, and experience plumbing excellence!
       </p>
 
       <div className="bg-theme-4/10 p-6 rounded-lg mt-10 mb-8">

@@ -125,7 +125,7 @@ export default function ArticleContent() {
 
       <p className="mb-6">
         Dealing with rusty water can be frustrating, but you don&#39;t have to tackle it alone. Plumb-All&#39;s experienced technicians can quickly diagnose the source of discoloration and implement effective solutions. For all your plumbing needs, contact Plumb-All at{" "}
-        <a href="tel:+17709143877" className="text-theme-1 hover:text-theme-2 transition">(770) 270-3514</a>{" "}
+        <a href="tel:+17709143877" className="text-theme-1 hover:text-theme-2 transition">(770) 914-3877</a>{" "}
         or reach out to us online. We are fully licensed, bonded, and insured, providing unparalleled service throughout Jonesboro and surrounding areas. Call us today—you&#39;ll be glad you did!
       </p>
 
