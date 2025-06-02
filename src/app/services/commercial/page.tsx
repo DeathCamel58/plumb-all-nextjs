@@ -91,7 +91,7 @@ export default function CommercialPlumbing() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <div className="w-full mb-12 text-center">
-          <h1 className="text-4xl font-bold mb-6">Expert Commercial Plumbing Solutions</h1>
+          <h2 className="text-4xl font-bold mb-6">Expert Commercial Plumbing Solutions</h2>
           <p className="text-xl max-w-4xl mx-auto mb-8">
             When faced with commercial plumbing challenges, timing is crucial. A sudden leak, stubborn clog, or grease trap issue can disrupt operations and drive away valuable customers. With over two decades of experience, Plumb-All delivers reliable commercial plumbing services designed to minimize downtime and keep your business running smoothly.
           </p>

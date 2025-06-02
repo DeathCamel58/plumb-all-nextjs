@@ -17,7 +17,7 @@ export const metadata = {
 export default function ArticleContent() {
   return (
     <article className="prose prose-lg max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Sewer Smells</h1>
+            <h2 className="text-3xl font-bold mb-6">Sewer Smells</h2>
 
       <p className="mb-6">
         Sewer gas smells in your home can be more dangerous than most realize. These gasses can include

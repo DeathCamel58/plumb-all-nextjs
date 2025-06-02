@@ -16,7 +16,7 @@ export const metadata = {
 export default function ArticleContent() {
   return (
     <article className="prose prose-lg max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Plumbing Gurgling</h1>
+            <h2 className="text-3xl font-bold mb-6">Plumbing Gurgling</h2>
 
       <p className="mb-6">
         In this post, we&#39;re going to cover what causes a plumbing gurgling sound, and potential

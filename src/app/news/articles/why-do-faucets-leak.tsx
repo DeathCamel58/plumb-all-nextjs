@@ -16,7 +16,7 @@ export const metadata = {
 export default function ArticleContent() {
   return (
     <article className="prose prose-lg max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Why do faucets leak?</h1>
+            <h2 className="text-3xl font-bold mb-6">Why do faucets leak?</h2>
 
       <p className="mb-6">
         Statistics show that a single leaking faucet can waste approximately{' '}

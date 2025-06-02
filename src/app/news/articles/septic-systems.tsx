@@ -17,7 +17,7 @@ export const metadata = {
 export default function ArticleContent() {
   return (
     <article className="prose prose-lg max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Septic Systems</h1>
+            <h2 className="text-3xl font-bold mb-6">Septic Systems</h2>
 
       <p className="mb-6">
         Septic systems are essential for homes and businesses that are not connected to the municipal sewer system.

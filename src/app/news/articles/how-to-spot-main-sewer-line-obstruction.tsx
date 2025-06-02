@@ -16,7 +16,7 @@ export const metadata = {
 export default function ArticleContent() {
   return (
     <article className="prose prose-lg max-w-none">
-            <h1 className="text-3xl font-bold mb-6">How To Spot Main Sewer Line Obstruction</h1>
+            <h2 className="text-3xl font-bold mb-6">How To Spot Main Sewer Line Obstruction</h2>
 
       <p className="mb-6">
         Your home&#39;s plumbing system relies heavily on the proper functioning of the sewer line, and any damage

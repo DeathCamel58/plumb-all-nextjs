@@ -17,7 +17,7 @@ export const metadata = {
 export default function ArticleContent() {
   return (
     <article className="prose prose-lg max-w-none">
-            <h1 className="text-3xl font-bold mb-6">How To Maintain Your Septic System</h1>
+            <h2 className="text-3xl font-bold mb-6">How To Maintain Your Septic System</h2>
 
       <p className="mb-6">
         A septic system treats household wastewater and leaches environmentally friendly water into your yard.

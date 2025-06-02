@@ -16,7 +16,7 @@ export const metadata = {
 export default function ArticleContent() {
   return (
     <article className="prose prose-lg max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Leaking Water Through Ceiling: Identifying and Fixing Upstairs Bathroom Leaks</h1>
+            <h2 className="text-3xl font-bold mb-6">Leaking Water Through Ceiling: Identifying and Fixing Upstairs Bathroom Leaks</h2>
 
       <p className="mb-6">
         When water starts seeping through your ceiling from an upstairs bathroom, quick action is essential.

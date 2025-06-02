@@ -16,7 +16,7 @@ export const metadata = {
 export default function ArticleContent() {
   return (
     <article className="prose prose-lg max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Are Septic Tank Additives and Enzymes Useful?</h1>
+            <h2 className="text-3xl font-bold mb-6">Are Septic Tank Additives and Enzymes Useful?</h2>
 
       <p className="mb-6">
         As a company that specializes in plumbing and septic repair and installation, we get asked this question quite often.

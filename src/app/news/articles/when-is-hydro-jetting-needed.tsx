@@ -16,7 +16,7 @@ export const metadata = {
 export default function ArticleContent() {
   return (
     <article className="prose prose-lg max-w-none">
-            <h1 className="text-3xl font-bold mb-6">When is Hydro Jetting Needed?</h1>
+            <h2 className="text-3xl font-bold mb-6">When is Hydro Jetting Needed?</h2>
 
       <p className="mb-6">
         Hydro Jetting refers to a method by which clogged drains and sewer lines are cleaned.

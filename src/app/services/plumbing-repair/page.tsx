@@ -91,7 +91,7 @@ export default function PlumbingRepair() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <div className="w-full mb-12 text-center">
-          <h1 className="text-4xl font-bold mb-6">Expert Plumbing Repair Solutions</h1>
+          <h2 className="text-4xl font-bold mb-6">Expert Plumbing Repair Solutions</h2>
           <p className="text-xl max-w-4xl mx-auto mb-8">
             When plumbing issues arise, quick and effective repairs are essential to prevent water damage and restore normal function to your home or business. With decades of experience, Plumb-All delivers reliable plumbing repair services designed to address problems promptly and prevent future issues.
           </p>

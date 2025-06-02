@@ -17,7 +17,7 @@ export const metadata = {
 export default function ArticleContent() {
   return (
     <article className="prose prose-lg max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Increasing Life of Septic Systems</h1>
+            <h2 className="text-3xl font-bold mb-6">Increasing Life of Septic Systems</h2>
 
       <p className="mb-6">
         A couple of the most common questions we get asked are &#34;What can I safely put down my drains with my septic tank?&#34;

@@ -66,7 +66,7 @@ export default function EljenSeptic() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <div className="w-full mb-12 text-center">
-          <h1 className="text-4xl font-bold mb-6">Advanced Eljen GSF Septic Solutions</h1>
+          <h2 className="text-4xl font-bold mb-6">Advanced Eljen GSF Septic Solutions</h2>
           <p className="text-xl max-w-4xl mx-auto mb-6">
             Looking for an innovative septic solution for challenging soil conditions? Plumb-All specializes in Eljen Geotextile Sand Filter (GSF) systems, a revolutionary alternative to traditional septic systems that provides superior treatment in difficult soil environments.
           </p>

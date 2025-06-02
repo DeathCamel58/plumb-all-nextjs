@@ -67,7 +67,7 @@ export default function WaterHeaterReplacement() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <div className="w-full mb-12 text-center">
-          <h1 className="text-4xl font-bold mb-6">Professional Water Heater Services</h1>
+          <h2 className="text-4xl font-bold mb-6">Professional Water Heater Services</h2>
           <p className="text-xl max-w-4xl mx-auto mb-6">
             Looking for water heater services? Look no further than Plumb-All! Whether you need a new electric or gas hot water heater installed, want to explore tankless options, or require maintenance and repair services for your existing water heater, our expert team can help.
           </p>

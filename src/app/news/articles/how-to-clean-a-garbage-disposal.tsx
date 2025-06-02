@@ -16,7 +16,7 @@ export const metadata = {
 export default function ArticleContent() {
   return (
     <article className="prose prose-lg max-w-none">
-            <h1 className="text-3xl font-bold mb-6">How to Clean a Garbage Disposal</h1>
+            <h2 className="text-3xl font-bold mb-6">How to Clean a Garbage Disposal</h2>
 
       <p className="mb-6">
         A garbage disposal does a great job at taking food waste, breaking it up, and getting it disposed of.

@@ -17,7 +17,7 @@ export const metadata = {
 export default function ArticleContent() {
   return (
     <article className="prose prose-lg max-w-none">
-            <h1 className="text-3xl font-bold mb-6">How to Get Items Dropped in a Sink</h1>
+            <h2 className="text-3xl font-bold mb-6">How to Get Items Dropped in a Sink</h2>
 
       <p className="mb-6">
         We&#39;ve all experienced that sinking feeling when something valuable drops down a drain.

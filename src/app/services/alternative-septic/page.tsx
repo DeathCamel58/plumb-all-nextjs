@@ -66,7 +66,7 @@ export default function AlternativeSeptic() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <div className="w-full mb-12 text-center">
-          <h1 className="text-4xl font-bold mb-6">Advanced Alternative Septic Solutions</h1>
+          <h2 className="text-4xl font-bold mb-6">Advanced Alternative Septic Solutions</h2>
           <p className="text-xl max-w-4xl mx-auto mb-6">
             Traditional septic systems separate and store solid waste from wastewater before allowing the liquid (effluent) to flow into the drain field. Alternative septic systems, however, treat wastewater more actively through innovative processes.
           </p>

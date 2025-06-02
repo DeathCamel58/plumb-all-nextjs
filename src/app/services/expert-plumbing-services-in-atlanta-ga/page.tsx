@@ -68,7 +68,7 @@ export default function ExpertPlumbingAtlanta() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction Section */}
         <div className="w-full mb-12">
-          <h1 className="text-4xl font-bold mb-6 text-center">Professional Plumbing Services in Atlanta</h1>
+          <h2 className="text-4xl font-bold mb-6 text-center">Professional Plumbing Services in Atlanta</h2>
 
           <div className="flex flex-wrap -mx-4 mt-8">
             <div className="w-full md:w-1/3 px-4 mb-6">

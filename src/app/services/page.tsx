@@ -137,7 +137,7 @@ export default function Services() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <div className="w-full mb-12 text-center">
-          <h1 className="text-4xl font-bold mb-6">Expert Plumbing & Septic Services</h1>
+          <h2 className="text-4xl font-bold mb-6">Expert Plumbing & Septic Services</h2>
           <p className="text-xl max-w-4xl mx-auto mb-8">
             Plumb-All delivers comprehensive plumbing and septic solutions for residential and commercial properties throughout the Metro Atlanta Area. With our team of licensed professionals, we provide reliable service, quality workmanship, and lasting results.
           </p>

@@ -17,7 +17,7 @@ export const metadata = {
 export default function ArticleContent() {
   return (
     <article className="prose prose-lg max-w-none">
-            <h1 className="text-3xl font-bold mb-6">How to Find Your Water Shut Off Valve</h1>
+            <h2 className="text-3xl font-bold mb-6">How to Find Your Water Shut Off Valve</h2>
 
       <p className="mb-6">
         Have you ever arrived home to discover water pooling on your floor? A minor plumbing issue can

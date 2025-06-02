@@ -67,7 +67,7 @@ export default function SepticRepair() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <div className="w-full mb-12 text-center">
-          <h1 className="text-4xl font-bold mb-6">Expert Septic Repair & Installation Services</h1>
+          <h2 className="text-4xl font-bold mb-6">Expert Septic Repair & Installation Services</h2>
           <p className="text-xl max-w-4xl mx-auto mb-6">
             Plumb-All provides comprehensive septic system solutions, specializing in drain field repair and installation.
             Our expert team delivers reliable, long-lasting septic services tailored to your property&#39;s unique needs.

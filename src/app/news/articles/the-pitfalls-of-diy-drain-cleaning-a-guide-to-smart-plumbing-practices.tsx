@@ -17,7 +17,7 @@ export const metadata = {
 export default function ArticleContent() {
   return (
     <article className="prose prose-lg max-w-none">
-            <h1 className="text-3xl font-bold mb-6">The Pitfalls of DIY Drain Cleaning: A Guide to Smart Plumbing Practices</h1>
+            <h2 className="text-3xl font-bold mb-6">The Pitfalls of DIY Drain Cleaning: A Guide to Smart Plumbing Practices</h2>
 
       <div className="bg-blue-50 p-4 rounded-lg mb-8 border-l-4 border-theme-3">
         <p className="font-medium text-gray-700">

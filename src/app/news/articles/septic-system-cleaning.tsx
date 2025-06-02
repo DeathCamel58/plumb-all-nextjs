@@ -18,7 +18,7 @@ export const metadata = {
 export default function ArticleContent() {
   return (
     <article className="prose prose-lg max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Septic System Cleaning</h1>
+            <h2 className="text-3xl font-bold mb-6">Septic System Cleaning</h2>
 
       <p className="mb-6">
         Many of our clients call us wanting their septic tank pumped. Unfortunately, pumping out a septic tank

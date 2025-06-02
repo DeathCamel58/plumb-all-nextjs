@@ -16,7 +16,7 @@ export const metadata = {
 export default function ArticleContent() {
   return (
     <article className="prose prose-lg max-w-none">
-            <h1 className="text-3xl font-bold mb-6">How To Maintain a Septic System</h1>
+            <h2 className="text-3xl font-bold mb-6">How To Maintain a Septic System</h2>
 
       <p className="mb-6">
         Regular septic maintenance is the greatest thing one can do to keep their septic system in good working order.

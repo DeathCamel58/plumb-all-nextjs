@@ -17,7 +17,7 @@ export const metadata = {
 export default function ArticleContent() {
   return (
     <article className="prose prose-lg max-w-none">
-            <h1 className="text-3xl font-bold mb-6">How to Fix a Running Toilet</h1>
+            <h2 className="text-3xl font-bold mb-6">How to Fix a Running Toilet</h2>
 
       <p className="mb-6">
         Dealing with a running toilet can be not only a nuisance but also a significant waste of water.

@@ -86,7 +86,7 @@ export default function AboutOurProcess() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <div className="w-full mb-12 text-center">
-          <h1 className="text-4xl font-bold mb-6">Our Approach to Excellence</h1>
+          <h2 className="text-4xl font-bold mb-6">Our Approach to Excellence</h2>
           <p className="text-xl max-w-4xl mx-auto">
             At Plumb-All, we&#39;ve developed a systematic approach to plumbing and septic services that ensures quality, efficiency, and customer satisfaction. Our process is designed to provide you with peace of mind from the moment you contact us until the job is complete.
           </p>

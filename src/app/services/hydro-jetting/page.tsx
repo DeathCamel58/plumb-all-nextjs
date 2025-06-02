@@ -67,7 +67,7 @@ export default function HydroJetting() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <div className="w-full mb-12 text-center">
-          <h1 className="text-4xl font-bold mb-6">Professional Hydro Jetting Services</h1>
+          <h2 className="text-4xl font-bold mb-6">Professional Hydro Jetting Services</h2>
           <p className="text-xl max-w-4xl mx-auto mb-6">
             Plumb-All&#39;s hydro jetting services are available throughout the Metro Atlanta Area, including Fayette County and Clayton County. This method utilizes high-pressure water to clear clogs, sludge, and debris from drains, supply lines, and septic fields. Over time, these lines can accumulate buildup, restricting the flow of water through them.
           </p>

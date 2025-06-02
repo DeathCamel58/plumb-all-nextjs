@@ -18,7 +18,7 @@ export const metadata = {
 export default function ArticleContent() {
   return (
     <article className="prose prose-lg max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Flushing Your Water Heater</h1>
+            <h2 className="text-3xl font-bold mb-6">Flushing Your Water Heater</h2>
 
       <p className="mb-6">
         In this article, we&#39;ll be discussing an essential maintenance task that is often overlooked but plays a crucial role in ensuring the longevity and efficiency of your water heater: flushing.

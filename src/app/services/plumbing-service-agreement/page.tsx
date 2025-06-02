@@ -67,7 +67,7 @@ export default function PlumbingServiceAgreement() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction Section */}
         <div className="w-full mb-12 text-center">
-          <h1 className="text-4xl font-bold mb-6">Professional Plumbing Service Agreements</h1>
+          <h2 className="text-4xl font-bold mb-6">Professional Plumbing Service Agreements</h2>
           <p className="text-xl max-w-4xl mx-auto mb-6">
             At Plumb-All, we believe in proactive maintenance to keep your plumbing systems running smoothly and efficiently. Our comprehensive service agreements provide peace of mind and significant cost savings for homeowners and businesses throughout Metro Atlanta.
           </p>

@@ -67,7 +67,7 @@ export default function SepticTankPumping() {
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <div className="w-full mb-12 text-center">
-          <h1 className="text-4xl font-bold mb-6">Professional Septic Tank Pumping Services</h1>
+          <h2 className="text-4xl font-bold mb-6">Professional Septic Tank Pumping Services</h2>
           <p className="text-xl max-w-4xl mx-auto mb-6">
             At Plumb-All, we understand the importance of proper septic tank maintenance. Our professional pumping services help prevent system failures, extend equipment lifespan, and protect your property and the environment.
           </p>

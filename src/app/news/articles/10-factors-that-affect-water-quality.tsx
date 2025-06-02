@@ -16,7 +16,7 @@ export const metadata = {
 export default function ArticleContent() {
   return (
     <article className="prose prose-lg max-w-none">
-            <h1 className="text-3xl font-bold mb-6">10 Factors That Affect Water Quality</h1>
+            <h2 className="text-3xl font-bold mb-6">10 Factors That Affect Water Quality</h2>
 
       <p className="mb-6">
         Water quality is a fundamental aspect of ensuring a healthy and comfortable living environment.

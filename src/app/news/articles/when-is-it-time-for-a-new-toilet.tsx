@@ -16,7 +16,7 @@ export const metadata = {
 export default function ArticleContent() {
   return (
     <article className="prose prose-lg max-w-none">
-            <h1 className="text-3xl font-bold mb-6">When is it Time for a New Toilet?</h1>
+            <h2 className="text-3xl font-bold mb-6">When is it Time for a New Toilet?</h2>
 
       <p className="mb-6">
         Your toilet may not be the most glamorous fixture in your home, but it&#39;s certainly one of the most essential.

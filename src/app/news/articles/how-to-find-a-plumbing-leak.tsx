@@ -16,7 +16,7 @@ export const metadata = {
 export default function ArticleContent() {
   return (
     <article className="prose prose-lg max-w-none">
-            <h1 className="text-3xl font-bold mb-6">How to Find a Plumbing Leak</h1>
+            <h2 className="text-3xl font-bold mb-6">How to Find a Plumbing Leak</h2>
 
       <p className="mb-6">
         Finding plumbing leaks in your home can be challenging, primarily because they&#39;re often hidden
