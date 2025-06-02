@@ -1,5 +1,6 @@
 import React from 'react';
 import CTACall from "@/components/cta/CTACall";
+import Link from "next/link";
 
 // Article metadata
 const slug = 'septic-systems';
@@ -47,16 +48,16 @@ export default function ArticleContent() {
 
       <p className="mb-6">
         Conventional septic systems are relatively low maintenance, cost-effective, and can last for decades with
-        <a href="/increasing-life-of-septic-systems/" className="text-theme-1 hover:text-theme-2 transition"> proper care</a> and
-        <a href="/septic-system-cleaning/" className="text-theme-1 hover:text-theme-2 transition"> regular service</a> of the septic system.
+        <Link href="/news/article/increasing-life-of-septic-systems/" className="text-theme-1 hover:text-theme-2 transition"> proper care</Link> and
+        <Link href="/news/article/septic-system-cleaning/" className="text-theme-1 hover:text-theme-2 transition"> regular service</Link> of the septic system.
       </p>
 
       <h3 className="text-xl font-semibold mb-3">Alternative Systems</h3>
 
       <p className="mb-6">
-        <a href="/alternative-septic/" className="text-theme-1 hover:text-theme-2 transition">Alternative septic</a> systems,
+        <Link href="/services/alternative-septic/" className="text-theme-1 hover:text-theme-2 transition">Alternative septic</Link> systems,
         such as Aerobic Treatment Units (ATUs), Mound Septic Systems, Drip Distribution Systems,
-        <a href="/eljen-septic/" className="text-theme-1 hover:text-theme-2 transition"> Geotextile Sand Filter</a>, and Chamber Systems,
+        <Link href="/services/eljen-septic/" className="text-theme-1 hover:text-theme-2 transition"> Geotextile Sand Filter</Link>, and Chamber Systems,
         are becoming increasingly popular in areas with poor soil conditions or sites with specific design requirements.
       </p>
 

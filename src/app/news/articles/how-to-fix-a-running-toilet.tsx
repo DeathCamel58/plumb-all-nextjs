@@ -1,5 +1,6 @@
 import React from 'react';
 import CTACall from "@/components/cta/CTACall";
+import Link from "next/link";
 
 // Article metadata
 const slug = 'how-to-fix-a-running-toilet';
@@ -200,7 +201,7 @@ export default function ArticleContent() {
         Fixing a running toilet is a relatively straightforward task that can save you from water wastage
         and potential plumbing complications. By following the steps outlined in this guide, you can identify
         and resolve the most common causes of a running toilet. However, if you encounter any challenges or
-        prefer professional assistance, don&#39;t hesitate to <a href="/contact/" className="text-theme-1 hover:text-theme-2 transition">get in touch</a> with
+        prefer professional assistance, don&#39;t hesitate to <Link href="/contact/" className="text-theme-1 hover:text-theme-2 transition">get in touch</Link> with
         Plumb-All at <a href="tel:+17709143877" className="text-theme-1 hover:text-theme-2 transition">(770) 914-3877</a>. Our team of experts is ready to assist you in
         resolving the issue and ensuring the efficient operation of your toilet.
       </p>
