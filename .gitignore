@@ -40,6 +40,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# Wrangler (cloudflare
+.wrangler/**
+
 # Opengraph Images
 /public/og-images
 /src/app/api/generate-og-temp
