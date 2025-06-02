@@ -54,6 +54,16 @@ const residentialServices = [
     description: "Fast, reliable repairs for leaks, clogs, broken pipes, and other common household plumbing issues. We diagnose and fix problems correctly the first time.",
   },
   {
+    title: "Toilet Installation",
+    path: "/services/toilet-installation",
+    description: "Professional toilet installation services by expert plumbers who ensure proper fitting, sealing, and function for optimal performance and longevity.",
+  },
+  {
+    title: "Sink Repair",
+    path: "/services/sink-repair",
+    description: "Professional sink repair services for kitchen, bathroom, and utility sinks. Our experts fix leaks, clogs, and damaged fixtures with precision and care.",
+  },
+  {
     title: "Drain Cleaning",
     path: "/services/drain-cleaning",
     description: "Professional drain cleaning services using advanced techniques like hydro jetting and sectional machine cleaning to remove even the toughest clogs.",

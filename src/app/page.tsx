@@ -160,7 +160,9 @@ export default function Home() {
               <div className="w-16 h-16 rounded-full background-theme-3 flex items-center justify-center text-white mx-auto mb-4">
                 <FaAward className="text-3xl" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Expertise</h3>
+              <h3 className="text-xl font-bold mb-2">
+                <Link href="/services" className="hover:text-theme-3 transition">Expertise</Link>
+              </h3>
               <p className="text-gray-600">
                 Certified professionals with years of experience in all plumbing systems.
               </p>
@@ -170,7 +172,9 @@ export default function Home() {
               <div className="w-16 h-16 rounded-full background-theme-3 flex items-center justify-center text-white mx-auto mb-4">
                 <FaShieldAlt className="text-3xl" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Quality</h3>
+              <h3 className="text-xl font-bold mb-2">
+                <Link href="/services/plumbing-repair" className="hover:text-theme-3 transition">Quality</Link>
+              </h3>
               <p className="text-gray-600">
                 Premium materials and workmanship backed by our satisfaction guarantee.
               </p>
@@ -180,7 +184,9 @@ export default function Home() {
               <div className="w-16 h-16 rounded-full background-theme-3 flex items-center justify-center text-white mx-auto mb-4">
                 <FaClock className="text-3xl" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Reliability</h3>
+              <h3 className="text-xl font-bold mb-2">
+                <Link href="/services/emergencies" className="hover:text-theme-3 transition">Reliability</Link>
+              </h3>
               <p className="text-gray-600">
                 Prompt service with clear communication and on-time appointments.
               </p>
@@ -190,7 +196,9 @@ export default function Home() {
               <div className="w-16 h-16 rounded-full background-theme-3 flex items-center justify-center text-white mx-auto mb-4">
                 <FaThumbsUp className="text-3xl" />
               </div>
-              <h3 className="text-xl font-bold mb-2">Customer Focus</h3>
+              <h3 className="text-xl font-bold mb-2">
+                <Link href="/services/plumbing-service-agreement" className="hover:text-theme-3 transition">Customer Focus</Link>
+              </h3>
               <p className="text-gray-600">
                 Dedicated to exceeding expectations with personalized service.
               </p>
@@ -283,37 +291,49 @@ export default function Home() {
               </thead>
               <tbody>
                 <tr className="border-b hover:bg-gray-50">
-                  <td className="py-4 px-6 font-medium text-gray-800">Sink Repair</td>
+                  <td className="py-4 px-6 font-medium text-gray-800">
+                    <Link href="/services/sink-repair" className="hover:text-theme-3 transition">Sink Repair</Link>
+                  </td>
                   <td className="py-4 px-6 text-green-600 text-center"><FaCheck className="text-2xl inline-block" /></td>
                   <td className="py-4 px-6 text-red-600 text-center"><FaTimes className="text-2xl inline-block" /></td>
                   <td className="py-4 px-6 text-green-600 text-center"><FaCheck className="text-2xl inline-block" /></td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
-                  <td className="py-4 px-6 font-medium text-gray-800">Field Line Repair</td>
+                  <td className="py-4 px-6 font-medium text-gray-800">
+                    <Link href="/services/septic-repair" className="hover:text-theme-3 transition">Field Line Repair</Link>
+                  </td>
                   <td className="py-4 px-6 text-red-600 text-center"><FaTimes className="text-2xl inline-block" /></td>
                   <td className="py-4 px-6 text-green-600 text-center"><FaCheck className="text-2xl inline-block" /></td>
                   <td className="py-4 px-6 text-green-600 text-center"><FaCheck className="text-2xl inline-block" /></td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
-                  <td className="py-4 px-6 font-medium text-gray-800">Toilet Installation</td>
+                  <td className="py-4 px-6 font-medium text-gray-800">
+                    <Link href="/services/toilet-installation" className="hover:text-theme-3 transition">Toilet Installation</Link>
+                  </td>
                   <td className="py-4 px-6 text-green-600 text-center"><FaCheck className="text-2xl inline-block" /></td>
                   <td className="py-4 px-6 text-red-600 text-center"><FaTimes className="text-2xl inline-block" /></td>
                   <td className="py-4 px-6 text-green-600 text-center"><FaCheck className="text-2xl inline-block" /></td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
-                  <td className="py-4 px-6 font-medium text-gray-800">Baffle-T Installs</td>
+                  <td className="py-4 px-6 font-medium text-gray-800">
+                    <Link href="/services/septic-tank-pumping" className="hover:text-theme-3 transition">Baffle-T Installs</Link>
+                  </td>
                   <td className="py-4 px-6 text-red-600 text-center"><FaTimes className="text-2xl inline-block" /></td>
                   <td className="py-4 px-6 text-green-600 text-center"><FaCheck className="text-2xl inline-block" /></td>
                   <td className="py-4 px-6 text-green-600 text-center"><FaCheck className="text-2xl inline-block" /></td>
                 </tr>
                 <tr className="border-b hover:bg-gray-50">
-                  <td className="py-4 px-6 font-medium text-gray-800">Hydro Jetting</td>
+                  <td className="py-4 px-6 font-medium text-gray-800">
+                    <Link href="/services/hydro-jetting" className="hover:text-theme-3 transition">Hydro Jetting</Link>
+                  </td>
                   <td className="py-4 px-6 text-red-600 text-center"><FaTimes className="text-2xl inline-block" /></td>
                   <td className="py-4 px-6 text-green-600 text-center"><FaCheck className="text-2xl inline-block" /></td>
                   <td className="py-4 px-6 text-green-600 text-center"><FaCheck className="text-2xl inline-block" /></td>
                 </tr>
                 <tr className="hover:bg-gray-50">
-                  <td className="py-4 px-6 font-medium text-gray-800">Drain Cleaning</td>
+                  <td className="py-4 px-6 font-medium text-gray-800">
+                    <Link href="/services/drain-cleaning" className="hover:text-theme-3 transition">Drain Cleaning</Link>
+                  </td>
                   <td className="py-4 px-6 text-green-600 text-center"><FaCheck className="text-2xl inline-block" /></td>
                   <td className="py-4 px-6 text-red-600 text-center"><FaTimes className="text-2xl inline-block" /></td>
                   <td className="py-4 px-6 text-green-600 text-center"><FaCheck className="text-2xl inline-block" /></td>
@@ -331,7 +351,9 @@ export default function Home() {
       <section className="w-full py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Get in Touch</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              <Link href="/contact" className="hover:text-theme-3 transition">Get in Touch</Link>
+            </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Have a plumbing issue? We&#39;ll reach out quickly to solve your problem.
             </p>
