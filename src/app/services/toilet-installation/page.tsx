@@ -93,7 +93,7 @@ export default function ToiletInstallation() {
         <div className="w-full mb-12 text-center">
           <h2 className="text-4xl font-bold mb-6">Professional Toilet Installation Services</h2>
           <p className="text-xl max-w-4xl mx-auto mb-8">
-            A properly installed toilet is essential for a functional bathroom. Whether you're replacing an old unit or installing a new one during a renovation, Plumb-All's expert technicians ensure your toilet is installed correctly, preventing leaks and ensuring optimal performance for years to come.
+            A properly installed toilet is essential for a functional bathroom. Whether you&#39;re replacing an old unit or installing a new one during a renovation, <Link href="/services" className="text-theme-3 hover:underline">Plumb-All&#39;s</Link> expert technicians ensure your toilet is installed correctly, preventing leaks and ensuring optimal performance for years to come. We also offer <Link href="/services/plumbing-repair" className="text-theme-3 hover:underline">plumbing repair</Link> and <Link href="/services/sink-repair" className="text-theme-3 hover:underline">sink repair</Link> services to address all your bathroom plumbing needs.
           </p>
         </div>
 
@@ -170,7 +170,7 @@ export default function ToiletInstallation() {
                 </li>
                 <li className="flex items-center">
                   <FaCheckCircle className="text-theme-3 mr-2" />
-                  <span>Inspection of flange and water supply</span>
+                  <span>Inspection of flange and <Link href="/services/plumbing-repair" className="text-theme-3 hover:underline">water supply</Link></span>
                 </li>
                 <li className="flex items-center">
                   <FaCheckCircle className="text-theme-3 mr-2" />
@@ -182,7 +182,7 @@ export default function ToiletInstallation() {
                 </li>
                 <li className="flex items-center">
                   <FaCheckCircle className="text-theme-3 mr-2" />
-                  <span>Thorough testing for leaks</span>
+                  <span>Thorough testing for <Link href="/services/leak-detection" className="text-theme-3 hover:underline">leaks</Link></span>
                 </li>
                 <li className="flex items-center">
                   <FaCheckCircle className="text-theme-3 mr-2" />
@@ -242,7 +242,7 @@ export default function ToiletInstallation() {
                 </li>
                 <li className="flex items-center">
                   <FaCheckCircle className="text-theme-3 mr-2" />
-                  <span>Reduced risk of water damage</span>
+                  <span>Reduced risk of <Link href="/services/leak-detection" className="text-theme-3 hover:underline">water damage</Link></span>
                 </li>
                 <li className="flex items-center">
                   <FaCheckCircle className="text-theme-3 mr-2" />
@@ -254,7 +254,7 @@ export default function ToiletInstallation() {
                 </li>
                 <li className="flex items-center">
                   <FaCheckCircle className="text-theme-3 mr-2" />
-                  <span>Peace of mind with professional work</span>
+                  <span>Peace of mind with <Link href="/services/plumbing-service-agreement" className="text-theme-3 hover:underline">professional work</Link></span>
                 </li>
               </ul>
             </div>

@@ -93,7 +93,7 @@ export default function SinkRepair() {
         <div className="w-full mb-12 text-center">
           <h2 className="text-4xl font-bold mb-6">Professional Sink Repair Services</h2>
           <p className="text-xl max-w-4xl mx-auto mb-8">
-            From leaky faucets to clogged drains and damaged basins, Plumb-All provides comprehensive sink repair services for kitchens, bathrooms, and utility areas. Our experienced technicians diagnose and fix sink problems quickly, ensuring minimal disruption to your daily routine.
+            From leaky faucets to clogged drains and damaged basins, <Link href="/services" className="text-theme-3 hover:underline">Plumb-All</Link> provides comprehensive sink repair services for kitchens, bathrooms, and utility areas. Our experienced technicians diagnose and fix sink problems quickly, ensuring minimal disruption to your daily routine. We also offer <Link href="/services/drain-cleaning" className="text-theme-3 hover:underline">drain cleaning</Link>, <Link href="/services/toilet-installation" className="text-theme-3 hover:underline">toilet installation</Link>, and <Link href="/services/plumbing-repair" className="text-theme-3 hover:underline">general plumbing repair</Link> services for all your home plumbing needs.
           </p>
         </div>
 
@@ -140,7 +140,7 @@ export default function SinkRepair() {
                 </li>
                 <li className="flex items-center">
                   <FaCheckCircle className="text-theme-3 mr-2" />
-                  <span>Sink drain unclogging</span>
+                  <span><Link href="/services/drain-cleaning" className="text-theme-3 hover:underline">Sink drain unclogging</Link></span>
                 </li>
                 <li className="flex items-center">
                   <FaCheckCircle className="text-theme-3 mr-2" />
@@ -152,7 +152,7 @@ export default function SinkRepair() {
                 </li>
                 <li className="flex items-center">
                   <FaCheckCircle className="text-theme-3 mr-2" />
-                  <span>Water line connections</span>
+                  <span><Link href="/services/plumbing-repair" className="text-theme-3 hover:underline">Water line connections</Link></span>
                 </li>
                 <li className="flex items-center">
                   <FaCheckCircle className="text-theme-3 mr-2" />
@@ -166,11 +166,11 @@ export default function SinkRepair() {
               <ul className="space-y-2">
                 <li className="flex items-center">
                   <FaCheckCircle className="text-theme-3 mr-2" />
-                  <span>Faucet leak repairs</span>
+                  <span><Link href="/services/leak-detection" className="text-theme-3 hover:underline">Faucet leak repairs</Link></span>
                 </li>
                 <li className="flex items-center">
                   <FaCheckCircle className="text-theme-3 mr-2" />
-                  <span>Slow drain fixes</span>
+                  <span><Link href="/services/drain-cleaning" className="text-theme-3 hover:underline">Slow drain fixes</Link></span>
                 </li>
                 <li className="flex items-center">
                   <FaCheckCircle className="text-theme-3 mr-2" />
@@ -186,7 +186,7 @@ export default function SinkRepair() {
                 </li>
                 <li className="flex items-center">
                   <FaCheckCircle className="text-theme-3 mr-2" />
-                  <span>Water pressure adjustments</span>
+                  <span><Link href="/services/plumbing-repair" className="text-theme-3 hover:underline">Water pressure adjustments</Link></span>
                 </li>
               </ul>
             </div>
