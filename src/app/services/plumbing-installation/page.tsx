@@ -94,7 +94,7 @@ export default function PlumbingInstallation() {
             <ul className="space-y-2">
               <li className="flex items-center">
                 <FaCheckCircle className="text-theme-3 mr-2" />
-                <span>Washroom & Bathroom</span>
+                <span><Link href="/services/bathroom-plumbing" className="text-theme-3 hover:underline">Washroom & Bathroom</Link></span>
               </li>
               <li className="flex items-center">
                 <FaCheckCircle className="text-theme-3 mr-2" />

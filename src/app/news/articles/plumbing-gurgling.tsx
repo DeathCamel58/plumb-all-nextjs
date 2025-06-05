@@ -1,5 +1,6 @@
 import React from 'react';
 import CTACall from "@/components/cta/CTACall";
+import Link from "next/link";
 
 // Article metadata
 const slug = 'plumbing-gurgling';
@@ -87,7 +88,7 @@ export default function ArticleContent() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
         <div className="bg-gray-50 p-5 rounded-lg border border-gray-200">
-          <h3 className="text-xl font-semibold mb-3">Bathroom Drains Gurgle When Toilet Flushes</h3>
+          <h3 className="text-xl font-semibold mb-3"><Link href="/services/bathroom-plumbing" className="text-theme-3 hover:underline">Bathroom Drains Gurgle</Link> When Toilet Flushes</h3>
 
           <p className="mb-4">
             Because bathrooms have many plumbing fixtures near each other, and toilets push down a
@@ -143,7 +144,7 @@ export default function ArticleContent() {
           <li>Gurgling sounds persist after attempting to clear drains</li>
           <li>Multiple drains in your home are gurgling</li>
           <li>You notice foul odors along with the gurgling sounds</li>
-          <li>Water is backing up into sinks, tubs, or showers</li>
+          <li>Water is backing up into <Link href="/services/sink-repair" className="text-theme-3 hover:underline">sinks</Link>, tubs, or showers</li>
           <li>Your toilet water level fluctuates or bubbles when not in use</li>
         </ul>
       </div>

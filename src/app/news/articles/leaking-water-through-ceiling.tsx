@@ -1,5 +1,6 @@
 import React from 'react';
 import CTACall from "@/components/cta/CTACall";
+import Link from "next/link";
 
 // Article metadata
 const slug = 'leaking-water-through-ceiling';
@@ -83,7 +84,7 @@ export default function ArticleContent() {
       <div className="bg-gray-50 p-5 rounded-lg mb-6 border border-gray-200">
         <h3 className="text-xl font-semibold mb-3">Sink Leaks</h3>
         <p className="mb-4">
-          Bathroom sink leaks typically stem from issues with gaskets, washers, or connection points:
+          <Link href="/services/bathroom-plumbing" className="text-theme-3 hover:underline">Bathroom sink leaks</Link> typically stem from issues with gaskets, washers, or connection points:
         </p>
         <ul className="list-disc pl-6 space-y-2">
           <li><strong>Faucet assembly leaks</strong> - Worn gaskets or washers in the faucet can cause water to leak around the base or handles</li>

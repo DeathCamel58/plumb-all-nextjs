@@ -93,7 +93,7 @@ export default function ToiletInstallation() {
         <div className="w-full mb-12 text-center">
           <h2 className="text-4xl font-bold mb-6">Professional Toilet Installation Services</h2>
           <p className="text-xl max-w-4xl mx-auto mb-8">
-            A properly installed toilet is essential for a functional bathroom. Whether you&#39;re replacing an old unit or installing a new one during a renovation, <Link href="/services" className="text-theme-3 hover:underline">Plumb-All&#39;s</Link> expert technicians ensure your toilet is installed correctly, preventing leaks and ensuring optimal performance for years to come. We also offer <Link href="/services/plumbing-repair" className="text-theme-3 hover:underline">plumbing repair</Link> and <Link href="/services/sink-repair" className="text-theme-3 hover:underline">sink repair</Link> services to address all your bathroom plumbing needs.
+            A properly installed toilet is essential for a functional <Link href="/services/bathroom-plumbing" className="text-theme-3 hover:underline">bathroom</Link>. Whether you&#39;re replacing an old unit or installing a new one during a renovation, <Link href="/services" className="text-theme-3 hover:underline">Plumb-All&#39;s</Link> expert technicians ensure your toilet is installed correctly, preventing leaks and ensuring optimal performance for years to come. We also offer <Link href="/services/plumbing-repair" className="text-theme-3 hover:underline">plumbing repair</Link> and <Link href="/services/sink-repair" className="text-theme-3 hover:underline">sink repair</Link> services to address all your bathroom plumbing needs.
           </p>
         </div>
 

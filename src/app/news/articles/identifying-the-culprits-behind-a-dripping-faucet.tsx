@@ -1,5 +1,6 @@
 import React from 'react';
 import CTACall from "@/components/cta/CTACall";
+import Link from "next/link";
 
 // Article metadata
 const slug = 'identifying-the-culprits-behind-a-dripping-faucet';
@@ -79,7 +80,7 @@ export default function ArticleContent() {
       <h2 className="text-2xl font-bold mt-8 mb-4">How Plumb-All Can Help</h2>
 
       <p className="mb-6">
-        While some faucet repairs can be DIY projects, others require professional expertise. At Plumb-All, our team of experienced plumbers can quickly diagnose and fix your dripping faucet, saving you time, frustration, and money in the long run.
+        While some <Link href="/services/faucet-repair" className="text-theme-3 hover:underline">Faucet repairs and replacements</Link> can be DIY projects, others require professional expertise. At Plumb-All, our team of experienced plumbers can quickly diagnose and fix your dripping faucet, saving you time, frustration, and money in the long run.
       </p>
 
       <p className="mb-6">

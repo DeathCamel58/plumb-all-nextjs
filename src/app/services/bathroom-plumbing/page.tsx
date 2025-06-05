@@ -170,7 +170,7 @@ export default function BathroomPlumbing() {
                 </li>
                 <li className="flex items-center">
                   <FaCheckCircle className="text-theme-3 mr-2" />
-                  <span>Faucet repairs and replacements</span>
+                  <span><Link href="/services/faucet-repair" className="text-theme-3 hover:underline">Faucet repairs and replacements</Link></span>
                 </li>
                 <li className="flex items-center">
                   <FaCheckCircle className="text-theme-3 mr-2" />

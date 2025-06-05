@@ -93,7 +93,7 @@ export default function SinkRepair() {
         <div className="w-full mb-12 text-center">
           <h2 className="text-4xl font-bold mb-6">Professional Sink Repair Services</h2>
           <p className="text-xl max-w-4xl mx-auto mb-8">
-            From leaky faucets to clogged drains and damaged basins, <Link href="/services" className="text-theme-3 hover:underline">Plumb-All</Link> provides comprehensive sink repair services for kitchens, bathrooms, and utility areas. Our experienced technicians diagnose and fix sink problems quickly, ensuring minimal disruption to your daily routine. We also offer <Link href="/services/drain-cleaning" className="text-theme-3 hover:underline">drain cleaning</Link>, <Link href="/services/toilet-installation" className="text-theme-3 hover:underline">toilet installation</Link>, and <Link href="/services/plumbing-repair" className="text-theme-3 hover:underline">general plumbing repair</Link> services for all your home plumbing needs.
+            From leaky faucets to clogged drains and damaged basins, <Link href="/services" className="text-theme-3 hover:underline">Plumb-All</Link> provides comprehensive sink repair services for kitchens, <Link href="/services/bathroom-plumbing" className="text-theme-3 hover:underline">bathrooms</Link>, and utility areas. Our experienced technicians diagnose and fix sink problems quickly, ensuring minimal disruption to your daily routine. We also offer <Link href="/services/drain-cleaning" className="text-theme-3 hover:underline">drain cleaning</Link>, <Link href="/services/toilet-installation" className="text-theme-3 hover:underline">toilet installation</Link>, and <Link href="/services/plumbing-repair" className="text-theme-3 hover:underline">general plumbing repair</Link> services for all your home plumbing needs.
           </p>
         </div>
 
@@ -136,7 +136,7 @@ export default function SinkRepair() {
               <ul className="space-y-2">
                 <li className="flex items-center">
                   <FaCheckCircle className="text-theme-3 mr-2" />
-                  <span>Faucet repairs and replacements</span>
+                  <span><Link href="/services/faucet-repair" className="text-theme-3 hover:underline">Faucet repairs and replacements</Link></span>
                 </li>
                 <li className="flex items-center">
                   <FaCheckCircle className="text-theme-3 mr-2" />

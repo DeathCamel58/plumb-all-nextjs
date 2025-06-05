@@ -210,7 +210,7 @@ export default function Residential() {
                   <li><Link href="/services/septic-tank-pumping" className="text-theme-3 hover:underline">Septic system</Link> services</li>
                   <li>Fixture installations and repairs</li>
                   <li>Pipe repairs and replacements</li>
-                  <li>Bathroom and kitchen plumbing</li>
+                  <li><Link href="/services/bathroom-plumbing" className="text-theme-3 hover:underline">Bathroom</Link> and kitchen plumbing</li>
                   <li>Sump pump services</li>
                   <li>Preventative maintenance</li>
                 </ul>

@@ -147,7 +147,7 @@ export default function DrainCleaning() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <ul className="list-disc pl-5 space-y-3">
-                  <li className="text-lg">Slow-draining sinks, tubs, and showers</li>
+                  <li className="text-lg">Slow-draining <Link href="/services/sink-repair" className="text-theme-3 hover:underline">sinks</Link>, tubs, and showers</li>
                   <li className="text-lg">Recurring clogs in kitchen and bathroom drains</li>
                   <li className="text-lg">Sewer line blockages and backups</li>
                 </ul>
