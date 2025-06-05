@@ -59,6 +59,11 @@ const residentialServices = [
     description: "Professional toilet installation services by expert plumbers who ensure proper fitting, sealing, and function for optimal performance and longevity.",
   },
   {
+    title: "Bathroom Plumbing",
+    path: "/services/bathroom-plumbing",
+    description: "Professional bathroom plumbing services for toilets, sinks, showers, and tubs. Our experts fix leaks, clogs, and damaged fixtures with precision and care.",
+  },
+  {
     title: "Sink Repair",
     path: "/services/sink-repair",
     description: "Professional sink repair services for kitchen, bathroom, and utility sinks. Our experts fix leaks, clogs, and damaged fixtures with precision and care.",

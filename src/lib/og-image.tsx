@@ -123,6 +123,7 @@ export async function getAllOgImageConfigs(): Promise<OgImageParams[]> {
     { title: 'Septic Tank Pumping', image: '/images/septic-pumping.jpg' },
     { title: 'Water Heater Replacement', image: '/images/water-heater-wrench.jpg' },
     { title: 'Sink Repair', image: '/images/sink-drain.jpg' },
+    { title: 'Bathroom Plumbing', image: '/images/toilet.jpg' },
   ];
 
   // Add dynamic article pages
