@@ -11,7 +11,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const description = 'Professional sink repair services for kitchen, bathroom, and utility sinks. Our experts fix leaks, clogs, and damaged fixtures with precision and care.';
 
   // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/og-images/og-plumbing-repair-spraying-pipe.png';
+  const ogImageUrl = '/og-images/og-sink-repair-sink-drain.png';
 
   const env = process.env.NODE_ENV;
 
