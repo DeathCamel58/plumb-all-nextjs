@@ -3,46 +3,17 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { getAllArticles } from './articles';
 import { Metadata } from "next";
+import {generateMetadataDict} from "@/components/header/metadata";
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
-  const finalTitle = 'Plumb-All: News';
+  // TODO: Maybe set the canonical to the current page
+  const title = 'News';
   const description = 'Plumb-All\'s blog and news posts';
+  const ogImageUrl = 'og-news-pipes';
+  const path = '/news';
 
-  // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/og-images/og-news-pipes.png';
-
-  const env = process.env.NODE_ENV;
-
-  return {
-    metadataBase: env === 'production' ? new URL('https://plumb-all.com') : new URL('http://127.0.0.1:3000'),
-    title: finalTitle,
-    description: description,
-    icons: {
-      icon: '/logo/icon.png'
-    },
-    openGraph: {
-      title: finalTitle,
-      description: description,
-      url: `/news`,
-      images: [
-        {
-          url: ogImageUrl,
-          width: 1200,
-          height: 630,
-          alt: 'Plumb-All Logo'
-        }
-      ],
-      type: 'website',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: finalTitle,
-      description: description,
-      images: [ogImageUrl],
-      site: '@PlumbAll'
-    }
-  };
+  return generateMetadataDict(title, description, ogImageUrl, path);
 }
 
 export default async function News() {

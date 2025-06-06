@@ -6,46 +6,16 @@ import Link from "next/link";
 import {Metadata} from "next";
 import HomeTabs from "@/components/HomeTabs";
 import HomeTestimonials from "@/components/HomeTestimonials";
+import {generateMetadataDict} from "@/components/header/metadata";
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
-  const finalTitle = 'Plumb-All';
+  const title = '';
   const description = 'Plumb-All\'s expert plumbers have been tackling all types of plumbing and septic problems in South Atlanta since 2003.';
+  const ogImageUrl = 'og-home-page-formbg';
+  const path = '/';
 
-  // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/og-images/og-home-page-formbg.png';
-
-  const env = process.env.NODE_ENV;
-
-  return {
-    metadataBase: env === 'production' ? new URL('https://plumb-all.com') : new URL('http://127.0.0.1:3000'),
-    title: finalTitle,
-    description: description,
-    icons: {
-      icon: '/logo/icon.png'
-    },
-    openGraph: {
-      title: finalTitle,
-      description: description,
-      url: `/`,
-      images: [
-        {
-          url: ogImageUrl,
-          width: 1200,
-          height: 630,
-          alt: 'Plumb-All Logo'
-        }
-      ],
-      type: 'website',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: finalTitle,
-      description: description,
-      images: [ogImageUrl],
-      site: '@PlumbAll'
-    }
-  };
+  return generateMetadataDict(title, description, ogImageUrl, path);
 }
 
 export default function Home() {

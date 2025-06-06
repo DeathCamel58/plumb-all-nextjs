@@ -4,46 +4,16 @@ import Link from 'next/link';
 import CTACall from '@/components/cta/CTACall';
 import { FaPhoneAlt, FaExclamationTriangle, FaTools, FaClock } from 'react-icons/fa';
 import {Metadata} from "next";
+import {generateMetadataDict} from "@/components/header/metadata";
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
-  const finalTitle = 'Plumb-All: Emergencies';
+  const title = 'Emergencies';
   const description = 'Pluming issues that need to be fixed ASAP? We&#039;re available 24/7 to fix your emergency plumbing needs. Licences and insured. Call us today at (844) 758-6225.';
+  const ogImageUrl = 'og-emergency-services-vans';
+  const path = '/services/emergencies';
 
-  // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/og-images/og-emergency-services-vans.png';
-
-  const env = process.env.NODE_ENV;
-
-  return {
-    metadataBase: env === 'production' ? new URL('https://plumb-all.com') : new URL('http://127.0.0.1:3000'),
-    title: finalTitle,
-    description: description,
-    icons: {
-      icon: '/logo/icon.png'
-    },
-    openGraph: {
-      title: finalTitle,
-      description: description,
-      url: `/services/emergencies`,
-      images: [
-        {
-          url: ogImageUrl,
-          width: 1200,
-          height: 630,
-          alt: 'Plumb-All Logo'
-        }
-      ],
-      type: 'website',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: finalTitle,
-      description: description,
-      images: [ogImageUrl],
-      site: '@PlumbAll'
-    }
-  };
+  return generateMetadataDict(title, description, ogImageUrl, path);
 }
 
 export default function Emergencies() {

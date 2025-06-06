@@ -4,46 +4,16 @@ import CTACall from '@/components/cta/CTACall';
 import Link from 'next/link';
 import { FaClock, FaTruck, FaWrench, FaTools, FaShieldAlt, FaCheckCircle, FaHome, FaBuilding } from 'react-icons/fa';
 import {Metadata} from "next";
+import {generateMetadataDict} from "@/components/header/metadata";
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
-  const finalTitle = 'Plumb-All: Services';
+  const title = 'Services';
   const description = 'Our top services include: septic drain field repair, plumbing installation & repair, alternative septic solutions, leak detection, and sewer line repair.';
+  const ogImageUrl = 'og-services-toilet-flapper';
+  const path = '/services';
 
-  // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/og-images/og-services-toilet-flapper.png';
-
-  const env = process.env.NODE_ENV;
-
-  return {
-    metadataBase: env === 'production' ? new URL('https://plumb-all.com') : new URL('http://127.0.0.1:3000'),
-    title: finalTitle,
-    description: description,
-    icons: {
-      icon: '/logo/icon.png'
-    },
-    openGraph: {
-      title: finalTitle,
-      description: description,
-      url: `/services`,
-      images: [
-        {
-          url: ogImageUrl,
-          width: 1200,
-          height: 630,
-          alt: 'Plumb-All Logo'
-        }
-      ],
-      type: 'website',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: finalTitle,
-      description: description,
-      images: [ogImageUrl],
-      site: '@PlumbAll'
-    }
-  };
+  return generateMetadataDict(title, description, ogImageUrl, path);
 }
 
 // Service categories

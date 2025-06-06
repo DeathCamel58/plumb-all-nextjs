@@ -4,46 +4,16 @@ import Link from 'next/link';
 import { FaTools, FaWrench, FaCheckCircle, FaShieldAlt, FaHandshake, FaClock } from 'react-icons/fa';
 import CTACall from "@/components/cta/CTACall";
 import {Metadata} from "next";
+import {generateMetadataDict} from "@/components/header/metadata";
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
-  const finalTitle = 'Plumb-All: Plumbing Repair';
+  const title = 'Plumbing Repair';
   const description = 'Our experts show a high level of attention to detail, and utilize extensive educational and vocational expertise when determining the best repair solution.';
+  const ogImageUrl = 'og-plumbing-repair-spraying-pipe';
+  const path = '/services/plumbing-repair';
 
-  // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/og-images/og-plumbing-repair-spraying-pipe.png';
-
-  const env = process.env.NODE_ENV;
-
-  return {
-    metadataBase: env === 'production' ? new URL('https://plumb-all.com') : new URL('http://127.0.0.1:3000'),
-    title: finalTitle,
-    description: description,
-    icons: {
-      icon: '/logo/icon.png'
-    },
-    openGraph: {
-      title: finalTitle,
-      description: description,
-      url: `/services/plumbing-repair`,
-      images: [
-        {
-          url: ogImageUrl,
-          width: 1200,
-          height: 630,
-          alt: 'Plumb-All Logo'
-        }
-      ],
-      type: 'website',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: finalTitle,
-      description: description,
-      images: [ogImageUrl],
-      site: '@PlumbAll'
-    }
-  };
+  return generateMetadataDict(title, description, ogImageUrl, path);
 }
 
 // Plumbing repair services

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { getAllArticles } from '../articles';
 import { Metadata } from "next";
 import { notFound } from 'next/navigation';
+import {generateMetadataDict} from "@/components/header/metadata";
 
 // Define Props type for the page
 type Props = {
@@ -14,45 +15,15 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { page } = await params;
   const pageNumber = parseInt(page);
-  const finalTitle = pageNumber === 1
-    ? 'Plumb-All: News'
-    : `Plumb-All: News - Page ${pageNumber}`;
+
+  const title = pageNumber === 1
+    ? 'News'
+    : `News - Page ${pageNumber}`;
   const description = 'Plumb-All\'s blog and news posts';
+  const ogImageUrl = 'og-news-pipes';
+  const path = pageNumber === 1 ? `/news` : `/news/${pageNumber}`;
 
-  // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/og-images/og-news-pipes.png';
-
-  const env = process.env.NODE_ENV;
-
-  return {
-    metadataBase: env === 'production' ? new URL('https://plumb-all.com') : new URL('http://127.0.0.1:3000'),
-    title: finalTitle,
-    description: description,
-    icons: {
-      icon: '/logo/icon.png'
-    },
-    openGraph: {
-      title: finalTitle,
-      description: description,
-      url: pageNumber === 1 ? `/news` : `/news/${pageNumber}`,
-      images: [
-        {
-          url: ogImageUrl,
-          width: 1200,
-          height: 630,
-          alt: 'Plumb-All Logo'
-        }
-      ],
-      type: 'website',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: finalTitle,
-      description: description,
-      images: [ogImageUrl],
-      site: '@PlumbAll'
-    }
-  };
+  return generateMetadataDict(title, description, ogImageUrl, path);
 }
 
 // Generate static paths for all paginated pages

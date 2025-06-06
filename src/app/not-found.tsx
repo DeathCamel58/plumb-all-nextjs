@@ -3,7 +3,7 @@ import { FaHome } from 'react-icons/fa';
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Page Not Found - Plumb-All',
+  title: 'Plumb-All: Page Not Found',
   description: 'The page you are looking for could not be found.',
 };
 

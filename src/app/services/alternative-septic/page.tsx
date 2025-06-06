@@ -3,46 +3,16 @@ import Image from 'next/image';
 import CTACall from '@/components/cta/CTACall';
 import { FaWrench, FaTools, FaCheckCircle, FaList, FaWater, FaHome, FaQuestion } from 'react-icons/fa';
 import {Metadata} from "next";
+import {generateMetadataDict} from "@/components/header/metadata";
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
-  const finalTitle = 'Plumb-All: Alternative Septic';
+  const title = 'Alternative Septic';
   const description = 'Know the differences between the different types of alternative septic systems, and get information on how to best care for your system.';
+  const ogImageUrl = 'og-alternative-septic-septic-system-overview';
+  const path = '/services/alternative-septic';
 
-  // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/og-images/og-alternative-septic-septic-system-overview.png';
-
-  const env = process.env.NODE_ENV;
-
-  return {
-    metadataBase: env === 'production' ? new URL('https://plumb-all.com') : new URL('http://127.0.0.1:3000'),
-    title: finalTitle,
-    description: description,
-    icons: {
-      icon: '/logo/icon.png'
-    },
-    openGraph: {
-      title: finalTitle,
-      description: description,
-      url: `/services/alternative-septic`,
-      images: [
-        {
-          url: ogImageUrl,
-          width: 1200,
-          height: 630,
-          alt: 'Plumb-All Logo'
-        }
-      ],
-      type: 'website',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: finalTitle,
-      description: description,
-      images: [ogImageUrl],
-      site: '@PlumbAll'
-    }
-  };
+  return generateMetadataDict(title, description, ogImageUrl, path);
 }
 
 export default function AlternativeSeptic() {

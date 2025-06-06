@@ -4,46 +4,16 @@ import Link from 'next/link';
 import CTACall from '@/components/cta/CTACall';
 import { FaWater, FaLeaf, FaCheckCircle, FaTools, FaExclamationTriangle, FaClipboardCheck } from 'react-icons/fa';
 import {Metadata} from "next";
+import {generateMetadataDict} from "@/components/header/metadata";
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
-  const finalTitle = 'Plumb-All: Septic Tank Pumping';
+  const title = 'Septic Tank Pumping';
   const description = 'Discover the importance of septic tank pumping and its benefits for your system\'s longevity and efficiency. At Plumb-All, we offer professional septic tank pumping services in Jonesboro and surrounding areas.';
+  const ogImageUrl = 'og-septic-tank-pumping-septic-pumping';
+  const path = '/services/septic-tank-pumping';
 
-  // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/og-images/og-septic-tank-pumping-septic-pumping.png';
-
-  const env = process.env.NODE_ENV;
-
-  return {
-    metadataBase: env === 'production' ? new URL('https://plumb-all.com') : new URL('http://127.0.0.1:3000'),
-    title: finalTitle,
-    description: description,
-    icons: {
-      icon: '/logo/icon.png'
-    },
-    openGraph: {
-      title: finalTitle,
-      description: description,
-      url: `/services/septic-tank-pumping`,
-      images: [
-        {
-          url: ogImageUrl,
-          width: 1200,
-          height: 630,
-          alt: 'Plumb-All Logo'
-        }
-      ],
-      type: 'website',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: finalTitle,
-      description: description,
-      images: [ogImageUrl],
-      site: '@PlumbAll'
-    }
-  };
+  return generateMetadataDict(title, description, ogImageUrl, path);
 }
 
 export default function SepticTankPumping() {

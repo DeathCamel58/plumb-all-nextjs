@@ -4,46 +4,16 @@ import Link from 'next/link';
 import { FaTools, FaWrench, FaShieldAlt, FaClock, FaCheckCircle, FaHandshake } from 'react-icons/fa';
 import CTACall from "@/components/cta/CTACall";
 import {Metadata} from "next";
+import {generateMetadataDict} from "@/components/header/metadata";
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
-  const finalTitle = 'Plumb-All: Bathroom Plumbing';
+  const title = 'Bathroom Plumbing';
   const description = 'Professional bathroom plumbing services. Our experts fix leaks, clogs, and damaged fixtures with precision and care.';
+  const ogImageUrl = 'og-bathroom-plumbing-toilet';
+  const path = '/services/bathroom-plumbing';
 
-  // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/og-images/og-bathroom-plumbing-toilet.png';
-
-  const env = process.env.NODE_ENV;
-
-  return {
-    metadataBase: env === 'production' ? new URL('https://plumb-all.com') : new URL('http://127.0.0.1:3000'),
-    title: finalTitle,
-    description: description,
-    icons: {
-      icon: '/logo/icon.png'
-    },
-    openGraph: {
-      title: finalTitle,
-      description: description,
-      url: `/services/bathroom-plumbing`,
-      images: [
-        {
-          url: ogImageUrl,
-          width: 1200,
-          height: 630,
-          alt: 'Plumb-All Logo'
-        }
-      ],
-      type: 'website',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: finalTitle,
-      description: description,
-      images: [ogImageUrl],
-      site: '@PlumbAll'
-    }
-  };
+  return generateMetadataDict(title, description, ogImageUrl, path);
 }
 
 // Bathroom plumbing services

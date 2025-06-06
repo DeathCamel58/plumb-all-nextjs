@@ -3,46 +3,16 @@ import Image from 'next/image';
 import CTACall from '@/components/cta/CTACall';
 import { FaWrench, FaTools, FaCheckCircle, FaHome, FaLeaf, FaStar, FaQuestion } from 'react-icons/fa';
 import {Metadata} from "next";
+import {generateMetadataDict} from "@/components/header/metadata";
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
-  const finalTitle = 'Plumb-All: Eljen Septic';
+  const title = 'Eljen Septic';
   const description = 'Many plumbers are stumped when it comes to Eljen Septic systems. Here at Plumb-All, we hold certifications to show that we can work on these.';
+  const ogImageUrl = 'og-eljen-septic-septic-system-overview';
+  const path = '/services/eljen-septic';
 
-  // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/og-images/og-eljen-septic-septic-system-overview.png';
-
-  const env = process.env.NODE_ENV;
-
-  return {
-    metadataBase: env === 'production' ? new URL('https://plumb-all.com') : new URL('http://127.0.0.1:3000'),
-    title: finalTitle,
-    description: description,
-    icons: {
-      icon: '/logo/icon.png'
-    },
-    openGraph: {
-      title: finalTitle,
-      description: description,
-      url: `/services/eljen-septic`,
-      images: [
-        {
-          url: ogImageUrl,
-          width: 1200,
-          height: 630,
-          alt: 'Plumb-All Logo'
-        }
-      ],
-      type: 'website',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: finalTitle,
-      description: description,
-      images: [ogImageUrl],
-      site: '@PlumbAll'
-    }
-  };
+  return generateMetadataDict(title, description, ogImageUrl, path);
 }
 
 export default function EljenSeptic() {

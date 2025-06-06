@@ -5,46 +5,16 @@ import CTACall from '@/components/cta/CTACall';
 import { FaTools, FaWrench, FaPhoneAlt, FaClock, FaStar, FaCheck, FaMapMarkerAlt } from 'react-icons/fa';
 import {Metadata} from "next";
 import { GoogleMapsEmbed } from '@next/third-parties/google'
+import {generateMetadataDict} from "@/components/header/metadata";
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
-  const finalTitle = 'Plumb-All: Plumbers in Atlanta, Ga';
-  const description = 'At Plumb-All, we&#39;re your trusted local plumbing experts in Atlanta, Georgia. With years of experience serving the Atlanta community, we take pride in providing top-notch plumbing solutions for both residential and commercial needs.';
+  const title = 'Plumbers in Atlanta, Ga';
+  const description = 'At Plumb-All, we\'re your trusted local plumbing experts in Atlanta, Georgia. With years of experience serving the Atlanta community, we take pride in providing top-notch plumbing solutions for both residential and commercial needs.';
+  const ogImageUrl = 'og-expert-plumbers-in-atlanta-slab-leak';
+  const path = '/services/expert-plumbing-services-in-atlanta-ga';
 
-  // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/og-images/og-expert-plumbers-in-atlanta-slab-leak.png';
-
-  const env = process.env.NODE_ENV;
-
-  return {
-    metadataBase: env === 'production' ? new URL('https://plumb-all.com') : new URL('http://127.0.0.1:3000'),
-    title: finalTitle,
-    description: description,
-    icons: {
-      icon: '/logo/icon.png'
-    },
-    openGraph: {
-      title: finalTitle,
-      description: description,
-      url: `/services/expert-plumbing-services-in-atlanta-ga`,
-      images: [
-        {
-          url: ogImageUrl,
-          width: 1200,
-          height: 630,
-          alt: 'Plumb-All Logo'
-        }
-      ],
-      type: 'website',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: finalTitle,
-      description: description,
-      images: [ogImageUrl],
-      site: '@PlumbAll'
-    }
-  };
+  return generateMetadataDict(title, description, ogImageUrl, path);
 }
 
 export default function ExpertPlumbingAtlanta() {

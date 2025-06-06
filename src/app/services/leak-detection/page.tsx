@@ -4,46 +4,16 @@ import Link from 'next/link';
 import CTACall from '@/components/cta/CTACall';
 import { FaWrench, FaExclamationTriangle, FaWater } from 'react-icons/fa';
 import {Metadata} from "next";
+import {generateMetadataDict} from "@/components/header/metadata";
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
-  const finalTitle = 'Plumb-All: Leak Detection';
+  const title = 'Leak Detection';
   const description = 'Our leak detection services concentrate on speed and damage control. Leaking pipes can cause extensive damage, so if you suspect a leak, act quickly!';
+  const ogImageUrl = 'og-leak-detection-spraying-pipe';
+  const path = '/services/leak-detection';
 
-  // Create URL for the dynamically generated OG image with title overlay
-  const ogImageUrl = '/og-images/og-leak-detection-spraying-pipe.png';
-
-  const env = process.env.NODE_ENV;
-
-  return {
-    metadataBase: env === 'production' ? new URL('https://plumb-all.com') : new URL('http://127.0.0.1:3000'),
-    title: finalTitle,
-    description: description,
-    icons: {
-      icon: '/logo/icon.png'
-    },
-    openGraph: {
-      title: finalTitle,
-      description: description,
-      url: `/services/leak-detection`,
-      images: [
-        {
-          url: ogImageUrl,
-          width: 1200,
-          height: 630,
-          alt: 'Plumb-All Logo'
-        }
-      ],
-      type: 'website',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: finalTitle,
-      description: description,
-      images: [ogImageUrl],
-      site: '@PlumbAll'
-    }
-  };
+  return generateMetadataDict(title, description, ogImageUrl, path);
 }
 
 export default function LeakDetection() {
