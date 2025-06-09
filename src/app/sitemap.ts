@@ -23,6 +23,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: '/services/eljen-septic', changeFrequency: 'monthly' },
     { url: '/services/emergencies', changeFrequency: 'monthly' },
     { url: '/services/expert-plumbing-services-in-atlanta-ga', changeFrequency: 'monthly' },
+    { url: '/services/garbage-disposal-repair', changeFrequency: 'monthly' },
     { url: '/services/hydro-jetting', changeFrequency: 'monthly' },
     { url: '/services/leak-detection', changeFrequency: 'monthly' },
     { url: '/services/plumbing-installation', changeFrequency: 'monthly' },

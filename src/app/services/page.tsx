@@ -39,6 +39,11 @@ const residentialServices = [
     description: "Faucet dripping? We fix and replace all makes—kitchen, bathroom, outdoor & more. Our experts show a high level of attention to detail when determining the best repair solution.",
   },
   {
+    title: "Garbage Disposal Repair",
+    path: "/services/garbage-disposal-repair",
+    description: "Professional garbage disposal repair and replacement services. We fix jams, leaks, and electrical issues, and install new units with expert precision.",
+  },
+  {
     title: "Sink Repair",
     path: "/services/sink-repair",
     description: "Professional sink repair services for kitchen, bathroom, and utility sinks. Our experts fix leaks, clogs, and damaged fixtures with precision and care.",

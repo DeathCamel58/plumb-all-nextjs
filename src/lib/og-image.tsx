@@ -125,6 +125,7 @@ export async function getAllOgImageConfigs(): Promise<OgImageParams[]> {
     { title: 'Sink Repair', image: '/images/sink-drain.jpg' },
     { title: 'Bathroom Plumbing', image: '/images/toilet.jpg' },
     { title: 'Faucet Repair', image: '/images/running-faucet.jpg' },
+    { title: 'Garbage Disposal Repair', image: '/images/garbage-disposal.jpg' },
   ];
 
   // Add dynamic article pages
