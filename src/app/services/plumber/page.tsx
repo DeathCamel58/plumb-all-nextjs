@@ -36,11 +36,18 @@ export default function PlumberServices() {
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
-        <div className="w-full mb-12 text-center">
+        <div className="w-full mb-8 text-center">
           <h2 className="text-4xl font-bold mb-6">Expert Plumber Services for All Your Needs</h2>
           <p className="text-xl max-w-4xl mx-auto mb-8">
             When you need a reliable plumber, <Link href="/services" className="text-theme-3 hover:underline">Plumb-All</Link> is your trusted solution. Our team of licensed, experienced plumbers provides comprehensive plumbing services for both <Link href="/services/residential" className="text-theme-3 hover:underline">residential</Link> and <Link href="/services/commercial" className="text-theme-3 hover:underline">commercial</Link> properties. From emergency repairs to new installations, our plumbers deliver quality workmanship with exceptional customer service.
           </p>
+        </div>
+
+        <div className="mt-8">
+          <CTACall
+            headerText="Need a plumber right away?"
+            buttonText="Call us at 844 PLUMB-ALL"
+          />
         </div>
 
         {/* Why Choose Us Section */}
@@ -79,13 +86,6 @@ export default function PlumberServices() {
               <h3 className="text-xl font-semibold mb-3">24/7 Emergency Service</h3>
               <p>Our plumbers are available around the clock for emergency plumbing situations that can&#39;t wait.</p>
             </div>
-          </div>
-
-          <div className="mt-8">
-            <CTACall
-              headerText="Need a plumber right away?"
-              buttonText="Call us at 844 PLUMB-ALL"
-            />
           </div>
         </div>
 
