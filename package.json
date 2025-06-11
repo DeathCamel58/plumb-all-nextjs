@@ -2,6 +2,7 @@
   "name": "plumb-all-nextjs",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
     "prebuild": "node scripts/generate-og-images.js",
