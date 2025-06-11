@@ -1,5 +1,6 @@
 import React from 'react';
 import CTACall from "@/components/cta/CTACall";
+import Link from "next/link";
 
 // Article metadata
 const slug = 'why-do-faucets-leak';
@@ -155,7 +156,7 @@ export default function ArticleContent() {
 
       <p className="mb-6">
         Remember that addressing a leaking faucet promptly not only saves water and money but also prevents
-        potential water damage to your home. Our experienced plumbers can quickly diagnose and fix any type
+        potential water damage to your home. Our experienced <Link href="/services/plumber" className="text-theme-3 hover:underline">plumbers</Link> can quickly diagnose and fix any type
         of faucet leak, ensuring your plumbing system operates efficiently.
       </p>
 

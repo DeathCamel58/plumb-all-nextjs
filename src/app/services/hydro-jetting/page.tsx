@@ -155,7 +155,7 @@ export default function HydroJetting() {
           </div>
           <div className="bg-gray-50 p-6 rounded-lg mt-8">
             <p className="text-center text-lg mb-6">
-              Though there are many plumbers out there, our plumbers have been through extensive training on all of the latest plumbing systems and standards. We are a group of hard working individuals who will make sure that the job is done quickly and correctly so that you can move on with your day, and not worry about your plumbing.
+              Though there are many plumbers out there, our <Link href="/services/plumber" className="text-theme-3 hover:underline">plumbers</Link> have been through extensive training on all of the latest plumbing systems and standards. We are a group of hard working individuals who will make sure that the job is done quickly and correctly so that you can move on with your day, and not worry about your plumbing.
             </p>
             <CTACall
               headerText="Need professional hydro jetting service?"

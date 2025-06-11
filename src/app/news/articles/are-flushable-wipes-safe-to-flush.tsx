@@ -1,5 +1,6 @@
 import React from 'react';
 import CTACall from "@/components/cta/CTACall";
+import Link from "next/link";
 
 // Article metadata
 const slug = 'are-flushable-wipes-safe-to-flush';
@@ -130,7 +131,7 @@ export default function ArticleContent() {
 
       <p className="mb-6">
         Plumb-All is always prepared to assist you, no matter the size of the clog.
-        Our professional plumbers have specialized equipment designed specifically to remove wipe blockages without damaging your plumbing system.
+        Our professional <Link href="/services/plumber" className="text-theme-3 hover:underline">plumbers</Link> have specialized equipment designed specifically to remove wipe blockages without damaging your plumbing system.
         For further information or to schedule an appointment, don&#39;t hesitate to call us at <a href="tel:+17709143877" className="text-theme-1 hover:text-theme-2 transition">(770) 914-3877</a>.
       </p>
 

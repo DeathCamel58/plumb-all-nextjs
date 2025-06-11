@@ -1,5 +1,6 @@
 import React from 'react';
 import CTACall from "@/components/cta/CTACall";
+import Link from "next/link";
 
 // Article metadata
 const slug = 'how-to-find-a-plumbing-leak';
@@ -61,7 +62,7 @@ export default function ArticleContent() {
       <p className="mb-6">
         Once you&#39;ve confirmed a potential leak through your water bill, it&#39;s advisable to contact
         a professional plumber, especially if your pipes are underground or in a concrete slab.
-        Professional plumbers have specialized equipment to locate these hidden leaks without
+        Professional <Link href="/services/plumber" className="text-theme-3 hover:underline">plumbers</Link> have specialized equipment to locate these hidden leaks without
         causing unnecessary damage to your property.
       </p>
 

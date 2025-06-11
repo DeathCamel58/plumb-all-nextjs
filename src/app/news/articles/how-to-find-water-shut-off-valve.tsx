@@ -1,6 +1,7 @@
 import React from 'react';
 import CTACall from "@/components/cta/CTACall";
 import Image from "next/image";
+import Link from "next/link";
 
 // Article metadata
 const slug = 'how-to-find-water-shut-off-valve';
@@ -139,7 +140,7 @@ export default function ArticleContent() {
           <li><strong>Previous homeowners:</strong> If possible, contact them for information</li>
           <li><strong>Neighbors with similar homes:</strong> Their valve locations may be similar</li>
           <li><strong>Local water utility:</strong> May have records or be able to send someone to help locate it</li>
-          <li><strong>Professional plumber:</strong> Can quickly locate and mark all important valves</li>
+          <li><strong>Professional <Link href="/services/plumber" className="text-theme-3 hover:underline">plumber</Link>:</strong> Can quickly locate and mark all important valves</li>
         </ul>
       </div>
 

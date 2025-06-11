@@ -1,5 +1,6 @@
 import React from 'react';
 import CTACall from "@/components/cta/CTACall";
+import Link from "next/link";
 
 // Article metadata
 const slug = 'when-is-hydro-jetting-needed';
@@ -61,7 +62,7 @@ export default function ArticleContent() {
         <h3 className="text-xl font-semibold mb-3">The Hydro Jetting Process</h3>
         <ol className="list-decimal pl-6 space-y-2">
           <li>
-            <strong>Assessment:</strong> A plumber first inspects your pipes to determine the
+            <strong>Assessment:</strong> A <Link href="/services/plumber" className="text-theme-3 hover:underline">plumber</Link> first inspects your pipes to determine the
             location and severity of the blockage.
           </li>
           <li>

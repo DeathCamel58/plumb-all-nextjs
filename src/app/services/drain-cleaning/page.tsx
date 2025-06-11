@@ -90,7 +90,7 @@ export default function DrainCleaning() {
                 <p className="mb-4 text-lg">We understand the urgency of drain issues and offer same-day service in most cases. Our technicians arrive promptly and work efficiently to minimize disruption to your home or business.</p>
 
                 <h3 className="text-xl font-semibold mb-3">Experienced Technicians</h3>
-                <p className="text-lg">Our licensed plumbers have the expertise to clear even the toughest clogs. With years of experience and ongoing training, they can diagnose and solve any drain problem quickly and effectively.</p>
+                <p className="text-lg">Our licensed <Link href="/services/plumber" className="text-theme-3 hover:underline">plumbers</Link> have the expertise to clear even the toughest clogs. With years of experience and ongoing training, they can diagnose and solve any drain problem quickly and effectively.</p>
               </div>
 
               <div>

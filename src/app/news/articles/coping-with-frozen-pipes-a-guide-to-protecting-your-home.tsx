@@ -1,5 +1,6 @@
 import React from 'react';
 import CTACall from "@/components/cta/CTACall";
+import Link from "next/link";
 
 // Article metadata
 const slug = 'coping-with-frozen-pipes-a-guide-to-protecting-your-home';
@@ -126,7 +127,7 @@ export default function ArticleContent() {
       </ul>
 
       <p className="mb-6">
-        At Plumb-All, our team of experienced plumbers is available 24/7 for frozen pipe emergencies. With over 20 years of experience, our fully licensed, bonded, and insured professionals can quickly diagnose and resolve your frozen pipe issues before they cause extensive damage to your home.
+        At Plumb-All, our team of experienced <Link href="/services/plumber" className="text-theme-3 hover:underline">plumbers</Link> is available 24/7 for frozen pipe emergencies. With over 20 years of experience, our fully licensed, bonded, and insured professionals can quickly diagnose and resolve your frozen pipe issues before they cause extensive damage to your home.
       </p>
 
       <p className="mb-6">

@@ -1,5 +1,6 @@
 import React from 'react';
 import CTACall from "@/components/cta/CTACall";
+import Link from "next/link";
 
 // Article metadata
 const slug = 'why-pouring-grease-down-your-drain-is-a-recipe-for-trouble';
@@ -109,7 +110,7 @@ export default function ArticleContent() {
       </p>
 
       <p className="mb-6">
-        If DIY methods fail to resolve the issue, it&#39;s time to call a professional plumber. Attempting to use chemical drain cleaners
+        If DIY methods fail to resolve the issue, it&#39;s time to call a professional <Link href="/services/plumber" className="text-theme-3 hover:underline">plumber</Link>. Attempting to use chemical drain cleaners
         on grease clogs can sometimes worsen the problem or damage your pipes, especially if you have older plumbing systems.
       </p>
 

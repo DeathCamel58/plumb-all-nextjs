@@ -202,7 +202,7 @@ export default function Residential() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <h3 className="text-xl font-semibold mb-3">Licensed & Experienced</h3>
-                <p className="mb-4 text-lg">Our team consists of licensed plumbers with years of experience in residential plumbing. We have the knowledge and skills to handle any plumbing challenge your home might face.</p>
+                <p className="mb-4 text-lg">Our team consists of licensed <Link href="/services/plumber" className="text-theme-3 hover:underline">plumbers</Link> with years of experience in residential plumbing. We have the knowledge and skills to handle any plumbing challenge your home might face.</p>
 
                 <h3 className="text-xl font-semibold mb-3">Transparent Pricing</h3>
                 <p className="text-lg">We provide clear, upfront pricing before beginning any work. You&#39;ll never be surprised by hidden fees or unexpected costs when you choose Plumb-All.</p>

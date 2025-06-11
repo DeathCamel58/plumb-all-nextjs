@@ -273,7 +273,7 @@ export default function AboutOurProcess() {
                   Founded in 2003 by Jamey Hesterlee, HIG Plumbing and Septic has been serving the Atlanta communities of Jonesboro, Morrow, Riverdale, Fayetteville, and beyond. As our business grew, we realized our branding needed to evolve with the times, and in 2018, we changed our name to Plumb-All.
                 </p>
                 <p className="mb-4">
-                  Our team is comprised of licensed Master and Journeyman Plumbers who prioritize customer service and quality workmanship. With a sizable crew and fleet of vehicles, we&#39;re able to provide rapid response times for both emergencies and routine maintenance.
+                  Our team is comprised of licensed Master and Journeyman <Link href="/services/plumber" className="text-theme-3 hover:underline">Plumbers</Link> who prioritize customer service and quality workmanship. With a sizable crew and fleet of vehicles, we&#39;re able to provide rapid response times for both emergencies and routine maintenance.
                 </p>
                 <p className="mb-4">
                   At Plumb-All, we specialize in all types of septic repair, including <Link href="/services/alternative-septic" className="text-theme-3 hover:underline">alternative septic</Link>, septic drain repair, and <Link href="/services/septic-repair" className="text-theme-3 hover:underline">leach field repair</Link>. We&#39;re also skilled at addressing any plumbing issue you may have. Don&#39;t just take our word for it – check out our outstanding reviews on Google Maps and Yelp to see what our satisfied customers have to say.

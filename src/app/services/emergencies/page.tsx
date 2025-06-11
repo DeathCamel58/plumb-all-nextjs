@@ -90,7 +90,7 @@ export default function Emergencies() {
                 <p className="mb-4 text-lg">Our dedicated emergency response team is available 24/7, with multiple crews on standby ready to address your plumbing crisis. We understand that plumbing emergencies don&#39;t wait for business hours, and neither do we.</p>
 
                 <h3 className="text-xl font-semibold mb-3">Highly Rated Service</h3>
-                <p className="text-lg">By choosing Plumb-All, you&#39;re selecting a highly rated plumber in your area. We&#39;re fully licensed and insured with a 4.8 star rating on <a rel="noreferrer noopener" href="https://g.page/r/Cbrr7EyVgUNcEBA" target="_blank" className="text-theme-3 hover:underline">Google Maps</a>, which demonstrates our commitment to customer satisfaction and quality workmanship.</p>
+                <p className="text-lg">By choosing Plumb-All, you&#39;re selecting a highly rated <Link href="/services/plumber" className="text-theme-3 hover:underline">plumber</Link> in your area. We&#39;re fully licensed and insured with a 4.8 star rating on <a rel="noreferrer noopener" href="https://g.page/r/Cbrr7EyVgUNcEBA" target="_blank" className="text-theme-3 hover:underline">Google Maps</a>, which demonstrates our commitment to customer satisfaction and quality workmanship.</p>
               </div>
 
               <div>

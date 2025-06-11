@@ -2,6 +2,7 @@
 
 import React, {useState} from 'react'
 import {FaBuilding, FaCog, FaHome, FaWrench} from "react-icons/fa";
+import Link from "next/link";
 
 const tabs = [
   {
@@ -11,7 +12,7 @@ const tabs = [
     content: (
       <p className="text-lg">
         Our team has worked on hundreds of households, day in, and day out. By choosing us,
-        you’re selecting the most friendly, dependable, and professional plumbers in the Metro-Atlanta
+        you’re selecting the most friendly, dependable, and professional <Link href="/services/plumber" className="text-theme-3 hover:underline">plumbers</Link> in the Metro-Atlanta
         area. We have a quick response time because we’re local, and we are proud to stand behind the
         work we’ve done.
       </p>

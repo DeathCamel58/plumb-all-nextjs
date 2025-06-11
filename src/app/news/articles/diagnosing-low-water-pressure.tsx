@@ -1,5 +1,6 @@
 import React from 'react';
 import CTACall from "@/components/cta/CTACall";
+import Link from "next/link";
 
 // Article metadata
 const slug = 'diagnosing-low-water-pressure';
@@ -199,7 +200,7 @@ export default function ArticleContent() {
       </ul>
 
       <p className="mb-6">
-        Our experienced plumbers can diagnose the root cause of your water pressure problems and implement effective, long-lasting solutions. We provide comprehensive services including water pressure testing, leak detection, pipe repair or replacement, and water booster pump installation.
+        Our experienced <Link href="/services/plumber" className="text-theme-3 hover:underline">plumbers</Link> can diagnose the root cause of your water pressure problems and implement effective, long-lasting solutions. We provide comprehensive services including water pressure testing, leak detection, pipe repair or replacement, and water booster pump installation.
       </p>
 
       <div className="bg-theme-4/10 p-6 rounded-lg mt-10 mb-8">
