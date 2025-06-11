@@ -34,7 +34,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const title = `${article.title}`;
-  const ogImageUrl = `/og-images/og-${slug}.png`;
+  const ogTitle = article.title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+  const ogImageName = article.image.split('/').pop()?.split('.')[0];
+  const ogImageUrl = `og-${ogTitle}-${ogImageName}`;
   const dateTime = new Date(article.date).toISOString();
 
   const path = `/news/article/${slug}`;
