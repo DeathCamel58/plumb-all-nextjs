@@ -38,6 +38,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: '/services/bathroom-plumbing', changeFrequency: 'monthly' },
     { url: '/services/faucet-repair', changeFrequency: 'monthly' },
     { url: '/services/plumber', changeFrequency: 'monthly' },
+    { url: '/services/water-line-repair', changeFrequency: 'monthly' },
     { url: '/news', changeFrequency: 'weekly' },
   ];
 

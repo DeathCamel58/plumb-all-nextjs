@@ -34,6 +34,11 @@ const residentialServices = [
     description: "Professional bathroom plumbing services for toilets, sinks, showers, and tubs. Our experts fix leaks, clogs, and damaged fixtures with precision and care.",
   },
   {
+    title: "Water Line Repair",
+    path: "/services/water-line-repair",
+    description: "Expert water line repair and replacement services. We diagnose and fix water line leaks, breaks, and corrosion with minimal disruption to your property.",
+  },
+  {
     title: "Faucet Repair",
     path: "/services/faucet-repair",
     description: "Faucet dripping? We fix and replace all makes—kitchen, bathroom, outdoor & more. Our experts show a high level of attention to detail when determining the best repair solution.",
