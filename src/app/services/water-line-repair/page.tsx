@@ -39,7 +39,7 @@ export default function WaterLineRepairServices() {
         <div className="w-full mb-8 text-center">
           <h2 className="text-4xl font-bold mb-6">Expert Water Line Repair Services</h2>
           <p className="text-xl max-w-4xl mx-auto mb-8">
-            When you&#39;re facing water line problems, <Link href="/services" className="text-theme-3 hover:underline">Plumb-All</Link> is your trusted solution. Our team of licensed, experienced plumbers specializes in water line repair and replacement for both <Link href="/services/residential" className="text-theme-3 hover:underline">residential</Link> and <Link href="/services/commercial" className="text-theme-3 hover:underline">commercial</Link> properties. From emergency water line breaks to gradual leaks and corrosion issues, our experts diagnose and fix water line problems with minimal disruption to your property.
+            When you&#39;re facing water line problems, <Link href="/services" className="text-theme-3 hover:underline">Plumb-All</Link> is your trusted solution. Our team of licensed, experienced <Link href="/services/plumber" className="text-theme-3 hover:underline">plumbers</Link> specializes in water line repair and replacement for both <Link href="/services/residential" className="text-theme-3 hover:underline">residential</Link> and <Link href="/services/commercial" className="text-theme-3 hover:underline">commercial</Link> properties. From <Link href="/services/emergencies" className="text-theme-3 hover:underline">emergency water line breaks</Link> to gradual leaks and corrosion issues, our experts diagnose and fix water line problems with minimal disruption to your property.
           </p>
         </div>
 
@@ -60,7 +60,7 @@ export default function WaterLineRepairServices() {
                 <FaWrench className="text-4xl" />
               </div>
               <h3 className="text-xl font-semibold mb-3">Water Line Specialists</h3>
-              <p>Our plumbers are specially trained in water line diagnostics and repair techniques, ensuring accurate solutions for your specific water line issues.</p>
+              <p>Our <Link href="/services/plumber" className="text-theme-3 hover:underline">plumbers</Link> are specially trained in water line diagnostics and repair techniques, ensuring accurate solutions for your specific water line issues.</p>
             </div>
 
             <div className="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow">
@@ -68,7 +68,7 @@ export default function WaterLineRepairServices() {
                 <FaTools className="text-4xl" />
               </div>
               <h3 className="text-xl font-semibold mb-3">Advanced Detection Equipment</h3>
-              <p>We use state-of-the-art leak detection and pipe locating technology to pinpoint water line problems without unnecessary excavation.</p>
+              <p>We use state-of-the-art <Link href="/services/leak-detection" className="text-theme-3 hover:underline">leak detection</Link> and pipe locating technology to pinpoint water line problems without unnecessary excavation.</p>
             </div>
 
             <div className="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow">
@@ -84,7 +84,7 @@ export default function WaterLineRepairServices() {
                 <FaClock className="text-4xl" />
               </div>
               <h3 className="text-xl font-semibold mb-3">24/7 Emergency Water Line Service</h3>
-              <p>Water line emergencies don&#39;t wait for business hours. Our team is available around the clock for urgent water line repairs.</p>
+              <p>Water line emergencies don&#39;t wait for business hours. Our team is available around the clock for <Link href="/services/emergencies" className="text-theme-3 hover:underline">urgent water line repairs</Link>.</p>
             </div>
           </div>
         </div>
@@ -104,11 +104,11 @@ export default function WaterLineRepairServices() {
               <ul className="space-y-2">
                 <li className="flex items-center">
                   <FaCheckCircle className="text-theme-3 mr-2" />
-                  <span>Water line leak detection and repair</span>
+                  <span><Link href="/services/leak-detection" className="text-theme-3 hover:underline">Water line leak detection</Link> and repair</span>
                 </li>
                 <li className="flex items-center">
                   <FaCheckCircle className="text-theme-3 mr-2" />
-                  <span>Broken water line emergency repairs</span>
+                  <span><Link href="/services/emergencies" className="text-theme-3 hover:underline">Broken water line emergency repairs</Link></span>
                 </li>
                 <li className="flex items-center">
                   <FaCheckCircle className="text-theme-3 mr-2" />
@@ -146,7 +146,7 @@ export default function WaterLineRepairServices() {
                 </li>
                 <li className="flex items-center">
                   <FaCheckCircle className="text-theme-3 mr-2" />
-                  <span>Water service line installation for new construction</span>
+                  <span><Link href="/services/plumbing-installation" className="text-theme-3 hover:underline">Water service line installation for new construction</Link></span>
                 </li>
                 <li className="flex items-center">
                   <FaCheckCircle className="text-theme-3 mr-2" />
@@ -180,7 +180,7 @@ export default function WaterLineRepairServices() {
               <ul className="space-y-2">
                 <li className="flex items-center">
                   <FaCheckCircle className="text-theme-3 mr-2" />
-                  <span>Unexplained increase in water bills</span>
+                  <span><Link href="/services/leak-detection" className="text-theme-3 hover:underline">Unexplained increase in water bills</Link></span>
                 </li>
                 <li className="flex items-center">
                   <FaCheckCircle className="text-theme-3 mr-2" />
@@ -188,7 +188,7 @@ export default function WaterLineRepairServices() {
                 </li>
                 <li className="flex items-center">
                   <FaCheckCircle className="text-theme-3 mr-2" />
-                  <span>Reduced water pressure throughout your home</span>
+                  <span><Link href="/services/plumbing-repair" className="text-theme-3 hover:underline">Reduced water pressure throughout your home</Link></span>
                 </li>
                 <li className="flex items-center">
                   <FaCheckCircle className="text-theme-3 mr-2" />
@@ -217,7 +217,7 @@ export default function WaterLineRepairServices() {
                 </li>
                 <li className="flex items-center">
                   <FaCheckCircle className="text-theme-3 mr-2" />
-                  <span>Advanced leak detection to pinpoint exact problem areas</span>
+                  <span><Link href="/services/leak-detection" className="text-theme-3 hover:underline">Advanced leak detection</Link> to pinpoint exact problem areas</span>
                 </li>
                 <li className="flex items-center">
                   <FaCheckCircle className="text-theme-3 mr-2" />
@@ -236,6 +236,9 @@ export default function WaterLineRepairServices() {
                   <span>Property restoration after water line work</span>
                 </li>
               </ul>
+              <p className="mt-4">
+                <Link href="/services/plumbing-service-agreement" className="inline-block text-theme-3 hover:underline">Learn about our preventative maintenance plans →</Link>
+              </p>
             </div>
           </div>
         </div>
