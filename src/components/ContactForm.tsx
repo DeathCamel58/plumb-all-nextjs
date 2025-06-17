@@ -32,6 +32,7 @@ interface InputProps {
   labelClassName?: string;
   labelAfter?: boolean;
   onDarkBackground?: boolean;
+  autocomplete?: string;
 }
 
 const Input: React.FC<InputProps> = ({
@@ -48,6 +49,7 @@ const Input: React.FC<InputProps> = ({
   labelClassName,
   labelAfter = false,
   onDarkBackground = false,
+  autocomplete,
 }) => {
   const inputElement = (
     <input
@@ -60,6 +62,7 @@ const Input: React.FC<InputProps> = ({
       className={`${className} ${onDarkBackground && type !== 'checkbox' ? 'border-gray-600 bg-gray-800 text-white placeholder-gray-400' : ''}`}
       placeholder={placeholder}
       required={required}
+      autoComplete={autocomplete}
     />
   );
 
@@ -96,6 +99,7 @@ interface TextAreaProps {
   label?: string;
   labelClassName?: string;
   onDarkBackground?: boolean;
+  autocomplete?: string;
 }
 
 const TextArea: React.FC<TextAreaProps> = ({
@@ -110,6 +114,7 @@ const TextArea: React.FC<TextAreaProps> = ({
   label,
   labelClassName,
   onDarkBackground = false,
+  autocomplete,
 }) => {
   return (
     <>
@@ -127,6 +132,7 @@ const TextArea: React.FC<TextAreaProps> = ({
         placeholder={placeholder}
         required={required}
         rows={rows}
+        autoComplete={autocomplete}
       />
     </>
   );
@@ -246,6 +252,7 @@ export default function ContactForm({ onDarkBackground = true }: ContactFormProp
             label="Name *"
             labelClassName="block text-sm font-medium"
             onDarkBackground={onDarkBackground}
+            autocomplete="name"
           />
         </FormGroup>
         <FormGroup>
@@ -260,6 +267,7 @@ export default function ContactForm({ onDarkBackground = true }: ContactFormProp
             label="Email"
             labelClassName="block text-sm font-medium"
             onDarkBackground={onDarkBackground}
+            autocomplete="email"
           />
         </FormGroup>
         <FormGroup>
@@ -275,6 +283,7 @@ export default function ContactForm({ onDarkBackground = true }: ContactFormProp
             label="Phone *"
             labelClassName="block text-sm font-medium"
             onDarkBackground={onDarkBackground}
+            autocomplete="tel"
           />
         </FormGroup>
       </FormGroup>
@@ -291,6 +300,7 @@ export default function ContactForm({ onDarkBackground = true }: ContactFormProp
           label="Address"
           labelClassName="block text-sm font-medium"
           onDarkBackground={onDarkBackground}
+          autocomplete="address-line1 address-level2 address-level1 postal-code"
         />
       </FormGroup>
 
@@ -304,6 +314,7 @@ export default function ContactForm({ onDarkBackground = true }: ContactFormProp
           onChange={handleChange}
           label="Honey"
           onDarkBackground={onDarkBackground}
+          autocomplete="off"
         />
       </FormGroup>
 
@@ -320,6 +331,7 @@ export default function ContactForm({ onDarkBackground = true }: ContactFormProp
           label="Message *"
           labelClassName="block text-sm font-medium"
           onDarkBackground={onDarkBackground}
+          autocomplete="off"
         />
       </FormGroup>
 
@@ -336,6 +348,7 @@ export default function ContactForm({ onDarkBackground = true }: ContactFormProp
           labelClassName="text-sm"
           labelAfter
           onDarkBackground={onDarkBackground}
+          autocomplete="off"
         />
       </FormGroup>
 
