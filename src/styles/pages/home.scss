@@ -1,17 +1,6 @@
-.home-pipes-bg {
-  background-image: url('/images/pipes.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.home-bg-dark-50 {
+  background-color: rgba(0, 0, 0, 0.5);
 }
-
-.home-contact-form {
-  background-image: url('/images/formbg.jpg');
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 
 @keyframes home-spin {
   from {

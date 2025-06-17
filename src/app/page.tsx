@@ -10,7 +10,7 @@ import {generateMetadataDict} from "@/components/header/metadata";
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
-  const title = '';
+  const title = 'Top Rated Atlanta Plumbers';
   const description = 'Plumb-All\'s expert plumbers have been tackling all types of plumbing and septic problems in South Atlanta since 2003.';
   const ogImageUrl = 'og-home-page-formbg';
   const path = '/';
@@ -23,8 +23,16 @@ export default function Home() {
     <div>
       {/* Hero Section */}
       <section className="relative w-full">
-        <div className="home-pipes-bg w-full h-[500px] bg-cover bg-center relative">
-          <div className="absolute inset-0 bg-opacity-50 flex items-center justify-center">
+        <div className="w-full h-[500px] relative">
+          <Image
+            src="/images/pipes.jpg"
+            alt="Plumbing pipes background"
+            fill
+            className="object-cover object-center"
+            sizes="100vw"
+            priority
+          />
+          <div className="absolute inset-0 home-bg-dark-50 flex items-center justify-center">
             <div className="text-white text-center max-w-3xl px-4">
               <h1 className="text-4xl md:text-5xl font-bold mb-4">Atlanta&#39;s Premier Plumbing & Septic Experts</h1>
               <p className="text-xl md:text-2xl mb-8">Solving all your plumbing needs since 2003</p>
@@ -329,8 +337,15 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="bg-gray-900 rounded-lg shadow-xl overflow-hidden">
-            <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className="bg-gray-900 rounded-lg shadow-xl overflow-hidden relative">
+            <Image
+              src="/images/formbg.jpg"
+              alt="Plumbing pipes background"
+              fill
+              className="object-cover object-center z-0"
+              sizes="100vw"
+            />
+            <div className="grid grid-cols-1 md:grid-cols-2 relative z-10 home-bg-dark-50">
               <div className="p-8 text-white">
                 <h3 className="text-2xl font-bold mb-6">Contact Us</h3>
                 <p className="mb-8 text-gray-300 text-lg">
