@@ -8,7 +8,7 @@ export const metadata = {
   slug: slug,
   title: 'Stop That Drip: Identifying What\'s Behind Your Leaky Faucet',
   date: '2023-12-21',
-  excerpt: 'That annoying drip is more than just a nuisance—it\'s wasting water and money. Learn how to identify the common causes of leaky faucets and how Plumb-All\'s expert team can help you solve the problem for good.',
+  excerpt: 'That annoying drip is more than just a nuisance—it\'s wasting water and money. Identify the common causes of leaky faucets.',
   image: '/images/dripping-faucet.jpg',
   path: `/news/article/${slug}`
 };

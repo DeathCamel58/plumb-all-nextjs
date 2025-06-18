@@ -9,7 +9,7 @@ import {generateMetadataDict} from "@/components/header/metadata";
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
   const title = 'Backflow';
-  const description = 'Plumb-All is a certified backflow inspection company that specializes in annual inspections, repairs, and installation of backflow preventers required by your local water authority.';
+  const description = 'We\'re a certified backflow inspection company that specializes in inspections, repairs, and installation of backflow preventers required by a water authority.';
   const ogImageUrl = 'og-backflow-backflow';
   const path = '/services/backflow';
 

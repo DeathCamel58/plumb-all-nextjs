@@ -8,7 +8,7 @@ export const metadata = {
   slug: slug,
   title: 'Winter Woes: How to Prevent and Thaw Frozen Pipes',
   date: '2023-12-01',
-  excerpt: 'When temperatures plummet, your pipes are at risk. Learn how to identify, thaw, and prevent frozen pipes with our comprehensive guide, and discover when it\'s time to call in the Plumb-All professionals.',
+  excerpt: 'When temperatures drop, your pipes are at risk. Learn how to identify, thaw, and prevent frozen pipes with our comprehensive guide.',
   image: '/images/frozen-pipe.jpg',
   path: `/news/article/${slug}`
 };

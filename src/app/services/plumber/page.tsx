@@ -9,7 +9,7 @@ import {generateMetadataDict} from "@/components/header/metadata";
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
   const title = 'Professional Plumber Services';
-  const description = 'Looking for a reliable plumber? Plumb-All offers expert plumbing services for residential and commercial properties. Our licensed plumbers handle everything from repairs to installations with quality workmanship and exceptional customer service.';
+  const description = 'Looking for a reliable plumber? Plumb-All offers expert plumbing services for residential and commercial properties.';
   const ogImageUrl = 'og-plumbing-repair-spraying-pipe';
   const path = '/services/plumber';
 

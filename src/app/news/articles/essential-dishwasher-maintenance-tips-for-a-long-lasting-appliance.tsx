@@ -5,9 +5,9 @@ import CTACall from "@/components/cta/CTACall";
 const slug = 'essential-dishwasher-maintenance-tips-for-a-long-lasting-appliance';
 export const metadata = {
   slug: slug,
-  title: 'Essential Dishwasher Maintenance Tips for a Long-lasting Appliance',
+  title: 'Essential Dishwasher Maintenance Tips',
   date: '2023-11-22',
-  excerpt: 'Discover expert tips to keep your dishwasher performing at its best! From inspecting seals to cleaning spray arm nozzles, our blog offers essential maintenance advice. Ensure a long-lasting appliance and say goodbye to unpleasant odors.',
+  excerpt: 'Discover expert tips to keep your dishwasher performing at its best! From inspecting seals to cleaning spray arm nozzles, our blog offers essential maintenance advice.',
   image: '/images/dishwasher.jpg',
   path: `/news/article/${slug}`
 };

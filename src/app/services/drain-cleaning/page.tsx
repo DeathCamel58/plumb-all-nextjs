@@ -9,7 +9,7 @@ import {generateMetadataDict} from "@/components/header/metadata";
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
   const title = 'Drain Cleaning';
-  const description = 'Need fast, professional drain cleaning in Metro Atlanta? Plumb-All in Jonesboro, GA, offers expert service, including hydro jetting and sectional machine cleaning. Call today for a free estimate!';
+  const description = 'Need fast, professional drain cleaning in Metro Atlanta? Plumb-All in Jonesboro, GA, offers expert service, including hydro jetting and sectional machine cleaning.';
   const ogImageUrl = 'og-drain-cleaning-drain-cleaning';
   const path = '/services/drain-cleaning';
 

@@ -9,7 +9,7 @@ import {generateMetadataDict} from "@/components/header/metadata";
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
   const title = 'Water Heater Replacement';
-  const description = 'Discover the importance of septic tank pumping and its benefits for your system\'s longevity and efficiency. At Plumb-All, we offer professional septic tank pumping services in Jonesboro and surrounding areas.';
+  const description = 'Discover the importance of septic tank pumping and its benefits for your system\'s longevity and efficiency.';
   const ogImageUrl = 'og-water-heater-replacement-water-heater-wrench';
   const path = '/services/water-heater-replacement';
 

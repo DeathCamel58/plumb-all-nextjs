@@ -10,7 +10,7 @@ import {generateMetadataDict} from "@/components/header/metadata";
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
   const title = 'Plumbers in Atlanta, Ga';
-  const description = 'At Plumb-All, we\'re your trusted local plumbing experts in Atlanta, Georgia. With years of experience serving the Atlanta community, we take pride in providing top-notch plumbing solutions for both residential and commercial needs.';
+  const description = 'Here at Plumb-All, we take pride in providing top-notch plumbing solutions for both residential and commercial needs.';
   const ogImageUrl = 'og-expert-plumbers-in-atlanta-slab-leak';
   const path = '/services/expert-plumbing-services-in-atlanta-ga';
 

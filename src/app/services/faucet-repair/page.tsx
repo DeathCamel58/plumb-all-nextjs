@@ -9,7 +9,7 @@ import {generateMetadataDict} from "@/components/header/metadata";
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
   const title = 'Faucet Repair';
-  const description = 'Faucet dripping? We fix and replace all makes—kitchen, bathroom, outdoor & more. Our experts show a high level of attention to detail, and utilize extensive educational and vocational expertise when determining the best repair solution.';
+  const description = 'Faucet dripping? We fix and replace all makes—kitchen, bathroom, outdoor & more. Our experts show a high level of attention to detail when determining the best solution.';
   const ogImageUrl = 'og-faucet-repair-running-faucet';
   const path = '/services/faucet-repair';
 
