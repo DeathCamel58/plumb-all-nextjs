@@ -4,6 +4,8 @@ import { FaCreditCard, FaCheckCircle, FaMoneyBillWave } from 'react-icons/fa';
 import CTACall from '@/components/cta/CTACall';
 import { Metadata } from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
+import BannerHeader from "@/components/BannerHeader";
+import HeroImage from '../../../public/logo/plumb-all-banner.png';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
@@ -19,18 +21,11 @@ export default function Financing() {
   return (
     <div className="min-h-screen">
       {/* Header Image */}
-      <div className="relative w-full h-64 md:h-96">
-        <Image
-          src="/logo/plumb-all-banner.png"
-          alt="Plumb-All Financing Banner"
-          fill
-          className="object-cover object-center w-full"
-          priority
-        />
-        <div className="absolute inset-0 background-theme-4/50 flex items-center justify-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white">Financing</h1>
-        </div>
-      </div>
+      <BannerHeader
+        image={HeroImage}
+        altText="Plumb-All Financing Banner"
+        title="Financing"
+      />
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 py-12">

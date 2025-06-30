@@ -1,10 +1,11 @@
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { FaTools, FaWrench, FaCheckCircle, FaShieldAlt, FaHandshake, FaClock } from 'react-icons/fa';
 import CTACall from "@/components/cta/CTACall";
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
+import BannerHeader from "@/components/BannerHeader";
+import HeroImage from '../../../../public/images/vans.jpg';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
@@ -20,18 +21,11 @@ export default function PlumberServices() {
   return (
     <div className="min-h-screen">
       {/* Header Image */}
-      <div className="relative w-full h-64 md:h-96">
-        <Image
-          src="/images/vans.jpg"
-          alt="Professional Plumber Vans"
-          fill
-          className="object-cover object-center w-full"
-          priority
-        />
-        <div className="absolute inset-0 background-theme-4/50 bg-opacity-50 flex items-center justify-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white">Professional Plumber Services</h1>
-        </div>
-      </div>
+      <BannerHeader
+        image={HeroImage}
+        altText="Professional Plumber Vans"
+        title="Professional Plumber Services"
+      />
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 py-12">

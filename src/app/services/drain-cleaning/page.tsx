@@ -5,6 +5,8 @@ import CTACall from '@/components/cta/CTACall';
 import { FaTools, FaWrench, FaWater, FaExclamationTriangle, FaPhoneAlt } from 'react-icons/fa';
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
+import BannerHeader from "@/components/BannerHeader";
+import HeroImage from '../../../../public/images/drain-cleaning.jpg';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
@@ -20,18 +22,11 @@ export default function DrainCleaning() {
   return (
     <div className="min-h-screen">
       {/* Header Image */}
-      <div className="relative w-full h-64 md:h-96">
-        <Image
-          src="/images/drain-cleaning.jpg"
-          alt="Cleaning a drain"
-          fill
-          className="object-cover object-center w-full"
-          priority
-        />
-        <div className="absolute inset-0 background-theme-4/50 bg-opacity-50 flex items-center justify-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white">Drain Cleaning</h1>
-        </div>
-      </div>
+      <BannerHeader
+        image={HeroImage}
+        altText="Cleaning a drain"
+        title="Drain Cleaning"
+      />
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 py-12">
