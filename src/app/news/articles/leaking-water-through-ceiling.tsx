@@ -70,7 +70,7 @@ export default function ArticleContent() {
         </p>
         <ul className="list-disc pl-6 space-y-2">
           <li><strong>Damaged shower tiles or grout</strong> - Cracked tiles or deteriorated grout can allow water to penetrate behind the shower walls</li>
-          <li><strong>Shower faucet leaks</strong> - Issues with the faucet assembly inside the wall can cause hidden leaks</li>
+          <li><strong><Link href="/news/article/why-do-faucets-leak" className="text-theme-3 hover:underline">Shower faucet leaks</Link></strong> - Issues with the faucet assembly inside the wall can cause hidden leaks</li>
           <li><strong>Water supply pipe leaks</strong> - Pipes within the wall or subfloor may develop leaks due to corrosion or joint failures</li>
           <li><strong>Drain leaks</strong> - The drain assembly or p-trap beneath the shower/tub can develop leaks at connection points</li>
         </ul>

@@ -152,7 +152,7 @@ export default function ArticleContent() {
       <h2 className="text-2xl font-bold mt-8 mb-4">Conclusion</h2>
 
       <p className="mb-6">
-        If you&#39;re experiencing gurgling sounds in your plumbing, don&#39;t wait to call a professional plumber.
+        If you&#39;re experiencing <Link href="/news/article/plumbing-sounds" className="text-theme-3 hover:underline">gurgling sounds</Link> in your plumbing, don&#39;t wait to call a professional plumber.
         Although gurgling sounds can sometimes indicate minor issues, they can quickly develop into larger
         problems with costly solutions if ignored.
       </p>

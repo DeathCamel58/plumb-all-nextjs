@@ -191,7 +191,7 @@ export default function ArticleContent() {
         <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
           <h3 className="text-lg font-semibold mb-2">Never Pour These Down Drains</h3>
           <ul className="list-disc pl-5 space-y-1">
-            <li>Cooking oil or grease</li>
+            <li><Link href="/news/article/why-pouring-grease-down-your-drain-is-a-recipe-for-trouble" className="text-theme-3 hover:underline">Cooking oil or grease</Link></li>
             <li>Paint or paint thinners</li>
             <li>Harsh household chemicals</li>
             <li>Gasoline or motor oil</li>

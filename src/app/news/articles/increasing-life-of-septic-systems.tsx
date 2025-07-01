@@ -1,6 +1,7 @@
 import React from 'react';
 import CTACall from "@/components/cta/CTACall";
 import Image from "next/image";
+import Link from "next/link";
 
 // Article metadata
 const slug = 'increasing-life-of-septic-systems';
@@ -124,7 +125,7 @@ export default function ArticleContent() {
       <h2 className="text-2xl font-bold mt-8 mb-4">Septic Tank Additives and Enzymes</h2>
 
       <p className="mb-6">
-        We get asked about septic tank additives and enzymes regularly. Although these products market themselves
+        We get asked about <Link href="/news/article/are-septic-tank-additives-and-enzymes-useful" className="text-theme-3 hover:underline">septic tank additives and enzymes</Link> regularly. Although these products market themselves
         as helpful to septic systems, these chemicals are snake oil. The EPA recommends
         (<a href="https://www3.epa.gov/npdes/pubs/homeowner_guide_long_customize.pdf" className="text-theme-1 hover:text-theme-2 transition">
           A Homeowner&#39;s Guide to Septic Systems, Page 6

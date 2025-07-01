@@ -44,7 +44,7 @@ export default function ArticleContent() {
           <strong>Visible frost on exposed pipes</strong> - Check pipes under sinks, in basements, or along exterior walls for a layer of frost.
         </li>
         <li>
-          <strong>Strange odors from drains</strong> - When water can&#39;t flow through frozen pipes, unusual smells may back up into your home.
+          <strong>Strange odors from drains</strong> - When water can&#39;t flow through frozen pipes, <Link href="/news/article/sewer-smells" className="text-theme-3 hover:underline">unusual smells</Link> may back up into your home.
         </li>
         <li>
           <strong>No water coming from faucets</strong> - If you turn on a tap and only get a trickle or nothing at all, you likely have a frozen pipe somewhere in your system.

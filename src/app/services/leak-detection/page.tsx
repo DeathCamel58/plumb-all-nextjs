@@ -82,7 +82,7 @@ export default function LeakDetection() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <ul className="list-disc pl-5 space-y-3">
-                  <li className="text-lg">Continuous sound of water (like a toilet running) when nothing is turned on.</li>
+                  <li className="text-lg">Continuous sound of water (like a <Link href="/news/article/when-is-it-time-for-a-new-toilet" className="text-theme-3 hover:underline">toilet running</Link>) when nothing is turned on.</li>
                   <li className="text-lg">Water meter reading changing when no water is being used.
                     <ul className="list-disc pl-5 mt-2 space-y-2">
                       <li>To determine this, mark the indicator on your meter; don&#39;t use any water for an hour; check the meter to see if the reading has changed.</li>
