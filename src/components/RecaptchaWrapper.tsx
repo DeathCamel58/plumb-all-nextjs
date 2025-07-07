@@ -23,7 +23,7 @@ export function RecaptchaWrapper({ action }: Props) {
       grecaptcha.enterprise.ready(async () => {
         try {
           const token = await grecaptcha.enterprise.execute(
-            "YOUR SITE KEY",
+            "6LcII3srAAAAANs7plKrgJq30B53o2lnoEeJrU_U",
             { action }
           );
           const tokenInput = document.getElementById(
