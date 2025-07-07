@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, FormEvent, ReactNode } from "react";
+import {RecaptchaWrapper} from "@/components/RecaptchaWrapper";
 
 // Custom React components
 interface FormProps {
@@ -230,6 +231,8 @@ export default function ContactForm({ onDarkBackground = true }: ContactFormProp
       className="relative space-y-4 text-left"
       id="contactForm"
     >
+      <RecaptchaWrapper action="contact_form" />
+
       {submitted ? (
         <FormGroup className="absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center text-white rounded-lg z-10">
           <h3 className="text-xl font-semibold text-center">
