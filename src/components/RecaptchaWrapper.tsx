@@ -18,16 +18,18 @@ interface Props {
 }
 
 export function RecaptchaWrapper({ action }: Props) {
+  const recaptcha_v3_site_key = "6LcII3srAAAAAIOAWnpxGUx0P6jR6ekNMwwuVOJS";
+
   const executeRecaptcha = () => {
     if (typeof grecaptcha !== "undefined") {
       grecaptcha.enterprise.ready(async () => {
         try {
           const token = await grecaptcha.enterprise.execute(
-            "6LcII3srAAAAANs7plKrgJq30B53o2lnoEeJrU_U",
+            recaptcha_v3_site_key,
             { action }
           );
           const tokenInput = document.getElementById(
-            "recaptcha-token"
+            "recaptchaToken"
           ) as HTMLInputElement;
           if (tokenInput) tokenInput.value = token;
         } catch (e) {
@@ -40,12 +42,11 @@ export function RecaptchaWrapper({ action }: Props) {
   return (
     <>
       <Script
-        src="https://www.google.com/recaptcha/enterprise.js?render=YOUR SITE KEY"
+        src={`https://www.google.com/recaptcha/enterprise.js?render=${recaptcha_v3_site_key}`}
         strategy="afterInteractive"
         onLoad={executeRecaptcha}
       />
-      <input type="hidden" name="recaptchaToken" id="recaptcha-token" />
-      );
+      <input type="hidden" name="recaptchaToken" id="recaptchaToken" />
     </>
   );
 }
