@@ -203,8 +203,6 @@ export default function ContactForm({ onDarkBackground = true }: ContactFormProp
       ...prev,
       [name]: type === "checkbox" ? checked : value,
     }));
-
-    console.log(formData)
   };
 
   const handleSubmit = async (e: FormEvent) => {
@@ -213,11 +211,23 @@ export default function ContactForm({ onDarkBackground = true }: ContactFormProp
     // Anti-spam honeypot
     if (formData.website) return;
 
+    // Get the recaptcha token from the hidden input field
+    const recaptchaTokenInput = document.getElementById('recaptchaToken') as HTMLInputElement;
+    const recaptchaToken = recaptchaTokenInput ? recaptchaTokenInput.value : '';
+
+    // Update formData with the recaptcha token
+    const submissionData = {
+      ...formData,
+      recaptchaToken
+    };
+
+    console.log(submissionData);
+
     try {
       await fetch("https://integration.plumb-all.com/website/contactForm", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(submissionData),
       });
       setSubmitted(true);
     } catch (err) {
