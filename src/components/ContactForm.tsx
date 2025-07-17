@@ -221,8 +221,6 @@ export default function ContactForm({ onDarkBackground = true }: ContactFormProp
       recaptchaToken
     };
 
-    console.log(submissionData);
-
     try {
       await fetch("https://integration.plumb-all.com/website/contactForm", {
         method: "POST",
