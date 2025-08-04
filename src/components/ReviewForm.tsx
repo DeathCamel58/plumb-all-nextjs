@@ -4,6 +4,24 @@ import React, { useState, FormEvent } from 'react';
 import { FaStar, FaGoogle, FaFacebook, FaYelp } from 'react-icons/fa';
 import { RecaptchaWrapper } from "@/components/RecaptchaWrapper";
 
+const reviewLinks = [
+  {
+    name: 'Yelp',
+    link: 'https://www.yelp.com/writeareview/biz/Y8KVQW_mcz6cC7j_heiG1g?return_url=%2Fbiz%2FY8KVQW_mcz6cC7j_heiG1g',
+    faIcon: FaYelp,
+  },
+  {
+    name: 'Facebook',
+    link: 'https://www.facebook.com/plumball.jonesboro/reviews',
+    faIcon: FaFacebook,
+  },
+  {
+    name: 'Google',
+    link: 'https://search.google.com/local/writereview?placeid=ChIJA0IpU9H59IgRuuvsTJWBQ1w',
+    faIcon: FaGoogle,
+  }
+]
+
 // Form data interface
 interface FeedbackFormData {
   recaptchaToken: string;
@@ -103,33 +121,18 @@ export default function ReviewForm() {
                 We&#39;re thrilled that you had a great experience with us. Would you mind sharing your experience on one of these platforms?
               </p>
               <div className="flex justify-center space-x-6">
-                <a
-                  href="https://www.facebook.com/plumball.jonesboro/reviews"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex flex-col items-center hover:text-blue-600 transition-colors"
-                >
-                  <FaFacebook className="text-4xl mb-2" />
-                  <span>Facebook</span>
-                </a>
-                <a
-                  href="https://www.yelp.com/writeareview/biz/Y8KVQW_mcz6cC7j_heiG1g?return_url=%2Fbiz%2FY8KVQW_mcz6cC7j_heiG1g"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex flex-col items-center hover:text-blue-600 transition-colors"
-                >
-                  <FaYelp className="text-4xl mb-2" />
-                  <span>Yelp</span>
-                </a>
-                <a
-                  href="https://search.google.com/local/writereview?placeid=ChIJA0IpU9H59IgRuuvsTJWBQ1w"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex flex-col items-center hover:text-blue-600 transition-colors"
-                >
-                  <FaGoogle className="text-4xl mb-2" />
-                  <span>Google</span>
-                </a>
+                {reviewLinks.map(link => (
+                  <a
+                    key={link.name}
+                    href={link.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex flex-col items-center hover:text-blue-600 transition-colors"
+                  >
+                    <link.faIcon className="text-4xl mb-2" />
+                    <span>{link.name}</span>
+                  </a>
+                ))}
               </div>
             </div>
           ) : (
