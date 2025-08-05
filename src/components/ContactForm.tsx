@@ -355,7 +355,7 @@ export default function ContactForm({ onDarkBackground = true }: ContactFormProp
           onChange={handleChange}
           className="h-4 w-4 text-blue-600 border-gray-300 rounded"
           value={formData.sms}
-          label="I consent to receive text messages from this business."
+          label="I consent to follow-up & informational text messages. Frequency varies. Msg & data rates may apply. Reply STOP to opt out."
           labelClassName="text-sm"
           labelAfter
           onDarkBackground={onDarkBackground}
