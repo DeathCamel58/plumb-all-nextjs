@@ -1,5 +1,6 @@
 import React from 'react';
 import CTACall from "@/components/cta/CTACall";
+import Link from "next/link";
 
 // Article metadata
 const slug = 'warning-signs-that-your-water-heater-requires-attention';
@@ -141,8 +142,11 @@ export default function ArticleContent() {
       </ul>
 
       <p className="mb-6">
-        A professional can diagnose whether your system needs repair, maintenance, or if it&#39;s time to consider upgrading
-        to a larger capacity or more efficient model.
+        A professional can diagnose whether your system needs repair, maintenance, or if it&#39;s time to consider
+        upgrading to a larger capacity or more efficient model. If you&#39;re experiencing frequent issues with your
+        traditional water heater, it might be worth exploring
+        <Link href="/news/articles/guide-to-tankless-water-heaters" className="text-theme-3 hover:underline">tankless
+          water heater options</Link> for improved efficiency and reliability.
       </p>
 
       <h2 className="text-2xl font-bold mt-8 mb-4">When to Call a Professional</h2>

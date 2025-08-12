@@ -84,7 +84,12 @@ export default function ArticleContent() {
       </p>
 
       <p className="mb-6">
-        With over two decades of experience, our fully licensed, bonded, and insured plumbers provide fast, reliable service at competitive rates. We&#39;ll not only fix your immediate issue but can also identify potential problems before they become costly emergencies.
+        With over two decades of experience, our fully licensed, bonded, and insured plumbers provide fast, reliable
+        service at competitive rates. We&#39;ll not only fix your immediate issue but can also identify potential
+        problems before they become costly emergencies. While you&#39;re considering plumbing improvements, you might
+        also want to explore our
+        <Link href="/news/articles/guide-to-tankless-water-heaters" className="text-theme-3 hover:underline">guide to
+          tankless water heaters</Link> for more efficient home water heating solutions.
       </p>
 
       <div className="bg-theme-4/10 p-6 rounded-lg mt-10 mb-8">
