@@ -52,7 +52,7 @@ export default function ArticleContent() {
 
         <li>
           <h3 className="text-xl font-semibold mb-2">Corroded Valve Seat</h3>
-          <p className="mb-2">The connector between the faucet and the spout that can corrode from mineral buildup.</p>
+          <p className="mb-2">The connector between the faucet and the spout that can corrode from mineral buildup, especially in <Link href="/news/articles/common-plumbing-issues" className="text-theme-3 hover:underline">hard water areas like Metro Atlanta</Link>.</p>
           <p><strong>Signs:</strong> Water leaking around the base of the spout.</p>
           <p><strong>DIY Potential:</strong> Low - Special tools may be required.</p>
           <p><strong>Pro Tip:</strong> Regular cleaning can prevent this issue. Consider a professional valve seat cleaning during routine maintenance.</p>

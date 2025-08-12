@@ -73,7 +73,7 @@ export default function ArticleContent() {
           <h3 className="text-lg font-semibold mb-2">Warning Signs of a Wipe Clog</h3>
           <ul className="list-disc pl-5 space-y-1">
             <li>Gurgling sounds from toilets or drains</li>
-            <li>Multiple drains backing up simultaneously</li>
+            <li><Link href="/news/articles/common-plumbing-issues" className="text-theme-3 hover:underline">Multiple drains backing up simultaneously</Link> (a common Metro Atlanta plumbing issue)</li>
             <li>Toilet water level rising or falling unexpectedly</li>
             <li>Sewage odors coming from drains</li>
             <li>Slow draining throughout the house</li>
