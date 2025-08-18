@@ -29,25 +29,39 @@ export default function Footer() {
             ))}
           </div>
 
-          <div className="space-y-2 justify-items-center">
-            <a
-              href="tel:+17709143877"
-              className="inline-block background-theme-1 text-white px-4 py-2 rounded shadow hover:background-theme-2 transition"
-            >
-              (770) 914-3877
-            </a>
+          <div className="space-y-4">
+            {/* Call to Action Button */}
+            <div className="text-center">
+              <a
+                href="tel:+17709143877"
+                className="inline-block background-theme-1 text-white px-6 py-3 rounded-lg shadow-lg hover:background-theme-2 transition-all duration-200 font-semibold"
+              >
+                Call Now: (770) 914-3877
+              </a>
+            </div>
 
-            <p className="text-sm">
-              Tel:{' '}
-              <a href="tel:+17709143877" className="text-theme-0 hover:text-theme-1 hover:underline transition">
-                (770) 914-3877
-              </a>
-              <br />
-              Email:{' '}
-              <a href="mailto:info@plumb-all.com" className="text-theme-0 hover:text-theme-1 hover:underline transition">
-                info@plumb-all.com
-              </a>
-            </p>
+            {/* Contact Information */}
+            <div className="bg-gray-800 bg-opacity-50 rounded-lg p-4 space-y-3">
+              <div className="flex items-center space-x-3">
+                <span className="text-theme-1 font-medium">Phone:</span>
+                <a
+                  href="tel:+17709143877"
+                  className="text-theme-0 hover:text-theme-1 hover:underline transition-colors duration-200 font-medium"
+                >
+                  (770) 914-3877
+                </a>
+              </div>
+
+              <div className="flex items-center space-x-3">
+                <span className="text-theme-1 font-medium">Email:</span>
+                <a
+                  href="mailto:info@plumb-all.com"
+                  className="text-theme-0 hover:text-theme-1 hover:underline transition-colors duration-200 font-medium"
+                >
+                  info@plumb-all.com
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
