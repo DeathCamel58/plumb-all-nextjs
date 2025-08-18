@@ -129,9 +129,10 @@ export default function ArticleContent() {
             <h5 className="font-semibold text-red-700 mb-2">5. Higher Maintenance Requirements</h5>
             <p className="text-gray-700">
               Tankless units require regular maintenance, including annual descaling in areas with hard water.
-              Neglecting maintenance can reduce efficiency and lifespan. Unlike traditional water heaters that need
+              Neglecting maintenance can reduce efficiency and lifespan. Unlike traditional water heaters that need&nbsp;
               <Link href="/news/articles/flushing-your-water-heater" className="text-theme-3 hover:underline"> regular
                 flushing</Link> to remove sediment buildup, tankless units require different maintenance procedures.
+              Consider including tankless system maintenance as part of your <Link href="/news/articles/why-schedule-plumbing-inspections" className="text-theme-3 hover:underline">annual plumbing inspection</Link>.
             </p>
           </div>
         </div>

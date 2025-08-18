@@ -131,7 +131,10 @@ export default function ArticleContent() {
       </p>
 
       <p className="mb-6">
-        We don&#39;t just fix the immediate problem—we&#39;ll help you identify vulnerable areas in your plumbing system and recommend preventative measures to protect your home throughout the winter season.
+        We don&#39;t just fix the immediate problem—we&#39;ll help you identify vulnerable areas in your plumbing system
+        and recommend preventative measures to protect your home throughout the winter season. Consider scheduling a&nbsp;
+        <Link href="/news/articles/why-schedule-plumbing-inspections" className="text-theme-3 hover:underline">comprehensive
+          plumbing inspection</Link> before winter to identify pipes at risk of freezing.
       </p>
 
       <div className="bg-theme-4/10 p-6 rounded-lg mt-10 mb-8">

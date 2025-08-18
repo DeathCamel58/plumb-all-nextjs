@@ -120,7 +120,10 @@ export default function ArticleContent() {
       <p className="mb-6">
         Remember, just because something is labeled as &#34;flushable&#34; doesn&#39;t always make it a reality.
         This principle applies to those beloved &#34;flushable&#34; bathroom wipes and their misleading packaging.
-        If your home frequently experiences clogs, whether you use wet wipes or not, there is an underlying issue that demands attention.
+        If your home frequently experiences clogs, whether you use wet wipes or not, there is an underlying issue that
+        demands attention. Consider scheduling a&nbsp;
+        <Link href="/news/articles/why-schedule-plumbing-inspections" className="text-theme-3 hover:underline">comprehensive
+          plumbing inspection</Link> to identify potential sewer line problems before they lead to major backups.
       </p>
 
       <div className="bg-blue-50 p-4 rounded-lg mb-6 border-l-4 border-theme-3">

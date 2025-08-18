@@ -254,7 +254,7 @@ export default function ArticleContent() {
               <li>Insulate exposed pipes before winter</li>
               <li>Disconnect and drain outdoor hoses</li>
               <li>Know where your main water shutoff is located</li>
-              <li>Schedule annual plumbing inspections</li>
+              <li>Schedule <Link href="/news/articles/why-schedule-plumbing-inspections" className="text-theme-3 hover:underline">annual plumbing inspections</Link></li>
             </ul>
           </div>
           <div>
@@ -262,7 +262,7 @@ export default function ArticleContent() {
             <ul className="list-disc pl-5 space-y-1 text-gray-700">
               <li>Avoid planting trees near sewer lines</li>
               <li>Use root-killing treatments annually</li>
-              <li>Schedule regular sewer line inspections</li>
+              <li>Schedule <Link href="/news/articles/why-schedule-plumbing-inspections" className="text-theme-3 hover:underline">regular sewer line inspections</Link></li>
               <li>Address small leaks promptly to prevent root attraction</li>
             </ul>
           </div>
