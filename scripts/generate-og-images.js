@@ -82,11 +82,8 @@ export async function GET() {
     console.log('Created temporary API route for OG image generation');
 
     // Start a Next.js dev server in the background with custom config
-    const min_port = 10000;
-    const max_port = 15000;
-    const random_port = Math.floor(Math.random() * (max_port - min_port) + min_port);
-    console.log(`Starting Next.js dev server with custom config (port ${random_port})...`);
-    const serverProcess = exec(`npx next dev --port ${random_port}`);
+    console.log('Starting Next.js dev server with custom config...');
+    const serverProcess = exec('npx next dev --port 3333');
 
     // Define function to kill the server process
     const killServer = () => {
@@ -113,7 +110,7 @@ export async function GET() {
     while (!serverOnline) {
         await new Promise(resolve => setTimeout(resolve, 1000));
         try {
-            const onlineTestResult = await fetch(`http://localhost:${random_port}`);
+            const onlineTestResult = await fetch('http://localhost:3333');
             if (onlineTestResult.status === 200) {
                 serverOnline = true;
                 console.log('\tServer online!');
@@ -127,7 +124,7 @@ export async function GET() {
 
     // Call the API to generate the images
     console.log('Calling API to generate OG images...');
-    const response = await fetch(`http://localhost:${random_port}/api/generate-og-temp`);
+    const response = await fetch('http://localhost:3333/api/generate-og-temp');
     const result = await response.json();
 
     console.log(`Generated ${result.count} OG images`);
