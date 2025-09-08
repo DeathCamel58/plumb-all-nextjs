@@ -130,9 +130,9 @@ export default function ArticleContent() {
             <p className="text-gray-700">
               Tankless units require regular maintenance, including annual descaling in areas with hard water.
               Neglecting maintenance can reduce efficiency and lifespan. Unlike traditional water heaters that need&nbsp;
-              <Link href="/news/articles/flushing-your-water-heater" className="text-theme-3 hover:underline"> regular
+              <Link href="/news/article/flushing-your-water-heater" className="text-theme-3 hover:underline"> regular
                 flushing</Link> to remove sediment buildup, tankless units require different maintenance procedures.
-              Consider including tankless system maintenance as part of your <Link href="/news/articles/why-schedule-plumbing-inspections" className="text-theme-3 hover:underline">annual plumbing inspection</Link>.
+              Consider including tankless system maintenance as part of your <Link href="/news/article/why-schedule-plumbing-inspections" className="text-theme-3 hover:underline">annual plumbing inspection</Link>.
             </p>
           </div>
         </div>
@@ -193,7 +193,7 @@ export default function ArticleContent() {
         <Link href="/services/plumber" className="text-theme-3 hover:underline">plumbers</Link> can assess your current
         system, calculate your hot water needs, and provide expert installation services. If your current traditional
         water heater is showing
-        <Link href="/news/articles/warning-signs-that-your-water-heater-requires-attention" className="text-theme-3 hover:underline"> warning signs of failure</Link>,
+        <Link href="/news/article/warning-signs-that-your-water-heater-requires-attention" className="text-theme-3 hover:underline"> warning signs of failure</Link>,
         it might be the perfect time to consider upgrading to a tankless system. For a free consultation and
         quote, don&#39;t hesitate to call us at <a href="tel:+17709143877" className="text-theme-1 hover:text-theme-2 transition">
         (770) 914-3877</a>.

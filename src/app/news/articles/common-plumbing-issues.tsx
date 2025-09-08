@@ -51,7 +51,7 @@ export default function ArticleContent() {
               <li>Soap scum that&#39;s difficult to clean</li>
               <li>Spots on dishes and glassware</li>
               <li>Dry, itchy skin and dull hair after showering</li>
-              <li><Link href="/news/articles/identifying-the-culprits-behind-a-dripping-faucet" className="text-theme-3 hover:underline">Dripping faucets</Link> caused by mineral buildup</li>
+              <li><Link href="/news/article/identifying-the-culprits-behind-a-dripping-faucet" className="text-theme-3 hover:underline">Dripping faucets</Link> caused by mineral buildup</li>
             </ul>
           </div>
         </div>
@@ -175,7 +175,7 @@ export default function ArticleContent() {
         <p className="font-medium text-gray-700">
           <strong>Local Tip:</strong> Atlanta&#39;s hard water can reduce a water heater&#39;s lifespan by 2-3 years
           compared to areas with soft water. Regular maintenance and&nbsp;
-          <Link href="/news/articles/flushing-your-water-heater" className="text-theme-3 hover:underline">annual flushing</Link>
+          <Link href="/news/article/flushing-your-water-heater" className="text-theme-3 hover:underline">annual flushing</Link>
           &nbsp;are essential for optimal performance.
         </p>
       </div>
@@ -186,7 +186,7 @@ export default function ArticleContent() {
           <p className="text-gray-700">
             Hard water minerals settle at the bottom of water heater tanks, reducing efficiency and causing premature failure.
             You may notice rumbling sounds, reduced hot water capacity, or&nbsp;
-            <Link href="/news/articles/warning-signs-that-your-water-heater-requires-attention" className="text-theme-3 hover:underline">other warning signs</Link>
+            <Link href="/news/article/warning-signs-that-your-water-heater-requires-attention" className="text-theme-3 hover:underline">other warning signs</Link>
             &nbsp;that indicate sediment problems.
           </p>
         </div>
@@ -227,7 +227,7 @@ export default function ArticleContent() {
             <p className="text-gray-700">
               Tree root intrusion, shifting clay soil, and aging pipes contribute to main sewer line blockages that can
               cause sewage backups into homes. Additionally,&nbsp;
-              <Link href="/news/articles/are-flushable-wipes-safe-to-flush" className="text-theme-3 hover:underline">improper disposal of &#34;flushable&#34; wipes</Link>
+              <Link href="/news/article/are-flushable-wipes-safe-to-flush" className="text-theme-3 hover:underline">improper disposal of &#34;flushable&#34; wipes</Link>
               &nbsp;can create stubborn clogs that combine with other debris.
             </p>
           </div>
@@ -254,7 +254,7 @@ export default function ArticleContent() {
               <li>Insulate exposed pipes before winter</li>
               <li>Disconnect and drain outdoor hoses</li>
               <li>Know where your main water shutoff is located</li>
-              <li>Schedule <Link href="/news/articles/why-schedule-plumbing-inspections" className="text-theme-3 hover:underline">annual plumbing inspections</Link></li>
+              <li>Schedule <Link href="/news/article/why-schedule-plumbing-inspections" className="text-theme-3 hover:underline">annual plumbing inspections</Link></li>
             </ul>
           </div>
           <div>
@@ -262,7 +262,7 @@ export default function ArticleContent() {
             <ul className="list-disc pl-5 space-y-1 text-gray-700">
               <li>Avoid planting trees near sewer lines</li>
               <li>Use root-killing treatments annually</li>
-              <li>Schedule <Link href="/news/articles/why-schedule-plumbing-inspections" className="text-theme-3 hover:underline">regular sewer line inspections</Link></li>
+              <li>Schedule <Link href="/news/article/why-schedule-plumbing-inspections" className="text-theme-3 hover:underline">regular sewer line inspections</Link></li>
               <li>Address small leaks promptly to prevent root attraction</li>
             </ul>
           </div>
@@ -279,7 +279,7 @@ export default function ArticleContent() {
       <div className="bg-red-50 p-4 rounded-lg mb-6 border-l-4 border-red-400">
         <ul className="list-disc pl-5 space-y-1 text-gray-700">
           <li>Multiple drains backing up simultaneously</li>
-          <li><Link href="/news/articles/diagnosing-low-water-pressure" className="text-theme-3 hover:underline">Water pressure issues</Link> throughout the house</li>
+          <li><Link href="/news/article/diagnosing-low-water-pressure" className="text-theme-3 hover:underline">Water pressure issues</Link> throughout the house</li>
           <li>Discolored or foul-smelling water</li>
           <li>Signs of sewer line problems</li>
           <li>Recurring clogs despite cleaning efforts</li>

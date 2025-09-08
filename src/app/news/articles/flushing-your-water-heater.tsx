@@ -116,7 +116,7 @@ export default function ArticleContent() {
         Regularly flushing your water heater is a crucial maintenance task that shouldn&#39;t be overlooked. By removing
         sediment and mineral buildup, you can improve your water heater&#39;s efficiency, extend its lifespan, and avoid
         costly repairs. If you&#39;re tired of dealing with traditional water heater maintenance issues, consider
-        exploring <Link href="/news/articles/guide-to-tankless-water-heaters" className="text-theme-3 hover:underline">
+        exploring <Link href="/news/article/guide-to-tankless-water-heaters" className="text-theme-3 hover:underline">
         tankless water heater options</Link> which require different maintenance procedures and offer several
         advantages. If you require professional assistance or have any plumbing-related questions, don&#39;t hesitate to
         reach out to our expert team at Plumb-All. Remember, a

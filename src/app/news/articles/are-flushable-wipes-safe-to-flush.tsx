@@ -73,7 +73,7 @@ export default function ArticleContent() {
           <h3 className="text-lg font-semibold mb-2">Warning Signs of a Wipe Clog</h3>
           <ul className="list-disc pl-5 space-y-1">
             <li>Gurgling sounds from toilets or drains</li>
-            <li><Link href="/news/articles/common-plumbing-issues" className="text-theme-3 hover:underline">Multiple drains backing up simultaneously</Link> (a common Metro Atlanta plumbing issue)</li>
+            <li><Link href="/news/article/common-plumbing-issues" className="text-theme-3 hover:underline">Multiple drains backing up simultaneously</Link> (a common Metro Atlanta plumbing issue)</li>
             <li>Toilet water level rising or falling unexpectedly</li>
             <li>Sewage odors coming from drains</li>
             <li>Slow draining throughout the house</li>
@@ -122,7 +122,7 @@ export default function ArticleContent() {
         This principle applies to those beloved &#34;flushable&#34; bathroom wipes and their misleading packaging.
         If your home frequently experiences clogs, whether you use wet wipes or not, there is an underlying issue that
         demands attention. Consider scheduling a&nbsp;
-        <Link href="/news/articles/why-schedule-plumbing-inspections" className="text-theme-3 hover:underline">comprehensive
+        <Link href="/news/article/why-schedule-plumbing-inspections" className="text-theme-3 hover:underline">comprehensive
           plumbing inspection</Link> to identify potential sewer line problems before they lead to major backups.
       </p>
 

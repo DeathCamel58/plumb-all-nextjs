@@ -102,7 +102,7 @@ export default function ArticleContent() {
       </p>
 
       <ul className="list-disc pl-8 mb-6 space-y-1">
-        <li>Mineral deposits clogging the showerhead (especially in <Link href="/news/articles/common-plumbing-issues" className="text-theme-3 hover:underline">hard water areas like Metro Atlanta</Link>)</li>
+        <li>Mineral deposits clogging the showerhead (especially in <Link href="/news/article/common-plumbing-issues" className="text-theme-3 hover:underline">hard water areas like Metro Atlanta</Link>)</li>
         <li>A flow restrictor that&#39;s limiting water output</li>
         <li>Partially closed water valves</li>
         <li>Shared water usage with other fixtures or appliances</li>
@@ -122,7 +122,7 @@ export default function ArticleContent() {
 
       <ul className="list-disc pl-8 mb-6 space-y-1">
         <li>A clogged pipe restricting water flow</li>
-        <li>Corroded galvanized pipes narrowing the water pathway (a <Link href="/news/articles/common-plumbing-issues" className="text-theme-3 hover:underline">common issue in older Atlanta homes</Link>)</li>
+        <li>Corroded galvanized pipes narrowing the water pathway (a <Link href="/news/article/common-plumbing-issues" className="text-theme-3 hover:underline">common issue in older Atlanta homes</Link>)</li>
         <li>A partially closed main water valve</li>
         <li>Municipal water supply issues affecting your neighborhood</li>
       </ul>

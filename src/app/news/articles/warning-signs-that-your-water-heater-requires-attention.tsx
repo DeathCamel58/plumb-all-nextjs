@@ -145,7 +145,7 @@ export default function ArticleContent() {
         A professional can diagnose whether your system needs repair, maintenance, or if it&#39;s time to consider
         upgrading to a larger capacity or more efficient model. If you&#39;re experiencing frequent issues with your
         traditional water heater, it might be worth exploring
-        <Link href="/news/articles/guide-to-tankless-water-heaters" className="text-theme-3 hover:underline">tankless
+        <Link href="/news/article/guide-to-tankless-water-heaters" className="text-theme-3 hover:underline">tankless
           water heater options</Link> for improved efficiency and reliability.
       </p>
 

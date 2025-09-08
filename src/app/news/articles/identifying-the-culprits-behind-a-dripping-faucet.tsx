@@ -52,7 +52,7 @@ export default function ArticleContent() {
 
         <li>
           <h3 className="text-xl font-semibold mb-2">Corroded Valve Seat</h3>
-          <p className="mb-2">The connector between the faucet and the spout that can corrode from mineral buildup, especially in <Link href="/news/articles/common-plumbing-issues" className="text-theme-3 hover:underline">hard water areas like Metro Atlanta</Link>.</p>
+          <p className="mb-2">The connector between the faucet and the spout that can corrode from mineral buildup, especially in <Link href="/news/article/common-plumbing-issues" className="text-theme-3 hover:underline">hard water areas like Metro Atlanta</Link>.</p>
           <p><strong>Signs:</strong> Water leaking around the base of the spout.</p>
           <p><strong>DIY Potential:</strong> Low - Special tools may be required.</p>
           <p><strong>Pro Tip:</strong> Regular cleaning can prevent this issue. Consider a professional valve seat cleaning during routine maintenance.</p>
@@ -88,7 +88,7 @@ export default function ArticleContent() {
         service at competitive rates. We&#39;ll not only fix your immediate issue but can also identify potential
         problems before they become costly emergencies. While you&#39;re considering plumbing improvements, you might
         also want to explore our
-        <Link href="/news/articles/guide-to-tankless-water-heaters" className="text-theme-3 hover:underline">guide to
+        <Link href="/news/article/guide-to-tankless-water-heaters" className="text-theme-3 hover:underline">guide to
           tankless water heaters</Link> for more efficient home water heating solutions.
       </p>
 

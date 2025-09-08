@@ -32,7 +32,7 @@ export default function ArticleContent() {
         to prevent expensive damage. Regular plumbing inspections are like annual check-ups for your home&#39;s
         circulatory system, helping you catch small issues before they become major headaches. In the Metro Atlanta
         area, where unique environmental factors put extra stress on plumbing systems, scheduled inspections aren&#39;t
-        just recommended – they&#39;re essential. Understanding the <Link href="/news/articles/common-plumbing-issues" className="text-theme-3 hover:underline">common plumbing issues in Metro Atlanta</Link> can help you appreciate why regular inspections are so important.
+        just recommended – they&#39;re essential. Understanding the <Link href="/news/article/common-plumbing-issues" className="text-theme-3 hover:underline">common plumbing issues in Metro Atlanta</Link> can help you appreciate why regular inspections are so important.
       </p>
 
       <h3 className="text-2xl font-semibold mb-4">The Hidden Costs of Neglecting Your Plumbing</h3>
@@ -140,7 +140,7 @@ export default function ArticleContent() {
             <ul className="list-disc pl-5 space-y-1 text-gray-600 text-sm">
               <li>Faucets and showerheads</li>
               <li>Toilets and bidets</li>
-              <li>Water heater inspection (including <Link href="/news/articles/guide-to-tankless-water-heaters" className="text-theme-3 hover:underline">tankless systems</Link>)</li>
+              <li>Water heater inspection (including <Link href="/news/article/guide-to-tankless-water-heaters" className="text-theme-3 hover:underline">tankless systems</Link>)</li>
               <li>Washing machine connections</li>
               <li>Dishwasher plumbing</li>
             </ul>
@@ -173,7 +173,7 @@ export default function ArticleContent() {
               <li>Properties with hard water issues</li>
               <li>Houses with mature landscaping (tree roots)</li>
               <li>Homes that have experienced previous plumbing problems</li>
-              <li>Properties with pipes vulnerable to <Link href="/news/articles/coping-with-frozen-pipes-a-guide-to-protecting-your-home" className="text-theme-3 hover:underline">winter freezing</Link></li>
+              <li>Properties with pipes vulnerable to <Link href="/news/article/coping-with-frozen-pipes-a-guide-to-protecting-your-home" className="text-theme-3 hover:underline">winter freezing</Link></li>
             </ul>
           </div>
           <div>
@@ -217,7 +217,7 @@ export default function ArticleContent() {
               <li>Slow draining sinks or tubs</li>
               <li>Gurgling sounds from drains</li>
               <li>Sewage odors in the home</li>
-              <li>Multiple drain backups (often caused by <Link href="/news/articles/are-flushable-wipes-safe-to-flush" className="text-theme-3 hover:underline">improper disposal items</Link>)</li>
+              <li>Multiple drain backups (often caused by <Link href="/news/article/are-flushable-wipes-safe-to-flush" className="text-theme-3 hover:underline">improper disposal items</Link>)</li>
               <li>Wet spots in the yard</li>
             </ul>
           </div>
