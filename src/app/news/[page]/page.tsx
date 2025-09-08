@@ -21,7 +21,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title = pageNumber === 1
     ? 'News'
     : `News - Page ${pageNumber}`;
-  const description = 'Plumb-All\'s blog and news posts';
+  const description = pageNumber === 1
+    ? 'Plumb-All\'s blog and news posts'
+    : `Plumb-All's blog and news posts - Page ${pageNumber}`;
   const ogImageUrl = 'og-news-pipes';
   const path = pageNumber === 1 ? `/news` : `/news/${pageNumber}`;
 
