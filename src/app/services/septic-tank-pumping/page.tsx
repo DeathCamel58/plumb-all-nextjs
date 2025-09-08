@@ -10,8 +10,8 @@ import HeroImage from '../../../../public/images/septic-pumping.jpg';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
-  const title = 'Septic Tank Pumping';
-  const description = 'Discover the importance of septic tank pumping and its benefits for your system\'s longevity and efficiency. At Plumb-All, we offer professional septic tank pumping services in Jonesboro and surrounding areas.';
+  const title = 'Septic Service | Metro Atlanta Septic Service & Septic Tank Pumping';
+  const description = 'Need reliable septic service? Plumb-All provides professional Metro Atlanta Septic Service, including septic tank pumping, inspections, and maintenance to protect your home and system.';
   const ogImageUrl = 'og-septic-tank-pumping-septic-pumping';
   const path = '/services/septic-tank-pumping';
 
@@ -24,20 +24,20 @@ export default function SepticTankPumping() {
       {/* Header Image */}
       <BannerHeader
         image={HeroImage}
-        altText="Septic Pump Hose"
-        title="Septic Tank Pumping"
+        altText="Metro Atlanta Septic Service – Pump Hose"
+        title="Septic Service & Septic Tank Pumping"
       />
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <div className="w-full mb-12 text-center">
-          <h2 className="text-4xl font-bold mb-6">Professional Septic Tank Pumping Services</h2>
+          <h2 className="text-4xl font-bold mb-6">Professional Septic Service and Tank Pumping</h2>
           <p className="text-xl max-w-4xl mx-auto mb-6">
-            At Plumb-All, we understand the importance of proper septic tank maintenance. Our professional pumping services help prevent system failures, extend equipment lifespan, and protect your property and the environment.
+            At Plumb-All, your trusted Metro Atlanta Septic Service, we understand the importance of proper septic system maintenance. Our professional septic service and pumping help prevent system failures, extend equipment lifespan, and protect your property and the environment.
           </p>
           <p className="text-xl max-w-4xl mx-auto mb-6">
-            Whether you&#39;re a homeowner, <Link href="/services/commercial" className="text-theme-3 hover:underline">business owner</Link>, or property manager in Jonesboro and surrounding areas, our expert technicians provide reliable, thorough septic tank pumping using advanced equipment and techniques.
+            Whether you&#39;re a homeowner, <Link href="/services/commercial" className="text-theme-3 hover:underline">business owner</Link>, or property manager across Metro Atlanta, our expert technicians provide reliable, thorough septic service and septic tank pumping using advanced equipment and techniques.
           </p>
         </div>
 
@@ -50,7 +50,7 @@ export default function SepticTankPumping() {
                 Don&#39;t wait for problems to develop. Regular septic tank pumping is essential for the health and longevity of your system.
               </p>
               <CTACall
-                headerText="Contact us today for professional septic tank pumping"
+                headerText="Contact us today for professional septic service and tank pumping"
                 buttonText="Call us at 844 PLUMB-ALL"
               />
             </div>
@@ -59,7 +59,7 @@ export default function SepticTankPumping() {
             <div className="relative w-full h-64 md:h-full rounded-lg overflow-hidden shadow-md">
               <Image
                 src="/images/septic-pumping.jpg"
-                alt="Septic Tank Pumping"
+                alt="Septic service in Metro Atlanta"
                 fill
                 className="object-cover"
               />
@@ -202,7 +202,7 @@ export default function SepticTankPumping() {
 
             <div className="bg-white p-6 rounded-lg shadow-md mb-10">
               <p className="text-lg mb-4">
-                At Plumb-All, we specialize in professional septic tank pumping services. Our experienced technicians use advanced equipment and techniques to ensure thorough pumping, adhering to the highest industry standards.
+                At Plumb-All, we specialize in professional septic tank pumping services. Our experienced technicians use advanced equipment and techniques to ensure thorough pumping, adhering to the highest industry standards. We also provide comprehensive septic service across Metro Atlanta.
               </p>
               <p className="text-lg">
                 We follow a comprehensive process that includes inspection, pumping, and cleaning to ensure your system operates at peak efficiency. Our team will also provide recommendations for ongoing maintenance to extend the life of your septic system.
@@ -212,7 +212,7 @@ export default function SepticTankPumping() {
             {/* Call to Action */}
             <div className="bg-white p-6 rounded-lg shadow-md text-center mb-10">
               <CTACall
-                headerText="Ready to schedule your septic tank pumping?"
+                headerText="Ready to schedule your septic service or tank pumping in Metro Atlanta?"
                 buttonText="Call us at 844 PLUMB-ALL"
               />
             </div>
@@ -255,10 +255,10 @@ export default function SepticTankPumping() {
           <div className="bg-gray-50 p-8 rounded-lg shadow-md text-center">
             <h2 className="text-2xl font-semibold mb-4">Protect Your Investment</h2>
             <p className="text-lg mb-6">
-              Regular septic tank pumping is essential for maintaining your system and protecting your property. Contact Plumb-All today to schedule your service.
+              Regular septic service and septic tank pumping are essential for maintaining your system and protecting your property. Contact Plumb-All today to schedule your Metro Atlanta Septic Service.
             </p>
             <CTACall
-              headerText="Need professional septic tank pumping services?"
+              headerText="Need professional septic service or septic tank pumping?"
               buttonText="Call us at 844 PLUMB-ALL"
             />
             <p className="text-center mt-4">
