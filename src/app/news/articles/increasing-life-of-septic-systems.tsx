@@ -127,7 +127,7 @@ export default function ArticleContent() {
       <p className="mb-6">
         We get asked about <Link href="/news/article/are-septic-tank-additives-and-enzymes-useful" className="text-theme-3 hover:underline">septic tank additives and enzymes</Link> regularly. Although these products market themselves
         as helpful to septic systems, these chemicals are snake oil. The EPA recommends
-        (<a href="https://www3.epa.gov/npdes/pubs/homeowner_guide_long_customize.pdf" className="text-theme-1 hover:text-theme-2 transition">
+        (<a href="https://nepis.epa.gov/Exe/ZyNET.exe/200041E0.txt?ZyActionD=ZyDocument&Client=EPA&Index=2000%20Thru%202005&Docs=&Query=&Time=&EndTime=&SearchMethod=1&TocRestrict=n&Toc=&TocEntry=&QField=&QFieldYear=&QFieldMonth=&QFieldDay=&UseQField=&IntQFieldOp=0&ExtQFieldOp=0&XmlQuery=&File=D%3A%5CZYFILES%5CINDEX%20DATA%5C00THRU05%5CTXT%5C00000005%5C200041E0.txt&User=ANONYMOUS&Password=anonymous&SortMethod=h%7C-&MaximumDocuments=1&FuzzyDegree=0&ImageQuality=r75g8/r75g8/x150y150g16/i425&Display=hpfr&DefSeekPage=&SearchBack=ZyActionL&Back=ZyActionS&BackDesc=Results%20page&MaximumPages=1&ZyEntry=8" className="text-theme-1 hover:text-theme-2 transition">
           A Homeowner&#39;s Guide to Septic Systems, Page 6
         </a>) not using any of these chemicals, as the microbes contained in a septic system are all that is
         necessary to break down waste.
