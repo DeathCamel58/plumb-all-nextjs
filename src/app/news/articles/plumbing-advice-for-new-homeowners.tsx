@@ -7,7 +7,7 @@ export const metadata = {
   slug: slug,
   title: 'Essential Plumbing Knowledge for New Homeowners',
   date: '2023-11-14',
-  excerpt: 'From locating the water main to choosing the right plunger, our expert advice ensures you\'re equipped to handle common plumbing issues and prevent costly emergencies.',
+  excerpt: 'From locating the water main to choosing the right plunger, our advice ensures you\'re equipped to handle common plumbing issues and prevent costly emergencies.',
   image: '/images/water-shut-off-valve.jpg',
   path: `/news/article/${slug}`
 };

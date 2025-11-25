@@ -8,7 +8,7 @@ export const metadata = {
   slug: slug,
   title: 'How to Find a Plumbing Leak',
   date: '2022-07-05',
-  excerpt: 'It can be difficult to find plumbing leaks at home. Most people only learn that they have a leak when they get a high water bill. Here’s how to find a leak before the high water bill hits you.',
+  excerpt: 'It can be difficult to find plumbing leaks at home. Here’s how to find a leak before the high water bill hits you.',
   image: '/images/water-heater-wrench.jpg',
   path: `/news/article/${slug}`
 };

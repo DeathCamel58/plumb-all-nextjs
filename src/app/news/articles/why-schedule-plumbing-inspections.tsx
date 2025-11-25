@@ -8,7 +8,7 @@ export const metadata = {
   slug: slug,
   title: 'Why You Should Schedule Regular Plumbing Inspections',
   date: '2025-08-18',
-  excerpt: 'Learn why regular plumbing inspections are essential for Metro Atlanta homeowners. Discover how preventive maintenance can save thousands in repairs, extend system lifespan, and protect your home from water damage.',
+  excerpt: 'Learn why plumbing inspections are essential for Atlanta homeowners. Preventive maintenance can save in repairs, and protect your home from water damage.',
   image: '/images/flush-water-heater.jpg',
   path: `/news/article/${slug}`
 };

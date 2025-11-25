@@ -7,7 +7,7 @@ export const metadata = {
   slug: slug,
   title: 'Kitchen Remodel? Don’t Forget These Plumbing Services',
   date: '2025-09-01',
-  excerpt: 'Planning a kitchen remodel? Don’t overlook your plumbing! From sink and dishwasher installation to rerouting water and gas lines, these essential services ensure your renovation runs smoothly. Learn what to plan for and why involving a professional plumber early can save time, money, and stress.',
+  excerpt: 'Planning a kitchen remodel? Don’t overlook your plumbing! From sink installation to moving water lines, these services ensure your renovation runs smoothly.',
   image: '/images/dishwasher-2.jpg',
   path: `/news/article/${slug}`
 };

@@ -10,7 +10,7 @@ import HeroImage from '../../../../public/images/vans.jpg';
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
   const title = 'Water Line Repair & Replacement Services';
-  const description = 'Expert water line repair and replacement services by Plumb-All. We diagnose and fix water line leaks, breaks, and corrosion with minimal disruption to your property. Available 24/7 for emergency water line repairs.';
+  const description = 'Expert water line repair and replacement services by Plumb-All. We fix water line leaks, breaks, and corrosion with minimal disruption to your property.';
   const ogImageUrl = 'og-water-line-repair-spraying-pipe';
   const path = '/services/water-line-repair';
 

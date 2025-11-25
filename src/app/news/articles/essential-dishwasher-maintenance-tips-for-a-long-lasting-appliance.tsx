@@ -7,7 +7,7 @@ export const metadata = {
   slug: slug,
   title: 'Essential Dishwasher Maintenance Tips',
   date: '2023-11-22',
-  excerpt: 'Discover expert tips to keep your dishwasher performing at its best! From inspecting seals to cleaning spray arm nozzles, our blog offers essential maintenance advice.',
+  excerpt: 'Discover tips to keep your dishwasher performing at its best! From inspecting seals to cleaning spray arm nozzles, our blog offers essential maintenance advice.',
   image: '/images/dishwasher.jpg',
   path: `/news/article/${slug}`
 };

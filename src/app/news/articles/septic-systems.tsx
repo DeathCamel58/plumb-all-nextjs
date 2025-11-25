@@ -8,7 +8,7 @@ export const metadata = {
   slug: slug,
   title: 'Septic Systems',
   date: '2023-04-21',
-  excerpt: 'Learn about the different types of septic systems available, including conventional and alternative systems, to make an informed decision for your home or business.',
+  excerpt: 'Learn about the types of septic systems available, including conventional and alternative systems, to make an informed decision for your home or business.',
   image: '/images/septic-install.jpg',
   path: `/news/article/${slug}`
 };

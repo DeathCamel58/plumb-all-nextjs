@@ -8,7 +8,7 @@ export const metadata = {
   slug: slug,
   title: 'Common Plumbing Issues in the Metro Atlanta Area',
   date: '2025-08-12',
-  excerpt: 'Discover the most common plumbing problems affecting Metro Atlanta homeowners. From hard water damage to seasonal pipe issues, learn how to identify, prevent, and address these regional plumbing challenges.',
+  excerpt: 'Discover some common plumbing problems affecting Atlanta homeowners. From hard water to seasonal pipe issues, learn how to address these plumbing challenges.',
   image: '/images/spraying-pipe.jpg',
   path: `/news/article/${slug}`
 };

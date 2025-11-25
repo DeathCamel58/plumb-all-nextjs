@@ -10,7 +10,7 @@ import HeroImage from '../../../../public/images/running-faucet.jpg';
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
   const title = 'Faucet Repair';
-  const description = 'Faucet dripping? We fix and replace all makes—kitchen, bathroom, outdoor & more. Our experts show a high level of attention to detail when determining the best solution.';
+  const description = 'Faucet dripping? We fix and replace all makes—kitchen, bathroom, outdoor & more. Our experts are trained to give you the best solution possible.';
   const ogImageUrl = 'og-faucet-repair-running-faucet';
   const path = '/services/faucet-repair';
 

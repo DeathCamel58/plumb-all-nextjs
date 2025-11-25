@@ -7,7 +7,7 @@ export const metadata = {
   slug: slug,
   title: 'How Can I Unclog My Shower Drain?',
   date: '2023-11-01',
-  excerpt: 'Learn how to unclog your shower drain using common household items and simple methods. Say goodbye to blockages caused by hair and grime with solutions like boiling water, a coat hanger, baking soda and vinegar, or dish detergent. No need for specialized products; you can easily clear your shower drain with these DIY techniques.',
+  excerpt: 'Learn how to unclog your shower drain using common household items and simple methods. No need for specialized products as our plumbers give good advice.',
   image: '/images/shower-drain.jpg',
   path: `/news/article/${slug}`
 };

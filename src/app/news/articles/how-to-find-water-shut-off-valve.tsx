@@ -9,7 +9,7 @@ export const metadata = {
   slug: slug,
   title: 'How to Find Your Water Shut Off Valve',
   date: '2022-09-06',
-  excerpt: 'Learn how to quickly locate your water shut off valve to prevent damage during plumbing emergencies. This essential knowledge can save you from costly water damage.',
+  excerpt: 'Learn how to locate your water shut off valve to prevent damage during plumbing emergencies. This essential knowledge can save you from costly water damage.',
   image: '/images/shut-off-valve.jpg',
   path: `/news/article/${slug}`
 };

@@ -7,7 +7,7 @@ export const metadata = {
   slug: slug,
   title: 'When is it Time for a New Toilet?',
   date: '2023-11-03',
-  excerpt: 'Discover the signs indicating it’s time for a new toilet in your home. Learn when to replace your toilet due to frequent repairs, cracks, constant clogs, outdated designs, or its age.',
+  excerpt: 'Discover the signs indicating it’s time for a new toilet in your home. Learn when to replace your toilet due to frequent repairs, clogs, cracks, or its age.',
   image: '/images/toilet.jpg',
   path: `/news/article/${slug}`
 };

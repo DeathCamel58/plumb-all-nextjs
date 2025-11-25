@@ -10,7 +10,7 @@ import HeroImage from '../../../../public/images/garbage-disposal.jpg';
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
   const title = 'Garbage Disposal Repair & Replacement';
-  const description = 'Professional garbage disposal repair and replacement services in the Metro Atlanta Area. We fix jams, leaks, and electrical issues, and install new units with expert precision.';
+  const description = 'Garbage disposal repair and replacement services in the Atlanta Area. We fix jams, leaks, and electrical issues, and install new units with expert precision.';
   const ogImageUrl = 'og-garbage-disposal-repair-garbage-disposal';
   const path = '/services/garbage-disposal-repair';
 

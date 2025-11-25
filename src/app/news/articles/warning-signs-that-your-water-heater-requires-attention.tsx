@@ -8,7 +8,7 @@ export const metadata = {
   slug: slug,
   title: 'Warning Signs That Your Water Heater Requires Attention',
   date: '2023-11-13',
-  excerpt: 'Discover the pivotal signs indicating your water heater may need urgent attention. From significant temperature fluctuations to subtle hot water leaks, learn the crucial warning signals homeowners often overlook. Stay informed and safeguard your home’s plumbing integrity with our seasoned professionals.',
+  excerpt: 'Discover the signs indicating your water heater may need attention. From temperature changes to subtle hot water leaks, learn warning signals people miss.',
   image: '/images/water-heater.jpg',
   path: `/news/article/${slug}`
 };

@@ -7,7 +7,7 @@ export const metadata = {
   slug: slug,
   title: 'The Risks of Neglecting Slab Leaks',
   date: '2023-11-14',
-  excerpt: 'Discover the risks and consequences of ignoring slab leaks on your property. Learn about the causes and potential hazards of slab leaks, and understand why timely intervention is crucial. Contact Plumb-All, your trusted plumbing partner in Jonesboro, GA, for expert assistance in addressing slab leaks and all your plumbing needs.',
+  excerpt: 'Discover the risks and consequences of ignoring slab leaks on your property. Learn about the causes and potential hazards of slab leaks here.',
   image: '/images/slab-leak.jpg',
   path: `/news/article/${slug}`
 };

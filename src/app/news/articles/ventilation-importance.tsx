@@ -9,7 +9,7 @@ export const metadata = {
   slug: slug,
   title: 'The Importance of Proper Ventilation in Plumbing Systems',
   date: '2025-06-17',
-  excerpt: 'A well-functioning ventilation system is critical to the overall health of a plumbing system. In this article, we\'ll explore why proper ventilation is so important in a plumbing system.',
+  excerpt: 'A well-functioning ventilation system is critical to a plumbing system. In this article, we explore why proper ventilation is so important in a plumbing system.',
   image: '/images/roof-vent-2.jpg',
   path: `/news/article/${slug}`
 };

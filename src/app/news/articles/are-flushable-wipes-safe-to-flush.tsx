@@ -8,7 +8,7 @@ export const metadata = {
   slug: slug,
   title: 'Are Flushable Wipes Safe to Flush?',
   date: '2023-11-06',
-  excerpt: 'Discover the truth about ‘flushable’ wipes and why they may not be as safe as you think. Learn why wet wipes can lead to plumbing problems and costly repairs. Find out what you should and shouldn’t flush, and how to deal with toilet clogs.',
+  excerpt: 'Flushable wipes are not be as safe to flush as you think. Learn why wet wipes can lead to plumbing problems and costly repairs.',
   image: '/images/flushable-wipes.jpg',
   path: `/news/article/${slug}`
 };

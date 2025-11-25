@@ -8,7 +8,7 @@ export const metadata = {
   slug: slug,
   title: 'Diagnosing Low Water Pressure',
   date: '2023-11-03',
-  excerpt: 'When water pressure falls short, everyday tasks become challenging. Learn about common causes of low water pressure and how to diagnose issues in your household plumbing system.',
+  excerpt: 'When water pressure falls short, showers, dishes, and other essential tasks can become difficult. Learn what causes low water pressure.',
   image: '/images/dripping-faucet-2.jpg',
   path: `/news/article/${slug}`
 };

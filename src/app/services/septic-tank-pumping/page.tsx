@@ -10,8 +10,8 @@ import HeroImage from '../../../../public/images/septic-pumping.jpg';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
-  const title = 'Septic Service | Metro Atlanta Septic Service & Septic Tank Pumping';
-  const description = 'Need reliable septic service? Plumb-All provides professional Metro Atlanta Septic Service, including septic tank pumping, inspections, and maintenance to protect your home and system.';
+  const title = 'Metro Atlanta Septic Service & Pumping';
+  const description = 'Need reliable septic service? Plumb-All provides professional Metro Atlanta Septic Service, including septic tank pumping, inspections, and maintenance.';
   const ogImageUrl = 'og-septic-tank-pumping-septic-pumping';
   const path = '/services/septic-tank-pumping';
 

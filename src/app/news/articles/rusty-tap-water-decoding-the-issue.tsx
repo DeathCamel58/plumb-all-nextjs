@@ -8,7 +8,7 @@ export const metadata = {
   slug: slug,
   title: 'Rusty Tap Water: Decoding the Issue',
   date: '2023-11-14',
-  excerpt: 'Unlock the secrets behind rusty tap water with our insightful guide. From deciphering discoloration in both hot and cold faucets to pinpointing issues with your water heater or corroded pipes, Plumb-All’s expert advice has you covered. Discover practical solutions to ensure your water supply remains clear and reliable.',
+  excerpt: 'Figure out why you see rusty tap water with our guide. When deciphering discoloration, Plumb-All’s expert advice has you covered.',
   image: '/images/rusty-water.jpg',
   path: `/news/article/${slug}`
 };

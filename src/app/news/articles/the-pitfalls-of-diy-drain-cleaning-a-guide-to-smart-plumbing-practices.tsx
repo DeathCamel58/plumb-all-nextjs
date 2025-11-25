@@ -8,7 +8,7 @@ export const metadata = {
   slug: slug,
   title: 'The Pitfalls of DIY Drain Cleaning',
   date: '2023-11-09',
-  excerpt: 'Discover the pitfalls of DIY drain cleaning and why reaching for commercial drain cleaners may harm your pipes. Learn the art of smart plumbing practices and avoid common culprits for clogged drains. Your go-to resource for maintaining a smoothly flowing plumbing system.',
+  excerpt: 'Discover the risks of DIY drain cleaning and why drain cleaners may harm your pipes. Use smart plumbing practices and avoid common culprits for clogged drains.',
   image: '/images/hand-drain-cleaning.jpg',
   path: `/news/article/${slug}`
 };

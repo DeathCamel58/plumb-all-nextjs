@@ -9,7 +9,7 @@ export const metadata = {
   slug: slug,
   title: 'Flushing Your Water Heater',
   date: '2023-06-19',
-  excerpt: 'Discover the importance of flushing your water heater for optimal performance and longevity. Learn how sediment buildup affects efficiency and how to perform this essential maintenance task.',
+  excerpt: 'Discover the importance of flushing your water heater for longevity. Learn how sediment buildup affects efficiency and how to perform this maintenance task.',
   image: '/images/flush-water-heater.jpg',
   path: `/news/article/${slug}`
 };

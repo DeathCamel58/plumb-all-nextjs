@@ -11,7 +11,7 @@ import HeroImage from '../../../../public/images/vans.jpg';
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
   const title = 'Emergencies';
-  const description = 'Pluming issues that need to be fixed ASAP? We&#039;re available 24/7 to fix your emergency plumbing needs. Licences and insured. Call us today at (844) 758-6225.';
+  const description = 'Plumbing issues that need to be fixed? We\'re available 24/7 to fix your emergency plumbing needs. Licences and insured. Call us today at (844) 758-6225.';
   const ogImageUrl = 'og-emergency-services-vans';
   const path = '/services/emergencies';
 

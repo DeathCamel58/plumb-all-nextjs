@@ -7,7 +7,7 @@ export const metadata = {
   slug: slug,
   title: '10 Factors That Affect Water Quality',
   date: '2023-11-03',
-  excerpt: 'Discover the essential factors influencing water quality and how to maintain pure, safe water for your family. Explore insights and expert guidance on water quality, treatment, and plumbing maintenance.',
+  excerpt: 'Find out what influences your water quality, and how you can ensure the highest quality possible. Read our guidance on water quality and treatment.',
   image: '/images/running-faucet.jpg',
   path: `/news/article/${slug}`
 };

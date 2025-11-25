@@ -7,7 +7,7 @@ export const metadata = {
   slug: slug,
   title: 'Preparing to Sell Your Home?',
   date: '2023-11-14',
-  excerpt: "Discover how strategic plumbing upgrades can significantly increase your home's resale value. Learn about the 5 highest-ROI plumbing improvements, from whole-house water filtration to luxury touches that impress buyers. Get expert tips and a pre-sale plumbing checklist from Plumb-All's experienced professionals.",
+  excerpt: 'Discover how plumbing upgrades can increase your home\'s resale value. Learn about the 5 highest-ROI plumbing improvements that impress buyers.',
   image: '/images/home-for-sale.jpg',
   path: `/news/article/${slug}`
 };

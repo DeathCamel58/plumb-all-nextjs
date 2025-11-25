@@ -7,7 +7,7 @@ export const metadata = {
   slug: slug,
   title: 'How to Clean a Garbage Disposal',
   date: '2021-09-17',
-  excerpt: 'A garbage disposal does a great job at taking food waste, breaking it up, and getting it disposed of. Unfortunately, every time it’s used, small particles of food build up on the inside of it, and it eventually winds up with a stinky smell.',
+  excerpt: 'A garbage disposal does a great job at breaking up food waste and getting it disposed of. However they need to be cleaned sometimes. Follow our go-to guide!',
   image: '/images/garbage-disposal.jpg',
   path: `/news/article/${slug}`
 };
