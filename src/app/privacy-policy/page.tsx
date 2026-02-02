@@ -25,7 +25,7 @@ export default function PrivacyPolicy() {
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 py-12">
-        <h2 className="text-3xl font-semibold mb-6">About Us</h2>
+        <h2 className="text-3xl font-semibold mb-6">Privacy Policy</h2>
 
         <p className="mb-4">
           Thank you for choosing to be part of our community at Plumb-All (&#34;<strong>Company</strong>&#34;, &#34;<strong>we</strong>&#34;, &#34;<strong>us</strong>&#34;, or &#34;<strong>our</strong>&#34;). We are committed to protecting your personal information and your right to privacy. If you have any questions or concerns about this privacy notice, or our practices with regards to your personal information, please contact us at webmaster@plumb-all.com.
@@ -139,8 +139,29 @@ export default function PrivacyPolicy() {
           <li><strong>To respond to user inquiries/offer support to users.</strong> We may use your information to respond to your inquiries and solve any potential issues you might have with the use of our Services.</li>
           <li><strong>To send you marketing and promotional communications.</strong> We and/or our third-party marketing partners may use the personal information you send to us for our marketing purposes, if this is in accordance with your marketing preferences. For example, when expressing an interest in obtaining information about us or our Website, subscribing to marketing or otherwise contacting us, we will collect personal information from you. You can opt-out of our marketing emails at any time (see the &#34;WHAT ARE YOUR PRIVACY RIGHTS&#34; below).</li>
           <li><strong>Deliver targeted advertising to you.</strong> We may use your information to develop and display personalized content and advertising (and work with third parties who do so) tailored to your interests and/or location and to measure its effectiveness.</li>
-          <li><strong>To send text message updates and communications.</strong> Plumb-All sends text message updates and responses to consumer customers about pricing, products offered, and appointments at https://plumb-all.com and in person. Mobile phone information is stored securely and will not be shared with third parties or affiliates for marketing or promotional purposes.</li>
         </ul>
+
+        <h3 className="text-2xl font-semibold mb-4">SMS Messaging & Text Communications</h3>
+
+        <p className="mb-4">
+          Plumb-All uses text messaging to communicate with customers regarding requested plumbing and septic services, including scheduling, appointment confirmations, technician arrival notifications, service-related questions, estimates, and follow-up communications.
+        </p>
+
+        <p className="mb-4">
+          Customers opt in to receive text messages by submitting service request forms on our website that include a consent checkbox, by calling us, or by initiating a text message to a Plumb-All business number.
+        </p>
+
+        <p className="mb-4">
+          Message frequency varies. Message and data rates may apply.
+        </p>
+
+        <p className="mb-4">
+          Customers may opt out of receiving text messages at any time by replying STOP. Customers may reply HELP for assistance.
+        </p>
+
+        <p className="mb-4">
+          Mobile phone numbers are used only for service-related communications and are not sold, rented, or shared with third parties for marketing or promotional purposes.
+        </p>
 
         <h2 className="text-3xl font-semibold mb-6" id="infoshare">3. WILL YOUR INFORMATION BE SHARED WITH ANYONE?</h2>
 
