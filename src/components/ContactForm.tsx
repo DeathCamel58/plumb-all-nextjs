@@ -185,7 +185,7 @@ const initialState: FormData = {
   address: "",
   website: "",
   message: "",
-  sms: true,
+  sms: false,
 };
 
 interface ContactFormProps {
@@ -355,11 +355,12 @@ export default function ContactForm({ onDarkBackground = true }: ContactFormProp
           onChange={handleChange}
           className="h-4 w-4 text-blue-600 border-gray-300 rounded"
           value={formData.sms}
-          label="I consent to follow-up & informational text messages. Frequency varies. Msg & data rates may apply. Reply STOP to opt out."
+          label="I consent to receive follow-up and informational text messages from Plumb-All related to my service request. Message frequency varies. Msg & data rates may apply. Reply STOP to opt out."
           labelClassName="text-sm"
           labelAfter
           onDarkBackground={onDarkBackground}
           autocomplete="off"
+          required
         />
       </FormGroup>
 
