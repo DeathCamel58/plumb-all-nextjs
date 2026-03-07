@@ -10,8 +10,8 @@ import HeroImage from '../../../../public/images/vans.jpg';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
-  const title = 'Emergencies';
-  const description = 'Plumbing issues that need to be fixed? We\'re available 24/7 to fix your emergency plumbing needs. Licences and insured. Call us today at (844) 758-6225.';
+  const title = 'Emergency Plumber Near Me – 24/7 Urgent Plumbing Service';
+  const description = 'Need an urgent plumber now? Plumb-All sends emergency plumbers near you 24/7 — nights, weekends & holidays. Licensed & insured. Call (770) 914-3877 for immediate help.';
   const ogImageUrl = 'og-emergency-services-vans';
   const path = '/services/emergencies';
 
@@ -25,14 +25,14 @@ export default function Emergencies() {
       <BannerHeader
         image={HeroImage}
         altText="Plumb-All Service Vans"
-        title="Plumbing Emergencies"
+        title="Emergency Plumber Near Me – Available 24/7"
       />
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction Section */}
         <div className="w-full mb-12">
-          <h2 className="text-4xl font-bold mb-6 text-center">24/7 Emergency Plumbing Services</h2>
+          <h2 className="text-4xl font-bold mb-6 text-center">24/7 Emergency Plumbing Services – We Come to You Now</h2>
 
           <div className="flex flex-wrap -mx-4 mt-8">
             <div className="w-full md:w-1/3 px-4 mb-6">
@@ -48,11 +48,11 @@ export default function Emergencies() {
             </div>
 
             <div className="w-full md:w-2/3 px-4 mb-6">
-              <p className="mb-4 text-lg">Don&#39;t settle for a plumbing company that claims to be 24/7, but won&#39;t send someone out until morning. At Plumb-All, we have multiple plumbing crews on standby around the clock, ready to respond to your emergency with lightning-fast speed.</p>
+              <p className="mb-4 text-lg">If you need a plumber now, don&#39;t wait — Plumb-All dispatches urgent plumbers near you around the clock. We have multiple plumbing crews on standby 24/7, ready to respond to your emergency with lightning-fast speed.</p>
 
-              <p className="mb-4 text-lg">We know how stressful and inconvenient plumbing emergencies can be, and we don&#39;t believe in making you wait. Whether it&#39;s a broken toilet, no water, or a major leak, we&#39;ll be there to fix it ASAP.</p>
+              <p className="mb-4 text-lg">Whether you&#39;re searching for &#34;plumbers near me now&#34; at 2 AM or need an urgent plumber on a holiday weekend, we answer every call and send a technician fast. Burst pipes, sewage backups, no hot water — we handle it all.</p>
 
-              <p className="mb-4 text-lg">Trust us for the fastest response times in the industry – when you need help the most, Plumb-All delivers.</p>
+              <p className="mb-4 text-lg">Trust Plumb-All for the fastest emergency plumber response times in Metro Atlanta — when you need help the most, we deliver.</p>
             </div>
           </div>
         </div>

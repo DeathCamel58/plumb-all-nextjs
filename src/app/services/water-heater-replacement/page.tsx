@@ -10,8 +10,8 @@ import HeroImage from '../../../../public/images/water-heater-wrench.jpg';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
-  const title = 'Water Heater Replacement';
-  const description = 'Discover the importance of septic tank pumping and its benefits for your system\'s longevity and efficiency.';
+  const title = 'Water Heater Replacement & Repair Near Me – Metro Atlanta';
+  const description = 'Need a hot water plumber near you? Plumb-All installs and repairs water heaters — tank, tankless, gas & electric — in Metro Atlanta. Fast, reliable service. Call (770) 914-3877.';
   const ogImageUrl = 'og-water-heater-replacement-water-heater-wrench';
   const path = '/services/water-heater-replacement';
 
@@ -25,19 +25,19 @@ export default function WaterHeaterReplacement() {
       <BannerHeader
         image={HeroImage}
         altText="Water Heater being repaired"
-        title="Water Heater Replacement"
+        title="Water Heater Replacement & Repair Near Me"
       />
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <div className="w-full mb-12 text-center">
-          <h2 className="text-4xl font-bold mb-6">Professional Water Heater Services</h2>
+          <h2 className="text-4xl font-bold mb-6">Professional Water Heater Replacement & Repair – Metro Atlanta</h2>
           <p className="text-xl max-w-4xl mx-auto mb-6">
-            Looking for water heater services? Look no further than Plumb-All! Whether you need a new electric or gas hot water heater installed, want to explore tankless options, or require maintenance and repair services for your existing water heater, our expert team can help.
+            Need a hot water plumber near you? Plumb-All is Metro Atlanta&#39;s trusted water heater service company. Whether you need a new electric or gas water heater installed, want to explore tankless water heater options, or need fast water heater repair service, our expert team is ready to help.
           </p>
           <p className="text-xl max-w-4xl mx-auto mb-6">
-            We specialize in water heater and expansion tank installation and maintenance for both commercial and residential properties in the Metro Atlanta area. With our extensive training and experience, we can handle any water heater-related issue with ease.
+            We specialize in water heater replacement and expansion tank installation for both residential and commercial properties across Metro Atlanta. No hot water? Our technicians respond fast for same-day water heater service near you.
           </p>
         </div>
 

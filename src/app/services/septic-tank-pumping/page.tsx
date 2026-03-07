@@ -10,8 +10,8 @@ import HeroImage from '../../../../public/images/septic-pumping.jpg';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
-  const title = 'Metro Atlanta Septic Service & Pumping';
-  const description = 'Need reliable septic service? Plumb-All provides professional Metro Atlanta Septic Service, including septic tank pumping, inspections, and maintenance.';
+  const title = 'Septic Tank Pumping Near Me – Metro Atlanta Septic Service';
+  const description = 'Need septic tank pumping near you? Plumb-All provides professional septic service across Metro Atlanta — pumping, inspections, repairs & maintenance. Licensed & insured. Call (770) 914-3877.';
   const ogImageUrl = 'og-septic-tank-pumping-septic-pumping';
   const path = '/services/septic-tank-pumping';
 
@@ -25,7 +25,7 @@ export default function SepticTankPumping() {
       <BannerHeader
         image={HeroImage}
         altText="Metro Atlanta Septic Service – Pump Hose"
-        title="Septic Service & Septic Tank Pumping"
+        title="Septic Tank Pumping Near Me – Metro Atlanta"
       />
 
       {/* Main Content */}

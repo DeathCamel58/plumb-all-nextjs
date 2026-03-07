@@ -10,8 +10,8 @@ import HeroImage from '../../../../public/images/spraying-pipe.jpg';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
-  const title = 'Leak Detection';
-  const description = 'Our leak detection services concentrate on speed and damage control. Leaking pipes can cause extensive damage, so if you suspect a leak, act quickly!';
+  const title = 'Leak Detection Near Me – Electronic Pipe Leak Detection';
+  const description = 'Suspect a hidden water leak? Plumb-All provides professional leak detection near you in Metro Atlanta using advanced electronic equipment — no guesswork, no unnecessary demolition. Call (770) 914-3877.';
   const ogImageUrl = 'og-leak-detection-spraying-pipe';
   const path = '/services/leak-detection';
 
@@ -25,14 +25,14 @@ export default function LeakDetection() {
       <BannerHeader
         image={HeroImage}
         altText="Spraying Pipe"
-        title="Leak Detection"
+        title="Leak Detection Near Me – Electronic Pipe Leak Detection"
       />
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <div className="w-full mb-12">
-          <h2 className="text-4xl font-bold mb-6 text-center">Professional Leak Detection Services</h2>
+          <h2 className="text-4xl font-bold mb-6 text-center">Professional Leak Detection Services Near You in Metro Atlanta</h2>
 
           <div className="flex flex-wrap -mx-4 mt-8">
             <div className="w-full md:w-1/3 px-4 mb-6">
@@ -48,11 +48,11 @@ export default function LeakDetection() {
             </div>
 
             <div className="w-full md:w-2/3 px-4 mb-6">
-              <p className="mb-4 text-lg">Our leak detection services prioritize swift action and minimizing damages. Leaks in pipes may start small, but can lead to significant harm if left unchecked. Traditional methods of detecting leaks involve trial-and-error, which can result in unnecessary property damage and expenses.</p>
+              <p className="mb-4 text-lg">Our leak detection services prioritize swift action and minimizing damage. Hidden water leaks may start small but can cause significant structural harm if left unchecked. Traditional approaches involve trial-and-error that damages your walls and floors unnecessarily.</p>
 
-              <p className="mb-4 text-lg">However, our technicians utilize advanced technology to electronically locate the source of the leak, saving you time and resources. This method is a marked improvement from traditional approaches and eliminates the need for costly and uncertain demolitions.</p>
+              <p className="mb-4 text-lg">Plumb-All technicians use advanced electronic leak detection equipment to pinpoint the exact source of pipe leaks — no guesswork, no unnecessary demolition. We serve homeowners and businesses across Metro Atlanta with fast, accurate leak detection near you.</p>
 
-              <p className="mb-4 text-lg">We understand the urgency of addressing leaks, whether they are in water or sewer lines. Our goal is to quickly identify and resolve the issue to prevent further harm to your home.</p>
+              <p className="mb-4 text-lg">We handle water line leaks, sewer line leaks, slab leaks, and more. Our goal is to quickly identify and resolve the issue before it causes further damage to your home or business.</p>
             </div>
           </div>
         </div>
