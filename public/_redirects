@@ -63,3 +63,5 @@
 /news/2/ /news/2 301
 /news/3/ /news/3 301
 /news/4/ /news/4 301
+/septicrepair /services/septic-repair 301
+/services/septic /services/septic-repair 301
