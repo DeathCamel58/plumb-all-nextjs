@@ -147,7 +147,7 @@ export default function Contact() {
             </p>
             <CTACall
               headerText="Our team is standing by to assist you"
-              buttonText="Call (770) 697-0105"
+              buttonText="Call (770) 914-3877"
             />
             <div className="mt-8 p-4 bg-gray-50 rounded-lg">
               <h4 className="text-lg font-semibold mb-2 flex items-center">
