@@ -9,8 +9,8 @@ import HeroImage from '../../../../public/images/septic-system-overview.jpg';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
-  const title = 'Alternative Septic';
-  const description = 'Know the differences between the different types of alternative septic systems, and get information on how to best care for your system.';
+  const title = 'Alternative Septic Systems Near Me – Metro Atlanta';
+  const description = 'Can\'t use a conventional septic system? Plumb-All installs alternative septic systems in Metro Atlanta — aerobic, mound, sand filter, drip emitter & more. Certified technicians. Call today.';
   const ogImageUrl = 'og-alternative-septic-septic-system-overview';
   const path = '/services/alternative-septic';
 
@@ -24,19 +24,19 @@ export default function AlternativeSeptic() {
       <BannerHeader
         image={HeroImage}
         altText="Alternative Septic System"
-        title="Alternative Septic Systems"
+        title="Alternative Septic Systems Near Me – Metro Atlanta"
       />
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <div className="w-full mb-12 text-center">
-          <h2 className="text-4xl font-bold mb-6">Advanced Alternative Septic Solutions</h2>
+          <h2 className="text-4xl font-bold mb-6">Advanced Alternative Septic Solutions in Metro Atlanta</h2>
           <p className="text-xl max-w-4xl mx-auto mb-6">
-            Traditional septic systems separate and store solid waste from wastewater before allowing the liquid (effluent) to flow into the drain field. Alternative septic systems, however, treat wastewater more actively through innovative processes.
+            Traditional septic systems separate and store solid waste from wastewater before allowing the liquid (effluent) to flow into the drain field. Alternative septic systems treat wastewater more actively through innovative processes — and are often the only option for properties that can&#39;t support a conventional system.
           </p>
           <p className="text-xl max-w-4xl mx-auto mb-6">
-            For properties with challenging soil conditions, high water tables, or limited space, alternative septic designs provide effective solutions. Our expert team specializes in designing, installing, and maintaining these advanced systems to meet your specific needs.
+            For Metro Atlanta properties with challenging soil conditions, high water tables, or limited space, Plumb-All&#39;s certified technicians specialize in designing, installing, and maintaining these advanced systems to meet your specific needs.
           </p>
         </div>
 

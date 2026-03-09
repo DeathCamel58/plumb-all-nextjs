@@ -10,8 +10,8 @@ import HeroImage from '../../../../public/images/septic-system-overview.jpg';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
-  const title = 'Septic Repair';
-  const description = 'Septic drain fields are essentially eco-friendly drains for your septic system. They connect to your septic tank, and allow water to seep out into your yard.';
+  const title = 'Septic Repair Near Me – Metro Atlanta';
+  const description = 'Need septic repair in Metro Atlanta? Plumb-All specializes in drain field repair, septic system installation, and alternative septic solutions. Licensed technicians, upfront pricing. Call today.';
   const ogImageUrl = 'og-septic-repair-septic-system-overview';
   const path = '/services/septic-repair';
 
@@ -25,16 +25,16 @@ export default function SepticRepair() {
       <BannerHeader
         image={HeroImage}
         altText="Septic System"
-        title="Septic Repair"
+        title="Septic Repair Near Me – Metro Atlanta"
       />
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <div className="w-full mb-12 text-center">
-          <h2 className="text-4xl font-bold mb-6">Expert Septic Repair & Installation Services</h2>
+          <h2 className="text-4xl font-bold mb-6">Expert Septic Repair & Installation Services in Metro Atlanta</h2>
           <p className="text-xl max-w-4xl mx-auto mb-6">
-            Plumb-All provides comprehensive septic system solutions, specializing in drain field repair and installation.
+            Plumb-All provides comprehensive septic system solutions across Metro Atlanta, specializing in drain field repair and installation.
             Our expert team delivers reliable, long-lasting septic services tailored to your property&#39;s unique needs.
           </p>
         </div>

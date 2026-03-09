@@ -9,8 +9,8 @@ import HeroImage from '../../../../public/images/septic-system-overview.jpg';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
-  const title = 'Eljen Septic';
-  const description = 'Many plumbers are stumped when it comes to Eljen Septic systems. Here at Plumb-All, we hold certifications to show that we can work on these.';
+  const title = 'Eljen GSF Septic Systems – Metro Atlanta';
+  const description = 'Plumb-All is a certified Eljen GSF septic installer serving Metro Atlanta. We install and maintain Eljen Geotextile Sand Filter systems for properties with difficult soil conditions. Call today.';
   const ogImageUrl = 'og-eljen-septic-septic-system-overview';
   const path = '/services/eljen-septic';
 
@@ -24,19 +24,19 @@ export default function EljenSeptic() {
       <BannerHeader
         image={HeroImage}
         altText="Eljen GSF Septic System"
-        title="Eljen GSF Septic Systems"
+        title="Eljen GSF Septic Systems – Metro Atlanta"
       />
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* Introduction */}
         <div className="w-full mb-12 text-center">
-          <h2 className="text-4xl font-bold mb-6">Advanced Eljen GSF Septic Solutions</h2>
+          <h2 className="text-4xl font-bold mb-6">Certified Eljen GSF Septic Installation in Metro Atlanta</h2>
           <p className="text-xl max-w-4xl mx-auto mb-6">
-            Looking for an innovative septic solution for challenging soil conditions? Plumb-All specializes in Eljen Geotextile Sand Filter (GSF) systems, a revolutionary alternative to traditional septic systems that provides superior treatment in difficult soil environments.
+            Looking for a certified Eljen septic installer in Metro Atlanta? Plumb-All specializes in Eljen Geotextile Sand Filter (GSF) systems — a revolutionary alternative to traditional septic systems that provides superior treatment in difficult soil environments.
           </p>
           <p className="text-xl max-w-4xl mx-auto mb-6">
-            Our expert team is certified to install and maintain these advanced systems, helping homeowners overcome property limitations and achieve reliable, environmentally-friendly wastewater treatment.
+            Our certified technicians install and maintain Eljen GSF systems throughout the Metro Atlanta area, helping property owners overcome soil limitations and achieve reliable, environmentally-friendly wastewater treatment.
           </p>
         </div>
 
