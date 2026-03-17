@@ -1,6 +1,7 @@
 import "../styles/globals.scss";
 import Menu from "@/components/Menu";
 import Footer from "@/components/Footer";
+import StickyCallButton from "@/components/StickyCallButton";
 import React from "react";
 import { GoogleTagManager } from '@next/third-parties/google'
 
@@ -24,6 +25,7 @@ export default function RootLayout({
         {children}
 
         <Footer />
+        <StickyCallButton />
       </body>
     </html>
   );
