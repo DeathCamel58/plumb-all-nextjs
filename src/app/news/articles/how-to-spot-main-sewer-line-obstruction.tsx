@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 import CTACall from "@/components/cta/CTACall";
 
 // Article metadata
@@ -22,7 +23,7 @@ export default function ArticleContent() {
         Your home&#39;s plumbing system relies heavily on the proper functioning of the sewer line, and any damage
         or obstruction in it can lead to unwelcome problems on your property. Repairing or replacing damaged
         or offset pipes can be a costly endeavor. Detecting a breakage or blockage in your sewer line early
-        can save you from significant inconvenience and expenses. It&#39;s important to note that damage tends
+        can save you from significant inconvenience and expenses — if you suspect a serious issue, our <Link href="/services/emergencies" className="text-theme-3 hover:underline">emergency plumbing services</Link> are available around the clock. It&#39;s important to note that damage tends
         to worsen with time.
       </p>
 
@@ -92,7 +93,7 @@ export default function ArticleContent() {
 
       <div className="bg-yellow-50 p-4 rounded-lg mb-6 border-l-4 border-yellow-400">
         <p className="font-medium text-gray-700">
-          <strong>Pro Tip:</strong> Cleaning out the sewer line or performing spot repairs can usually resolve
+          <strong>Pro Tip:</strong> Professional <Link href="/services/drain-cleaning" className="text-theme-3 hover:underline">drain cleaning</Link> or <Link href="/services/hydro-jetting" className="text-theme-3 hover:underline">hydro jetting</Link> can usually resolve
           the problem. However, if the issue is advanced, a costly replacement may be necessary. Your technician
           may conduct a camera inspection to identify the source of the problem and discuss service options with you.
         </p>

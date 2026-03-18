@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 import CTACall from "@/components/cta/CTACall";
 
 // Article metadata
@@ -54,8 +55,8 @@ export default function ArticleContent() {
           The pipes responsible for conveying water to your residence can significantly influence its quality.
           Older pipes constructed from materials such as lead, galvanized steel, or copper may leach
           contaminants into the water. In contrast, modern pipes made from materials like PVC or PEX are
-          less likely to affect water quality. Regular inspections and maintenance are key to identifying
-          potential issues.
+          less likely to affect water quality. Regular inspections and professional <Link href="/services/water-line-repair" className="text-theme-3 hover:underline">water line repair</Link> are key to identifying
+          and resolving potential issues.
         </p>
       </div>
 
@@ -183,7 +184,7 @@ export default function ArticleContent() {
 
       <p className="mb-6">
         At Plumb-All Plumbing, we are committed to assisting you in preserving optimal water quality for your home.
-        If you have inquiries about water quality or require professional plumbing services, please do not
+        If you have inquiries about water quality or require the help of a professional <Link href="/services/plumber" className="text-theme-3 hover:underline">plumber</Link>, please do not
         hesitate to contact us at <a href="tel:+17709143877" className="text-theme-1 hover:text-theme-2 transition">(770) 914-3877</a>.
       </p>
 

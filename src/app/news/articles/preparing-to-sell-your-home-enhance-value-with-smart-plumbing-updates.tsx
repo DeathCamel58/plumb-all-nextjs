@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 import CTACall from "@/components/cta/CTACall";
 
 // Article metadata
@@ -50,7 +51,7 @@ export default function ArticleContent() {
 
         <li>
           <h3 className="text-xl font-semibold mb-2">Revamp Your Bathroom with Strategic Updates</h3>
-          <p className="mb-2">Bathrooms significantly influence buying decisions, but complete remodels aren&#39;t always necessary to make a positive impression.</p>
+          <p className="mb-2">Bathrooms significantly influence buying decisions, and targeted <Link href="/services/bathroom-plumbing" className="text-theme-3 hover:underline">bathroom plumbing</Link> updates don&#39;t always require a complete remodel to make a positive impression.</p>
           <p><strong>High-Impact, Low-Cost Updates:</strong></p>
           <ul className="list-disc pl-6 mb-2 space-y-1">
             <li>Replace outdated faucets with modern, water-efficient models</li>
@@ -63,7 +64,7 @@ export default function ArticleContent() {
 
         <li>
           <h3 className="text-xl font-semibold mb-2">Address All Existing Plumbing Issues</h3>
-          <p className="mb-2">Even minor plumbing problems can raise red flags during home inspections and negotiations.</p>
+          <p className="mb-2">Even minor plumbing problems can raise red flags during home inspections and negotiations. Professional <Link href="/services/plumbing-repair" className="text-theme-3 hover:underline">plumbing repair</Link> before listing can prevent costly negotiation setbacks.</p>
           <p><strong>Common Issues to Resolve:</strong></p>
           <ul className="list-disc pl-6 mb-2 space-y-1">
             <li>Dripping faucets or running toilets</li>
@@ -112,7 +113,7 @@ export default function ArticleContent() {
           <li>Check water pressure and address any issues</li>
           <li>Update visible fixtures in kitchens and bathrooms</li>
           <li>Consider adding a water filtration system</li>
-          <li>Ensure water heater is functioning efficiently</li>
+          <li>Ensure water heater is functioning efficiently — consider <Link href="/services/water-heater-replacement" className="text-theme-3 hover:underline">water heater replacement</Link> if it&#39;s nearing end of life</li>
           <li>Document all plumbing improvements for potential buyers</li>
         </ul>
       </div>

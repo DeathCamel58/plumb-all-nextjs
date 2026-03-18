@@ -52,10 +52,10 @@ export default function Backflow() {
                 As a certified backflow inspection company, Plumb-All offers expert annual inspections, repairs, and installation of backflow preventers required by local water authorities throughout Metro Atlanta.
               </p>
               <p className="mb-4 text-lg">
-                Our team is committed to providing exceptional customer service throughout the state of Georgia, and we bring over 15 years of experience to every job. Trust us to handle all of your backflow prevention needs with professionalism and expertise.
+                Our team of expert <Link href="/services/plumber" className="text-theme-3 hover:underline">plumbers</Link> is committed to providing exceptional customer service throughout the state of Georgia, and we bring over 15 years of experience to every job. Trust us to handle all of your backflow prevention needs with professionalism and expertise.
               </p>
               <p className="text-lg">
-                Don&#39;t let backflow issues compromise your water quality. Contact us today for fast, reliable service or a free quote.
+                Don&#39;t let backflow issues compromise your <Link href="/news/article/10-factors-that-affect-water-quality" className="text-theme-3 hover:underline">water quality</Link>. Contact us today for fast, reliable service or a free quote.
               </p>
             </div>
           </div>
@@ -89,7 +89,7 @@ export default function Backflow() {
                 <p className="mb-4 text-lg">Our backflow specialists are fully certified and trained to handle all types of backflow prevention devices. We stay up-to-date with the latest regulations and industry standards to ensure compliance.</p>
 
                 <h3 className="text-xl font-semibold mb-3">Comprehensive Services</h3>
-                <p className="text-lg">From installation and testing to repairs and maintenance, we provide complete backflow prevention services for both residential and commercial properties throughout Metro Atlanta.</p>
+                <p className="text-lg">From installation and testing to repairs and maintenance, we provide complete backflow prevention services for both residential and <Link href="/services/commercial" className="text-theme-3 hover:underline">commercial</Link> properties throughout Metro Atlanta.</p>
               </div>
 
               <div>

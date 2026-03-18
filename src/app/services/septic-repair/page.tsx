@@ -83,7 +83,7 @@ export default function SepticRepair() {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-4">Alarm box going off?</h3>
               <p className="text-lg mb-4">
-                A septic alarm means your system needs immediate attention. Don&#39;t wait — delays can cause sewage backups and property damage.
+                A septic alarm means your system needs immediate attention. Don&#39;t wait — delays can cause sewage backups and property damage. Visit our <Link href="/services/emergencies" className="text-theme-3 hover:underline">emergency services</Link> page for more information.
               </p>
               <p className="text-lg mb-4">
                 Call us right away. Our technicians will respond quickly to diagnose the issue and get your system working again.
@@ -205,7 +205,7 @@ export default function SepticRepair() {
                   <li>Clear diagnosis and upfront repair estimate</li>
                   <li>Professional repair by licensed technicians</li>
                   <li>Final testing to confirm everything is working</li>
-                  <li>Maintenance recommendations to prevent future issues</li>
+                  <li>Maintenance recommendations to prevent future issues — including <Link href="/services/septic-tank-pumping" className="text-theme-3 hover:underline">routine septic pumping</Link></li>
                 </ol>
               </div>
             </div>
@@ -223,7 +223,7 @@ export default function SepticRepair() {
 
           <div className="bg-white p-6 rounded-lg shadow-md mb-8">
             <p className="text-lg mb-4">
-              Sometimes a repair isn&#39;t enough. If your system is beyond repair or you&#39;re building new, we install complete septic systems — including <Link href="/services/alternative-septic" className="text-theme-3 hover:underline">alternative septic systems</Link> for properties with challenging soil conditions.
+              Sometimes a repair isn&#39;t enough. If your system is beyond repair or you&#39;re building new, we install complete septic systems — including <Link href="/services/alternative-septic" className="text-theme-3 hover:underline">alternative septic systems</Link> like the <Link href="/services/eljen-septic" className="text-theme-3 hover:underline">Eljen GSF system</Link> for properties with challenging soil conditions.
             </p>
             <p className="text-lg">
               Our team handles everything from soil analysis and permitting to installation and final inspection, ensuring your new system meets all local codes and is built to last.
@@ -235,7 +235,7 @@ export default function SepticRepair() {
         <div className="bg-gray-50 p-8 rounded-lg shadow-md text-center">
           <h2 className="text-2xl font-semibold mb-4">Ready for Expert Septic Repair?</h2>
           <p className="text-lg mb-6">
-            Contact Plumb-All today to discuss your septic repair or installation needs. Free estimates, no obligation.
+            Contact Plumb-All today to discuss your septic repair or installation needs. You can also read our overview of <Link href="/news/article/septic-systems" className="text-theme-3 hover:underline">how septic systems work</Link> to better understand your options. Free estimates, no obligation.
           </p>
           <CTACall
             buttonText="Call us at 844 PLUMB-ALL"

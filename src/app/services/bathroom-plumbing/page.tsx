@@ -168,7 +168,7 @@ export default function BathroomPlumbing() {
 
           <p className="mb-6">
             At Plumb-All, we follow a systematic approach to bathroom plumbing repairs that ensures thorough diagnosis and effective solutions.
-            Our process is designed to identify the root cause of bathroom plumbing issues and provide lasting repairs that prevent future problems.
+            Our process is designed to identify the root cause of bathroom plumbing issues and provide lasting repairs that prevent future problems. If you notice water damage, read our guide on <Link href="/news/article/leaking-water-through-ceiling" className="text-theme-3 hover:underline">leaking water through the ceiling</Link> to learn what to do next.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">

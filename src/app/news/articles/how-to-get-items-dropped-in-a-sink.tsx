@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 import CTACall from "@/components/cta/CTACall";
 import Image from "next/image";
 
@@ -146,7 +147,7 @@ export default function ArticleContent() {
 
       <p className="mb-6">
         While the methods above are effective for most situations, there are times when professional
-        assistance is warranted. Consider calling a plumber if:
+        assistance is warranted. Consider calling a <Link href="/services/plumber" className="text-theme-3 hover:underline">plumber</Link> if:
       </p>
 
       <div className="bg-gray-50 p-5 rounded-lg mb-6 border border-gray-200">
@@ -161,7 +162,7 @@ export default function ArticleContent() {
 
       <p className="mb-6">
         Professional plumbers have specialized tools like drain cameras and retrieval devices that
-        can locate and recover items that have traveled deeper into your plumbing system.
+        can locate and recover items that have traveled deeper into your plumbing system. Our <Link href="/services/sink-repair" className="text-theme-3 hover:underline">sink repair</Link> experts can also address any damage caused during retrieval.
       </p>
 
       <h2 className="text-2xl font-bold mt-8 mb-4">Preventing Future Incidents</h2>

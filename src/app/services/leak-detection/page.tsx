@@ -48,11 +48,11 @@ export default function LeakDetection() {
             </div>
 
             <div className="w-full md:w-2/3 px-4 mb-6">
-              <p className="mb-4 text-lg">Our leak detection services prioritize swift action and minimizing damage. Hidden water leaks may start small but can cause significant structural harm if left unchecked. Traditional approaches involve trial-and-error that damages your walls and floors unnecessarily.</p>
+              <p className="mb-4 text-lg">Our leak detection services prioritize swift action and minimizing damage. Learn more about <Link href="/news/article/how-to-find-a-plumbing-leak" className="text-theme-3 hover:underline">how to find a plumbing leak</Link>. Hidden water leaks may start small but can cause significant structural harm if left unchecked. Traditional approaches involve trial-and-error that damages your walls and floors unnecessarily.</p>
 
               <p className="mb-4 text-lg">Plumb-All technicians use advanced electronic leak detection equipment to pinpoint the exact source of pipe leaks — no guesswork, no unnecessary demolition. We serve homeowners and businesses across Metro Atlanta with fast, accurate leak detection near you.</p>
 
-              <p className="mb-4 text-lg">We handle water line leaks, sewer line leaks, slab leaks, and more. Our goal is to quickly identify and resolve the issue before it causes further damage to your home or business.</p>
+              <p className="mb-4 text-lg">We handle <Link href="/services/water-line-repair" className="text-theme-3 hover:underline">water line leaks</Link>, sewer line leaks, slab leaks, and more. Our goal is to quickly identify and resolve the issue before it causes further damage to your home or business. Once found, our <Link href="/services/plumbing-repair" className="text-theme-3 hover:underline">plumbing repair</Link> team can fix the problem right away. For urgent situations, our <Link href="/services/emergencies" className="text-theme-3 hover:underline">24/7 emergency services</Link> are available around the clock.</p>
             </div>
           </div>
         </div>

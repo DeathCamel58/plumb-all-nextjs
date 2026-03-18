@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 import CTACall from "@/components/cta/CTACall";
 
 // Article metadata
@@ -75,7 +76,7 @@ export default function ArticleContent() {
 
       <p className="mb-6">
         The septic tank is designed to break down toilet paper. It cannot process other products, which will clog your
-        septic system and cause damage. Also, ensure you use toilet paper free from chemicals, as these can harm your
+        septic system and cause damage that may require <Link href="/services/septic-repair" className="text-theme-3 hover:underline">septic repair</Link>. Also, ensure you use toilet paper free from chemicals, as these can harm your
         septic system.
       </p>
 
@@ -96,7 +97,7 @@ export default function ArticleContent() {
       <h3 className="text-xl font-bold mt-6 mb-3">4. Schedule Regular Pumping</h3>
 
       <p className="mb-6">
-        The typical household septic system needs to be pumped every 3 to 5 years.
+        The typical household septic system needs to be <Link href="/services/septic-tank-pumping" className="text-theme-3 hover:underline">pumped</Link> every 3 to 5 years.
       </p>
 
       <p className="mb-6">

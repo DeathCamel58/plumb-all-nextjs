@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { FaCreditCard, FaCheckCircle, FaMoneyBillWave } from 'react-icons/fa';
 import CTACall from '@/components/cta/CTACall';
 import { Metadata } from "next";
@@ -34,7 +35,7 @@ export default function Financing() {
           <h2 className="text-4xl font-bold mb-6">Financing Options</h2>
           <p className="text-xl max-w-4xl mx-auto">
             We understand that plumbing emergencies and upgrades can be unexpected expenses.
-            That&#39;s why we offer flexible financing solutions to help you get the services you need without financial stress.
+            That&#39;s why we offer flexible financing solutions to help you get the <Link href="/services" className="text-theme-3 hover:underline">services</Link> you need without financial stress, whether it&#39;s an <Link href="/services/emergencies" className="text-theme-3 hover:underline">emergency plumbing</Link> situation or a planned upgrade.
           </p>
         </div>
 
@@ -83,7 +84,7 @@ export default function Financing() {
             </p>
 
             <p className="mb-4">
-              Our financing options through Wisetack include flexible payment plans with low monthly payments, competitive interest rates, and no prepayment penalties. That means you can pay off your plumbing services as quickly or as slowly as you&#39;d like, depending on your budget and needs.
+              Our financing options through Wisetack include flexible payment plans with low monthly payments, competitive interest rates, and no prepayment penalties. Financing also pairs well with our <Link href="/services/plumbing-service-agreement" className="text-theme-3 hover:underline">plumbing service agreement</Link> for ongoing maintenance needs. That means you can pay off your plumbing services as quickly or as slowly as you&#39;d like, depending on your budget and needs.
             </p>
 
             <p className="mb-4">
@@ -212,7 +213,7 @@ export default function Financing() {
         <div className="w-full text-center mb-12 bg-gray-50 p-8 rounded-lg shadow-sm">
           <h3 className="text-2xl font-semibold mb-4">Ready to Get Started?</h3>
           <p className="mb-6 max-w-3xl mx-auto">
-            Decided that we&#39;re the right fit for you? Contact us today to discuss your plumbing needs and financing options.
+            Decided that we&#39;re the right fit for you? <Link href="/contact" className="text-theme-3 hover:underline">Contact us</Link> today to discuss your plumbing needs and financing options.
           </p>
           <CTACall
             headerText=""

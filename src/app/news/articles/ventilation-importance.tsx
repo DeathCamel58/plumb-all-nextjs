@@ -1,6 +1,7 @@
 // src/app/news/articles/ventilation-importance.tsx
 
 import React from 'react';
+import Link from "next/link";
 import CTACall from "@/components/cta/CTACall";
 
 // Article metadata
@@ -48,7 +49,7 @@ const VentilationImportanceArticle: React.FC = () => {
 
       <h3 className="text-2xl font-bold mt-8 mb-4">Maintaining Proper Ventilation</h3>
       <p className="mb-6">
-        Regular inspections and maintenance of your plumbing system can help ensure proper ventilation. If you notice any signs of poor ventilation, it&#39;s important to consult with a professional plumber who can assess the issue and make necessary repairs.
+        Regular inspections and maintenance of your plumbing system can help ensure proper ventilation. If you notice any signs of poor ventilation, it&#39;s important to consult with a <Link href="/services/plumber" className="text-theme-3 hover:underline">professional plumber</Link> who can assess the issue and make necessary <Link href="/services/plumbing-repair" className="text-theme-3 hover:underline">repairs</Link>.
       </p>
 
       <div className="mt-12 mb-8">

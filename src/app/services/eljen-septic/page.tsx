@@ -34,7 +34,7 @@ export default function EljenSeptic() {
         <div className="w-full mb-12 text-center">
           <h2 className="text-4xl font-bold mb-6">Certified Eljen GSF Septic Installation in Metro Atlanta</h2>
           <p className="text-xl max-w-4xl mx-auto mb-6">
-            Looking for a certified Eljen septic installer in Metro Atlanta? Plumb-All specializes in Eljen Geotextile Sand Filter (GSF) systems — a proven alternative to traditional septic systems that provides superior treatment in difficult soil environments.
+            Looking for a certified Eljen septic installer in Metro Atlanta? Plumb-All specializes in Eljen Geotextile Sand Filter (GSF) systems — a proven <Link href="/services/alternative-septic" className="text-theme-3 hover:underline">alternative septic solution</Link> that provides superior treatment in difficult soil environments.
           </p>
           <p className="text-xl max-w-4xl mx-auto mb-6">
             Our certified technicians install and maintain Eljen GSF systems throughout Metro Atlanta, helping property owners overcome soil limitations and achieve reliable, long-lasting wastewater treatment.
@@ -207,7 +207,7 @@ export default function EljenSeptic() {
               </div>
             </div>
             <p>
-              After installation, we provide comprehensive maintenance guidance and ongoing support to ensure your system continues to perform at its best.
+              After installation, we provide comprehensive maintenance guidance and ongoing support to ensure your system continues to perform at its best. If issues arise down the road, our <Link href="/services/septic-repair" className="text-theme-3 hover:underline">septic repair services</Link> are always available.
             </p>
           </div>
         </div>
@@ -231,7 +231,7 @@ export default function EljenSeptic() {
             </div>
             <div className="mb-6">
               <h3 className="text-xl font-semibold mb-2">Do Eljen systems require special maintenance?</h3>
-              <p>While Eljen systems are designed for reliability, we recommend regular inspections and maintenance to ensure optimal performance and longevity.</p>
+              <p>While Eljen systems are designed for reliability, we recommend regular inspections and <Link href="/services/septic-tank-pumping" className="text-theme-3 hover:underline">routine pumping</Link> to ensure optimal performance and longevity. See our guide on <Link href="/news/article/how-to-maintain-your-septic-system" className="text-theme-3 hover:underline">how to maintain your septic system</Link> for tips.</p>
             </div>
             <div>
               <h3 className="text-xl font-semibold mb-2">How much space do Eljen GSF systems require?</h3>

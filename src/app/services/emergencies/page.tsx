@@ -112,19 +112,19 @@ export default function Emergencies() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <ul className="list-disc pl-5 space-y-3">
-                  <li className="text-lg">Burst or leaking pipes causing water damage</li>
+                  <li className="text-lg">Burst or leaking pipes causing water damage — our <Link href="/services/leak-detection" className="text-theme-3 hover:underline">leak detection</Link> team can pinpoint the source</li>
                   <li className="text-lg">Overflowing toilets that won&#39;t stop running</li>
-                  <li className="text-lg">Sewer line backups creating unsanitary conditions</li>
-                  <li className="text-lg">Water heater failures leaving you without hot water</li>
+                  <li className="text-lg">Sewer line backups creating unsanitary conditions — may require professional <Link href="/services/drain-cleaning" className="text-theme-3 hover:underline">drain cleaning</Link></li>
+                  <li className="text-lg"><Link href="/services/water-heater-replacement" className="text-theme-3 hover:underline">Water heater</Link> failures leaving you without hot water</li>
                 </ul>
               </div>
 
               <div>
                 <ul className="list-disc pl-5 space-y-3">
-                  <li className="text-lg">Main water line breaks requiring immediate attention</li>
-                  <li className="text-lg">Frozen pipes at risk of bursting during cold weather</li>
+                  <li className="text-lg">Main <Link href="/services/water-line-repair" className="text-theme-3 hover:underline">water line</Link> breaks requiring immediate attention</li>
+                  <li className="text-lg"><Link href="/news/article/coping-with-frozen-pipes-a-guide-to-protecting-your-home" className="text-theme-3 hover:underline">Frozen pipes</Link> at risk of bursting during cold weather</li>
                   <li className="text-lg">Gas line leaks requiring professional repair</li>
-                  <li className="text-lg">Sump pump failures during heavy rainfall</li>
+                  <li className="text-lg">Sump pump failures during heavy rainfall or <Link href="/services/septic-repair" className="text-theme-3 hover:underline">septic emergencies</Link></li>
                 </ul>
               </div>
             </div>

@@ -36,10 +36,10 @@ export default function HydroJetting() {
             Plumb-All&#39;s hydro jetting services are available throughout the Metro Atlanta Area, including Fayette County and Clayton County. This method utilizes high-pressure water to clear clogs, sludge, and debris from drains, supply lines, and septic fields. Over time, these lines can accumulate buildup, restricting the flow of water through them.
           </p>
           <p className="text-xl max-w-4xl mx-auto mb-6">
-            While most companies only offer traditional drain machines, we go the extra mile with our hydro jetting services. Drain machines use a spiral cable to catch and bore through blockages, but they leave behind grease, sludge, and dirt in the pipes. Our hydro jetting services thoroughly clean problem pipes, addressing both the symptoms and underlying issues to prevent future problems.
+            While most companies only offer traditional <Link href="/services/drain-cleaning" className="text-theme-3 hover:underline">drain cleaning</Link> machines, we go the extra mile with our hydro jetting services. Drain machines use a spiral cable to catch and bore through blockages, but they leave behind grease, sludge, and dirt in the pipes. Our hydro jetting services thoroughly clean problem pipes, addressing both the symptoms and underlying issues to prevent future problems.
           </p>
           <p className="text-xl max-w-4xl mx-auto mb-6">
-            If you&#39;re experiencing frequent backups or improper draining, let us provide our expert jetting services to restore proper flow.
+            If you&#39;re experiencing frequent backups or improper draining, let us provide our expert jetting services to restore proper flow. Learn more about <Link href="/news/article/when-is-hydro-jetting-needed" className="text-theme-3 hover:underline">when hydro jetting is needed</Link>.
           </p>
         </div>
 
@@ -66,7 +66,7 @@ export default function HydroJetting() {
               <h3 className="text-2xl font-semibold">What is Hydro Jetting?</h3>
             </div>
             <p className="mb-4">
-              High-pressure jetting is an efficient, economical, and environmentally safe way to clean drain and sewer pipes. Using state of the art pumps and flexible hoses, ordinary water is propelled under varying amounts of pressure into a sewer line, drain pipe, or septic field. A special nozzle mounted on the end of a heavy-duty hose has an array of forward and reverse water jets, which direct extremely powerful concentrated streams of water all the way to the pipe walls. Even the toughest blockages and buildup can&#39;t stand up to water jet machine cutting, which thoroughly cleans pipes.
+              High-pressure jetting is an efficient, economical, and environmentally safe way to clean drain and sewer pipes. Using state of the art pumps and flexible hoses, ordinary water is propelled under varying amounts of pressure into a sewer line, drain pipe, or septic field. This is especially effective for maintaining <Link href="/services/septic-tank-pumping" className="text-theme-3 hover:underline">septic systems</Link>. A special nozzle mounted on the end of a heavy-duty hose has an array of forward and reverse water jets, which direct extremely powerful concentrated streams of water all the way to the pipe walls. Even the toughest blockages and buildup can&#39;t stand up to water jet machine cutting, which thoroughly cleans pipes.
             </p>
             <p className="mb-4">
               For a complete list of <Link href="/services/residential" className="text-theme-3 hover:underline">residential plumbing</Link> or <Link href="/services/commercial" className="text-theme-3 hover:underline">commercial plumbing</Link> services – including everything from toilet repair to grease trap cleaning and backflow services – call us! You can set up <Link href="/services/plumbing-service-agreement" className="text-theme-3 hover:underline">regular appointments</Link> for water jetting maintenance or call us in an emergency too. We&#39;re available 24 hours a day, 7 days a week, 365 days a year – even holidays and weekends – to help get your plumbing system up and running smoothly again.

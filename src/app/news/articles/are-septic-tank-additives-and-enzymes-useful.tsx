@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 import CTACall from "@/components/cta/CTACall";
 
 // Article metadata
@@ -19,7 +20,7 @@ export default function ArticleContent() {
             <h2 className="text-3xl font-bold mb-6">Are Septic Tank Additives and Enzymes Useful?</h2>
 
       <p className="mb-6">
-        As a company that specializes in plumbing and septic repair and installation, we get asked this question quite often.
+        As a company that specializes in plumbing and <Link href="/services/septic-repair" className="text-theme-3 hover:underline">septic repair</Link> and installation, we get asked this question quite often.
         Most of the time, customers have heard that they should put additives and enzymes into their septic system regularly
         to keep everything running properly. Unfortunately, this isn&#39;t the case, as these products can cause harm to your system.
         We&#39;ll dive into why this is below.
@@ -79,7 +80,7 @@ export default function ArticleContent() {
       <div className="bg-gray-50 p-5 rounded-lg mb-6 border border-gray-200">
         <ul className="list-disc pl-6 space-y-2">
           <li>Have your septic tank inspected every 3-5 years by a professional</li>
-          <li>Get your tank pumped when necessary (typically every 3-5 years)</li>
+          <li>Get your tank <Link href="/services/septic-tank-pumping" className="text-theme-3 hover:underline">pumped</Link> when necessary (typically every 3-5 years)</li>
           <li>Be mindful of what goes down your drains</li>
           <li>Avoid flushing non-biodegradable items</li>
           <li>Use water efficiently to prevent overloading the system</li>

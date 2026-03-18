@@ -35,7 +35,7 @@ export default function Contact() {
         <div className="w-full mb-12 text-center">
           <h2 className="text-4xl font-bold mb-6">We&#39;re Here For You</h2>
           <p className="text-xl max-w-4xl mx-auto">
-            At Plumb-All, our customers come first. We strive to keep you informed throughout every project and rely on your feedback to ensure we&#39;re delivering the highest quality service.
+            At Plumb-All, our customers come first. We strive to keep you informed throughout every project and rely on your feedback to ensure we&#39;re delivering the highest quality service. Browse our full range of <Link href="/services" className="text-theme-3 hover:underline">plumbing services</Link> to see how we can help.
           </p>
         </div>
 
@@ -46,7 +46,7 @@ export default function Contact() {
               <FaPhoneAlt className="text-2xl" />
             </div>
             <h3 className="text-xl font-semibold mb-2">Call Us</h3>
-            <p className="mb-4">Need immediate assistance? Our team is ready to help!</p>
+            <p className="mb-4">Need immediate assistance? For <Link href="/services/emergencies" className="text-theme-3 hover:underline">plumbing emergencies</Link>, call us directly.</p>
             <a
               href="tel:+17709143877"
               className="inline-block font-bold background-theme-1 text-white px-6 py-3 rounded shadow hover:background-theme-2 transition"
@@ -126,7 +126,7 @@ export default function Contact() {
           <div className="bg-gray-900 text-white p-8 rounded-lg shadow-md">
             <h3 className="text-2xl font-semibold mb-6">Send Us a Message</h3>
             <p className="mb-6">
-              Have a question or need to schedule a service? Fill out the form below and we&#39;ll get back to you within 24 hours.
+              Have a question or need to schedule a service? Fill out the form below and we&#39;ll get back to you within 24 hours. We also offer <Link href="/financing" className="text-theme-3 hover:underline">financing options</Link> to make our services more accessible.
             </p>
             <ContactForm onDarkBackground={true} />
           </div>

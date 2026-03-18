@@ -34,10 +34,10 @@ export default function WaterHeaterReplacement() {
         <div className="w-full mb-12 text-center">
           <h2 className="text-4xl font-bold mb-6">Professional Water Heater Replacement & Repair – Metro Atlanta</h2>
           <p className="text-xl max-w-4xl mx-auto mb-6">
-            Need a hot water plumber near you? Plumb-All is Metro Atlanta&#39;s trusted water heater service company. Whether you need a new electric or gas water heater installed, want to explore tankless water heater options, or need fast water heater repair service, our expert team is ready to help.
+            Need a hot water plumber near you? Plumb-All is Metro Atlanta&#39;s trusted water heater service company. Whether you need a new electric or gas water heater installed, want to explore <Link href="/news/article/guide-to-tankless-water-heaters" className="text-theme-3 hover:underline">tankless water heater options</Link>, or need fast water heater repair service, our expert team is ready to help.
           </p>
           <p className="text-xl max-w-4xl mx-auto mb-6">
-            We specialize in water heater replacement and expansion tank installation for both residential and commercial properties across Metro Atlanta. No hot water? Our technicians respond fast for same-day water heater service near you.
+            We specialize in water heater replacement and expansion tank installation for both residential and commercial properties across Metro Atlanta. No hot water? A leaking water heater may need <Link href="/services/leak-detection" className="text-theme-3 hover:underline">leak detection</Link>. Our technicians respond fast for same-day water heater service near you.
           </p>
         </div>
 
@@ -86,7 +86,7 @@ export default function WaterHeaterReplacement() {
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Traditional tank water heater installation and replacement</span>
+                  <span>Traditional tank water heater <Link href="/services/plumbing-installation" className="text-theme-3 hover:underline">installation</Link> and replacement</span>
                 </li>
                 <li className="flex items-start">
                   <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
@@ -94,7 +94,7 @@ export default function WaterHeaterReplacement() {
                 </li>
                 <li className="flex items-start">
                   <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Water heater repair and maintenance</span>
+                  <span>Water heater repair and <Link href="/news/article/flushing-your-water-heater" className="text-theme-3 hover:underline">maintenance</Link></span>
                 </li>
                 <li className="flex items-start">
                   <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
@@ -149,7 +149,7 @@ export default function WaterHeaterReplacement() {
               </div>
               <h3 className="text-xl font-semibold mb-3">Expert Technicians</h3>
               <p>
-                Our plumbers have extensive training on all the latest water heater systems and standards to ensure quality installation and service.
+                Our <Link href="/services/plumber" className="text-theme-3 hover:underline">plumbers</Link> have extensive training on all the latest water heater systems and standards to ensure quality installation and service.
               </p>
             </div>
             <div className="flex flex-col items-center text-center p-6 bg-gray-50 rounded-lg shadow-sm hover:shadow-md transition-shadow">
@@ -167,7 +167,7 @@ export default function WaterHeaterReplacement() {
               </div>
               <h3 className="text-xl font-semibold mb-3">Quality Guarantee</h3>
               <p>
-                We provide warranties on water heaters to give our clients peace of mind, and offer long-term extended warranties on select models.
+                We provide warranties on water heaters to give our clients peace of mind, and offer long-term extended warranties on select models. Ask about our <Link href="/services/plumbing-service-agreement" className="text-theme-3 hover:underline">plumbing service agreement</Link> for ongoing maintenance coverage.
               </p>
             </div>
           </div>

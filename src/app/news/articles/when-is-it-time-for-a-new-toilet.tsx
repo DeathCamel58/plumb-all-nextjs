@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 import CTACall from "@/components/cta/CTACall";
 
 // Article metadata
@@ -142,7 +143,7 @@ export default function ArticleContent() {
 
       <p className="mb-6">
         If your toilet is approaching or surpassing this age range, it&#39;s prudent to start thinking about a replacement.
-        Upgrading to a new toilet can provide peace of mind, improved efficiency, and an aesthetic boost to your bathroom.
+        Upgrading to a new toilet can provide peace of mind, improved efficiency, and an aesthetic boost to your <Link href="/services/bathroom-plumbing" className="text-theme-3 hover:underline">bathroom</Link>.
       </p>
 
       <h2 className="text-2xl font-bold mt-8 mb-4">Your Trusted Experts</h2>
@@ -155,7 +156,7 @@ export default function ArticleContent() {
 
       <p className="mb-6">
         If any of these signs resonate with your situation, don&#39;t hesitate to reach out to Plumb-All for professional
-        guidance and top-notch toilet installation services. Contact Plumb-All today at <a href="tel:+17709143877" className="text-theme-1 hover:text-theme-2 transition">(770) 914-3877</a> to
+        guidance and top-notch <Link href="/services/toilet-installation" className="text-theme-3 hover:underline">toilet installation</Link> services. Contact Plumb-All today at <a href="tel:+17709143877" className="text-theme-1 hover:text-theme-2 transition">(770) 914-3877</a> to
         schedule a consultation and trust in our expertise to help you select and install a new toilet that will
         elevate your bathroom experience and deliver lasting performance.
       </p>

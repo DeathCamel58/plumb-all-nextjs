@@ -86,7 +86,7 @@ export default function SepticTankPumping() {
                 A septic alarm means your system needs immediate attention. Don&#39;t ignore it — delays can lead to sewage backups in your home.
               </p>
               <p className="text-lg mb-4">
-                Call us right away and our team will respond quickly to diagnose and resolve the issue before it becomes a bigger problem.
+                Call us right away and our team will respond quickly to diagnose and resolve the issue before it becomes a bigger problem. If your system needs more than pumping, we also offer professional <Link href="/services/septic-repair" className="text-theme-3 hover:underline">septic repair services</Link>.
               </p>
               <div className="mt-4">
                 <CTACall
@@ -178,7 +178,7 @@ export default function SepticTankPumping() {
               </div>
               <div className="border border-gray-200 rounded-lg p-4">
                 <h3 className="font-semibold text-lg mb-2">3. Report & Recommendations</h3>
-                <p>We provide a summary of your system&#39;s health and recommendations for ongoing maintenance.</p>
+                <p>We provide a summary of your system&#39;s health and recommendations for ongoing maintenance. Learn more in our guide on <Link href="/news/article/how-to-maintain-your-septic-system" className="text-theme-3 hover:underline">how to maintain your septic system</Link>.</p>
               </div>
             </div>
           </div>
@@ -212,7 +212,7 @@ export default function SepticTankPumping() {
                 </li>
                 <li className="flex items-start">
                   <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Saves money vs. emergency repairs or full replacement</span>
+                  <span>Saves money vs. emergency repairs or full replacement — consider an <Link href="/services/alternative-septic" className="text-theme-3 hover:underline">alternative septic system</Link> if your current setup keeps failing</span>
                 </li>
                 <li className="flex items-start">
                   <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
@@ -254,7 +254,7 @@ export default function SepticTankPumping() {
         <div className="bg-gray-50 p-8 rounded-lg shadow-md text-center">
           <h2 className="text-2xl font-semibold mb-4">Protect Your Investment</h2>
           <p className="text-lg mb-6">
-            Regular septic tank pumping is one of the best ways to protect your property and avoid expensive emergencies. Contact Plumb-All today to schedule your service.
+            Regular septic tank pumping is one of the best ways to protect your property and avoid expensive emergencies. Ask about our <Link href="/services/plumbing-service-agreement" className="text-theme-3 hover:underline">plumbing service agreement</Link> to stay on a regular maintenance schedule. Contact Plumb-All today to schedule your service.
           </p>
           <CTACall
             headerText="Need professional septic tank pumping?"

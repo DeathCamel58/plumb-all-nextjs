@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 import CTACall from "@/components/cta/CTACall";
 
 // Article metadata
@@ -152,8 +153,7 @@ export default function ArticleContent() {
       <h2 className="text-2xl font-bold mt-8 mb-4">When to Call a Professional</h2>
 
       <p className="mb-6">
-        While these DIY methods are effective for most common clogs, some situations require professional
-        assistance. Consider contacting Plumb-All if:
+        While these DIY methods are effective for most common clogs, some situations require professional <Link href="/services/drain-cleaning" className="text-theme-3 hover:underline">drain cleaning</Link> assistance. Consider contacting Plumb-All if:
       </p>
 
       <div className="bg-gray-50 p-5 rounded-lg mb-6 border border-gray-200">
@@ -162,7 +162,7 @@ export default function ArticleContent() {
           <li>You notice slow drainage in multiple fixtures</li>
           <li>There are foul odors coming from the drain</li>
           <li>You suspect a deeper plumbing issue</li>
-          <li>The clog keeps returning despite your efforts</li>
+          <li>The clog keeps returning despite your efforts — professional <Link href="/services/hydro-jetting" className="text-theme-3 hover:underline">hydro jetting</Link> may be needed</li>
         </ul>
       </div>
 

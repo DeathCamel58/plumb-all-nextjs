@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 import CTACall from "@/components/cta/CTACall";
 
 // Article metadata
@@ -69,7 +70,7 @@ export default function ArticleContent() {
 
       <p className="mb-6">
         If you plan to move your sink or dishwasher, it&#39;s not as simple as just setting them in a new spot. Major
-        plumbing work is often required. Both appliances need proper access to hot and cold water as well as waste-pipe
+        <Link href="/services/plumbing-installation" className="text-theme-3 hover:underline">plumbing installation</Link> work is often required. Both appliances need proper access to hot and cold water as well as waste-pipe
         connections. Since dishwashers typically connect through the sink&#39;s plumbing, they are best installed right
         next to the sink.
       </p>
@@ -77,7 +78,7 @@ export default function ArticleContent() {
       <div className="bg-blue-50 p-4 rounded-lg mb-6 border-l-4 border-theme-3">
         <p className="font-medium text-gray-700">
           <strong>💡 Pro Tip:</strong> When shopping for a new sink, consider modern features like pull-out sprayers,
-          built-in soap dispensers, and stainless steel garbage disposals to enhance both function and style in your new
+          built-in soap dispensers, and stainless steel <Link href="/services/garbage-disposal-repair" className="text-theme-3 hover:underline">garbage disposals</Link> to enhance both function and style in your new
           kitchen.
         </p>
       </div>
@@ -148,7 +149,7 @@ export default function ArticleContent() {
       <div className="bg-theme-3/10 p-5 rounded-lg mb-6 border-l-4 border-theme-3">
         <p className="font-medium text-gray-700 text-center">
           <strong>🏠 Ready to tackle your kitchen remodel?</strong> Contact your local plumbing expert today to discuss
-          installation and rerouting options that will make your dream kitchen a reality.
+          <Link href="/services/faucet-repair" className="text-theme-3 hover:underline">fixture installation</Link> and rerouting options that will make your dream kitchen a reality.
         </p>
       </div>
 

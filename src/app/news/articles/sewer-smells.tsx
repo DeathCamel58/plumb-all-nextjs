@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 import CTACall from "@/components/cta/CTACall";
 import Image from "next/image";
 
@@ -27,7 +28,7 @@ export default function ArticleContent() {
 
       <p className="mb-6">
         These smells normally originate from drains and septic systems when air is allowed to flow from the
-        sewer pipes out of drains. Normally this problem can be solved quickly by a professional plumber,
+        sewer pipes out of drains. Normally this problem can be solved quickly by a professional <Link href="/services/plumber" className="text-theme-3 hover:underline">plumber</Link>,
         and fixed on the same day. Don&#39;t risk the dangers associated with these gasses, and get a specialist
         to diagnose your problem.
       </p>
@@ -45,7 +46,7 @@ export default function ArticleContent() {
           <li>Loose connections along vent pipes or sewer lines</li>
           <li>Missing clean out plugs will get the gasses out into your property</li>
           <li>Bad wax rings on toilets can get the gasses seep out from under your toilet</li>
-          <li>Sewer or septic pipe leaks</li>
+          <li>Sewer or septic pipe leaks — regular <Link href="/services/septic-tank-pumping" className="text-theme-3 hover:underline">septic tank pumping</Link> can help prevent these</li>
         </ul>
       </div>
 
@@ -108,7 +109,7 @@ export default function ArticleContent() {
         <ul className="list-disc pl-6 space-y-2">
           <li>Sewer smells persist after running water down all drains</li>
           <li>You notice the smell coming from multiple locations</li>
-          <li>The smell is accompanied by slow drains or gurgling sounds</li>
+          <li>The smell is accompanied by slow drains or gurgling sounds — professional <Link href="/services/drain-cleaning" className="text-theme-3 hover:underline">drain cleaning</Link> may be needed</li>
           <li>You&#39;ve recently had plumbing work done</li>
           <li>The smell is particularly strong near toilets or floor drains</li>
         </ul>

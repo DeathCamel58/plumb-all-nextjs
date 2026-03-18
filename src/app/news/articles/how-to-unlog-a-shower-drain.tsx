@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 import CTACall from "@/components/cta/CTACall";
 
 // Article metadata
@@ -125,7 +126,7 @@ export default function ArticleContent() {
             <h3 className="text-xl font-semibold">Know when to call a pro</h3>
           </div>
           <p className="text-gray-800">
-            If none of the above works, the blockage may be deeper in the line. Pros use motorized augers and hydro‑jetting to clear
+            If none of the above works, the blockage may be deeper in the line. Pros use motorized augers and <Link href="/services/drain-cleaning" className="text-theme-3 hover:underline">professional drain cleaning</Link> techniques to clear
             stubborn clogs safely without damaging pipes.
           </p>
         </div>
@@ -149,7 +150,7 @@ export default function ArticleContent() {
         <h3 className="text-2xl font-bold mb-3">Final thoughts</h3>
         <p className="text-gray-800">
           Most shower clogs can be cleared at home with patience and the right tools. If you’re battling recurring blockages, a
-          professional inspection can pinpoint the real cause and prevent damage to your pipes.
+          <Link href="/services/plumber" className="text-theme-3 hover:underline">professional plumber</Link> can pinpoint the real cause and prevent damage to your pipes.
         </p>
       </section>
 

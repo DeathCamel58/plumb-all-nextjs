@@ -183,7 +183,7 @@ export default function AlternativeSeptic() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md mb-8">
             <p className="mb-4">
-              Our expertise extends to a wide range of specialized septic solutions to address various site challenges:
+              Our expertise extends to a wide range of specialized septic solutions to address various site challenges, including the <Link href="/services/eljen-septic" className="text-theme-3 hover:underline">Eljen GSF system</Link>:
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <ul className="space-y-3">
@@ -258,7 +258,7 @@ export default function AlternativeSeptic() {
           <div className="bg-white p-6 rounded-lg shadow-md">
             <div className="mb-6">
               <h3 className="text-xl font-semibold mb-2">How do I know if I need an alternative system?</h3>
-              <p>If your property has poor soil drainage, a high water table, limited space, or has failed a percolation test, an alternative septic system may be your best or only option. We&#39;ll assess your property and let you know.</p>
+              <p>If your property has poor soil drainage, a high water table, limited space, or has failed a percolation test, an alternative septic system may be your best or only option. If your existing system has failed, our <Link href="/services/septic-repair" className="text-theme-3 hover:underline">septic repair team</Link> can assess your property and let you know.</p>
             </div>
             <div className="mb-6">
               <h3 className="text-xl font-semibold mb-2">Are alternative septic systems more expensive?</h3>
@@ -266,7 +266,7 @@ export default function AlternativeSeptic() {
             </div>
             <div className="mb-6">
               <h3 className="text-xl font-semibold mb-2">Do alternative systems require more maintenance?</h3>
-              <p>Some systems, like aerobic treatment units, require periodic inspections and maintenance. We provide ongoing service plans to keep your system running efficiently.</p>
+              <p>Some systems, like aerobic treatment units, require periodic inspections and <Link href="/services/septic-tank-pumping" className="text-theme-3 hover:underline">regular pumping</Link>. We provide ongoing service plans to keep your system running efficiently.</p>
             </div>
             <div>
               <h3 className="text-xl font-semibold mb-2">Are these systems approved in Georgia?</h3>
@@ -279,7 +279,7 @@ export default function AlternativeSeptic() {
         <div className="bg-gray-50 p-8 rounded-lg shadow-md text-center">
           <h2 className="text-2xl font-semibold mb-4">Ready to Solve Your Septic Challenges?</h2>
           <p className="text-lg mb-6">
-            Contact Plumb-All today to learn how an alternative septic system can provide the right solution for your property. Free consultations available.
+            Contact Plumb-All today to learn how an alternative septic system can provide the right solution for your property. Read our article on <Link href="/news/article/septic-systems" className="text-theme-3 hover:underline">septic systems</Link> to learn more about how these systems work. Free consultations available.
           </p>
           <CTACall
             headerText="Schedule your free consultation"

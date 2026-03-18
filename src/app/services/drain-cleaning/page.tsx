@@ -50,7 +50,7 @@ export default function DrainCleaning() {
             <div className="w-full md:w-2/3 px-4 mb-6">
               <p className="mb-4 text-lg">Are you dealing with a slow or clogged drain? Plumb-All is here to help! As a trusted plumbing company based in Jonesboro, GA, we provide expert drain cleaning services to homeowners and businesses across Metro Atlanta.</p>
 
-              <p className="mb-4 text-lg">Our professional technicians use advanced equipment and proven techniques to clear blockages quickly and effectively, restoring proper flow to your plumbing system.</p>
+              <p className="mb-4 text-lg">Our professional technicians use advanced equipment and proven techniques to clear blockages quickly and effectively, restoring proper flow to your plumbing system. Learn about <Link href="/news/article/why-pouring-grease-down-your-drain-is-a-recipe-for-trouble" className="text-theme-3 hover:underline">why pouring grease down your drain is a recipe for trouble</Link>.</p>
 
               <p className="text-lg">Don&#39;t let drain problems disrupt your daily routine. With Plumb-All&#39;s fast, reliable service, you can count on us to solve your drain issues promptly and prevent future clogs.</p>
             </div>

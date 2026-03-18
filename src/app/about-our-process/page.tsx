@@ -53,7 +53,7 @@ export default function AboutOurProcess() {
         <div className="w-full mb-12 text-center">
           <h2 className="text-4xl font-bold mb-6">Our Approach to Excellence</h2>
           <p className="text-xl max-w-4xl mx-auto">
-            At Plumb-All, we&#39;ve developed a systematic approach to plumbing and septic services that ensures quality, efficiency, and customer satisfaction. Our process is designed to provide you with peace of mind from the moment you contact us until the job is complete.
+            At Plumb-All, we&#39;ve developed a systematic approach to plumbing and septic services that ensures quality, efficiency, and customer satisfaction. Our process is designed to provide you with peace of mind from the moment you <Link href="/contact" className="text-theme-3 hover:underline">contact us</Link> until the job is complete.
           </p>
         </div>
 
@@ -70,7 +70,7 @@ export default function AboutOurProcess() {
               <div>
                 <h3 className="text-2xl font-semibold mb-3">Initial Contact</h3>
                 <p className="mb-3">
-                  When you call Plumb-All, our friendly staff will gather information about your plumbing needs and schedule a convenient appointment time. For emergencies, we prioritize your call and dispatch a technician immediately.
+                  When you call Plumb-All, our friendly staff will gather information about your plumbing needs and schedule a convenient appointment time. For <Link href="/services/emergencies" className="text-theme-3 hover:underline">emergencies</Link>, we prioritize your call and dispatch a technician immediately.
                 </p>
                 <a href="tel:+17709143877" className="flex items-center text-white background-theme-1 text-white px-4 py-2 rounded shadow hover:background-theme-2 transition">
                   <FaPhoneAlt className="mr-2" />
@@ -104,7 +104,7 @@ export default function AboutOurProcess() {
               <div>
                 <h3 className="text-2xl font-semibold mb-3">Transparent Quote</h3>
                 <p className="mb-3">
-                  After diagnosing the issue, we provide a clear, detailed quote before any work begins. We explain the problem, recommended solution, and all associated costs so there are no surprises.
+                  After diagnosing the issue, we provide a clear, detailed quote before any work begins. We explain the problem, recommended solution, and all associated costs so there are no surprises. We also offer <Link href="/financing" className="text-theme-3 hover:underline">financing options</Link> for larger projects.
                 </p>
                 <div className="flex items-center text-theme-3">
                   <FaClipboardCheck className="mr-2" />
@@ -178,7 +178,7 @@ export default function AboutOurProcess() {
               </div>
               <h3 className="text-xl font-semibold mb-3">24/7 Emergency Service</h3>
               <p className="text-center">
-                We understand the frustration of waiting for plumbing issues to be resolved. That&#39;s why we offer 24/7 emergency services to our customers. Whether it&#39;s day or night, we&#39;re always available to assist you with any urgent plumbing needs. Don&#39;t hesitate to call us – we&#39;re here to help!
+                We understand the frustration of waiting for plumbing issues to be resolved. That&#39;s why we offer <Link href="/services/emergencies" className="text-theme-3 hover:underline">24/7 emergency services</Link> to our customers. Whether it&#39;s day or night, we&#39;re always available to assist you with any urgent plumbing needs. Don&#39;t hesitate to call us – we&#39;re here to help!
               </p>
             </div>
 
@@ -274,7 +274,7 @@ export default function AboutOurProcess() {
                   At Plumb-All, we specialize in all types of septic repair, including <Link href="/services/alternative-septic" className="text-theme-3 hover:underline">alternative septic</Link>, septic drain repair, and <Link href="/services/septic-repair" className="text-theme-3 hover:underline">leach field repair</Link>. We&#39;re also skilled at addressing any plumbing issue you may have. Don&#39;t just take our word for it – check out our outstanding reviews on Google Maps and Yelp to see what our satisfied customers have to say.
                 </p>
                 <p className="mb-4">
-                  To learn more about our services, give us a call at <a href="tel:+17709143877" className="text-theme-3 hover:underline">(770) 914-3877</a> or <a href="mailto:info@plumb-all.com?subject=Plumb-All" className="text-theme-3 hover:underline">email us</a>. We&#39;re excited to serve you and your plumbing needs!
+                  To learn more about our <Link href="/services" className="text-theme-3 hover:underline">services</Link>, give us a call at <a href="tel:+17709143877" className="text-theme-3 hover:underline">(770) 914-3877</a> or <a href="mailto:info@plumb-all.com?subject=Plumb-All" className="text-theme-3 hover:underline">email us</a>. We&#39;re excited to serve you and your plumbing needs!
                 </p>
               </div>
             </div>

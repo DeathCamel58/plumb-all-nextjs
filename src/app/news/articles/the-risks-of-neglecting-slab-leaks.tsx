@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 import CTACall from "@/components/cta/CTACall";
 
 // Article metadata
@@ -98,7 +99,7 @@ export default function ArticleContent() {
       <div className="bg-gray-50 p-6 rounded-lg mb-8 border border-gray-200">
         <h3 className="text-xl font-semibold mb-3">When to Call a Professional</h3>
         <ul className="list-disc pl-6 space-y-2">
-          <li>As soon as you suspect a slab leak—early detection is crucial</li>
+          <li>As soon as you suspect a slab leak—early detection is crucial, and our <Link href="/services/emergencies" className="text-theme-3 hover:underline">emergency services</Link> can respond quickly</li>
           <li>If your water meter runs when all fixtures are turned off</li>
           <li>When you notice any of the warning signs mentioned above</li>
           <li>Before attempting any DIY fixes that could worsen the situation</li>
@@ -109,7 +110,7 @@ export default function ArticleContent() {
       <h2 className="text-2xl font-bold mt-8 mb-4">Comprehensive Plumbing Solutions from Plumb-All</h2>
 
       <p className="mb-6">
-        At Plumb-All, we specialize in non-invasive leak detection and efficient repair solutions. Our experienced technicians use advanced technology to pinpoint the exact location of slab leaks without unnecessary demolition of your floors.
+        At Plumb-All, we specialize in non-invasive <Link href="/services/leak-detection" className="text-theme-3 hover:underline">leak detection</Link> and efficient <Link href="/services/plumbing-repair" className="text-theme-3 hover:underline">repair solutions</Link>. Our experienced technicians use advanced technology to pinpoint the exact location of slab leaks without unnecessary demolition of your floors.
       </p>
 
       <p className="mb-6">

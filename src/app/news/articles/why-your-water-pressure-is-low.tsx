@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 import CTACall from "@/components/cta/CTACall";
 
 // Article metadata
@@ -248,8 +249,8 @@ export default function ArticleContent() {
               <h5 className="font-bold text-gray-800">Replace Corroded Pipes</h5>
             </div>
             <p className="text-gray-700 text-sm leading-relaxed">
-              Galvanized steel, brass, and copper pipes can corrode over time. Plumbers can either clean or replace
-              pipes depending on their condition.
+              Galvanized steel, brass, and copper pipes can corrode over time. Plumbers can either clean or <Link href="/services/water-line-repair" className="text-theme-3 hover:underline">replace
+              pipes</Link> depending on their condition.
             </p>
           </div>
           <div className="bg-white p-5 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
@@ -260,7 +261,7 @@ export default function ArticleContent() {
               <h5 className="font-bold text-gray-800">Seal Leaks</h5>
             </div>
             <p className="text-gray-700 text-sm leading-relaxed">
-              Even minor leaks can impact water pressure. Video inspection can help locate hidden leaks for repair or
+              Even minor leaks can impact water pressure. Professional <Link href="/services/leak-detection" className="text-theme-3 hover:underline">leak detection</Link> using video inspection can help locate hidden leaks for repair or
               pipe replacement.
             </p>
           </div>
@@ -292,7 +293,7 @@ export default function ArticleContent() {
         </ul>
         <p className="text-gray-700 mt-4">
           Low water pressure can have multiple causes, and diagnosing the exact reason often requires a professional eye.
-          A licensed plumber ensures your system is safe, efficient, and running at the proper pressure.
+          A licensed <Link href="/services/plumber" className="text-theme-3 hover:underline">plumber</Link> ensures your system is safe, efficient, and running at the proper pressure.
         </p>
       </div>
 

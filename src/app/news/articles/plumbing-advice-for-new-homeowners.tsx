@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 import CTACall from "@/components/cta/CTACall";
 
 // Article metadata
@@ -111,15 +112,15 @@ export default function ArticleContent() {
       <ul className="list-disc pl-6 mb-6 space-y-3">
         <li>Water pressure that&#39;s consistently too high or too low</li>
         <li>Recurring clogs that don&#39;t respond to plunging</li>
-        <li>Visible water damage on walls, floors, or ceilings</li>
+        <li>Visible water damage on walls, floors, or ceilings — professional <Link href="/services/leak-detection" className="text-theme-3 hover:underline">leak detection</Link> can find the source</li>
         <li>Sewer line backups or foul odors</li>
         <li>No hot water or inconsistent water temperature</li>
         <li>Frozen or burst pipes</li>
-        <li>Installation of new fixtures or appliances</li>
+        <li>Installation of new fixtures or appliances — consider a <Link href="/services/plumbing-service-agreement" className="text-theme-3 hover:underline">plumbing service agreement</Link> for ongoing maintenance</li>
       </ul>
 
       <p className="mb-6">
-        At Plumb-All, we understand that plumbing emergencies don&#39;t wait for convenient times. Our team of licensed, bonded, and insured professionals is ready to assist with any plumbing issue, from minor repairs to major installations. Contact us online or call <a href="tel:+17709143877" className="text-theme-1 hover:text-theme-2 transition">(770) 914-3877</a> for prompt, reliable service. Your home&#39;s plumbing is our priority!
+        At Plumb-All, we understand that plumbing emergencies don&#39;t wait for convenient times. Our team of licensed, bonded, and insured <Link href="/services/plumber" className="text-theme-3 hover:underline">professional plumbers</Link> is ready to assist with any plumbing issue, from minor repairs to major installations. Contact us online or call <a href="tel:+17709143877" className="text-theme-1 hover:text-theme-2 transition">(770) 914-3877</a> for prompt, reliable service. Your home&#39;s plumbing is our priority!
       </p>
 
       <div className="bg-theme-4/10 p-6 rounded-lg mt-10 mb-8">

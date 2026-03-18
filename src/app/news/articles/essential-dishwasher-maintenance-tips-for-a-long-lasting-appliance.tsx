@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 import CTACall from "@/components/cta/CTACall";
 
 // Article metadata
@@ -94,7 +95,7 @@ export default function ArticleContent() {
       </p>
 
       <ul className="list-disc pl-6 mb-6 space-y-3">
-        <li>Water not draining properly despite a clean filter</li>
+        <li>Water not draining properly despite a clean filter — this may require professional <Link href="/services/drain-cleaning" className="text-theme-3 hover:underline">drain cleaning</Link></li>
         <li>Persistent leaks after checking the door seal</li>
         <li>Unusual noises during operation</li>
         <li>Electrical issues or control panel malfunctions</li>
@@ -102,7 +103,7 @@ export default function ArticleContent() {
       </ul>
 
       <p className="mb-6">
-        For all your plumbing concerns, Plumb-All is here to assist. Our experienced technicians can diagnose and repair dishwasher issues quickly and efficiently. Contact us online or give us a call at <a href="tel:+17709143877" className="text-theme-1 hover:text-theme-2 transition">(770) 914-3877</a> to learn more about our services. We take pride in being fully licensed, bonded, and insured, providing unparalleled service. Don&#39;t hesitate—give us a call today, and experience plumbing excellence!
+        For all your plumbing concerns, Plumb-All is here to assist. Our experienced technicians offer professional <Link href="/services/plumbing-repair" className="text-theme-3 hover:underline">plumbing repair</Link> and can diagnose and repair dishwasher issues quickly and efficiently. Contact us online or give us a call at <a href="tel:+17709143877" className="text-theme-1 hover:text-theme-2 transition">(770) 914-3877</a> to learn more about our services. We take pride in being fully licensed, bonded, and insured, providing unparalleled service. Don&#39;t hesitate—give us a call today, and experience plumbing excellence!
       </p>
 
       <div className="bg-theme-4/10 p-6 rounded-lg mt-10 mb-8">

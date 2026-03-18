@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from "next/link";
 import CTACall from "@/components/cta/CTACall";
 
 // Article metadata
@@ -90,6 +91,7 @@ export default function ArticleContent() {
         <p className="font-medium text-gray-700">
           <strong>Important Note:</strong> If you have a septic system, be careful about what you put into a garbage disposal.
           Keep in mind that chemicals can kill off the good bacteria in your septic tank, which could cause problems down the road.
+          If your disposal needs professional attention, our <Link href="/services/garbage-disposal-repair" className="text-theme-3 hover:underline">garbage disposal repair</Link> team can help.
         </p>
       </div>
 
