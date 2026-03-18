@@ -1,7 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import CTACall from '@/components/cta/CTACall';
-import { FaWrench, FaTools, FaCheckCircle, FaHome, FaLeaf, FaStar, FaQuestion } from 'react-icons/fa';
+import Link from 'next/link';
+import { FaWrench, FaTools, FaCheckCircle, FaHome, FaLeaf, FaStar, FaQuestion, FaShieldAlt, FaClock, FaClipboardCheck } from 'react-icons/fa';
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
@@ -33,11 +34,32 @@ export default function EljenSeptic() {
         <div className="w-full mb-12 text-center">
           <h2 className="text-4xl font-bold mb-6">Certified Eljen GSF Septic Installation in Metro Atlanta</h2>
           <p className="text-xl max-w-4xl mx-auto mb-6">
-            Looking for a certified Eljen septic installer in Metro Atlanta? Plumb-All specializes in Eljen Geotextile Sand Filter (GSF) systems — a revolutionary alternative to traditional septic systems that provides superior treatment in difficult soil environments.
+            Looking for a certified Eljen septic installer in Metro Atlanta? Plumb-All specializes in Eljen Geotextile Sand Filter (GSF) systems — a proven alternative to traditional septic systems that provides superior treatment in difficult soil environments.
           </p>
           <p className="text-xl max-w-4xl mx-auto mb-6">
-            Our certified technicians install and maintain Eljen GSF systems throughout the Metro Atlanta area, helping property owners overcome soil limitations and achieve reliable, environmentally-friendly wastewater treatment.
+            Our certified technicians install and maintain Eljen GSF systems throughout Metro Atlanta, helping property owners overcome soil limitations and achieve reliable, long-lasting wastewater treatment.
           </p>
+        </div>
+
+        {/* Why Choose Plumb-All */}
+        <div className="w-full mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white p-6 rounded-lg shadow-md text-center">
+              <FaClock className="text-theme-3 text-3xl mx-auto mb-3" />
+              <h3 className="text-lg font-semibold mb-2">Free Consultation</h3>
+              <p>We&#39;ll assess your property and determine if Eljen GSF is the right fit — no obligation.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md text-center">
+              <FaShieldAlt className="text-theme-3 text-3xl mx-auto mb-3" />
+              <h3 className="text-lg font-semibold mb-2">Certified Eljen Installer</h3>
+              <p>Factory-certified technicians with specialized Eljen GSF training and experience.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md text-center">
+              <FaClipboardCheck className="text-theme-3 text-3xl mx-auto mb-3" />
+              <h3 className="text-lg font-semibold mb-2">Upfront Pricing</h3>
+              <p>You&#39;ll know the full cost before any work begins. No surprise fees.</p>
+            </div>
+          </div>
         </div>
 
         {/* Image and Call to Action */}
@@ -46,12 +68,15 @@ export default function EljenSeptic() {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h2 className="text-2xl font-semibold mb-4 text-center">Ready for an Advanced Septic Solution?</h2>
               <p className="text-center mb-6">
-                Don&#39;t let challenging soil conditions limit your property options. Our Eljen GSF specialists are ready to help you find the perfect septic solution.
+                Don&#39;t let challenging soil conditions limit your property options. Our Eljen GSF specialists are ready to help.
               </p>
               <CTACall
-                headerText="Contact us today for expert Eljen GSF installation"
+                headerText="Contact us today for a free Eljen GSF consultation"
                 buttonText="Call us at 844 PLUMB-ALL"
               />
+              <p className="text-center mt-2">
+                Or <Link href="/contact" className="text-theme-3 hover:underline">request a quote online</Link>
+              </p>
             </div>
           </div>
           <div className="md:col-span-4">
@@ -89,15 +114,11 @@ export default function EljenSeptic() {
                 </li>
                 <li className="flex items-start">
                   <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Requires less space than conventional drain fields</span>
+                  <span>Requires 50–60% less space than conventional drain fields</span>
                 </li>
                 <li className="flex items-start">
                   <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Extends the life of your septic system</span>
-                </li>
-                <li className="flex items-start">
-                  <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Prevents costly property limitations</span>
+                  <span>Typical lifespan of 25–30 years with proper maintenance</span>
                 </li>
                 <li className="flex items-start">
                   <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
@@ -129,10 +150,6 @@ export default function EljenSeptic() {
                   <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
                   <span>Helps maintain healthier groundwater</span>
                 </li>
-                <li className="flex items-start">
-                  <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Sustainable long-term wastewater solution</span>
-                </li>
               </ul>
             </div>
           </div>
@@ -148,7 +165,7 @@ export default function EljenSeptic() {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md mb-8">
             <p className="mb-4">
-              Eljen GSF (Geotextile Sand Filter) systems use an innovative approach to wastewater treatment that combines traditional septic principles with advanced filtration technology:
+              Eljen GSF (Geotextile Sand Filter) systems use an innovative multi-stage approach to wastewater treatment:
             </p>
             <ol className="list-decimal pl-6 mb-4 space-y-2">
               <li>Wastewater flows from your home to the septic tank where solids settle</li>
@@ -157,7 +174,7 @@ export default function EljenSeptic() {
               <li>Beneficial bacteria develop on the geotextile fabric, providing biological treatment</li>
               <li>The sand filter provides final polishing before the treated water returns to the soil</li>
             </ol>
-            <p className="mb-4">
+            <p>
               This multi-stage process ensures thorough treatment even in challenging soil conditions, making it an ideal solution for properties with high groundwater, clay soils, or limited space.
             </p>
           </div>
@@ -206,7 +223,7 @@ export default function EljenSeptic() {
           <div className="bg-white p-6 rounded-lg shadow-md">
             <div className="mb-6">
               <h3 className="text-xl font-semibold mb-2">How long do Eljen GSF systems last?</h3>
-              <p>With proper maintenance, Eljen GSF systems typically last 25-30 years, often outlasting traditional septic systems in challenging soil conditions.</p>
+              <p>With proper maintenance, Eljen GSF systems typically last 25–30 years, often outlasting traditional septic systems in challenging soil conditions.</p>
             </div>
             <div className="mb-6">
               <h3 className="text-xl font-semibold mb-2">Are Eljen GSF systems approved in Georgia?</h3>
@@ -218,21 +235,24 @@ export default function EljenSeptic() {
             </div>
             <div>
               <h3 className="text-xl font-semibold mb-2">How much space do Eljen GSF systems require?</h3>
-              <p>Eljen GSF systems typically require 50-60% less space than conventional drain fields, making them ideal for properties with limited available area.</p>
+              <p>Eljen GSF systems typically require 50–60% less space than conventional drain fields, making them ideal for properties with limited available area.</p>
             </div>
           </div>
         </div>
 
         {/* Final Call to Action */}
-        <div className="bg-white p-8 rounded-lg shadow-md text-center">
+        <div className="bg-gray-50 p-8 rounded-lg shadow-md text-center">
           <h2 className="text-2xl font-semibold mb-4">Ready to Solve Your Septic Challenges?</h2>
           <p className="text-lg mb-6">
-            Contact Plumb-All today to learn how an Eljen GSF system can provide the perfect septic solution for your property.
+            Contact Plumb-All today to learn how an Eljen GSF system can provide the right septic solution for your property. Free consultations available.
           </p>
           <CTACall
             headerText="Schedule your free consultation"
             buttonText="Call us at 844 PLUMB-ALL"
           />
+          <p className="text-center mt-4">
+            Or <Link href="/contact" className="text-theme-3 hover:underline">contact us online</Link> to schedule a consultation.
+          </p>
         </div>
       </div>
     </div>

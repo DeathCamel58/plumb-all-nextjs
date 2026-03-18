@@ -1,7 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import CTACall from '@/components/cta/CTACall';
-import { FaWrench, FaTools, FaCheckCircle, FaList, FaWater, FaHome, FaQuestion } from 'react-icons/fa';
+import Link from 'next/link';
+import { FaWrench, FaTools, FaCheckCircle, FaList, FaWater, FaHome, FaQuestion, FaShieldAlt, FaClock, FaClipboardCheck } from 'react-icons/fa';
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
@@ -33,11 +34,32 @@ export default function AlternativeSeptic() {
         <div className="w-full mb-12 text-center">
           <h2 className="text-4xl font-bold mb-6">Advanced Alternative Septic Solutions in Metro Atlanta</h2>
           <p className="text-xl max-w-4xl mx-auto mb-6">
-            Traditional septic systems separate and store solid waste from wastewater before allowing the liquid (effluent) to flow into the drain field. Alternative septic systems treat wastewater more actively through innovative processes — and are often the only option for properties that can&#39;t support a conventional system.
+            Can&#39;t use a conventional septic system? You&#39;re not out of options. Alternative septic systems treat wastewater through advanced processes and are often the only solution for properties with challenging soil, high water tables, or limited space.
           </p>
           <p className="text-xl max-w-4xl mx-auto mb-6">
-            For Metro Atlanta properties with challenging soil conditions, high water tables, or limited space, Plumb-All&#39;s certified technicians specialize in designing, installing, and maintaining these advanced systems to meet your specific needs.
+            Plumb-All&#39;s certified technicians specialize in designing, installing, and maintaining alternative septic systems throughout Metro Atlanta. Free consultations, upfront pricing.
           </p>
+        </div>
+
+        {/* Why Choose Plumb-All */}
+        <div className="w-full mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-white p-6 rounded-lg shadow-md text-center">
+              <FaClock className="text-theme-3 text-3xl mx-auto mb-3" />
+              <h3 className="text-lg font-semibold mb-2">Free Consultation</h3>
+              <p>We&#39;ll assess your property and recommend the best system — no obligation.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md text-center">
+              <FaShieldAlt className="text-theme-3 text-3xl mx-auto mb-3" />
+              <h3 className="text-lg font-semibold mb-2">Certified Installers</h3>
+              <p>Licensed, insured, and certified to install all major alternative septic systems.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md text-center">
+              <FaClipboardCheck className="text-theme-3 text-3xl mx-auto mb-3" />
+              <h3 className="text-lg font-semibold mb-2">Upfront Pricing</h3>
+              <p>You&#39;ll know the full cost before any work begins. No surprise fees.</p>
+            </div>
+          </div>
         </div>
 
         {/* Image and Call to Action */}
@@ -46,12 +68,15 @@ export default function AlternativeSeptic() {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h2 className="text-2xl font-semibold mb-4 text-center">Need an Alternative Septic Solution?</h2>
               <p className="text-center mb-6">
-                Don&#39;t let challenging soil conditions limit your property options. Our alternative septic specialists can help you find the perfect solution.
+                Don&#39;t let challenging soil conditions limit your property options. Our specialists can help you find the right system.
               </p>
               <CTACall
-                headerText="Contact us today for expert alternative septic installation"
+                headerText="Contact us today for a free consultation"
                 buttonText="Call us at 844 PLUMB-ALL"
               />
+              <p className="text-center mt-2">
+                Or <Link href="/contact" className="text-theme-3 hover:underline">request a quote online</Link>
+              </p>
             </div>
           </div>
           <div className="md:col-span-4">
@@ -228,73 +253,41 @@ export default function AlternativeSeptic() {
             <div className="w-12 h-12 rounded-full background-theme-3 flex items-center justify-center text-white mr-4">
               <FaQuestion className="text-2xl" />
             </div>
-            <h2 className="text-3xl font-semibold">Common Concerns</h2>
+            <h2 className="text-3xl font-semibold">Common Questions</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-4">Worried about your system?</h3>
-              <p className="mb-4">
-                If you&#39;re concerned about your plumbing or septic system, don&#39;t hesitate to give us a call today! Our prompt and reliable team will:
-              </p>
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Quickly arrive at your property</span>
-                </li>
-                <li className="flex items-start">
-                  <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Conduct a thorough inspection</span>
-                </li>
-                <li className="flex items-start">
-                  <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Identify potential issues before they become major problems</span>
-                </li>
-                <li className="flex items-start">
-                  <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Provide preventative maintenance and fast solutions</span>
-                </li>
-              </ul>
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="mb-6">
+              <h3 className="text-xl font-semibold mb-2">How do I know if I need an alternative system?</h3>
+              <p>If your property has poor soil drainage, a high water table, limited space, or has failed a percolation test, an alternative septic system may be your best or only option. We&#39;ll assess your property and let you know.</p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-4">Alarm box going off?</h3>
-              <p className="mb-4">
-                Any type of septic tank alarm should be taken seriously, as these could result in a backup in your home.
-              </p>
-              <p className="mb-4">
-                Don&#39;t jeopardize your system and safety - call the experts immediately when you notice:
-              </p>
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Audible alarms from your system</span>
-                </li>
-                <li className="flex items-start">
-                  <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Warning lights on your control panel</span>
-                </li>
-                <li className="flex items-start">
-                  <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Unusual odors around your septic area</span>
-                </li>
-                <li className="flex items-start">
-                  <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Slow drains or backups in your home</span>
-                </li>
-              </ul>
+            <div className="mb-6">
+              <h3 className="text-xl font-semibold mb-2">Are alternative septic systems more expensive?</h3>
+              <p>They typically cost more to install than conventional systems, but they can save you money long-term by avoiding municipal sewage connection fees and working reliably in conditions where traditional systems fail.</p>
+            </div>
+            <div className="mb-6">
+              <h3 className="text-xl font-semibold mb-2">Do alternative systems require more maintenance?</h3>
+              <p>Some systems, like aerobic treatment units, require periodic inspections and maintenance. We provide ongoing service plans to keep your system running efficiently.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-2">Are these systems approved in Georgia?</h3>
+              <p>Yes, all the alternative septic systems we install are approved for use in Georgia and meet all state and local regulatory requirements.</p>
             </div>
           </div>
         </div>
 
         {/* Final Call to Action */}
-        <div className="bg-white p-8 rounded-lg shadow-md text-center">
+        <div className="bg-gray-50 p-8 rounded-lg shadow-md text-center">
           <h2 className="text-2xl font-semibold mb-4">Ready to Solve Your Septic Challenges?</h2>
           <p className="text-lg mb-6">
-            Contact Plumb-All today to learn how an alternative septic system can provide the perfect solution for your property.
+            Contact Plumb-All today to learn how an alternative septic system can provide the right solution for your property. Free consultations available.
           </p>
           <CTACall
             headerText="Schedule your free consultation"
             buttonText="Call us at 844 PLUMB-ALL"
           />
+          <p className="text-center mt-4">
+            Or <Link href="/contact" className="text-theme-3 hover:underline">contact us online</Link> to schedule a consultation.
+          </p>
         </div>
       </div>
     </div>

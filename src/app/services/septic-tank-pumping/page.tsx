@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import CTACall from '@/components/cta/CTACall';
-import { FaWater, FaLeaf, FaCheckCircle, FaTools, FaExclamationTriangle, FaClipboardCheck } from 'react-icons/fa';
+import { FaWater, FaCheckCircle, FaTools, FaExclamationTriangle, FaClipboardCheck, FaClock, FaShieldAlt } from 'react-icons/fa';
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
@@ -34,25 +34,85 @@ export default function SepticTankPumping() {
         <div className="w-full mb-12 text-center">
           <h2 className="text-4xl font-bold mb-6">Professional Septic Service and Tank Pumping</h2>
           <p className="text-xl max-w-4xl mx-auto mb-6">
-            At Plumb-All, your trusted Metro Atlanta Septic Service, we understand the importance of proper septic system maintenance. Our professional septic service and pumping help prevent system failures, extend equipment lifespan, and protect your property and the environment.
+            Whether your tank is overdue for pumping, you&#39;re noticing slow drains or odors, or you just want to stay ahead of problems — Plumb-All&#39;s licensed technicians provide fast, reliable septic tank pumping across Metro Atlanta.
           </p>
           <p className="text-xl max-w-4xl mx-auto mb-6">
-            Whether you&#39;re a homeowner, <Link href="/services/commercial" className="text-theme-3 hover:underline">business owner</Link>, or property manager across Metro Atlanta, our expert technicians provide reliable, thorough septic service and septic tank pumping using advanced equipment and techniques.
+            We serve homeowners, <Link href="/services/commercial" className="text-theme-3 hover:underline">businesses</Link>, and property managers with same-week scheduling, upfront pricing, and no surprise fees.
           </p>
+        </div>
+
+        {/* Signs You Need Pumping - moved up for urgency */}
+        <div className="w-full mb-16">
+          <div className="flex items-center mb-8">
+            <div className="w-12 h-12 rounded-full background-theme-3 flex items-center justify-center text-white mr-4">
+              <FaExclamationTriangle className="text-2xl" />
+            </div>
+            <h2 className="text-3xl font-semibold">Signs Your Septic Tank Needs Pumping</h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-4">Worried about your system?</h3>
+              <p className="text-lg mb-4">
+                If you&#39;re noticing any of these warning signs, your tank likely needs pumping now:
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
+                  <span>Slow drains throughout the house</span>
+                </li>
+                <li className="flex items-start">
+                  <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
+                  <span>Sewage odors near the tank or drain field</span>
+                </li>
+                <li className="flex items-start">
+                  <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
+                  <span>Standing water or soggy ground near the septic area</span>
+                </li>
+                <li className="flex items-start">
+                  <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
+                  <span>Gurgling sounds in plumbing fixtures</span>
+                </li>
+                <li className="flex items-start">
+                  <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
+                  <span>It&#39;s been 3+ years since your last pumping</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-4">Alarm box going off?</h3>
+              <p className="text-lg mb-4">
+                A septic alarm means your system needs immediate attention. Don&#39;t ignore it — delays can lead to sewage backups in your home.
+              </p>
+              <p className="text-lg mb-4">
+                Call us right away and our team will respond quickly to diagnose and resolve the issue before it becomes a bigger problem.
+              </p>
+              <div className="mt-4">
+                <CTACall
+                  headerText="Septic emergency? We can help."
+                  buttonText="Call us at 844 PLUMB-ALL"
+                />
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Image and Call to Action */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-16">
           <div className="md:col-span-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h2 className="text-2xl font-semibold mb-4 text-center">Ready to Maintain Your Septic System?</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-center">Schedule Your Septic Pumping</h2>
               <p className="text-center mb-6">
-                Don&#39;t wait for problems to develop. Regular septic tank pumping is essential for the health and longevity of your system.
+                Don&#39;t wait for a backup. We offer free estimates and upfront pricing — you&#39;ll know the cost before we start.
               </p>
               <CTACall
-                headerText="Contact us today for professional septic service and tank pumping"
+                headerText="Contact us today for professional septic tank pumping"
                 buttonText="Call us at 844 PLUMB-ALL"
               />
+              <p className="text-center mt-2">
+                Or <Link href="/contact" className="text-theme-3 hover:underline">request a quote online</Link>
+              </p>
             </div>
           </div>
           <div className="md:col-span-4">
@@ -67,17 +127,71 @@ export default function SepticTankPumping() {
           </div>
         </div>
 
-        {/* The Importance of Septic Tank Pumping */}
+        {/* Why Choose Plumb-All */}
+        <div className="w-full mb-16">
+          <div className="flex items-center mb-8">
+            <div className="w-12 h-12 rounded-full background-theme-3 flex items-center justify-center text-white mr-4">
+              <FaShieldAlt className="text-2xl" />
+            </div>
+            <h2 className="text-3xl font-semibold">Why Choose Plumb-All</h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+            <div className="bg-white p-6 rounded-lg shadow-md text-center">
+              <FaClock className="text-theme-3 text-3xl mx-auto mb-3" />
+              <h3 className="text-lg font-semibold mb-2">Fast Scheduling</h3>
+              <p>Same-week appointments available for most services across Metro Atlanta.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md text-center">
+              <FaShieldAlt className="text-theme-3 text-3xl mx-auto mb-3" />
+              <h3 className="text-lg font-semibold mb-2">Licensed & Insured</h3>
+              <p>Fully licensed, insured, and serving Metro Atlanta since 2003.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md text-center">
+              <FaClipboardCheck className="text-theme-3 text-3xl mx-auto mb-3" />
+              <h3 className="text-lg font-semibold mb-2">Upfront Pricing</h3>
+              <p>Free estimates with no hidden fees. You approve the price before we start.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Our Services Section */}
+        <div className="w-full mb-16">
+          <div className="flex items-center mb-8">
+            <div className="w-12 h-12 rounded-full background-theme-3 flex items-center justify-center text-white mr-4">
+              <FaTools className="text-2xl" />
+            </div>
+            <h2 className="text-3xl font-semibold">What&#39;s Included in Our Septic Pumping Service</h2>
+          </div>
+
+          <div className="bg-white p-6 rounded-lg shadow-md mb-10">
+            <p className="text-lg mb-4">
+              Our septic tank pumping service goes beyond just emptying the tank. We follow a thorough process to ensure your system is in top shape:
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="border border-gray-200 rounded-lg p-4">
+                <h3 className="font-semibold text-lg mb-2">1. Inspection</h3>
+                <p>We assess your tank&#39;s condition, check for damage, and measure sludge levels before pumping.</p>
+              </div>
+              <div className="border border-gray-200 rounded-lg p-4">
+                <h3 className="font-semibold text-lg mb-2">2. Pumping & Cleaning</h3>
+                <p>We pump out all solids and liquids using professional-grade equipment, then clean the tank interior.</p>
+              </div>
+              <div className="border border-gray-200 rounded-lg p-4">
+                <h3 className="font-semibold text-lg mb-2">3. Report & Recommendations</h3>
+                <p>We provide a summary of your system&#39;s health and recommendations for ongoing maintenance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Benefits - condensed to 2 cards */}
         <div className="w-full mb-16">
           <div className="flex items-center mb-8">
             <div className="w-12 h-12 rounded-full background-theme-3 flex items-center justify-center text-white mr-4">
               <FaWater className="text-2xl" />
             </div>
-            <h2 className="text-3xl font-semibold">The Importance of Septic Tank Pumping</h2>
+            <h2 className="text-3xl font-semibold">Benefits of Regular Septic Pumping</h2>
           </div>
-          <p className="text-lg mb-8">
-            Regular septic tank pumping is a crucial aspect of septic system maintenance. It ensures the proper functioning of your system and helps prevent costly repairs and potential health hazards. Here&#39;s why septic tank pumping is essential:
-          </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
@@ -85,24 +199,24 @@ export default function SepticTankPumping() {
                 <div className="w-10 h-10 rounded-full background-theme-3 flex items-center justify-center text-white mr-3">
                   <FaTools className="text-xl" />
                 </div>
-                <h3 className="text-xl font-semibold">Preventing System Failures</h3>
+                <h3 className="text-xl font-semibold">Prevents Costly Problems</h3>
               </div>
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Removes accumulated solids that reduce storage capacity</span>
+                  <span>Prevents backups, odors, and system failures</span>
                 </li>
                 <li className="flex items-start">
                   <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Prevents backups and unpleasant odors</span>
+                  <span>Reduces risk of drain field damage</span>
                 </li>
                 <li className="flex items-start">
                   <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Maintains system efficiency and proper flow</span>
+                  <span>Saves money vs. emergency repairs or full replacement</span>
                 </li>
                 <li className="flex items-start">
                   <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Reduces risk of emergency situations</span>
+                  <span>Keeps your system compliant with local regulations</span>
                 </li>
               </ul>
             </div>
@@ -112,159 +226,43 @@ export default function SepticTankPumping() {
                 <div className="w-10 h-10 rounded-full background-theme-3 flex items-center justify-center text-white mr-3">
                   <FaClipboardCheck className="text-xl" />
                 </div>
-                <h3 className="text-xl font-semibold">Extending System Lifespan</h3>
+                <h3 className="text-xl font-semibold">Extends System Lifespan</h3>
               </div>
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Helps prolong the lifespan of your septic system</span>
+                  <span>Prolongs the life of your tank and drain field</span>
                 </li>
-                <li className="flex items-start">
-                  <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Reduces strain on system components</span>
-                </li>
-                <li className="flex items-start">
-                  <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Minimizes risk of damage to drain fields</span>
-                </li>
-                <li className="flex items-start">
-                  <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Prevents need for expensive repairs or replacements</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 mb-10">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="flex items-center mb-6">
-                <div className="w-10 h-10 rounded-full background-theme-3 flex items-center justify-center text-white mr-3">
-                  <FaLeaf className="text-xl" />
-                </div>
-                <h3 className="text-xl font-semibold">Environmental Benefits</h3>
-              </div>
-              <ul className="space-y-3">
                 <li className="flex items-start">
                   <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
                   <span>Protects groundwater from contamination</span>
                 </li>
                 <li className="flex items-start">
                   <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Prevents solids and bacteria from infiltrating drain fields</span>
+                  <span>Maintains system efficiency and proper flow</span>
                 </li>
                 <li className="flex items-start">
                   <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Maintains healthy balance in septic system</span>
-                </li>
-                <li className="flex items-start">
-                  <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Safeguards nearby water sources and ecosystems</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <div className="flex items-center mb-6">
-                <div className="w-10 h-10 rounded-full background-theme-3 flex items-center justify-center text-white mr-3">
-                  <FaExclamationTriangle className="text-xl" />
-                </div>
-                <h3 className="text-xl font-semibold">Practical Advantages</h3>
-              </div>
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Cost-effective maintenance in the long run</span>
-                </li>
-                <li className="flex items-start">
-                  <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Saves money on emergency services</span>
-                </li>
-                <li className="flex items-start">
-                  <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Ensures compliance with local regulations</span>
-                </li>
-                <li className="flex items-start">
-                  <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Helps avoid potential fines and penalties</span>
+                  <span>Recommended every 3–5 years for most households</span>
                 </li>
               </ul>
             </div>
           </div>
+        </div>
 
-          {/* Our Services Section */}
-          <div className="w-full mb-16">
-            <div className="flex items-center mb-8">
-              <div className="w-12 h-12 rounded-full background-theme-3 flex items-center justify-center text-white mr-4">
-                <FaTools className="text-2xl" />
-              </div>
-              <h2 className="text-3xl font-semibold">Our Professional Services</h2>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-md mb-10">
-              <p className="text-lg mb-4">
-                At Plumb-All, we specialize in professional septic tank pumping services. Our experienced technicians use advanced equipment and techniques to ensure thorough pumping, adhering to the highest industry standards. We also provide comprehensive septic service across Metro Atlanta.
-              </p>
-              <p className="text-lg">
-                We follow a comprehensive process that includes inspection, pumping, and cleaning to ensure your system operates at peak efficiency. Our team will also provide recommendations for ongoing maintenance to extend the life of your septic system.
-              </p>
-            </div>
-
-            {/* Call to Action */}
-            <div className="bg-white p-6 rounded-lg shadow-md text-center mb-10">
-              <CTACall
-                headerText="Ready to schedule your septic service or tank pumping in Metro Atlanta?"
-                buttonText="Call us at 844 PLUMB-ALL"
-              />
-            </div>
-          </div>
-
-          {/* Common Issues Section */}
-          <div className="w-full mb-16">
-            <div className="flex items-center mb-8">
-              <div className="w-12 h-12 rounded-full background-theme-3 flex items-center justify-center text-white mr-4">
-                <FaExclamationTriangle className="text-2xl" />
-              </div>
-              <h2 className="text-3xl font-semibold">Common Septic System Concerns</h2>
-            </div>
-
-            {/* Two-column sections */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold mb-4">Worried about your system?</h3>
-                <p className="text-lg mb-4">
-                  If you&#39;re experiencing any concerns or issues with your septic system, don&#39;t worry. Our team of highly skilled and trained professionals at Plumb-All is here to help.
-                </p>
-                <p className="text-lg">
-                  We understand that septic system problems can be stressful, but with our expertise and dedication, we&#39;ll diagnose the issue and provide effective solutions.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-semibold mb-4">Alarm box going off?</h3>
-                <p className="text-lg mb-4">
-                  If your septic system has an alarm box installed and it&#39;s going off, it&#39;s essential to address the situation promptly.
-                </p>
-                <p className="text-lg">
-                  The alarm system is designed to alert you when there&#39;s a problem with your septic system, indicating that immediate attention is needed. Contacting us can ensure that you prevent a larger problem from happening.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Final Call to Action */}
-          <div className="bg-gray-50 p-8 rounded-lg shadow-md text-center">
-            <h2 className="text-2xl font-semibold mb-4">Protect Your Investment</h2>
-            <p className="text-lg mb-6">
-              Regular septic service and septic tank pumping are essential for maintaining your system and protecting your property. Contact Plumb-All today to schedule your Metro Atlanta Septic Service.
-            </p>
-            <CTACall
-              headerText="Need professional septic service or septic tank pumping?"
-              buttonText="Call us at 844 PLUMB-ALL"
-            />
-            <p className="text-center mt-4">
-              Or <Link href="/contact" className="text-theme-3 hover:underline">contact us online</Link> to schedule a consultation.
-            </p>
-          </div>
+        {/* Final Call to Action */}
+        <div className="bg-gray-50 p-8 rounded-lg shadow-md text-center">
+          <h2 className="text-2xl font-semibold mb-4">Protect Your Investment</h2>
+          <p className="text-lg mb-6">
+            Regular septic tank pumping is one of the best ways to protect your property and avoid expensive emergencies. Contact Plumb-All today to schedule your service.
+          </p>
+          <CTACall
+            headerText="Need professional septic tank pumping?"
+            buttonText="Call us at 844 PLUMB-ALL"
+          />
+          <p className="text-center mt-4">
+            Or <Link href="/contact" className="text-theme-3 hover:underline">contact us online</Link> to schedule a consultation.
+          </p>
         </div>
       </div>
     </div>
