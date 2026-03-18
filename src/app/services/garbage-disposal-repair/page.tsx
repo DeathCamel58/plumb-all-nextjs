@@ -5,6 +5,8 @@ import { FaWrench, FaTools, FaRecycle, FaCheckCircle, FaShieldAlt, FaBolt, FaWat
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
+import ServiceSchema from "@/components/schema/ServiceSchema";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import HeroImage from '../../../../public/images/garbage-disposal.jpg';
 
 // Generate metadata for the page
@@ -20,6 +22,13 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function GarbageDisposalRepair() {
   return (
     <div className="min-h-screen">
+      <ServiceSchema name="Garbage Disposal Repair" description="Garbage disposal repair and replacement services in the Atlanta Area. We fix jams, leaks, and electrical issues, and install new units with expert precision." url="/services/garbage-disposal-repair" />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: '/' },
+        { name: 'Services', url: '/services' },
+        { name: 'Garbage Disposal Repair', url: '/services/garbage-disposal-repair' },
+      ]} />
+
       {/* Header Image */}
       <BannerHeader
         image={HeroImage}

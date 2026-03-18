@@ -7,6 +7,7 @@ const footerMenuItems = [
   { label: 'Home', url: '/' },
   { label: 'Services', url: '/services' },
   { label: 'About', url: '/about-our-process' },
+  { label: 'Financing', url: '/financing' },
   { label: 'Contact', url: '/contact' },
   { label: 'Blog', url: '/news' },
 ]

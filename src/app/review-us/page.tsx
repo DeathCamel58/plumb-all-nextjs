@@ -2,6 +2,17 @@ import React from 'react';
 import BannerHeader from "@/components/BannerHeader";
 import HeroImage from '../../../public/images/our-team.jpg';
 import ReviewForm from "@/components/ReviewForm";
+import {Metadata} from "next";
+import {generateMetadataDict} from "@/components/header/metadata";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const title = 'Review Our Service';
+  const description = 'Let us know how we did! Leave a review for Plumb-All and help other homeowners find reliable plumbing and septic services in Metro Atlanta.';
+  const ogImageUrl = 'og-home-page-formbg';
+  const path = '/review-us';
+
+  return generateMetadataDict(title, description, ogImageUrl, path);
+}
 
 export default function ReviewUs() {
 

@@ -7,6 +7,8 @@ import {Metadata} from "next";
 import { GoogleMapsEmbed } from '@next/third-parties/google'
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
+import ServiceSchema from "@/components/schema/ServiceSchema";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import HeroImage from '../../../../public/images/slab-leak.jpg';
 
 // Generate metadata for the page
@@ -22,6 +24,13 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function ExpertPlumbingAtlanta() {
   return (
     <div className="min-h-screen">
+      <ServiceSchema name="Expert Plumbing Services in Atlanta" description="Here at Plumb-All, we take pride in providing top-notch plumbing solutions for both residential and commercial needs." url="/services/expert-plumbing-services-in-atlanta-ga" />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: '/' },
+        { name: 'Services', url: '/services' },
+        { name: 'Expert Plumbing Services in Atlanta', url: '/services/expert-plumbing-services-in-atlanta-ga' },
+      ]} />
+
       {/* Header Image */}
       <BannerHeader
         image={HeroImage}

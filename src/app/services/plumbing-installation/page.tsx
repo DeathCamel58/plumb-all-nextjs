@@ -5,6 +5,8 @@ import Link from "next/link";
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
+import ServiceSchema from "@/components/schema/ServiceSchema";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import HeroImage from '../../../../public/images/gray-pipes.jpg';
 
 // Generate metadata for the page
@@ -20,6 +22,13 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function PlumbingInstallation() {
   return (
     <div className="min-h-screen">
+      <ServiceSchema name="Plumbing Installation" description="As expert plumbers with years of experience in plumbing installation, we are trained to plan and install the best solution to your projects needs." url="/services/plumbing-installation" />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: '/' },
+        { name: 'Services', url: '/services' },
+        { name: 'Plumbing Installation', url: '/services/plumbing-installation' },
+      ]} />
+
       {/* Header Image */}
       <BannerHeader
         image={HeroImage}
@@ -122,6 +131,13 @@ export default function PlumbingInstallation() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Financing */}
+        <div className="w-full mb-16 bg-blue-50 border border-blue-200 rounded-lg p-6 text-center">
+          <p className="text-lg">
+            Plumbing installation can be a significant investment. <Link href="/financing" className="text-theme-3 hover:underline font-semibold">Flexible financing options</Link> are available to help make your project affordable.
+          </p>
         </div>
 
         {/* Final CTA */}

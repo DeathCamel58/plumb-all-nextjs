@@ -1,10 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
-import { FaTools, FaWrench, FaCheckCircle, FaShieldAlt, FaHandshake, FaClock } from 'react-icons/fa';
+import { FaTools, FaWrench, FaCheckCircle, FaShieldAlt, FaHandshake, FaClock, FaQuestion } from 'react-icons/fa';
 import CTACall from "@/components/cta/CTACall";
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
+import ServiceSchema from "@/components/schema/ServiceSchema";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
+import FAQSchema from "@/components/schema/FAQSchema";
 import HeroImage from '../../../../public/images/vans.jpg';
 
 // Generate metadata for the page
@@ -20,6 +23,18 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function PlumberServices() {
   return (
     <div className="min-h-screen">
+      <ServiceSchema name="Professional Plumber Services" description="Looking for a reliable plumber? Plumb-All offers expert plumbing services for residential and commercial properties." url="/services/plumber" />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: '/' },
+        { name: 'Services', url: '/services' },
+        { name: 'Professional Plumber Services', url: '/services/plumber' },
+      ]} />
+      <FAQSchema faqs={[
+        { question: "Are your plumbers licensed?", answer: "Yes, all Plumb-All technicians are fully licensed, insured, and undergo continuous training to stay current with the latest plumbing codes and techniques." },
+        { question: "Do you offer free estimates?", answer: "Yes, we provide free estimates for most plumbing projects. Contact us to schedule a consultation and receive upfront pricing with no hidden fees." },
+        { question: "What areas do you serve?", answer: "Plumb-All serves the entire Metro Atlanta area, including Jonesboro, Fayetteville, Stockbridge, McDonough, Peachtree City, and surrounding communities." },
+      ]} />
+
       {/* Header Image */}
       <BannerHeader
         image={HeroImage}
@@ -226,6 +241,33 @@ export default function PlumberServices() {
               <p className="mt-4">
                 <Link href="/services/plumbing-service-agreement" className="inline-block text-theme-3 hover:underline">Learn more about our maintenance plans →</Link>
               </p>
+            </div>
+          </div>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="w-full mb-16">
+          <div className="flex items-center mb-8">
+            <div className="w-12 h-12 rounded-full background-theme-3 flex items-center justify-center text-white mr-4">
+              <FaQuestion className="text-2xl" />
+            </div>
+            <h2 className="text-3xl font-semibold">Frequently Asked Questions</h2>
+          </div>
+
+          <div className="space-y-6">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-3">Are your plumbers licensed?</h3>
+              <p className="text-lg">Yes, all Plumb-All technicians are fully licensed, insured, and undergo continuous training to stay current with the latest plumbing codes and techniques.</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-3">Do you offer free estimates?</h3>
+              <p className="text-lg">Yes, we provide free estimates for most plumbing projects. Contact us to schedule a consultation and receive upfront pricing with no hidden fees.</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-3">What areas do you serve?</h3>
+              <p className="text-lg">Plumb-All serves the entire Metro Atlanta area, including Jonesboro, Fayetteville, Stockbridge, McDonough, Peachtree City, and surrounding communities.</p>
             </div>
           </div>
         </div>

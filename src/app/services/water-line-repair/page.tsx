@@ -5,6 +5,8 @@ import CTACall from "@/components/cta/CTACall";
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
+import ServiceSchema from "@/components/schema/ServiceSchema";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import HeroImage from '../../../../public/images/vans.jpg';
 
 // Generate metadata for the page
@@ -20,6 +22,13 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function WaterLineRepairServices() {
   return (
     <div className="min-h-screen">
+      <ServiceSchema name="Water Line Repair" description="Expert water line repair and replacement services by Plumb-All. We fix water line leaks, breaks, and corrosion with minimal disruption to your property." url="/services/water-line-repair" />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: '/' },
+        { name: 'Services', url: '/services' },
+        { name: 'Water Line Repair', url: '/services/water-line-repair' },
+      ]} />
+
       {/* Header Image */}
       <BannerHeader
         image={HeroImage}

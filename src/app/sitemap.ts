@@ -5,6 +5,18 @@ import fs from "fs";
 
 export const dynamic = 'force-static';
 
+// Priority mapping for different page types
+function getPriority(url: string): number {
+  if (url === '') return 1.0; // Homepage
+  if (url.startsWith('/services/')) return 0.8; // Service pages
+  if (url === '/services') return 0.8; // Services index
+  if (['/about-our-process', '/financing', '/contact'].includes(url)) return 0.7; // Non-service pages
+  if (url === '/news') return 0.5; // News listing
+  if (url.startsWith('/news/article/')) return 0.6; // Blog articles
+  if (['/privacy-policy', '/terms-and-conditions'].includes(url)) return 0.3; // Legal pages
+  return 0.5; // Default
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const urlPrefix = 'https://plumb-all.com'
 
@@ -15,6 +27,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: '/contact', changeFrequency: 'monthly' },
     { url: '/financing', changeFrequency: 'monthly' },
     { url: '/privacy-policy', changeFrequency: 'monthly' },
+    { url: '/terms-and-conditions', changeFrequency: 'monthly' },
     { url: '/services', changeFrequency: 'monthly' },
     { url: '/services/alternative-septic', changeFrequency: 'monthly' },
     { url: '/services/backflow', changeFrequency: 'monthly' },
@@ -65,7 +78,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         url: `${urlPrefix}${page.url}`,
         lastModified: new Date(),
         changeFrequency: 'monthly',
-        priority: 1,
+        priority: getPriority(page.url),
       })
     } else {
       const isArticle = page.url.startsWith('/news/article/')
@@ -81,7 +94,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         url: `${urlPrefix}${page.url}`,
         lastModified: mTime,
         changeFrequency: 'monthly',
-        priority: 1,
+        priority: getPriority(page.url),
       })
     }
   }

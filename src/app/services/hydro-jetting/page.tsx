@@ -5,6 +5,9 @@ import { FaWrench, FaTools, FaLeaf, FaCheckCircle, FaQuestion, FaCalendarAlt } f
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
+import ServiceSchema from "@/components/schema/ServiceSchema";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
+import FAQSchema from "@/components/schema/FAQSchema";
 import HeroImage from '../../../../public/images/hydro-jetting-nozzle.jpg';
 
 // Generate metadata for the page
@@ -20,6 +23,18 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function HydroJetting() {
   return (
     <div className="min-h-screen">
+      <ServiceSchema name="Hydro Jetting" description="We offer hydro jetting services to the Metro Atlanta Area. Jetting is an effective preventative maintenance that keeps your pipes running well." url="/services/hydro-jetting" />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: '/' },
+        { name: 'Services', url: '/services' },
+        { name: 'Hydro Jetting', url: '/services/hydro-jetting' },
+      ]} />
+      <FAQSchema faqs={[
+        { question: "Is hydro jetting safe for old pipes?", answer: "Hydro jetting is safe for most pipe materials when performed by experienced professionals. Our technicians assess your pipes with a camera inspection first to ensure hydro jetting is appropriate." },
+        { question: "How is hydro jetting different from snaking?", answer: "Snaking breaks through clogs but doesn't clean pipe walls. Hydro jetting uses high-pressure water to completely remove grease, scale, roots, and debris, restoring pipes to near-original condition." },
+        { question: "How often should hydro jetting be done?", answer: "For most residential properties, hydro jetting every 1-2 years prevents major clogs. Commercial properties with heavy grease output may need it more frequently." },
+      ]} />
+
       {/* Header Image */}
       <BannerHeader
         image={HeroImage}
@@ -155,6 +170,33 @@ export default function HydroJetting() {
               headerText="Need professional hydro jetting service?"
               buttonText="Call us at 844 PLUMB-ALL"
             />
+          </div>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="w-full mb-16">
+          <div className="flex items-center mb-8">
+            <div className="w-12 h-12 rounded-full background-theme-3 flex items-center justify-center text-white mr-4">
+              <FaQuestion className="text-2xl" />
+            </div>
+            <h2 className="text-3xl font-semibold">Frequently Asked Questions</h2>
+          </div>
+
+          <div className="space-y-6">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-3">Is hydro jetting safe for old pipes?</h3>
+              <p className="text-lg">Hydro jetting is safe for most pipe materials when performed by experienced professionals. Our technicians assess your pipes with a camera inspection first to ensure hydro jetting is appropriate.</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-3">How is hydro jetting different from snaking?</h3>
+              <p className="text-lg">Snaking breaks through clogs but doesn&#39;t clean pipe walls. Hydro jetting uses high-pressure water to completely remove grease, scale, roots, and debris, restoring pipes to near-original condition.</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-3">How often should hydro jetting be done?</h3>
+              <p className="text-lg">For most residential properties, hydro jetting every 1-2 years prevents major clogs. Commercial properties with heavy grease output may need it more frequently.</p>
+            </div>
           </div>
         </div>
 

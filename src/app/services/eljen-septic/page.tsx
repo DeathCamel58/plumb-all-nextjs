@@ -6,6 +6,9 @@ import { FaWrench, FaTools, FaCheckCircle, FaHome, FaLeaf, FaStar, FaQuestion, F
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
+import ServiceSchema from "@/components/schema/ServiceSchema";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
+import FAQSchema from "@/components/schema/FAQSchema";
 import HeroImage from '../../../../public/images/septic-system-overview.jpg';
 
 // Generate metadata for the page
@@ -21,6 +24,26 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function EljenSeptic() {
   return (
     <div className="min-h-screen">
+      <ServiceSchema
+        name="Eljen GSF Septic Systems"
+        description="Plumb-All is a certified Eljen GSF septic installer serving Metro Atlanta."
+        url="/services/eljen-septic"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "Eljen GSF Septic Systems", url: "/services/eljen-septic" },
+        ]}
+      />
+      <FAQSchema
+        faqs={[
+          { question: "How long do Eljen GSF systems last?", answer: "With proper maintenance, Eljen GSF systems typically last 25-30 years, often outlasting traditional septic systems in challenging soil conditions." },
+          { question: "Are Eljen GSF systems approved in Georgia?", answer: "Yes, Eljen GSF systems are approved for use throughout Georgia and meet all state regulatory requirements for advanced septic treatment." },
+          { question: "Do Eljen systems require special maintenance?", answer: "While Eljen systems are designed for reliability, regular inspections and routine pumping are recommended to ensure optimal performance and longevity." },
+          { question: "How much space do Eljen GSF systems require?", answer: "Eljen GSF systems typically require 50-60% less space than conventional drain fields, making them ideal for properties with limited available area." },
+        ]}
+      />
       {/* Header Image */}
       <BannerHeader
         image={HeroImage}
@@ -238,6 +261,13 @@ export default function EljenSeptic() {
               <p>Eljen GSF systems typically require 50–60% less space than conventional drain fields, making them ideal for properties with limited available area.</p>
             </div>
           </div>
+        </div>
+
+        {/* Financing */}
+        <div className="w-full mb-16 bg-blue-50 border border-blue-200 rounded-lg p-6 text-center">
+          <p className="text-lg">
+            Eljen GSF systems are a significant investment. <Link href="/financing" className="text-theme-3 hover:underline font-semibold">Flexible financing options</Link> are available to help make your project affordable.
+          </p>
         </div>
 
         {/* Final Call to Action */}

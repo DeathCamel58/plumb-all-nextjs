@@ -5,6 +5,8 @@ import CTACall from "@/components/cta/CTACall";
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
+import ServiceSchema from "@/components/schema/ServiceSchema";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import HeroImage from '../../../../public/images/toilet-install.jpg';
 
 // Generate metadata for the page
@@ -44,6 +46,13 @@ const installationServices = [
 export default function ToiletInstallation() {
   return (
     <div className="min-h-screen">
+      <ServiceSchema name="Toilet Installation" description="Professional toilet installation services by Plumb-All. Our expert plumbers ensure proper installation, preventing leaks and ensuring optimal performance." url="/services/toilet-installation" />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: '/' },
+        { name: 'Services', url: '/services' },
+        { name: 'Toilet Installation', url: '/services/toilet-installation' },
+      ]} />
+
       {/* Header Image */}
       <BannerHeader
         image={HeroImage}

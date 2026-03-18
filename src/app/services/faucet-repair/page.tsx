@@ -5,6 +5,8 @@ import CTACall from "@/components/cta/CTACall";
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
+import ServiceSchema from "@/components/schema/ServiceSchema";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import HeroImage from '../../../../public/images/running-faucet.jpg';
 
 // Generate metadata for the page
@@ -20,6 +22,13 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function FaucetRepair() {
   return (
     <div className="min-h-screen">
+      <ServiceSchema name="Faucet Repair" description="Faucet dripping? We fix and replace all makes—kitchen, bathroom, outdoor & more. Our experts are trained to give you the best solution possible." url="/services/faucet-repair" />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: '/' },
+        { name: 'Services', url: '/services' },
+        { name: 'Faucet Repair', url: '/services/faucet-repair' },
+      ]} />
+
       {/* Header Image */}
       <BannerHeader
         image={HeroImage}

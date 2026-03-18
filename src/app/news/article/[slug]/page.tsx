@@ -6,6 +6,8 @@ import { getAllArticles, getArticleBySlug, getRelatedArticles } from '../../arti
 import dynamic from 'next/dynamic';
 import { Metadata } from 'next';
 import {generateMetadataDict} from "@/components/header/metadata";
+import ArticleSchema from "@/components/schema/ArticleSchema";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 
 // Function to get all article slugs for static generation
 export async function generateStaticParams() {
@@ -62,6 +64,21 @@ export default async function ArticlePage({ params }: Props) {
 
   return (
     <div className="min-h-screen">
+      <ArticleSchema
+        headline={article.title}
+        description={article.excerpt}
+        datePublished={new Date(article.date).toISOString()}
+        image={article.image || '/images/pipes.jpg'}
+        url={`/news/article/${slug}`}
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: '/' },
+          { name: 'News', url: '/news' },
+          { name: article.title, url: `/news/article/${slug}` },
+        ]}
+      />
+
       {/* Header Image */}
       <div className="relative w-full h-64 md:h-96">
         <Image

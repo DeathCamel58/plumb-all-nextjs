@@ -2,10 +2,13 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import CTACall from '@/components/cta/CTACall';
-import { FaWrench, FaExclamationTriangle, FaWater } from 'react-icons/fa';
+import { FaWrench, FaExclamationTriangle, FaWater, FaQuestion } from 'react-icons/fa';
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
+import ServiceSchema from "@/components/schema/ServiceSchema";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
+import FAQSchema from "@/components/schema/FAQSchema";
 import HeroImage from '../../../../public/images/spraying-pipe.jpg';
 
 // Generate metadata for the page
@@ -21,6 +24,25 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function LeakDetection() {
   return (
     <div className="min-h-screen">
+      <ServiceSchema
+        name="Leak Detection"
+        description="Professional leak detection services in Metro Atlanta."
+        url="/services/leak-detection"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "Leak Detection", url: "/services/leak-detection" },
+        ]}
+      />
+      <FAQSchema
+        faqs={[
+          { question: "How do I know if I have a hidden leak?", answer: "Signs include unexplained increases in your water bill, the sound of running water when no fixtures are on, musty odors, damp spots on walls or floors, and mold or mildew growth." },
+          { question: "Will you need to tear up my floor?", answer: "Our advanced leak detection equipment can locate leaks behind walls and under floors without destructive exploration. We pinpoint the exact location before any repair work begins." },
+          { question: "Does insurance cover leak detection?", answer: "Many homeowner insurance policies cover leak detection and resulting water damage. We recommend contacting your insurance provider, and we can provide documentation to support your claim." },
+        ]}
+      />
       {/* Header Image */}
       <BannerHeader
         image={HeroImage}
@@ -137,6 +159,30 @@ export default function LeakDetection() {
               <li>Lost air in the water tank</li>
               <li>Extra high electric bills</li>
             </ul>
+          </div>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="w-full mb-16">
+          <div className="flex items-center mb-8">
+            <div className="w-12 h-12 rounded-full background-theme-3 flex items-center justify-center text-white mr-4">
+              <FaQuestion className="text-2xl" />
+            </div>
+            <h2 className="text-3xl font-semibold">Frequently Asked Questions</h2>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="mb-6">
+              <h3 className="text-xl font-semibold mb-2">How do I know if I have a hidden leak?</h3>
+              <p>Signs include unexplained increases in your water bill, the sound of running water when no fixtures are on, musty odors, damp spots on walls or floors, and mold or mildew growth.</p>
+            </div>
+            <div className="mb-6">
+              <h3 className="text-xl font-semibold mb-2">Will you need to tear up my floor?</h3>
+              <p>Our advanced leak detection equipment can locate leaks behind walls and under floors without destructive exploration. We pinpoint the exact location before any repair work begins.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-2">Does insurance cover leak detection?</h3>
+              <p>Many homeowner insurance policies cover leak detection and resulting water damage. We recommend contacting your insurance provider, and we can provide documentation to support your claim.</p>
+            </div>
           </div>
         </div>
 

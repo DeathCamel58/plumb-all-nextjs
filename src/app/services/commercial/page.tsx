@@ -5,6 +5,8 @@ import Link from "next/link";
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
+import ServiceSchema from "@/components/schema/ServiceSchema";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import HeroImage from '../../../../public/images/backflow.jpg';
 
 // Generate metadata for the page
@@ -44,6 +46,13 @@ const commercialServices = [
 export default function CommercialPlumbing() {
   return (
     <div className="min-h-screen">
+      <ServiceSchema name="Commercial Plumbing Services" description="Commercial plumbing problems are much more important to get solved quickly. Leaks, clogged pipes, or grease trap issues can hurt your business." url="/services/commercial" />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: '/' },
+        { name: 'Services', url: '/services' },
+        { name: 'Commercial Plumbing Services', url: '/services/commercial' },
+      ]} />
+
       {/* Header Image */}
       <BannerHeader
         image={HeroImage}

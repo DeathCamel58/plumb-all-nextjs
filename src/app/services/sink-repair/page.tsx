@@ -5,6 +5,8 @@ import CTACall from "@/components/cta/CTACall";
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
+import ServiceSchema from "@/components/schema/ServiceSchema";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import HeroImage from '../../../../public/images/sink-repair.jpg';
 
 // Generate metadata for the page
@@ -44,6 +46,13 @@ const sinkRepairServices = [
 export default function SinkRepair() {
   return (
     <div className="min-h-screen">
+      <ServiceSchema name="Sink Repair" description="Professional sink repair services for kitchen, bathroom, and utility sinks. Our experts fix leaks, clogs, and damaged fixtures with precision and care." url="/services/sink-repair" />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: '/' },
+        { name: 'Services', url: '/services' },
+        { name: 'Sink Repair', url: '/services/sink-repair' },
+      ]} />
+
       {/* Header Image */}
       <BannerHeader
         image={HeroImage}

@@ -5,6 +5,8 @@ import { FaClock, FaTruck, FaWrench, FaTools, FaShieldAlt, FaCheckCircle, FaHome
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
+import ServiceSchema from "@/components/schema/ServiceSchema";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import HeroImage from '../../../public/images/toilet-flapper.jpg';
 
 // Generate metadata for the page
@@ -120,6 +122,12 @@ const commercialServices = [
 export default function Services() {
   return (
     <div className="min-h-screen">
+      <ServiceSchema name="Plumbing & Septic Services" description="Our top services include: septic drain field repair, plumbing installation & repair, alternative septic solutions, leak detection, and sewer line repair." url="/services" />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: '/' },
+        { name: 'Services', url: '/services' },
+      ]} />
+
       {/* Header Image */}
       <BannerHeader
         image={HeroImage}

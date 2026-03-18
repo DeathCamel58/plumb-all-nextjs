@@ -2,10 +2,13 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import CTACall from '@/components/cta/CTACall';
-import { FaPhoneAlt, FaExclamationTriangle, FaTools, FaClock } from 'react-icons/fa';
+import { FaPhoneAlt, FaExclamationTriangle, FaTools, FaClock, FaQuestion } from 'react-icons/fa';
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
+import ServiceSchema from "@/components/schema/ServiceSchema";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
+import FAQSchema from "@/components/schema/FAQSchema";
 import HeroImage from '../../../../public/images/vans.jpg';
 
 // Generate metadata for the page
@@ -21,6 +24,25 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function Emergencies() {
   return (
     <div className="min-h-screen">
+      <ServiceSchema
+        name="Emergency Plumbing Services"
+        description="24/7 emergency plumbing service in Metro Atlanta. Licensed and insured."
+        url="/services/emergencies"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "Emergency Plumbing", url: "/services/emergencies" },
+        ]}
+      />
+      <FAQSchema
+        faqs={[
+          { question: "What counts as a plumbing emergency?", answer: "Burst pipes, sewage backups, gas leaks, overflowing toilets, no hot water, and major water leaks are all plumbing emergencies that require immediate attention." },
+          { question: "How fast can you respond?", answer: "We have multiple crews on standby 24/7 and prioritize emergency calls. In most cases, a technician can be at your location within the hour in the Metro Atlanta area." },
+          { question: "Do you charge extra for after-hours service?", answer: "We offer transparent, upfront pricing for all emergency calls. Contact us and we'll provide a clear quote before any work begins." },
+        ]}
+      />
       {/* Header Image */}
       <BannerHeader
         image={HeroImage}
@@ -152,6 +174,30 @@ export default function Emergencies() {
             <p className="text-lg">
               With our experience and dedication, we are your local professionals committed to restoring your peace of mind. If you&#39;re facing a plumbing emergency, don&#39;t wait – contact Plumb-All right away.
             </p>
+          </div>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="w-full mb-16">
+          <div className="flex items-center mb-8">
+            <div className="w-12 h-12 rounded-full background-theme-3 flex items-center justify-center text-white mr-4">
+              <FaQuestion className="text-2xl" />
+            </div>
+            <h2 className="text-3xl font-semibold">Frequently Asked Questions</h2>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="mb-6">
+              <h3 className="text-xl font-semibold mb-2">What counts as a plumbing emergency?</h3>
+              <p>Burst pipes, sewage backups, gas leaks, overflowing toilets, no hot water, and major water leaks are all plumbing emergencies that require immediate attention. When in doubt, call us — we&#39;ll help you determine the urgency.</p>
+            </div>
+            <div className="mb-6">
+              <h3 className="text-xl font-semibold mb-2">How fast can you respond?</h3>
+              <p>We have multiple crews on standby 24/7 and prioritize emergency calls. In most cases, a technician can be at your location within the hour in the Metro Atlanta area.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-2">Do you charge extra for after-hours service?</h3>
+              <p>We offer transparent, upfront pricing for all emergency calls. Contact us and we&#39;ll provide a clear quote before any work begins.</p>
+            </div>
           </div>
         </div>
 

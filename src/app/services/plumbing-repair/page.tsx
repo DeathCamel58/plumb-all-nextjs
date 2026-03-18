@@ -5,6 +5,8 @@ import CTACall from "@/components/cta/CTACall";
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
+import ServiceSchema from "@/components/schema/ServiceSchema";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import HeroImage from '../../../../public/images/spraying-pipe.jpg';
 
 // Generate metadata for the page
@@ -44,6 +46,13 @@ const repairServices = [
 export default function PlumbingRepair() {
   return (
     <div className="min-h-screen">
+      <ServiceSchema name="Plumbing Repair" description="Our experts show a high level of attention to detail, and utilize extensive educational and vocational expertise when determining the best repair solution." url="/services/plumbing-repair" />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: '/' },
+        { name: 'Services', url: '/services' },
+        { name: 'Plumbing Repair', url: '/services/plumbing-repair' },
+      ]} />
+
       {/* Header Image */}
       <BannerHeader
         image={HeroImage}

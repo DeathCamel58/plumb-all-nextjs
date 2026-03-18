@@ -2,10 +2,13 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import CTACall from '@/components/cta/CTACall';
-import { FaTools, FaWrench, FaWater, FaExclamationTriangle, FaPhoneAlt } from 'react-icons/fa';
+import { FaTools, FaWrench, FaWater, FaExclamationTriangle, FaPhoneAlt, FaQuestion } from 'react-icons/fa';
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
+import ServiceSchema from "@/components/schema/ServiceSchema";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
+import FAQSchema from "@/components/schema/FAQSchema";
 import HeroImage from '../../../../public/images/drain-cleaning.jpg';
 
 // Generate metadata for the page
@@ -21,6 +24,25 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function DrainCleaning() {
   return (
     <div className="min-h-screen">
+      <ServiceSchema
+        name="Drain Cleaning"
+        description="Professional drain cleaning services in Metro Atlanta."
+        url="/services/drain-cleaning"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "Drain Cleaning", url: "/services/drain-cleaning" },
+        ]}
+      />
+      <FAQSchema
+        faqs={[
+          { question: "How often should drains be cleaned?", answer: "We recommend professional drain cleaning annually as preventive maintenance. If you notice slow drains, recurring clogs, or foul odors, schedule a cleaning sooner." },
+          { question: "Are chemical drain cleaners safe?", answer: "Chemical drain cleaners can damage pipes over time, especially older plumbing. Professional drain cleaning is safer and more effective at removing buildup without harming your pipes." },
+          { question: "What causes recurring clogs?", answer: "Common causes include grease buildup, hair accumulation, tree root intrusion, and mineral deposits. Professional cleaning combined with a camera inspection can identify and resolve the root cause." },
+        ]}
+      />
       {/* Header Image */}
       <BannerHeader
         image={HeroImage}
@@ -200,6 +222,30 @@ export default function DrainCleaning() {
             <p className="text-lg">
               Don&#39;t let a clogged drain disrupt your day! <Link href="/contact" className="text-theme-3 hover:underline">Schedule</Link> your drain cleaning today with Plumb-All. We offer free estimates and quick response times to get your plumbing back in top shape.
             </p>
+          </div>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="w-full mb-16">
+          <div className="flex items-center mb-8">
+            <div className="w-12 h-12 rounded-full background-theme-3 flex items-center justify-center text-white mr-4">
+              <FaQuestion className="text-2xl" />
+            </div>
+            <h2 className="text-3xl font-semibold">Frequently Asked Questions</h2>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="mb-6">
+              <h3 className="text-xl font-semibold mb-2">How often should drains be cleaned?</h3>
+              <p>We recommend professional drain cleaning annually as preventive maintenance. If you notice slow drains, recurring clogs, or foul odors, schedule a cleaning sooner.</p>
+            </div>
+            <div className="mb-6">
+              <h3 className="text-xl font-semibold mb-2">Are chemical drain cleaners safe?</h3>
+              <p>Chemical drain cleaners can damage pipes over time, especially older plumbing. Professional drain cleaning is safer and more effective at removing buildup without harming your pipes.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-2">What causes recurring clogs?</h3>
+              <p>Common causes include grease buildup, hair accumulation, tree root intrusion, and mineral deposits. Professional cleaning combined with a camera inspection can identify and resolve the root cause.</p>
+            </div>
           </div>
         </div>
 

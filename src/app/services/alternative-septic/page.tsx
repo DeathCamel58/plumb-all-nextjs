@@ -6,6 +6,9 @@ import { FaWrench, FaTools, FaCheckCircle, FaList, FaWater, FaHome, FaQuestion, 
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
+import ServiceSchema from "@/components/schema/ServiceSchema";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
+import FAQSchema from "@/components/schema/FAQSchema";
 import HeroImage from '../../../../public/images/septic-system-overview.jpg';
 
 // Generate metadata for the page
@@ -21,6 +24,26 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function AlternativeSeptic() {
   return (
     <div className="min-h-screen">
+      <ServiceSchema
+        name="Alternative Septic Systems"
+        description="Plumb-All installs alternative septic systems in Metro Atlanta — aerobic, mound, sand filter, drip emitter and more."
+        url="/services/alternative-septic"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "Alternative Septic Systems", url: "/services/alternative-septic" },
+        ]}
+      />
+      <FAQSchema
+        faqs={[
+          { question: "How do I know if I need an alternative system?", answer: "If your property has poor soil drainage, a high water table, limited space, or has failed a percolation test, an alternative septic system may be your best or only option." },
+          { question: "Are alternative septic systems more expensive?", answer: "They typically cost more to install than conventional systems, but they can save you money long-term by avoiding municipal sewage connection fees and working reliably in conditions where traditional systems fail." },
+          { question: "Do alternative systems require more maintenance?", answer: "Some systems, like aerobic treatment units, require periodic inspections and regular pumping. Plumb-All provides ongoing service plans to keep your system running efficiently." },
+          { question: "Are these systems approved in Georgia?", answer: "Yes, all the alternative septic systems we install are approved for use in Georgia and meet all state and local regulatory requirements." },
+        ]}
+      />
       {/* Header Image */}
       <BannerHeader
         image={HeroImage}
@@ -273,6 +296,13 @@ export default function AlternativeSeptic() {
               <p>Yes, all the alternative septic systems we install are approved for use in Georgia and meet all state and local regulatory requirements.</p>
             </div>
           </div>
+        </div>
+
+        {/* Financing */}
+        <div className="w-full mb-16 bg-blue-50 border border-blue-200 rounded-lg p-6 text-center">
+          <p className="text-lg">
+            Alternative septic systems are a significant investment. <Link href="/financing" className="text-theme-3 hover:underline font-semibold">Flexible financing options</Link> are available to help make your project affordable.
+          </p>
         </div>
 
         {/* Final Call to Action */}

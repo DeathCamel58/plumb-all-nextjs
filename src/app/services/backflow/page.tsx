@@ -1,11 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
-import { FaBuilding, FaTools, FaWrench, FaClipboardCheck, FaCheckCircle, FaShieldAlt, FaPhoneAlt } from 'react-icons/fa';
+import { FaBuilding, FaTools, FaWrench, FaClipboardCheck, FaCheckCircle, FaShieldAlt, FaPhoneAlt, FaQuestion } from 'react-icons/fa';
 import CTACall from "@/components/cta/CTACall";
 import Link from "next/link";
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
+import ServiceSchema from "@/components/schema/ServiceSchema";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
+import FAQSchema from "@/components/schema/FAQSchema";
 import HeroImage from '../../../../public/images/backflow.jpg';
 
 // Generate metadata for the page
@@ -21,6 +24,18 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function Backflow() {
   return (
     <div className="min-h-screen">
+      <ServiceSchema name="Backflow Testing & Prevention" description="We're a certified backflow inspection company that specializes in inspections, repairs, and installation of backflow preventers required by a water authority." url="/services/backflow" />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: '/' },
+        { name: 'Services', url: '/services' },
+        { name: 'Backflow Testing & Prevention', url: '/services/backflow' },
+      ]} />
+      <FAQSchema faqs={[
+        { question: "What is backflow testing?", answer: "Backflow testing ensures your plumbing system's check valves are preventing contaminated water from flowing back into the clean water supply. It's a critical safety measure required by most municipalities." },
+        { question: "How often is backflow testing required?", answer: "Most jurisdictions require annual backflow testing. Your local water authority may send notices when testing is due. Plumb-All can help you stay compliant." },
+        { question: "What happens if I fail a backflow test?", answer: "If your backflow preventer fails testing, it needs to be repaired or replaced. Plumb-All can handle the repair and re-test to bring you back into compliance quickly." },
+      ]} />
+
       {/* Header Image */}
       <BannerHeader
         image={HeroImage}
@@ -164,6 +179,33 @@ export default function Backflow() {
               <p className="text-lg">
                 We are certified for annual inspections of RPZ, DCV, DCDA, PVB, and other backflow devices. By regularly updating our employees on all new regulations for these devices, you can rest assured that we know how to keep your devices in tip-top shape.
               </p>
+            </div>
+          </div>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="w-full mb-16">
+          <div className="flex items-center mb-8">
+            <div className="w-12 h-12 rounded-full background-theme-3 flex items-center justify-center text-white mr-4">
+              <FaQuestion className="text-2xl" />
+            </div>
+            <h2 className="text-3xl font-semibold">Frequently Asked Questions</h2>
+          </div>
+
+          <div className="space-y-6">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-3">What is backflow testing?</h3>
+              <p className="text-lg">Backflow testing ensures your plumbing system&#39;s check valves are preventing contaminated water from flowing back into the clean water supply. It&#39;s a critical safety measure required by most municipalities.</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-3">How often is backflow testing required?</h3>
+              <p className="text-lg">Most jurisdictions require annual backflow testing. Your local water authority may send notices when testing is due. Plumb-All can help you stay compliant.</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-semibold mb-3">What happens if I fail a backflow test?</h3>
+              <p className="text-lg">If your backflow preventer fails testing, it needs to be repaired or replaced. Plumb-All can handle the repair and re-test to bring you back into compliance quickly.</p>
             </div>
           </div>
         </div>

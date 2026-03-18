@@ -6,6 +6,8 @@ import { FaWrench, FaTools, FaCheckCircle, FaWater, FaExclamationTriangle, FaShi
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
+import ServiceSchema from "@/components/schema/ServiceSchema";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import HeroImage from '../../../../public/images/septic-system-overview.jpg';
 
 // Generate metadata for the page
@@ -21,6 +23,18 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function SepticRepair() {
   return (
     <div className="min-h-screen">
+      <ServiceSchema
+        name="Septic Repair"
+        description="Expert septic repair services in Metro Atlanta."
+        url="/services/septic-repair"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "Septic Repair", url: "/services/septic-repair" },
+        ]}
+      />
       {/* Header Image */}
       <BannerHeader
         image={HeroImage}
@@ -229,6 +243,13 @@ export default function SepticRepair() {
               Our team handles everything from soil analysis and permitting to installation and final inspection, ensuring your new system meets all local codes and is built to last.
             </p>
           </div>
+        </div>
+
+        {/* Financing */}
+        <div className="w-full mb-16 bg-blue-50 border border-blue-200 rounded-lg p-6 text-center">
+          <p className="text-lg">
+            Septic repair can be a significant investment. <Link href="/financing" className="text-theme-3 hover:underline font-semibold">Flexible financing options</Link> are available to help make your project affordable.
+          </p>
         </div>
 
         {/* Final Call to Action */}

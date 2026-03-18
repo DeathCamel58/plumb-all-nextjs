@@ -7,6 +7,8 @@ import {Metadata} from "next";
 import HomeTabs from "@/components/HomeTabs";
 import HomeTestimonials from "@/components/HomeTestimonials";
 import {generateMetadataDict} from "@/components/header/metadata";
+import LocalBusinessSchema from "@/components/schema/LocalBusinessSchema";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
@@ -21,6 +23,9 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function Home() {
   return (
     <div>
+      <LocalBusinessSchema />
+      <BreadcrumbSchema items={[{ name: 'Home', url: '/' }]} />
+
       {/* Hero Section */}
       <section className="relative w-full">
         <div className="w-full h-[500px] relative">

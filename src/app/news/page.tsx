@@ -11,7 +11,7 @@ import HeroImage from '../../../public/images/formbg.jpg';
 export async function generateMetadata(): Promise<Metadata> {
   // TODO: Maybe set the canonical to the current page
   const title = 'News';
-  const description = 'Plumb-All\'s blog and news posts';
+  const description = 'Expert plumbing tips, maintenance guides, and industry insights from Plumb-All\'s licensed plumbers in Metro Atlanta.';
   const ogImageUrl = 'og-news-pipes';
   const path = '/news';
 

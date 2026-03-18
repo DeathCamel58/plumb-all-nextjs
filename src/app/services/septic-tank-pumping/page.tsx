@@ -2,10 +2,13 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import CTACall from '@/components/cta/CTACall';
-import { FaWater, FaCheckCircle, FaTools, FaExclamationTriangle, FaClipboardCheck, FaClock, FaShieldAlt } from 'react-icons/fa';
+import { FaWater, FaCheckCircle, FaTools, FaExclamationTriangle, FaClipboardCheck, FaClock, FaShieldAlt, FaQuestion } from 'react-icons/fa';
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
+import ServiceSchema from "@/components/schema/ServiceSchema";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
+import FAQSchema from "@/components/schema/FAQSchema";
 import HeroImage from '../../../../public/images/septic-pumping.jpg';
 
 // Generate metadata for the page
@@ -21,6 +24,25 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function SepticTankPumping() {
   return (
     <div className="min-h-screen">
+      <ServiceSchema
+        name="Septic Tank Pumping"
+        description="Professional septic tank pumping services in Metro Atlanta."
+        url="/services/septic-tank-pumping"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "Septic Tank Pumping", url: "/services/septic-tank-pumping" },
+        ]}
+      />
+      <FAQSchema
+        faqs={[
+          { question: "How often should a septic tank be pumped?", answer: "Most septic tanks should be pumped every 3-5 years, depending on household size and usage. Larger families or homes with garbage disposals may need more frequent pumping." },
+          { question: "What are signs my septic tank is full?", answer: "Common signs include slow drains throughout the house, gurgling sounds in pipes, sewage odors near the tank or drain field, and standing water or lush grass over the drain field." },
+          { question: "How much does septic tank pumping cost?", answer: "The cost varies based on tank size and accessibility. Contact Plumb-All for a free estimate — we offer upfront pricing with no hidden fees." },
+        ]}
+      />
       {/* Header Image */}
       <BannerHeader
         image={HeroImage}
@@ -248,6 +270,37 @@ export default function SepticTankPumping() {
               </ul>
             </div>
           </div>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="w-full mb-16">
+          <div className="flex items-center mb-8">
+            <div className="w-12 h-12 rounded-full background-theme-3 flex items-center justify-center text-white mr-4">
+              <FaQuestion className="text-2xl" />
+            </div>
+            <h2 className="text-3xl font-semibold">Common Questions</h2>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="mb-6">
+              <h3 className="text-xl font-semibold mb-2">How often should a septic tank be pumped?</h3>
+              <p>Most septic tanks should be pumped every 3-5 years, depending on household size and usage. Larger families or homes with garbage disposals may need more frequent pumping.</p>
+            </div>
+            <div className="mb-6">
+              <h3 className="text-xl font-semibold mb-2">What are signs my septic tank is full?</h3>
+              <p>Common signs include slow drains throughout the house, gurgling sounds in pipes, sewage odors near the tank or drain field, and standing water or lush grass over the drain field.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-2">How much does septic tank pumping cost?</h3>
+              <p>The cost varies based on tank size and accessibility. Contact Plumb-All for a free estimate — we offer upfront pricing with no hidden fees.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Financing */}
+        <div className="w-full mb-16 bg-blue-50 border border-blue-200 rounded-lg p-6 text-center">
+          <p className="text-lg">
+            Septic tank pumping can be a significant investment. <Link href="/financing" className="text-theme-3 hover:underline font-semibold">Flexible financing options</Link> are available to help make your project affordable.
+          </p>
         </div>
 
         {/* Final Call to Action */}

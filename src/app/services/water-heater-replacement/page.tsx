@@ -2,10 +2,13 @@ import React from 'react';
 import Image from 'next/image';
 import CTACall from '@/components/cta/CTACall';
 import Link from 'next/link';
-import { FaWrench, FaTools, FaCheckCircle, FaWater, FaHome, FaBuilding, FaStar } from 'react-icons/fa';
+import { FaWrench, FaTools, FaCheckCircle, FaWater, FaHome, FaBuilding, FaStar, FaQuestion } from 'react-icons/fa';
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
+import ServiceSchema from "@/components/schema/ServiceSchema";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
+import FAQSchema from "@/components/schema/FAQSchema";
 import HeroImage from '../../../../public/images/water-heater-wrench.jpg';
 
 // Generate metadata for the page
@@ -21,6 +24,25 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function WaterHeaterReplacement() {
   return (
     <div className="min-h-screen">
+      <ServiceSchema
+        name="Water Heater Replacement"
+        description="Professional water heater replacement services in Metro Atlanta."
+        url="/services/water-heater-replacement"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "/" },
+          { name: "Services", url: "/services" },
+          { name: "Water Heater Replacement", url: "/services/water-heater-replacement" },
+        ]}
+      />
+      <FAQSchema
+        faqs={[
+          { question: "How long does a water heater last?", answer: "Traditional tank water heaters last 8-12 years, while tankless models can last 20+ years with proper maintenance. If your water heater is over 10 years old, it may be time to consider replacement." },
+          { question: "Tank vs tankless — which is better?", answer: "Tank water heaters are more affordable upfront, while tankless models are more energy-efficient and provide endless hot water. Our technicians can help you choose the best option for your home and budget." },
+          { question: "How much does water heater replacement cost?", answer: "Costs vary based on the type and size of unit. Contact Plumb-All for a free estimate — we offer upfront pricing and flexible financing options." },
+        ]}
+      />
       {/* Header Image */}
       <BannerHeader
         image={HeroImage}
@@ -187,6 +209,37 @@ export default function WaterHeaterReplacement() {
               From five-star ratings to heartfelt testimonials, our reviews highlight our ability to deliver tailored solutions, transparent communication, and prompt responses. Your satisfaction is not just our goal – it&#39;s our track record.
             </p>
           </div>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="w-full mb-16">
+          <div className="flex items-center mb-8">
+            <div className="w-12 h-12 rounded-full background-theme-3 flex items-center justify-center text-white mr-4">
+              <FaQuestion className="text-2xl" />
+            </div>
+            <h2 className="text-3xl font-semibold">Frequently Asked Questions</h2>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="mb-6">
+              <h3 className="text-xl font-semibold mb-2">How long does a water heater last?</h3>
+              <p>Traditional tank water heaters last 8-12 years, while tankless models can last 20+ years with proper maintenance. If your water heater is over 10 years old, it may be time to consider replacement.</p>
+            </div>
+            <div className="mb-6">
+              <h3 className="text-xl font-semibold mb-2">Tank vs tankless — which is better?</h3>
+              <p>Tank water heaters are more affordable upfront, while tankless models are more energy-efficient and provide endless hot water. Our technicians can help you choose the best option for your home and budget.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-2">How much does water heater replacement cost?</h3>
+              <p>Costs vary based on the type and size of unit. Contact Plumb-All for a free estimate — we offer upfront pricing and flexible financing options.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Financing */}
+        <div className="w-full mb-16 bg-blue-50 border border-blue-200 rounded-lg p-6 text-center">
+          <p className="text-lg">
+            Water heater replacement can be a significant investment. <Link href="/financing" className="text-theme-3 hover:underline font-semibold">Flexible financing options</Link> are available to help make your project affordable.
+          </p>
         </div>
 
         {/* Final Call to Action */}

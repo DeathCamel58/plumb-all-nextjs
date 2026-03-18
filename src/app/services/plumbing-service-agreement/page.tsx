@@ -6,6 +6,8 @@ import { FaCheckCircle, FaHandshake, FaTools, FaWrench, FaShieldAlt, FaMoneyBill
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
+import ServiceSchema from "@/components/schema/ServiceSchema";
+import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import HeroImage from '../../../../public/images/spraying-pipe.jpg';
 
 // Generate metadata for the page
@@ -21,6 +23,13 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function PlumbingServiceAgreement() {
   return (
     <div className="min-h-screen">
+      <ServiceSchema name="Plumbing Service Agreement" description="Our ongoing plumbing service agreement keeps you better protected from costly and damaging plumbing emergencies with regular inspections and maintenance." url="/services/plumbing-service-agreement" />
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: '/' },
+        { name: 'Services', url: '/services' },
+        { name: 'Plumbing Service Agreement', url: '/services/plumbing-service-agreement' },
+      ]} />
+
       {/* Header Image */}
       <BannerHeader
         image={HeroImage}
