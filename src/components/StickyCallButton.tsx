@@ -1,5 +1,3 @@
-'use client'
-
 import { FaPhone } from 'react-icons/fa'
 
 const StickyCallButton = () => {
