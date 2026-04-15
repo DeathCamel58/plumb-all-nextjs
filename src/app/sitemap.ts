@@ -44,6 +44,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: '/services/plumbing-service-agreement', changeFrequency: 'monthly' },
     { url: '/services/residential', changeFrequency: 'monthly' },
     { url: '/services/septic-repair', changeFrequency: 'monthly' },
+    { url: '/services/septic-system', changeFrequency: 'monthly' },
     { url: '/services/septic-tank-pumping', changeFrequency: 'monthly' },
     { url: '/services/sink-repair', changeFrequency: 'monthly' },
     { url: '/services/toilet-installation', changeFrequency: 'monthly' },

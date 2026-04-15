@@ -66,3 +66,5 @@
 /septicrepair /services/septic-repair 301
 /services/septic /services/septic-repair 301
 /plumbing/water-heater /services/water-heater-replacement 301
+/septic-system /services/septic-system 301
+/septic-system/ /services/septic-system 301

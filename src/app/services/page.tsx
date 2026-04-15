@@ -80,6 +80,11 @@ const residentialServices = [
 
 const septicServices = [
   {
+    title: "Septic System Services",
+    path: "/services/septic-system",
+    description: "Complete septic system services: installation, inspection, pumping, drain field repair, and alternative systems — one licensed team for every septic need.",
+  },
+  {
     title: "Septic Tank Pumping",
     path: "/services/septic-tank-pumping",
     description: "Regular pumping to remove accumulated solids and prevent system failure, extending the life of your septic system.",
