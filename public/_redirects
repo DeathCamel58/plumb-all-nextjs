@@ -39,6 +39,9 @@
 /septic-tank-pumping/ /services/septic-tank-pumping/ 301
 /hg-plumbing-and-septic-now-plumb-all/ /about-our-process 301
 /contact/ /contact 301
+/contact-us /contact 301
+/connect /contact 301
+/contact_us /contact 301
 /backflow/ /services/backflow 301
 /commercial/ /services/commercial 301
 /hydro-jetting/ /services/hydro-jetting 301
@@ -55,6 +58,13 @@
 /emergencies/ /services/emergencies 301
 /financing/ /financing 301
 /about-our-process/ /about-our-process 301
+/about /about-our-process 301
+/about-us /about-our-process 301
+/about_us /about-our-process 301
+/aboutus /about-our-process 301
+/team /about-our-process 301
+/our-story /about-our-process 301
+/our-team /about-our-process 301
 /septicrepair/ /services/septic-repair 301
 /services/septicrepair/ /services/septic-repair 301
 /eljen-septic/ /services/eljen-septic 301
