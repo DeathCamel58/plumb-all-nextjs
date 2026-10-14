@@ -1,5 +1,7 @@
 import React from 'react';
 
+export const QUOTE_URL = 'https://clienthub.getjobber.com/client_hubs/4015938f-cada-4cbe-9e0f-3fa27b028598/public/work_request/new?utm_source=website';
+
 export default function CTACall({
   headerText,
   buttonText,
@@ -21,7 +23,7 @@ export default function CTACall({
         </a>
         {showQuoteButton && (
           <a
-            href="https://clienthub.getjobber.com/client_hubs/4015938f-cada-4cbe-9e0f-3fa27b028598/public/work_request/new?utm_source=website"
+            href={QUOTE_URL}
             className="inline-block border-2 border-gray-800 text-gray-800 px-4 py-2 rounded shadow hover:bg-gray-800 hover:text-white transition"
           >
             Get a Free Quote &rarr;
