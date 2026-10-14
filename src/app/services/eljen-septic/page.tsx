@@ -7,6 +7,7 @@ import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
 import TrustStrip from "@/components/TrustStrip";
+import SepticServiceAreas from "@/components/SepticServiceAreas";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import FAQSchema from "@/components/schema/FAQSchema";
@@ -271,6 +272,9 @@ export default function EljenSeptic() {
             Eljen GSF systems are a significant investment. <Link href="/financing" className="text-theme-3 hover:underline font-semibold">Flexible financing options</Link> are available to help make your project affordable.
           </p>
         </div>
+
+        {/* Septic Service Areas */}
+        <SepticServiceAreas />
 
         {/* Final Call to Action */}
         <div className="bg-gray-50 p-8 rounded-lg shadow-md text-center">
