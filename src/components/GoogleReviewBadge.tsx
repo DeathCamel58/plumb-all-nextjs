@@ -17,7 +17,7 @@ export default function GoogleReviewBadge() {
         <FaStar />
         <FaStarHalfAlt />
       </div>
-      <span className="text-gray-700 font-semibold text-sm">4.8</span>
+      <span className="text-gray-700 font-semibold text-sm">4.6</span>
       <span className="text-gray-500 text-sm">on Google</span>
     </a>
   );
