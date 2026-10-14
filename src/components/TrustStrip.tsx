@@ -19,10 +19,10 @@ export default function TrustStrip() {
 
   return (
     <div className="w-full bg-white border-b border-gray-200 shadow-sm">
-      <ul className="max-w-6xl mx-auto px-4 py-3 flex flex-wrap justify-center items-center gap-y-1 text-sm md:text-base font-semibold text-gray-700">
+      <ul className="max-w-6xl mx-auto px-4 py-3 flex flex-wrap justify-center items-center gap-x-4 gap-y-1 lg:gap-x-0 text-sm md:text-base font-semibold text-gray-700">
         {items.map((item, i) => (
           <li key={i} className="whitespace-nowrap">
-            {i > 0 && <span className="mx-3 text-gray-300" aria-hidden="true">|</span>}
+            {i > 0 && <span className="hidden lg:inline mx-3 text-gray-300" aria-hidden="true">|</span>}
             {item}
           </li>
         ))}
