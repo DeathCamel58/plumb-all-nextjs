@@ -7,6 +7,7 @@ import {Metadata} from "next";
 import { GoogleMapsEmbed } from '@next/third-parties/google'
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
+import TrustStrip from "@/components/TrustStrip";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import HeroImage from '../../../../public/images/slab-leak.jpg';
@@ -37,6 +38,7 @@ export default function ExpertPlumbingAtlanta() {
         altText="Expert Plumbing Services in Atlanta"
         title="Expert Plumbing Services in Atlanta, GA"
       />
+      <TrustStrip />
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 py-12">

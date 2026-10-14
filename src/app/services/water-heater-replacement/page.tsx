@@ -6,6 +6,7 @@ import { FaWrench, FaTools, FaCheckCircle, FaWater, FaHome, FaBuilding, FaStar, 
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
+import TrustStrip from "@/components/TrustStrip";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import FAQSchema from "@/components/schema/FAQSchema";
@@ -49,6 +50,7 @@ export default function WaterHeaterReplacement() {
         altText="Water Heater being repaired"
         title="Water Heater Replacement & Repair Near Me"
       />
+      <TrustStrip />
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 py-12">

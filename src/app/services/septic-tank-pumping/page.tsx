@@ -6,6 +6,7 @@ import { FaWater, FaCheckCircle, FaTools, FaExclamationTriangle, FaClipboardChec
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
+import TrustStrip from "@/components/TrustStrip";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import FAQSchema from "@/components/schema/FAQSchema";
@@ -49,6 +50,7 @@ export default function SepticTankPumping() {
         altText="Metro Atlanta Septic Service – Pump Hose"
         title="Septic Tank Pumping Near Me – Metro Atlanta"
       />
+      <TrustStrip />
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 py-12">

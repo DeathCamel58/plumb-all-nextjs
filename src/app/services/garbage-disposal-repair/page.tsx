@@ -5,6 +5,7 @@ import { FaWrench, FaTools, FaRecycle, FaCheckCircle, FaShieldAlt, FaBolt, FaWat
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
+import TrustStrip from "@/components/TrustStrip";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import HeroImage from '../../../../public/images/garbage-disposal.jpg';
@@ -35,6 +36,7 @@ export default function GarbageDisposalRepair() {
         altText="Garbage Disposal"
         title="Garbage Disposal Repair & Replacement"
       />
+      <TrustStrip />
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 py-12">

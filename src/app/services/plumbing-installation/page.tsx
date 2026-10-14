@@ -5,6 +5,7 @@ import Link from "next/link";
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
+import TrustStrip from "@/components/TrustStrip";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import HeroImage from '../../../../public/images/gray-pipes.jpg';
@@ -35,6 +36,7 @@ export default function PlumbingInstallation() {
         altText="Plumbing Installation"
         title="Plumbing Installation"
       />
+      <TrustStrip />
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 py-12">

@@ -6,6 +6,7 @@ import { FaTools, FaWrench, FaWater, FaPhoneAlt, FaClock, FaTruck, FaHome, FaShi
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
+import TrustStrip from "@/components/TrustStrip";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import HeroImage from '../../../../public/images/slab-leak.jpg';
@@ -36,6 +37,7 @@ export default function Residential() {
         altText="Residential Plumbing"
         title="Residential Plumbing and Septic"
       />
+      <TrustStrip />
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 py-12">
