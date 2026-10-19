@@ -2,6 +2,7 @@
 
 import React, { useState, FormEvent, ReactNode } from "react";
 import {RecaptchaWrapper} from "@/components/RecaptchaWrapper";
+import { getClickIds } from "@/lib/clickIds";
 
 // Custom React components
 interface FormProps {
@@ -215,10 +216,12 @@ export default function ContactForm({ onDarkBackground = true }: ContactFormProp
     const recaptchaTokenInput = document.getElementById('recaptchaToken') as HTMLInputElement;
     const recaptchaToken = recaptchaTokenInput ? recaptchaTokenInput.value : '';
 
-    // Update formData with the recaptcha token
+    // Update formData with the recaptcha token, and any Google Ads click IDs
+    // from the landing page so the lead can be tied back to its ad click
     const submissionData = {
       ...formData,
-      recaptchaToken
+      recaptchaToken,
+      ...getClickIds(),
     };
 
     try {
