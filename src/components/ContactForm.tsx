@@ -189,6 +189,23 @@ const initialState: FormData = {
   sms: false,
 };
 
+/**
+ * Records the lead in GA4. The Google tag (loaded by GTM) reads gtag commands
+ * from the dataLayer, and they must be pushed as an `arguments` object.
+ * No contact details are sent.
+ */
+function trackLead() {
+  const w = window as unknown as { dataLayer?: unknown[] };
+  w.dataLayer = w.dataLayer || [];
+  const dataLayer = w.dataLayer;
+  function gtag(...args: unknown[]) {
+    void args;
+    // eslint-disable-next-line prefer-rest-params
+    dataLayer.push(arguments);
+  }
+  gtag("event", "generate_lead", { form_name: "contact_form" });
+}
+
 interface ContactFormProps {
   onDarkBackground?: boolean;
 }
@@ -225,12 +242,15 @@ export default function ContactForm({ onDarkBackground = true }: ContactFormProp
     };
 
     try {
-      await fetch("https://integration.plumb-all.com/website/contactForm", {
+      const response = await fetch("https://integration.plumb-all.com/website/contactForm", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(submissionData),
       });
       setSubmitted(true);
+      if (response.ok) {
+        trackLead();
+      }
     } catch (err) {
       console.error("Form submission failed", err);
     }
