@@ -2,7 +2,7 @@
 
 import React, { useState, FormEvent } from 'react';
 import { FaStar, FaGoogle, FaFacebook, FaYelp } from 'react-icons/fa';
-import { RecaptchaWrapper } from "@/components/RecaptchaWrapper";
+import { RecaptchaWrapper, getRecaptchaToken } from "@/components/RecaptchaWrapper";
 
 const reviewLinks = [
   {
@@ -61,9 +61,8 @@ export default function ReviewForm() {
     // Anti-spam honeypot
     if (formData.website) return;
 
-    // Get the recaptcha token from the hidden input field
-    const recaptchaTokenInput = document.getElementById('recaptchaToken') as HTMLInputElement;
-    const recaptchaToken = recaptchaTokenInput ? recaptchaTokenInput.value : '';
+    // Get a fresh recaptcha token now: tokens expire two minutes after they're made
+    const recaptchaToken = await getRecaptchaToken('feedback_form');
 
     // Update formData with the recaptcha token
     const submissionData = {

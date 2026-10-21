@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, FormEvent, ReactNode } from "react";
-import {RecaptchaWrapper} from "@/components/RecaptchaWrapper";
+import {RecaptchaWrapper, getRecaptchaToken} from "@/components/RecaptchaWrapper";
 import { getClickIds } from "@/lib/clickIds";
 
 // Custom React components
@@ -229,9 +229,8 @@ export default function ContactForm({ onDarkBackground = true }: ContactFormProp
     // Anti-spam honeypot
     if (formData.website) return;
 
-    // Get the recaptcha token from the hidden input field
-    const recaptchaTokenInput = document.getElementById('recaptchaToken') as HTMLInputElement;
-    const recaptchaToken = recaptchaTokenInput ? recaptchaTokenInput.value : '';
+    // Get a fresh recaptcha token now: tokens expire two minutes after they're made
+    const recaptchaToken = await getRecaptchaToken('contact_form');
 
     // Update formData with the recaptcha token, and any Google Ads click IDs
     // from the landing page so the lead can be tied back to its ad click
