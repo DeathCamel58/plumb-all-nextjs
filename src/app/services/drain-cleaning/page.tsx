@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import CTACall from '@/components/cta/CTACall';
-import { FaTools, FaWrench, FaWater, FaExclamationTriangle, FaPhoneAlt, FaQuestion, FaClock, FaClipboardCheck, FaShieldAlt, FaCreditCard } from 'react-icons/fa';
+import { FaTools, FaWrench, FaWater, FaExclamationTriangle, FaPhoneAlt, FaQuestion, FaClock, FaClipboardCheck, FaShieldAlt, FaCreditCard, FaToilet, FaSink, FaShower, FaSmog } from 'react-icons/fa';
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
@@ -39,6 +39,8 @@ export default function DrainCleaning() {
       />
       <FAQSchema
         faqs={[
+          { question: "Do you unclog toilets?", answer: "Yes. If plunging hasn't worked, or the toilet clogs again and again, we clear it and check whether the blockage is further down the line." },
+          { question: "Sewage is coming up in my tub or shower. What should I do?", answer: "Stop running water and flushing toilets, then call us. Sewage coming up in the lowest drains usually means the main sewer line is blocked. Our emergency plumbing service is available 24/7." },
           { question: "How often should drains be cleaned?", answer: "We recommend professional drain cleaning annually as preventive maintenance. If you notice slow drains, recurring clogs, or foul odors, schedule a cleaning sooner." },
           { question: "Are chemical drain cleaners safe?", answer: "Chemical drain cleaners can damage pipes over time, especially older plumbing. Professional drain cleaning is safer and more effective at removing buildup without harming your pipes." },
           { question: "What causes recurring clogs?", answer: "Common causes include grease buildup, hair accumulation, tree root intrusion, and mineral deposits. Professional cleaning combined with a camera inspection can identify and resolve the root cause." },
@@ -52,13 +54,62 @@ export default function DrainCleaning() {
         image={HeroImage}
         altText="Technician clearing a floor drain with a sectional drain machine"
         title="Drain Cleaning in Metro Atlanta"
-        subtitle="Same-day service in most cases · Free estimates · Upfront pricing"
+        subtitle="Clogged toilet, sink, shower, or main line? Same-day service in most cases · Free estimates · Upfront pricing"
         showQuoteButton
       />
       <TrustStrip />
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 py-12">
+        {/* Clogs We Clear */}
+        <div className="w-full mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">Clogs We Clear Every Day</h2>
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+            <div className="bg-white p-4 md:p-6 rounded-lg shadow-md text-center">
+              <FaToilet className="text-theme-3 text-2xl md:text-3xl mx-auto mb-3" />
+              <h3 className="text-base md:text-lg font-semibold mb-2">Clogged Toilets</h3>
+              <p className="text-sm md:text-base">Won&#39;t flush, keeps backing up, or overflowing.</p>
+            </div>
+            <div className="bg-white p-4 md:p-6 rounded-lg shadow-md text-center">
+              <FaSink className="text-theme-3 text-2xl md:text-3xl mx-auto mb-3" />
+              <h3 className="text-base md:text-lg font-semibold mb-2">Kitchen Sinks & Disposals</h3>
+              <p className="text-sm md:text-base">Standing water, grease clogs, and <Link href="/services/garbage-disposal-repair" className="text-theme-3 hover:underline">garbage disposals</Link> that back up.</p>
+            </div>
+            <div className="bg-white p-4 md:p-6 rounded-lg shadow-md text-center">
+              <FaShower className="text-theme-3 text-2xl md:text-3xl mx-auto mb-3" />
+              <h3 className="text-base md:text-lg font-semibold mb-2">Showers & Tubs</h3>
+              <p className="text-sm md:text-base">Slow or stopped drains from hair and soap buildup.</p>
+            </div>
+            <div className="bg-white p-4 md:p-6 rounded-lg shadow-md text-center">
+              <FaWater className="text-theme-3 text-2xl md:text-3xl mx-auto mb-3" />
+              <h3 className="text-base md:text-lg font-semibold mb-2">Washer & Dishwasher Drains</h3>
+              <p className="text-sm md:text-base">Laundry and dishwasher lines that won&#39;t drain or overflow.</p>
+            </div>
+            <div className="bg-white p-4 md:p-6 rounded-lg shadow-md text-center">
+              <FaExclamationTriangle className="text-theme-3 text-2xl md:text-3xl mx-auto mb-3" />
+              <h3 className="text-base md:text-lg font-semibold mb-2">Main Sewer Line Backups</h3>
+              <p className="text-sm md:text-base">Several drains backing up at once, or sewage in the tub or shower.</p>
+            </div>
+            <div className="bg-white p-4 md:p-6 rounded-lg shadow-md text-center">
+              <FaSmog className="text-theme-3 text-2xl md:text-3xl mx-auto mb-3" />
+              <h3 className="text-base md:text-lg font-semibold mb-2">Gurgling & Sewer Smells</h3>
+              <p className="text-sm md:text-base">Gurgling pipes, slow drains, and odors that keep coming back.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Sewage Backup Callout */}
+        <div className="mb-12 bg-red-50 border-l-4 border-red-600 p-6 rounded-lg shadow-sm">
+          <h2 className="text-2xl font-semibold mb-2">Sewage Backing Up Into Your Home?</h2>
+          <p className="mb-4 text-lg">Stop running water and flushing toilets, then call us. A backup in your lowest drains usually means the main sewer line is blocked. Our <Link href="/services/emergencies" className="text-theme-3 hover:underline">emergency plumbers</Link> are available 24/7.</p>
+          <a
+            href="tel:+17709143877"
+            className="inline-block background-theme-1 text-white px-6 py-3 rounded-lg hover:background-theme-2 transition text-lg font-semibold shadow"
+          >
+            <FaPhoneAlt className="inline-block mr-2" /> Call (770) 914-3877
+          </a>
+        </div>
+
         {/* Key Benefits */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-12">
           <div className="bg-white p-4 md:p-6 rounded-lg shadow-md text-center">
@@ -152,36 +203,6 @@ export default function DrainCleaning() {
           </div>
         </div>
 
-        {/* Common Drain Issues */}
-        <div className="w-full mb-16">
-          <div className="flex items-center mb-8">
-            <div className="w-12 h-12 rounded-full background-theme-3 flex items-center justify-center text-white mr-4">
-              <FaExclamationTriangle className="text-2xl" />
-            </div>
-            <h2 className="text-3xl font-semibold">Common Drain Issues We Solve</h2>
-          </div>
-
-          <div className="bg-white p-6 rounded-lg shadow-md">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <ul className="list-disc pl-5 space-y-3">
-                  <li className="text-lg">Slow-draining <Link href="/services/sink-repair" className="text-theme-3 hover:underline">sinks</Link>, tubs, and showers</li>
-                  <li className="text-lg">Recurring clogs in kitchen and bathroom drains</li>
-                  <li className="text-lg">Sewer line blockages and backups</li>
-                </ul>
-              </div>
-
-              <div>
-                <ul className="list-disc pl-5 space-y-3">
-                  <li className="text-lg">Foul odors coming from drains</li>
-                  <li className="text-lg">Gurgling sounds in pipes</li>
-                  <li className="text-lg">Multiple clogged drains throughout your home</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* Drain Cleaning Services */}
         <div className="w-full mb-16">
           <div className="flex items-center mb-8">
@@ -265,6 +286,14 @@ export default function DrainCleaning() {
             <h2 className="text-3xl font-semibold">Frequently Asked Questions</h2>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="mb-6">
+              <h3 className="text-xl font-semibold mb-2">Do you unclog toilets?</h3>
+              <p>Yes. If plunging hasn&#39;t worked, or the toilet clogs again and again, we clear it and check whether the blockage is further down the line.</p>
+            </div>
+            <div className="mb-6">
+              <h3 className="text-xl font-semibold mb-2">Sewage is coming up in my tub or shower. What should I do?</h3>
+              <p>Stop running water and flushing toilets, then call us. Sewage coming up in the lowest drains usually means the main sewer line is blocked. Our <Link href="/services/emergencies" className="text-theme-3 hover:underline">emergency plumbing service</Link> is available 24/7.</p>
+            </div>
             <div className="mb-6">
               <h3 className="text-xl font-semibold mb-2">How often should drains be cleaned?</h3>
               <p>We recommend professional drain cleaning annually as preventive maintenance. If you notice slow drains, recurring clogs, or foul odors, schedule a cleaning sooner.</p>
