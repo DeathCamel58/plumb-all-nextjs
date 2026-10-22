@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import CTACall from '@/components/cta/CTACall';
 import Link from 'next/link';
-import { FaWrench, FaTools, FaCheckCircle, FaWater, FaExclamationTriangle, FaShieldAlt, FaClock, FaClipboardCheck } from 'react-icons/fa';
+import { FaWrench, FaTools, FaCheckCircle, FaWater, FaExclamationTriangle, FaShieldAlt, FaClock, FaClipboardCheck, FaBell, FaSmog, FaToilet, FaPhoneAlt, FaQuestion } from 'react-icons/fa';
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
@@ -10,6 +10,7 @@ import TrustStrip from "@/components/TrustStrip";
 import SepticServiceAreas from "@/components/SepticServiceAreas";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
+import FAQSchema from "@/components/schema/FAQSchema";
 import HeroImage from '../../../../public/images/septic-system-overview.jpg';
 
 // Generate metadata for the page
@@ -37,16 +38,75 @@ export default function SepticRepair() {
           { name: "Septic Repair", url: "/services/septic-repair" },
         ]}
       />
+      <FAQSchema
+        faqs={[
+          { question: "My septic alarm is going off. What should I do?", answer: "Cut back on water use (hold off on laundry, the dishwasher, and long showers) and call us. The alarm usually means the water level in the tank or pump chamber is too high, often from a failed pump, a stuck float, or a clog. Waiting it out can lead to a sewage backup." },
+          { question: "Can a failing drain field be repaired?", answer: "Sometimes. It depends on what caused it. We inspect the system and tell you whether a repair will work or the field needs replacing, with an upfront price either way." },
+          { question: "Do you offer financing for septic repairs?", answer: "Yes. Flexible financing is available through Wisetack on larger repairs and replacements." },
+          { question: "What areas do you serve?", answer: "Plumb-All provides septic service across South Metro Atlanta, including Jonesboro, Fayetteville, Peachtree City, Tyrone, McDonough, Stockbridge, Hampton, Locust Grove, Griffin, and Newnan." },
+        ]}
+      />
       {/* Header Image */}
       <BannerHeader
         image={HeroImage}
         altText="Septic System"
         title="Septic Repair Near Me – Metro Atlanta"
+        subtitle="Sewage backup, septic alarm, or soggy yard? Free estimates · Upfront pricing · Licensed & insured"
+        showQuoteButton
       />
       <TrustStrip />
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 py-12">
+        {/* Septic Problems We Fix */}
+        <div className="w-full mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">Septic Problems We Fix</h2>
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+            <div className="bg-white p-4 md:p-6 rounded-lg shadow-md text-center">
+              <FaExclamationTriangle className="text-theme-3 text-2xl md:text-3xl mx-auto mb-3" />
+              <h3 className="text-base md:text-lg font-semibold mb-2">Sewage Backing Up</h3>
+              <p className="text-sm md:text-base">Sewage coming up in tubs, showers, or floor drains.</p>
+            </div>
+            <div className="bg-white p-4 md:p-6 rounded-lg shadow-md text-center">
+              <FaBell className="text-theme-3 text-2xl md:text-3xl mx-auto mb-3" />
+              <h3 className="text-base md:text-lg font-semibold mb-2">Septic Alarm Going Off</h3>
+              <p className="text-sm md:text-base">High-water alarms, failed pumps, and stuck floats.</p>
+            </div>
+            <div className="bg-white p-4 md:p-6 rounded-lg shadow-md text-center">
+              <FaWater className="text-theme-3 text-2xl md:text-3xl mx-auto mb-3" />
+              <h3 className="text-base md:text-lg font-semibold mb-2">Soggy Yard or Standing Water</h3>
+              <p className="text-sm md:text-base">Wet ground or unusually green grass over the drain field.</p>
+            </div>
+            <div className="bg-white p-4 md:p-6 rounded-lg shadow-md text-center">
+              <FaSmog className="text-theme-3 text-2xl md:text-3xl mx-auto mb-3" />
+              <h3 className="text-base md:text-lg font-semibold mb-2">Sewage Smell</h3>
+              <p className="text-sm md:text-base">Odors in the house, in the yard, or near the tank.</p>
+            </div>
+            <div className="bg-white p-4 md:p-6 rounded-lg shadow-md text-center">
+              <FaToilet className="text-theme-3 text-2xl md:text-3xl mx-auto mb-3" />
+              <h3 className="text-base md:text-lg font-semibold mb-2">Slow Drains & Gurgling</h3>
+              <p className="text-sm md:text-base">Drains slowing down all over the house, or gurgling pipes.</p>
+            </div>
+            <div className="bg-white p-4 md:p-6 rounded-lg shadow-md text-center">
+              <FaWrench className="text-theme-3 text-2xl md:text-3xl mx-auto mb-3" />
+              <h3 className="text-base md:text-lg font-semibold mb-2">Broken Lids, Baffles & Lines</h3>
+              <p className="text-sm md:text-base">Damaged tank lids, baffles, distribution boxes, and lines.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Backup and Alarm Callout */}
+        <div className="mb-12 bg-red-50 border-l-4 border-red-600 p-6 rounded-lg shadow-sm">
+          <h2 className="text-2xl font-semibold mb-2">Sewage Backing Up or Alarm Going Off?</h2>
+          <p className="mb-4 text-lg">Cut back on water use (hold off on laundry, the dishwasher, and long showers), then call us. A backup or high-water alarm means the tank or pump chamber can&#39;t drain, and waiting can put sewage in your home. Our <Link href="/services/emergencies" className="text-theme-3 hover:underline">emergency plumbers</Link> are available 24/7.</p>
+          <a
+            href="tel:+17709143877"
+            className="inline-block background-theme-1 text-white px-6 py-3 rounded-lg hover:background-theme-2 transition text-lg font-semibold shadow"
+          >
+            <FaPhoneAlt className="inline-block mr-2" /> Call (770) 914-3877
+          </a>
+        </div>
+
         {/* Introduction */}
         <div className="w-full mb-12 text-center">
           <h2 className="text-4xl font-bold mb-6">Expert Septic Repair Services in Metro Atlanta</h2>
@@ -56,63 +116,6 @@ export default function SepticRepair() {
           <p className="text-xl max-w-4xl mx-auto mb-6">
             We offer free estimates, upfront pricing, and fast scheduling so you can get your system back to normal quickly.
           </p>
-        </div>
-
-        {/* Signs You Need Repair */}
-        <div className="w-full mb-16">
-          <div className="flex items-center mb-8">
-            <div className="w-12 h-12 rounded-full background-theme-3 flex items-center justify-center text-white mr-4">
-              <FaExclamationTriangle className="text-2xl" />
-            </div>
-            <h2 className="text-3xl font-semibold">Signs Your Septic System Needs Repair</h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-4">Common Warning Signs</h3>
-              <p className="text-lg mb-4">
-                If you&#39;re experiencing any of these, your septic system may need professional repair:
-              </p>
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Sewage backing up into your home or building</span>
-                </li>
-                <li className="flex items-start">
-                  <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Persistent foul odors near the tank or drain field</span>
-                </li>
-                <li className="flex items-start">
-                  <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Standing water or saturated ground around the septic area</span>
-                </li>
-                <li className="flex items-start">
-                  <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Unusually green or lush grass over the drain field</span>
-                </li>
-                <li className="flex items-start">
-                  <FaCheckCircle className="text-theme-3 mt-1 mr-2 flex-shrink-0" />
-                  <span>Slow drains or gurgling throughout the house</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-4">Alarm box going off?</h3>
-              <p className="text-lg mb-4">
-                A septic alarm means your system needs immediate attention. Don&#39;t wait — delays can cause sewage backups and property damage. Visit our <Link href="/services/emergencies" className="text-theme-3 hover:underline">emergency services</Link> page for more information.
-              </p>
-              <p className="text-lg mb-4">
-                Call us right away. Our technicians will respond quickly to diagnose the issue and get your system working again.
-              </p>
-              <div className="mt-4">
-                <CTACall
-                  headerText="Septic emergency? Call now."
-                  buttonText="Call us at 844 PLUMB-ALL"
-                />
-              </div>
-            </div>
-          </div>
         </div>
 
         {/* Why Choose Plumb-All */}
@@ -245,6 +248,34 @@ export default function SepticRepair() {
             <p className="text-lg">
               Our team handles everything from soil analysis and permitting to installation and final inspection, ensuring your new system meets all local codes and is built to last.
             </p>
+          </div>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="w-full mb-16">
+          <div className="flex items-center mb-8">
+            <div className="w-12 h-12 rounded-full background-theme-3 flex items-center justify-center text-white mr-4">
+              <FaQuestion className="text-2xl" />
+            </div>
+            <h2 className="text-3xl font-semibold">Common Questions</h2>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="mb-6">
+              <h3 className="text-xl font-semibold mb-2">My septic alarm is going off. What should I do?</h3>
+              <p>Cut back on water use (hold off on laundry, the dishwasher, and long showers) and call us. The alarm usually means the water level in the tank or pump chamber is too high, often from a failed pump, a stuck float, or a clog. Waiting it out can lead to a sewage backup.</p>
+            </div>
+            <div className="mb-6">
+              <h3 className="text-xl font-semibold mb-2">Can a failing drain field be repaired?</h3>
+              <p>Sometimes. It depends on what caused it. We inspect the system and tell you whether a repair will work or the field needs replacing, with an upfront price either way.</p>
+            </div>
+            <div className="mb-6">
+              <h3 className="text-xl font-semibold mb-2">Do you offer financing for septic repairs?</h3>
+              <p>Yes. <Link href="/financing" className="text-theme-3 hover:underline">Flexible financing</Link> is available through Wisetack on larger repairs and replacements.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold mb-2">What areas do you serve?</h3>
+              <p>Plumb-All provides septic service across South Metro Atlanta, including Jonesboro, Fayetteville, Peachtree City, Tyrone, McDonough, Stockbridge, Hampton, Locust Grove, Griffin, and Newnan.</p>
+            </div>
           </div>
         </div>
 
