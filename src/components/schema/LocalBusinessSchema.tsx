@@ -8,7 +8,7 @@ export default function LocalBusinessSchema() {
     name: 'Plumb-All',
     url: 'https://plumb-all.com',
     logo: 'https://plumb-all.com/logo/wide-logo.png',
-    image: 'https://plumb-all.com/images/vans.jpg',
+    image: 'https://plumb-all.com/images/vans.webp',
     telephone: '+1-770-914-3877',
     email: 'info@plumb-all.com',
     priceRange: '$$',

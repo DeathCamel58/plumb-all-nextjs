@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Tree Root Intrusion: How Roots Damage Your Pipes',
   date: '2023-07-12',
   excerpt: 'Learn how tree roots find their way into your sewer and drain pipes, the damage they cause, and the best methods for removal and prevention.',
-  image: '/images/roots-in-pipe.jpg',
+  image: '/images/roots-in-pipe.webp',
   path: `/news/article/${slug}`
 };
 

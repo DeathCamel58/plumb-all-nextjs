@@ -9,7 +9,7 @@ export const metadata = {
   title: '10 Factors That Affect Water Quality',
   date: '2023-11-03',
   excerpt: 'Find out what influences your water quality, and how you can ensure the highest quality possible. Read our guidance on water quality and treatment.',
-  image: '/images/running-faucet.jpg',
+  image: '/images/running-faucet.webp',
   path: `/news/article/${slug}`
 };
 

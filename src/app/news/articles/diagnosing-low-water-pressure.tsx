@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Diagnosing Low Water Pressure',
   date: '2023-11-03',
   excerpt: 'When water pressure falls short, showers, dishes, and other essential tasks can become difficult. Learn what causes low water pressure.',
-  image: '/images/dripping-faucet-2.jpg',
+  image: '/images/dripping-faucet-2.webp',
   path: `/news/article/${slug}`
 };
 

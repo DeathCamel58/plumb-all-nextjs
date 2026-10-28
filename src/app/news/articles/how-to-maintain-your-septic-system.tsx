@@ -9,7 +9,7 @@ export const metadata = {
   title: 'How To Maintain Your Septic System',
   date: '2022-07-05',
   excerpt: 'Your septic system cleanly disposes of waste and is at the heart of your plumbing system. When cared for, it can last for years. Here’s how to maintain it.',
-  image: '/images/eljen-install.jpg',
+  image: '/images/eljen-install.webp',
   path: `/news/article/${slug}`
 };
 

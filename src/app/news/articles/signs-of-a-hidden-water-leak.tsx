@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Signs of a Hidden Water Leak and What to Do About It',
   date: '2026-02-05',
   excerpt: 'Hidden water leaks can cause thousands in damage before you notice them. Learn the warning signs and how professional leak detection can save your home.',
-  image: '/images/slab-leak.jpg',
+  image: '/images/slab-leak.webp',
   path: `/news/article/${slug}`
 };
 

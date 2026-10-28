@@ -9,7 +9,7 @@ export const metadata = {
   title: 'How to Fix a Running Toilet',
   date: '2023-11-03',
   excerpt: 'Learn how to fix a running toilet and prevent water waste with our step-by-step guide. Discover common causes and solutions for a smoothly operating toilet.',
-  image: '/images/toilet-flapper.jpg',
+  image: '/images/toilet-flapper.webp',
   path: `/news/article/${slug}`
 };
 

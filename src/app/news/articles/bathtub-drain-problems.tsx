@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Bathtub Drain Problems and How to Solve Them',
   date: '2024-09-18',
   excerpt: 'Learn about the most common bathtub drain problems, from slow drains and hair clogs to soap buildup, and discover effective solutions for each.',
-  image: '/images/shower-drain.jpg',
+  image: '/images/shower-drain.webp',
   path: `/news/article/${slug}`
 };
 

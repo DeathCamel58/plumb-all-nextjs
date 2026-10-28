@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Preparing to Sell Your Home?',
   date: '2023-11-14',
   excerpt: 'Discover how plumbing upgrades can increase your home\'s resale value. Learn about the 5 highest-ROI plumbing improvements that impress buyers.',
-  image: '/images/home-for-sale.jpg',
+  image: '/images/home-for-sale.webp',
   path: `/news/article/${slug}`
 };
 

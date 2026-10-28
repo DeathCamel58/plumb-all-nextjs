@@ -7,7 +7,7 @@ import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
-import HeroImage from '../../../public/images/toilet-flapper.jpg';
+import HeroImage from '../../../public/images/toilet-flapper.webp';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {

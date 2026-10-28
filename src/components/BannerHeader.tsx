@@ -26,6 +26,7 @@ export default function BannerHeader({
         fill
         className="object-cover object-center w-full"
         priority
+        fetchPriority="high"
         placeholder="blur"
       />
       <div className="absolute inset-0 background-theme-4/50 bg-opacity-50" />

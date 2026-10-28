@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Laundry Room Plumbing: Common Issues and Solutions',
   date: '2025-05-14',
   excerpt: 'From washer hookups to drain problems, learn about the most common laundry room plumbing issues and how to prevent costly water damage.',
-  image: '/images/pipes.jpg',
+  image: '/images/pipes.webp',
   path: `/news/article/${slug}`
 };
 

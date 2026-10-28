@@ -9,7 +9,7 @@ export const metadata = {
     title: "How to Prevent Tree Roots From Damaging Your Sewer Line",
     date: "2024-06-05",
     excerpt: "Tree roots are one of the most common causes of sewer line damage. Learn how to protect your pipes with smart landscaping and preventive measures.",
-    image: "/images/roots-in-pipe.jpg",
+    image: "/images/roots-in-pipe.webp",
     path: `/news/article/${slug}`,
 };
 

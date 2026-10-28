@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Warning Signs That Your Water Heater Requires Attention',
   date: '2023-11-13',
   excerpt: 'Discover the signs indicating your water heater may need attention. From temperature changes to subtle hot water leaks, learn warning signals people miss.',
-  image: '/images/water-heater.jpg',
+  image: '/images/water-heater.webp',
   path: `/news/article/${slug}`
 };
 

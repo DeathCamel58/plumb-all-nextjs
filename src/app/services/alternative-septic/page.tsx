@@ -11,7 +11,7 @@ import SepticServiceAreas from "@/components/SepticServiceAreas";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import FAQSchema from "@/components/schema/FAQSchema";
-import HeroImage from '../../../../public/images/septic-system-overview.jpg';
+import HeroImage from '../../../../public/images/septic-system-overview.webp';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
@@ -108,7 +108,7 @@ export default function AlternativeSeptic() {
           <div className="md:col-span-4">
             <div className="relative w-full h-64 md:h-full rounded-lg overflow-hidden shadow-md">
               <Image
-                src="/images/septic-install.jpg"
+                src="/images/septic-install.webp"
                 alt="Septic System"
                 fill
                 className="object-cover"
@@ -137,7 +137,7 @@ export default function AlternativeSeptic() {
               </div>
               <div className="relative w-full h-64 mb-4 rounded-lg overflow-hidden">
                 <Image
-                  src="/images/aerobic-treatment.png"
+                  src="/images/aerobic-treatment.webp"
                   alt="Aerobic Treatment Diagram"
                   fill
                   className="object-cover"
@@ -171,7 +171,7 @@ export default function AlternativeSeptic() {
               </div>
               <div className="relative w-full h-64 mb-4 rounded-lg overflow-hidden">
                 <Image
-                  src="/images/mound-septic.jpg"
+                  src="/images/mound-septic.webp"
                   alt="Mound Septic Diagram"
                   fill
                   className="object-cover"

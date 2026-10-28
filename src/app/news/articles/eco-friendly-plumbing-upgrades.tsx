@@ -9,7 +9,7 @@ export const metadata = {
     title: "Eco-Friendly Plumbing Upgrades for Your Home",
     date: "2024-03-06",
     excerpt: "Discover plumbing upgrades that reduce water waste, lower energy bills, and help the environment without sacrificing comfort.",
-    image: "/images/running-faucet.jpg",
+    image: "/images/running-faucet.webp",
     path: `/news/article/${slug}`,
 };
 

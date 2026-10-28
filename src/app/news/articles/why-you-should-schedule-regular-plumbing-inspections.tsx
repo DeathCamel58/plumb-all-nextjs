@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Why You Should Schedule Regular Plumbing Inspections',
   date: '2025-11-19',
   excerpt: 'Learn why plumbing inspections are essential for homeowners. Preventive maintenance can save on costly repairs and protect your home from water damage.',
-  image: '/images/sink-repair.jpg',
+  image: '/images/sink-repair.webp',
   path: `/news/article/${slug}`
 };
 

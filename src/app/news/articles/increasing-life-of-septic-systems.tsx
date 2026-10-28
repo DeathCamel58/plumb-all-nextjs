@@ -10,7 +10,7 @@ export const metadata = {
   title: 'Increasing Life of Septic Systems',
   date: '2021-09-02',
   excerpt: 'One of the most common questions for us is “What can I put down my drains with a septic tank?” Here, we list what is safe to put down drains on a septic system.',
-  image: '/images/septic-tank-diagram.jpg',
+  image: '/images/septic-tank-diagram.webp',
   path: `/news/article/${slug}`
 };
 
@@ -78,7 +78,7 @@ export default function ArticleContent() {
 
           <figure className="mb-6">
             <Image
-              src="/images/drain-cleaner-on-metal.jpg"
+              src="/images/drain-cleaner-on-metal.webp"
               alt="The corrosive effect of drain cleaners on metal"
               className="rounded-lg max-w-full h-auto"
               width={437}

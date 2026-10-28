@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Plumbing Sounds',
   date: '2019-07-17',
   excerpt: 'Although not all building plumbing systems make noticeable sounds, these annoying sounds can come from anyone’s home and they’re more common in older homes.',
-  image: '/images/gray-pipes-2.jpg',
+  image: '/images/gray-pipes-2.webp',
   path: `/news/article/${slug}`
 };
 

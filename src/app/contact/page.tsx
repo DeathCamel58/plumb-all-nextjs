@@ -7,7 +7,7 @@ import ContactForm from '@/components/ContactForm';
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
-import HeroImage from '../../../public/images/our-team.jpg';
+import HeroImage from '../../../public/images/our-team.webp';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
@@ -134,7 +134,7 @@ export default function Contact() {
           <div>
             <div className="relative w-full h-64 mb-6 rounded-lg overflow-hidden">
               <Image
-                src="/images/vans.jpg"
+                src="/images/vans.webp"
                 alt="Plumb-All Service Vans"
                 fill
                 className="object-cover object-center"

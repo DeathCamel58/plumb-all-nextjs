@@ -32,10 +32,15 @@ const Menu = () => {
 
         <div className="flex items-center space-x-4">
           <button
+            type="button"
             onClick={() => setIsOpen(!isOpen)}
+            aria-label={isOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isOpen}
+            aria-controls="mobile-menu"
             className="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100 focus:outline-none"
           >
             <svg
+              aria-hidden="true"
               className="h-6 w-6"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -71,7 +76,7 @@ const Menu = () => {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="md:hidden px-4 pb-4 space-y-2">
+        <nav id="mobile-menu" aria-label="Main menu" className="md:hidden px-4 pb-4 space-y-2">
           {menuItems.map((item) => (
             <Link key={item.url} href={item.url} className="block text-gray-700 hover:text-cyan-600 transition">
               {item.label}
@@ -83,7 +88,7 @@ const Menu = () => {
           >
             (770) 914-3877
           </a>
-        </div>
+        </nav>
       )}
     </header>
   )

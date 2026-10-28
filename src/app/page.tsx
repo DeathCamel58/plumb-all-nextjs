@@ -30,7 +30,7 @@ export default function Home() {
       <section className="relative w-full">
         <div className="w-full h-[500px] relative">
           <Image
-            src="/images/pipes.jpg"
+            src="/images/pipes.webp"
             alt="Plumbing pipes background"
             fill
             className="object-cover object-center"
@@ -223,7 +223,7 @@ export default function Home() {
               rel="noopener noreferrer"
             >
               <Image
-                src="/images/PHCC-logo.png"
+                src="/images/PHCC-logo.webp"
                 alt="Plumbing Heating Cooling Contractors Association Member"
                 width={200}
                 height={200}
@@ -344,7 +344,7 @@ export default function Home() {
 
           <div className="bg-gray-900 rounded-lg shadow-xl overflow-hidden relative">
             <Image
-              src="/images/formbg.jpg"
+              src="/images/formbg.webp"
               alt="Plumbing pipes background"
               fill
               className="object-cover object-center z-0"

@@ -9,7 +9,7 @@ export const metadata = {
   title: 'How to Unclog a Shower Drain',
   date: '2025-09-10',
   excerpt: 'A step-by-step guide to clearing a slow or clogged shower drain safely and effectively.',
-  image: '/images/clogged-drain.png',
+  image: '/images/clogged-drain.webp',
   path: `/news/article/${slug}`
 };
 

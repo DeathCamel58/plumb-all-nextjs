@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Winter Plumbing Tips for Atlanta Homeowners',
   date: '2019-12-11',
   excerpt: 'Atlanta winters may be mild compared to the north, but freezing temperatures can still wreak havoc on your plumbing. Learn how to protect your home this winter.',
-  image: '/images/frozen-pipe.jpg',
+  image: '/images/frozen-pipe.webp',
   path: `/news/article/${slug}`
 };
 

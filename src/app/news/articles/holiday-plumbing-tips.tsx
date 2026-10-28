@@ -9,7 +9,7 @@ export const metadata = {
     title: "Holiday Plumbing Tips: Avoid Disasters This Season",
     date: "2021-12-08",
     excerpt: "The holiday season puts extra strain on your plumbing. Learn how to prepare your kitchen, garbage disposal, and guest bathrooms to avoid plumbing emergencies during the busiest time of year.",
-    image: "/images/sink-drain.jpg",
+    image: "/images/sink-drain.webp",
     path: `/news/article/${slug}`,
 };
 

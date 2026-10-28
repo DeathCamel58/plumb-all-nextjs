@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Why Your Water Pressure is Low and How to Fix It',
   date: '2025-09-08',
   excerpt: 'Struggling with low water pressure in your home? There are several common causes - and many have simple fixes. Find out how here!',
-  image: '/images/running-faucet.jpg',
+  image: '/images/running-faucet.webp',
   path: `/news/article/${slug}`
 };
 

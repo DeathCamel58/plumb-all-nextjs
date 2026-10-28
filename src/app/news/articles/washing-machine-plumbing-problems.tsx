@@ -9,7 +9,7 @@ export const metadata = {
     title: "Signs Your Washing Machine Needs Plumbing Attention",
     date: "2024-04-03",
     excerpt: "Learn the warning signs that your washing machine has plumbing issues and what you can do to prevent costly water damage.",
-    image: "/images/pipes.jpg",
+    image: "/images/pipes.webp",
     path: `/news/article/${slug}`,
 };
 

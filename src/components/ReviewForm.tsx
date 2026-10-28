@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, FormEvent } from 'react';
+import React, { useState, useRef, FormEvent } from 'react';
 import { FaStar, FaGoogle, FaFacebook, FaYelp } from 'react-icons/fa';
 import { RecaptchaWrapper, getRecaptchaToken } from "@/components/RecaptchaWrapper";
 
@@ -35,6 +35,10 @@ export default function ReviewForm() {
   const [rating, setRating] = useState<number>(0);
   const [hover, setHover] = useState<number>(0);
   const [submitted, setSubmitted] = useState<boolean>(false);
+  const [sending, setSending] = useState<boolean>(false);
+  const [failed, setFailed] = useState<boolean>(false);
+  // Blocks repeat clicks right away, before the sending state re-renders
+  const inFlight = useRef(false);
   const [formData, setFormData] = useState<FeedbackFormData>({
     recaptchaToken: '',
     name: "",
@@ -61,27 +65,38 @@ export default function ReviewForm() {
     // Anti-spam honeypot
     if (formData.website) return;
 
-    // Get a fresh recaptcha token now: tokens expire two minutes after they're made
-    const recaptchaToken = await getRecaptchaToken('feedback_form');
-
-    // Update formData with the recaptcha token
-    const submissionData = {
-      ...formData,
-      recaptchaToken
-    };
+    // One submission at a time, so repeat clicks don't send it twice
+    if (inFlight.current) return;
+    inFlight.current = true;
+    setSending(true);
+    setFailed(false);
 
     try {
-      await fetch("https://integration.plumb-all.com/website/negativeFeedback", {
+      // Get a fresh recaptcha token now: tokens expire two minutes after they're made
+      const recaptchaToken = await getRecaptchaToken('feedback_form');
+
+      // Update formData with the recaptcha token
+      const submissionData = {
+        ...formData,
+        recaptchaToken
+      };
+
+      const response = await fetch("https://integration.plumb-all.com/website/negativeFeedback", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(submissionData),
       });
+      if (!response.ok) {
+        throw new Error(`Feedback form returned ${response.status}`);
+      }
       setSubmitted(true);
     } catch (err) {
       console.error("Form submission failed", err);
+      setFailed(true);
+      inFlight.current = false;
+    } finally {
+      setSending(false);
     }
-
-    setSubmitted(true);
   };
 
   return (
@@ -213,11 +228,19 @@ export default function ReviewForm() {
                     />
                   </div>
 
+                  {failed ? (
+                    <p role="alert" className="text-sm text-red-700">
+                      Sorry, your feedback didn&rsquo;t go through. Please try again, or call us at{" "}
+                      <a href="tel:+17709143877" className="underline font-semibold">(770) 914-3877</a>.
+                    </p>
+                  ) : null}
+
                   <button
                     type="submit"
-                    className="inline-block background-theme-1 text-white px-6 py-3 rounded shadow hover:background-theme-2 transition"
+                    disabled={sending}
+                    className="inline-block background-theme-1 text-white px-6 py-3 rounded shadow hover:background-theme-2 transition disabled:opacity-60 disabled:cursor-wait"
                   >
-                    Submit Feedback
+                    {sending ? "Sending…" : "Submit Feedback"}
                   </button>
                 </form>
               )}

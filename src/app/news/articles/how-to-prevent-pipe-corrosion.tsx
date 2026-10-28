@@ -9,7 +9,7 @@ export const metadata = {
   title: 'How to Prevent Pipe Corrosion in Your Home',
   date: '2024-12-11',
   excerpt: 'Understand the types of pipe corrosion, what causes them, and learn effective prevention strategies to protect your home\'s plumbing system.',
-  image: '/images/gray-pipes-2.jpg',
+  image: '/images/gray-pipes-2.webp',
   path: `/news/article/${slug}`
 };
 

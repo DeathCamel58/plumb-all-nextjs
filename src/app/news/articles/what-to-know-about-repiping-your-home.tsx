@@ -9,7 +9,7 @@ export const metadata = {
   title: 'What to Know About Repiping Your Home',
   date: '2020-09-23',
   excerpt: 'Repiping your home is a major investment, but it can solve persistent plumbing problems and protect your property. Here\'s everything you need to know about the process.',
-  image: '/images/gray-pipes.jpg',
+  image: '/images/gray-pipes.webp',
   path: `/news/article/${slug}`
 };
 

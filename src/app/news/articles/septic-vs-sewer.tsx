@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Septic vs. Sewer: Pros and Cons for Homeowners',
   date: '2025-01-29',
   excerpt: 'Comparing septic systems and municipal sewer connections to help homeowners understand the costs, maintenance requirements, and benefits of each option.',
-  image: '/images/septic-system-overview.jpg',
+  image: '/images/septic-system-overview.webp',
   path: `/news/article/${slug}`
 };
 

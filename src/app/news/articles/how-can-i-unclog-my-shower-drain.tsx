@@ -9,7 +9,7 @@ export const metadata = {
   title: 'How Can I Unclog My Shower Drain?',
   date: '2023-11-01',
   excerpt: 'Learn how to unclog your shower drain using common household items and simple methods. No need for specialized products as our plumbers give good advice.',
-  image: '/images/shower-drain.jpg',
+  image: '/images/shower-drain.webp',
   path: `/news/article/${slug}`
 };
 

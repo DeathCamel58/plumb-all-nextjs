@@ -9,7 +9,7 @@ export const metadata = {
   title: 'What to Do in a Plumbing Emergency',
   date: '2025-12-03',
   excerpt: 'A plumbing emergency can happen at any time. Learn the critical first steps to take before the plumber arrives to minimize damage and protect your home.',
-  image: '/images/spraying-pipe.jpg',
+  image: '/images/spraying-pipe.webp',
   path: `/news/article/${slug}`
 };
 

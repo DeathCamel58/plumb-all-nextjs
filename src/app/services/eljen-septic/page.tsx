@@ -11,7 +11,7 @@ import SepticServiceAreas from "@/components/SepticServiceAreas";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import FAQSchema from "@/components/schema/FAQSchema";
-import HeroImage from '../../../../public/images/septic-system-overview.jpg';
+import HeroImage from '../../../../public/images/septic-system-overview.webp';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
@@ -108,7 +108,7 @@ export default function EljenSeptic() {
           <div className="md:col-span-4">
             <div className="relative w-full h-64 md:h-full rounded-lg overflow-hidden shadow-md">
               <Image
-                src="/images/septic-system-overview.jpg"
+                src="/images/septic-system-overview.webp"
                 alt="Eljen GSF Septic System"
                 fill
                 className="object-cover"

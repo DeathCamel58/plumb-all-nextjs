@@ -10,7 +10,7 @@ import TrustStrip from "@/components/TrustStrip";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import FAQSchema from "@/components/schema/FAQSchema";
-import HeroImage from '../../../../public/images/vans.jpg';
+import HeroImage from '../../../../public/images/vans.webp';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
@@ -62,7 +62,7 @@ export default function Emergencies() {
             <div className="w-full md:w-1/3 px-4 mb-6">
               <figure className="mb-4">
                 <Image
-                  src="/images/vans.jpg"
+                  src="/images/vans.webp"
                   alt="Plumb-All Emergency Service"
                   width={412}
                   height={268}

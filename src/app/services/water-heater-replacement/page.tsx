@@ -10,7 +10,7 @@ import TrustStrip from "@/components/TrustStrip";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import FAQSchema from "@/components/schema/FAQSchema";
-import HeroImage from '../../../../public/images/water-heater-wrench.jpg';
+import HeroImage from '../../../../public/images/water-heater-wrench.webp';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
@@ -82,7 +82,7 @@ export default function WaterHeaterReplacement() {
           <div className="md:col-span-4">
             <div className="relative w-full h-64 md:h-full rounded-lg overflow-hidden shadow-md">
               <Image
-                src="/images/flush-water-heater.jpg"
+                src="/images/flush-water-heater.webp"
                 alt="Person opening flush valve on water heater."
                 fill
                 className="object-cover"

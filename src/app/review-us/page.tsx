@@ -1,6 +1,6 @@
 import React from 'react';
 import BannerHeader from "@/components/BannerHeader";
-import HeroImage from '../../../public/images/our-team.jpg';
+import HeroImage from '../../../public/images/our-team.webp';
 import ReviewForm from "@/components/ReviewForm";
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";

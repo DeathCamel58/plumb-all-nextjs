@@ -68,7 +68,7 @@ export default async function ArticlePage({ params }: Props) {
         headline={article.title}
         description={article.excerpt}
         datePublished={new Date(article.date).toISOString()}
-        image={article.image || '/images/pipes.jpg'}
+        image={article.image || '/images/pipes.webp'}
         url={`/news/article/${slug}`}
       />
       <BreadcrumbSchema
@@ -82,7 +82,7 @@ export default async function ArticlePage({ params }: Props) {
       {/* Header Image */}
       <div className="relative w-full h-64 md:h-96">
         <Image
-          src={article.image || "/images/pipes.jpg"}
+          src={article.image || "/images/pipes.webp"}
           alt={article.title}
           fill
           className="object-cover object-center w-full"
@@ -130,7 +130,7 @@ export default async function ArticlePage({ params }: Props) {
                 <div key={relatedArticle.slug} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
                   <div className="relative h-40">
                     <Image
-                      src={relatedArticle.image || "/images/pipes.jpg"}
+                      src={relatedArticle.image || "/images/pipes.webp"}
                       alt={relatedArticle.title}
                       fill
                       className="object-cover"

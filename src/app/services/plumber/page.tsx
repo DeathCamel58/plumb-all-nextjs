@@ -9,7 +9,7 @@ import TrustStrip from "@/components/TrustStrip";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import FAQSchema from "@/components/schema/FAQSchema";
-import HeroImage from '../../../../public/images/vans.jpg';
+import HeroImage from '../../../../public/images/vans.webp';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {

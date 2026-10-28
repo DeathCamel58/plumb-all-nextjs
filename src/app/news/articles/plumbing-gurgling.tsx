@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Plumbing Gurgling',
   date: '2021-09-01',
   excerpt: 'In this post, we’re going to cover what causes a plumbing gurgling sound, and potential solutions to stop these sounds from occurring.',
-  image: '/images/roof-vent.jpg',
+  image: '/images/roof-vent.webp',
   path: `/news/article/${slug}`
 };
 

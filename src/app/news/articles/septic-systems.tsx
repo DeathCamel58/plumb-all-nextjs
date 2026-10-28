@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Septic Systems',
   date: '2023-04-21',
   excerpt: 'Learn about the types of septic systems available, including conventional and alternative systems, to make an informed decision for your home or business.',
-  image: '/images/septic-install.jpg',
+  image: '/images/septic-install.webp',
   path: `/news/article/${slug}`
 };
 

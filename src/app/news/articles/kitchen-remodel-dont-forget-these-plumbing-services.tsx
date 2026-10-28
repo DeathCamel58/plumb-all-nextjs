@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Kitchen Remodel? Don’t Forget These Plumbing Services',
   date: '2025-09-01',
   excerpt: 'Planning a kitchen remodel? Don’t overlook your plumbing! From sink installation to moving water lines, these services ensure your renovation runs smoothly.',
-  image: '/images/dishwasher-2.jpg',
+  image: '/images/dishwasher-2.webp',
   path: `/news/article/${slug}`
 };
 

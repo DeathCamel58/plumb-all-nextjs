@@ -9,7 +9,7 @@ export const metadata = {
     title: "What Is Trenchless Sewer Repair?",
     date: "2022-01-19",
     excerpt: "Trenchless sewer repair fixes damaged sewer lines without digging up your yard. Learn how pipe lining and pipe bursting work, their benefits, and when trenchless methods are the right choice.",
-    image: "/images/roots-in-pipe.jpg",
+    image: "/images/roots-in-pipe.webp",
     path: `/news/article/${slug}`,
 };
 

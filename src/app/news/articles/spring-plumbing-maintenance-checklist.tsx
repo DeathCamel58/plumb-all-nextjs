@@ -9,7 +9,7 @@ export const metadata = {
     title: "Spring Plumbing Maintenance Checklist for Atlanta Homeowners",
     date: "2026-03-17",
     excerpt: "Spring is the perfect time to check your plumbing after winter. Use this checklist to inspect your home\'s plumbing system and catch small problems before they become expensive repairs.",
-    image: "/images/gray-pipes.jpg",
+    image: "/images/gray-pipes.webp",
     path: `/news/article/${slug}`,
 };
 

@@ -9,7 +9,7 @@ export const metadata = {
   title: 'How to Prevent Clogged Drains',
   date: '2019-10-02',
   excerpt: 'Clogged drains are one of the most common plumbing problems homeowners face. Learn practical tips to keep your drains flowing freely and avoid costly repairs.',
-  image: '/images/drain-cleaning.jpg',
+  image: '/images/drain-cleaning.webp',
   path: `/news/article/${slug}`
 };
 

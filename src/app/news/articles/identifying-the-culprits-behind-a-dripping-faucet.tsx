@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Stop That Drip: Identifying What\'s Behind Your Leaky Faucet',
   date: '2023-12-21',
   excerpt: 'That annoying drip is more than just a nuisance—it\'s wasting water and money. Identify the common causes of leaky faucets.',
-  image: '/images/dripping-faucet.jpg',
+  image: '/images/dripping-faucet.webp',
   path: `/news/article/${slug}`
 };
 

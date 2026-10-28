@@ -9,7 +9,7 @@ export const metadata = {
   title: 'How To Spot Main Sewer Line Obstruction',
   date: '2023-11-01',
   excerpt: 'Learn how to detect a sewer line obstruction early to avoid costly repairs. Stay proactive and protect your home’s plumbing system.',
-  image: '/images/roots-in-pipe.jpg',
+  image: '/images/roots-in-pipe.webp',
   path: `/news/article/${slug}`
 };
 

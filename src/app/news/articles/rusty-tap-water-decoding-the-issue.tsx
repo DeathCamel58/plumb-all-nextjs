@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Rusty Tap Water: Decoding the Issue',
   date: '2023-11-14',
   excerpt: 'Figure out why you see rusty tap water with our guide. When deciphering discoloration, Plumb-All’s expert advice has you covered.',
-  image: '/images/rusty-water.jpg',
+  image: '/images/rusty-water.webp',
   path: `/news/article/${slug}`
 };
 

@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Guide to Tankless Water Heaters: Pros and Cons',
   date: '2025-07-15',
   excerpt: 'Considering a tankless water heater? Learn about the advantages and disadvantages of on-demand water heating systems.',
-  image: '/images/tankless-water-heaters.jpg',
+  image: '/images/tankless-water-heaters.webp',
   path: `/news/article/${slug}`
 };
 

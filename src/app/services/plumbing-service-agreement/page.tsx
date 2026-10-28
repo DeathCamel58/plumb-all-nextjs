@@ -9,7 +9,7 @@ import BannerHeader from "@/components/BannerHeader";
 import TrustStrip from "@/components/TrustStrip";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
-import HeroImage from '../../../../public/images/spraying-pipe.jpg';
+import HeroImage from '../../../../public/images/spraying-pipe.webp';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
@@ -66,7 +66,7 @@ export default function PlumbingServiceAgreement() {
           <div className="md:col-span-4">
             <div className="relative w-full h-64 md:h-full rounded-lg overflow-hidden shadow-md">
               <Image
-                src="/images/water-heater-wrench.jpg"
+                src="/images/water-heater-wrench.webp"
                 alt="Professional Plumber"
                 fill
                 className="object-cover"

@@ -11,7 +11,7 @@ import SepticServiceAreas from "@/components/SepticServiceAreas";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import FAQSchema from "@/components/schema/FAQSchema";
-import HeroImage from '../../../../public/images/septic-pumping.jpg';
+import HeroImage from '../../../../public/images/septic-pumping.webp';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
@@ -139,7 +139,7 @@ export default function SepticTankPumping() {
           <div className="md:col-span-4">
             <div className="relative w-full h-64 md:h-full rounded-lg overflow-hidden shadow-md">
               <Image
-                src="/images/septic-pumping.jpg"
+                src="/images/septic-pumping.webp"
                 alt="Septic service in Metro Atlanta"
                 fill
                 className="object-cover"

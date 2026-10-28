@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Water Filtration Systems: Types and Benefits',
   date: '2024-08-07',
   excerpt: 'Explore the different types of water filtration systems available for your home, from carbon filters to reverse osmosis, and learn which one is right for you.',
-  image: '/images/running-faucet.jpg',
+  image: '/images/running-faucet.webp',
   path: `/news/article/${slug}`
 };
 

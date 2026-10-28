@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Plumbing Permits in Georgia: What Homeowners Should Know',
   date: '2025-03-12',
   excerpt: 'Understand when plumbing permits are required in Georgia, how to obtain them, and why working with a licensed plumber keeps your project legal and safe.',
-  image: '/images/home-plumbing-diagram.jpg',
+  image: '/images/home-plumbing-diagram.webp',
   path: `/news/article/${slug}`
 };
 

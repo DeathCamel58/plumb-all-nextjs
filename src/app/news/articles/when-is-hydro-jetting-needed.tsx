@@ -9,7 +9,7 @@ export const metadata = {
   title: 'When is Hydro Jetting Needed?',
   date: '2022-06-06',
   excerpt: 'Hydro Jetting refers to a method by which clogged drains, and sewer lines are cleaned. With hydro jetting, water is blasted into the drain lines to clean lines.',
-  image: '/images/hydro-jetting-nozzle.jpg',
+  image: '/images/hydro-jetting-nozzle.webp',
   path: `/news/article/${slug}`
 };
 

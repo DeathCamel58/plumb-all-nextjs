@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Bathroom Ventilation: Preventing Moisture Damage',
   date: '2023-05-03',
   excerpt: 'Learn why proper bathroom ventilation is essential for preventing mold, mildew, and moisture damage, and how to ensure your bathroom is adequately ventilated.',
-  image: '/images/roof-vent.jpg',
+  image: '/images/roof-vent.webp',
   path: `/news/article/${slug}`
 };
 

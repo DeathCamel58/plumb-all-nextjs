@@ -6,7 +6,7 @@ import Link from "next/link";
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
-import HeroImage from '../../../public/images/our-team.jpg';
+import HeroImage from '../../../public/images/our-team.webp';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
@@ -255,7 +255,7 @@ export default function AboutOurProcess() {
               <div className="md:w-1/3 mb-6 md:mb-0 md:pr-8">
                 <div className="relative w-full h-64 rounded-lg overflow-hidden">
                   <Image
-                    src="/images/our-team.jpg"
+                    src="/images/our-team.webp"
                     alt="Plumbing History"
                     fill
                     className="object-cover object-center"

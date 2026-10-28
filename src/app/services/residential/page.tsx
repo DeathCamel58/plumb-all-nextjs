@@ -9,7 +9,7 @@ import BannerHeader from "@/components/BannerHeader";
 import TrustStrip from "@/components/TrustStrip";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
-import HeroImage from '../../../../public/images/slab-leak.jpg';
+import HeroImage from '../../../../public/images/slab-leak.webp';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
@@ -49,7 +49,7 @@ export default function Residential() {
             <div className="w-full md:w-1/3 px-4 mb-6">
               <figure className="mb-4">
                 <Image
-                  src="/images/water-heater-wrench.jpg"
+                  src="/images/water-heater-wrench.webp"
                   alt="Residential Plumbing Service"
                   width={412}
                   height={268}

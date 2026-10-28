@@ -9,7 +9,7 @@ export const metadata = {
   title: 'How to Clean a Garbage Disposal',
   date: '2021-09-17',
   excerpt: 'A garbage disposal does a great job at breaking up food waste and getting it disposed of. However they need to be cleaned sometimes. Follow our go-to guide!',
-  image: '/images/garbage-disposal.jpg',
+  image: '/images/garbage-disposal.webp',
   path: `/news/article/${slug}`
 };
 

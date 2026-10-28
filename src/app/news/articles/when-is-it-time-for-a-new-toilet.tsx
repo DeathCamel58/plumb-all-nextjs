@@ -9,7 +9,7 @@ export const metadata = {
   title: 'When is it Time for a New Toilet?',
   date: '2023-11-03',
   excerpt: 'Discover the signs indicating it’s time for a new toilet in your home. Learn when to replace your toilet due to frequent repairs, clogs, cracks, or its age.',
-  image: '/images/toilet.jpg',
+  image: '/images/toilet.webp',
   path: `/news/article/${slug}`
 };
 

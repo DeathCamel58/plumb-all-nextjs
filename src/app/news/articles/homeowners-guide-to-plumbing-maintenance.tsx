@@ -9,7 +9,7 @@ export const metadata = {
   title: 'The Homeowner\u0027s Guide to Plumbing Maintenance',
   date: '2025-06-04',
   excerpt: 'Learn the essential plumbing maintenance tasks every homeowner should perform throughout the year to prevent costly repairs and keep your system running smoothly.',
-  image: '/images/sink-repair.jpg',
+  image: '/images/sink-repair.webp',
   path: `/news/article/${slug}`
 };
 

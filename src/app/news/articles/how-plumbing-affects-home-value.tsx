@@ -9,7 +9,7 @@ export const metadata = {
     title: "How Plumbing Affects Your Home\u0027s Value",
     date: "2022-08-03",
     excerpt: "Your plumbing system plays a bigger role in your home\u0027s value than you might think. Learn which plumbing upgrades increase resale value, what inspectors look for, and how to get the best return on investment.",
-    image: "/images/home-for-sale.jpg",
+    image: "/images/home-for-sale.webp",
     path: `/news/article/${slug}`,
 };
 

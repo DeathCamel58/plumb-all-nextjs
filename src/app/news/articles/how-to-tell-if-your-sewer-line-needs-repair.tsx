@@ -9,7 +9,7 @@ export const metadata = {
   title: 'How to Tell If Your Sewer Line Needs Repair',
   date: '2024-07-17',
   excerpt: 'Learn the warning signs that indicate your sewer line may need repair, from slow drains to foul odors, and discover the inspection and repair options available.',
-  image: '/images/roots-in-pipe.jpg',
+  image: '/images/roots-in-pipe.webp',
   path: `/news/article/${slug}`
 };
 

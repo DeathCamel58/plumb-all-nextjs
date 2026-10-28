@@ -9,7 +9,7 @@ export const metadata = {
     title: "Sump Pump Maintenance: Keeping Your Basement Dry",
     date: "2024-04-24",
     excerpt: "Learn how to maintain your sump pump to prevent basement flooding, including testing procedures, cleaning tips, and battery backup options.",
-    image: "/images/pipes.jpg",
+    image: "/images/pipes.webp",
     path: `/news/article/${slug}`,
 };
 

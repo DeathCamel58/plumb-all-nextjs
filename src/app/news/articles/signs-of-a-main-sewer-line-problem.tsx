@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Signs of a Main Sewer Line Problem',
   date: '2023-01-11',
   excerpt: 'Discover the warning signs of a main sewer line problem, from multiple drain backups to soggy yards, and learn what causes these issues.',
-  image: '/images/roots-in-pipe.jpg',
+  image: '/images/roots-in-pipe.webp',
   path: `/news/article/${slug}`
 };
 

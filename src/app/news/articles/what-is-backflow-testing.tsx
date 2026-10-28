@@ -9,7 +9,7 @@ export const metadata = {
   title: 'What Is Backflow Testing and Why Does It Matter?',
   date: '2025-12-17',
   excerpt: 'Backflow testing protects your drinking water from contamination. Learn what it is, how often it\'s required, and what to expect during a backflow test.',
-  image: '/images/backflow.jpg',
+  image: '/images/backflow.webp',
   path: `/news/article/${slug}`
 };
 

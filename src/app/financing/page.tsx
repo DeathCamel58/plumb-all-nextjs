@@ -110,7 +110,7 @@ export default function Financing() {
 
           <div className="md:col-span-4">
             <Image
-              src="/images/wisetack-iphone-1.png"
+              src="/images/wisetack-iphone-1.webp"
               alt="Wisetack Financing"
               height={400}
               width={400}

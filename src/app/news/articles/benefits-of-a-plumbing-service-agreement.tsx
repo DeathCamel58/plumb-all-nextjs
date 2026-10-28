@@ -9,7 +9,7 @@ export const metadata = {
     title: "The Benefits of a Plumbing Service Agreement",
     date: "2024-06-26",
     excerpt: "Learn how a plumbing service agreement can save you money, prevent emergencies, and give you peace of mind with priority scheduling and regular inspections.",
-    image: "/images/vans.jpg",
+    image: "/images/vans.webp",
     path: `/news/article/${slug}`,
 };
 

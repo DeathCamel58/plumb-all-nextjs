@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Why do faucets leak?',
   date: '2022-09-06',
   excerpt: 'A single leaking faucet can waste approximately 3,000 gallons of water per year. In this article, we cover some common causes.',
-  image: '/images/faucet-leak.jpg',
+  image: '/images/faucet-leak.webp',
   path: `/news/article/${slug}`
 };
 

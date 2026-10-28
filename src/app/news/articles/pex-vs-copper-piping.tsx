@@ -9,7 +9,7 @@ export const metadata = {
   title: 'PEX vs. Copper: Which Piping Is Right for Your Home?',
   date: '2021-02-10',
   excerpt: 'Choosing between PEX and copper piping is one of the biggest decisions in a plumbing project. Learn the pros, cons, and best use cases for each material.',
-  image: '/images/pipes.jpg',
+  image: '/images/pipes.webp',
   path: `/news/article/${slug}`
 };
 

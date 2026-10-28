@@ -10,7 +10,7 @@ export const metadata = {
   title: 'Flushing Your Water Heater',
   date: '2023-06-19',
   excerpt: 'Discover the importance of flushing your water heater for longevity. Learn how sediment buildup affects efficiency and how to perform this maintenance task.',
-  image: '/images/flush-water-heater.jpg',
+  image: '/images/flush-water-heater.webp',
   path: `/news/article/${slug}`
 };
 
@@ -83,7 +83,7 @@ export default function ArticleContent() {
 
         <div className="flex items-center justify-center">
           <Image
-            src="/images/water-heater.jpg"
+            src="/images/water-heater.webp"
             alt="Water Heater"
             className="rounded-lg shadow-md max-w-full h-auto"
             width={250}

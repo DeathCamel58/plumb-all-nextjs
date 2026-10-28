@@ -9,7 +9,7 @@ export const metadata = {
     title: "What Is a Water Pressure Regulator and Do You Need One?",
     date: "2024-02-07",
     excerpt: "Learn how water pressure regulators protect your plumbing system, signs you may need one, and what to expect during installation.",
-    image: "/images/dripping-faucet-2.jpg",
+    image: "/images/dripping-faucet-2.webp",
     path: `/news/article/${slug}`,
 };
 

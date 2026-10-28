@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Signs You Need a Water Line Repair',
   date: '2020-02-19',
   excerpt: 'Your water line is the lifeline of your home\'s plumbing system. Learn the warning signs that indicate you may need a water line repair before the problem gets worse.',
-  image: '/images/pipes.jpg',
+  image: '/images/pipes.webp',
   path: `/news/article/${slug}`
 };
 

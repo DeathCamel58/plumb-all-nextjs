@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Why Pouring Grease Down Your Drain is a Recipe for Trouble',
   date: '2023-11-13',
   excerpt: 'Discover why pouring grease down your kitchen sink can lead to plumbing disasters. Learn about how fats, oils, and grease can cause clogs.',
-  image: '/images/sink-drain.jpg',
+  image: '/images/sink-drain.webp',
   path: `/news/article/${slug}`
 };
 

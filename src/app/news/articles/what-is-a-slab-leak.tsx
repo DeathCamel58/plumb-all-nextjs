@@ -9,7 +9,7 @@ export const metadata = {
   title: 'What Is a Slab Leak and How Is It Repaired?',
   date: '2024-10-30',
   excerpt: 'Learn what slab leaks are, how to recognize the warning signs, and explore the detection methods and repair options available to fix them.',
-  image: '/images/slab-leak.jpg',
+  image: '/images/slab-leak.webp',
   path: `/news/article/${slug}`
 };
 

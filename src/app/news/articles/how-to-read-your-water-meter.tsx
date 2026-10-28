@@ -9,7 +9,7 @@ export const metadata = {
     title: "How to Read Your Water Meter and Detect Leaks",
     date: "2021-10-20",
     excerpt: "Your water meter is a powerful tool for detecting hidden leaks and monitoring usage. Learn how to locate, read, and use your water meter to catch plumbing problems early.",
-    image: "/images/water-shut-off-valve.jpg",
+    image: "/images/water-shut-off-valve.webp",
     path: `/news/article/${slug}`,
 };
 

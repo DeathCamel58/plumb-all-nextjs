@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Sink Installation: What to Consider Before You Start',
   date: '2025-09-24',
   excerpt: 'Choosing and installing a new sink involves more than picking a style you like. Learn about sink types, mounting options, plumbing requirements, and common mistakes to avoid.',
-  image: '/images/sink-underside.jpg',
+  image: '/images/sink-underside.webp',
   path: `/news/article/${slug}`
 };
 

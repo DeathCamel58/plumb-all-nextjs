@@ -9,7 +9,7 @@ export const metadata = {
   title: 'What to Expect During a Septic Tank Inspection',
   date: '2026-02-19',
   excerpt: 'Whether you\'re buying a home or maintaining your system, a septic inspection is essential. Here\'s what the process involves and how to prepare.',
-  image: '/images/septic-pumping.jpg',
+  image: '/images/septic-pumping.webp',
   path: `/news/article/${slug}`
 };
 

@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Smart Home Plumbing Technology: What\'s Available',
   date: '2025-04-09',
   excerpt: 'Explore the latest smart plumbing technologies including leak detectors, automatic shut-off valves, smart water heaters, and whole-home monitoring systems.',
-  image: '/images/home-plumbing-diagram.jpg',
+  image: '/images/home-plumbing-diagram.webp',
   path: `/news/article/${slug}`
 };
 

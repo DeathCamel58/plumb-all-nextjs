@@ -9,7 +9,7 @@ export const metadata = {
     title: "Bathroom Remodel Plumbing: What You Need to Know",
     date: "2022-03-09",
     excerpt: "Planning a bathroom remodel? Understanding the plumbing considerations is essential before you start. Learn about moving fixtures, permits, common mistakes, and how to plan your project for success.",
-    image: "/images/sink-repair.jpg",
+    image: "/images/sink-repair.webp",
     path: `/news/article/${slug}`,
 };
 

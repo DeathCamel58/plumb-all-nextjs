@@ -6,7 +6,7 @@ import { Metadata } from "next";
 import { notFound } from 'next/navigation';
 import {generateMetadataDict} from "@/components/header/metadata";
 import BannerHeader from "@/components/BannerHeader";
-import HeroImage from '../../../../public/images/formbg.jpg';
+import HeroImage from '../../../../public/images/formbg.webp';
 
 // Define Props type for the page
 type Props = {
@@ -93,7 +93,7 @@ export default async function NewsPage({ params }: Props) {
             <div key={article.slug} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
               <div className="relative h-48">
                 <Image
-                  src={article.image || "/images/pipes.jpg"}
+                  src={article.image || "/images/pipes.webp"}
                   alt={article.title}
                   fill
                   className="object-cover"

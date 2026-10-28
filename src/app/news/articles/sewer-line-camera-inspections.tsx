@@ -9,7 +9,7 @@ export const metadata = {
   title: 'The Importance of Sewer Line Camera Inspections',
   date: '2020-07-15',
   excerpt: 'A sewer line camera inspection can reveal hidden problems before they become expensive emergencies. Learn when you need one and what it can uncover.',
-  image: '/images/roots-in-pipe.jpg',
+  image: '/images/roots-in-pipe.webp',
   path: `/news/article/${slug}`
 };
 

@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Common Plumbing Issues in the Metro Atlanta Area',
   date: '2025-08-12',
   excerpt: 'Discover some common plumbing problems affecting Atlanta homeowners. From hard water to seasonal pipe issues, learn how to address these plumbing challenges.',
-  image: '/images/spraying-pipe.jpg',
+  image: '/images/spraying-pipe.webp',
   path: `/news/article/${slug}`
 };
 

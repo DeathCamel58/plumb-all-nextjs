@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Essential Plumbing Knowledge for New Homeowners',
   date: '2023-11-14',
   excerpt: 'From locating the water main to choosing the right plunger, our advice ensures you\'re equipped to handle common plumbing issues and prevent costly emergencies.',
-  image: '/images/water-shut-off-valve.jpg',
+  image: '/images/water-shut-off-valve.webp',
   path: `/news/article/${slug}`
 };
 

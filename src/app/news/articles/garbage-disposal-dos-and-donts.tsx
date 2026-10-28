@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Garbage Disposal Do\u0027s and Don\u0027ts',
   date: '2023-10-04',
   excerpt: 'Keep your garbage disposal running smoothly with these essential do\u0027s and don\u0027ts, plus maintenance tips and troubleshooting advice.',
-  image: '/images/garbage-disposal.jpg',
+  image: '/images/garbage-disposal.webp',
   path: `/news/article/${slug}`
 };
 

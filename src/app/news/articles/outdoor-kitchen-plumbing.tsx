@@ -9,7 +9,7 @@ export const metadata = {
     title: "What to Know Before Installing an Outdoor Kitchen",
     date: "2024-05-15",
     excerpt: "Planning an outdoor kitchen? Learn the essential plumbing considerations for water supply, drainage, gas lines, and winterization.",
-    image: "/images/pipes.jpg",
+    image: "/images/pipes.webp",
     path: `/news/article/${slug}`,
 };
 

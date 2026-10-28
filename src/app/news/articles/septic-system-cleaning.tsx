@@ -10,7 +10,7 @@ export const metadata = {
   title: 'Septic System Cleaning',
   date: '2021-09-09',
   excerpt: 'What is a septic tank cleaning, and why do people get it cleaned instead of pumped? In this article, we strive to inform and educate about septic cleaning.',
-  image: '/images/septic-install.jpg',
+  image: '/images/septic-install.webp',
   path: `/news/article/${slug}`
 };
 
@@ -50,7 +50,7 @@ export default function ArticleContent() {
 
         <div className="flex items-center justify-center">
           <Image
-            src="/images/septic-system-overview.jpg"
+            src="/images/septic-system-overview.webp"
             alt="Septic System Diagram"
             className="rounded-lg max-w-full h-auto"
             width={500}

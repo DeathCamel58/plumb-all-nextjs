@@ -9,7 +9,7 @@ export const metadata = {
   title: 'How to Prepare Your Plumbing for Fall and Winter',
   date: '2024-10-09',
   excerpt: 'Protect your plumbing from cold weather damage with this comprehensive guide to fall and winter preparation, including pipe insulation, water heater checks, and more.',
-  image: '/images/frozen-pipe.jpg',
+  image: '/images/frozen-pipe.webp',
   path: `/news/article/${slug}`
 };
 

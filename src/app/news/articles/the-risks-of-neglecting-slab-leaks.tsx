@@ -9,7 +9,7 @@ export const metadata = {
   title: 'The Risks of Neglecting Slab Leaks',
   date: '2023-11-14',
   excerpt: 'Discover the risks and consequences of ignoring slab leaks on your property. Learn about the causes and potential hazards of slab leaks here.',
-  image: '/images/slab-leak.jpg',
+  image: '/images/slab-leak.webp',
   path: `/news/article/${slug}`
 };
 

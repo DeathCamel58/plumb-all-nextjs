@@ -9,7 +9,7 @@ export const metadata = {
   title: 'How to Choose the Right Plumber in Metro Atlanta',
   date: '2026-01-22',
   excerpt: 'Not all plumbers are created equal. Here\'s what to look for when hiring a plumber in Metro Atlanta — from licensing to pricing to reviews.',
-  image: '/images/vans.jpg',
+  image: '/images/vans.webp',
   path: `/news/article/${slug}`
 };
 

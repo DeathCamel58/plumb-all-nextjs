@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Are Flushable Wipes Safe to Flush?',
   date: '2023-11-06',
   excerpt: 'Flushable wipes are not be as safe to flush as you think. Learn why wet wipes can lead to plumbing problems and costly repairs.',
-  image: '/images/flushable-wipes.jpg',
+  image: '/images/flushable-wipes.webp',
   path: `/news/article/${slug}`
 };
 

@@ -10,7 +10,7 @@ import TrustStrip from "@/components/TrustStrip";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import FAQSchema from "@/components/schema/FAQSchema";
-import HeroImage from '../../../../public/images/backflow.jpg';
+import HeroImage from '../../../../public/images/backflow.webp';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
@@ -55,7 +55,7 @@ export default function Backflow() {
             <div className="w-full md:w-1/3 px-4 mb-6">
               <figure className="mb-4">
                 <Image
-                  src="/images/gray-pipes.jpg"
+                  src="/images/gray-pipes.webp"
                   alt="Backflow Prevention Service"
                   width={412}
                   height={268}

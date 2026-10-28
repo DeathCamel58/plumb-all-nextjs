@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Drain Field Maintenance: Protecting Your Septic System',
   date: '2025-04-23',
   excerpt: 'Discover how your septic drain field works, warning signs of failure, essential maintenance tips, and what to avoid to keep your system functioning properly.',
-  image: '/images/septic-install.jpg',
+  image: '/images/septic-install.webp',
   path: `/news/article/${slug}`
 };
 

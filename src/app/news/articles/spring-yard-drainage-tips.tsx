@@ -9,7 +9,7 @@ export const metadata = {
     title: "Spring Yard Drainage Tips to Protect Your Plumbing",
     date: "2021-04-21",
     excerpt: "Poor yard drainage can lead to foundation damage, flooded basements, and serious plumbing problems. Learn how to improve drainage around your home this spring with grading, French drains, and downspout extensions.",
-    image: "/images/gray-pipes-2.jpg",
+    image: "/images/gray-pipes-2.webp",
     path: `/news/article/${slug}`,
 };
 

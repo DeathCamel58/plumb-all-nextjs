@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Essential Dishwasher Maintenance Tips',
   date: '2023-11-22',
   excerpt: 'Discover tips to keep your dishwasher performing at its best! From inspecting seals to cleaning spray arm nozzles, our blog offers essential maintenance advice.',
-  image: '/images/dishwasher.jpg',
+  image: '/images/dishwasher.webp',
   path: `/news/article/${slug}`
 };
 

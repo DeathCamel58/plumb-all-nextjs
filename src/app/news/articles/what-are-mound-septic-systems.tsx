@@ -9,7 +9,7 @@ export const metadata = {
   title: 'What Are Mound Septic Systems?',
   date: '2025-02-19',
   excerpt: 'Learn how mound septic systems work, when they are needed, and what installation and maintenance requirements homeowners should expect.',
-  image: '/images/mound-septic.jpg',
+  image: '/images/mound-septic.webp',
   path: `/news/article/${slug}`
 };
 

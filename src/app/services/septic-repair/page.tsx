@@ -11,7 +11,7 @@ import SepticServiceAreas from "@/components/SepticServiceAreas";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import FAQSchema from "@/components/schema/FAQSchema";
-import HeroImage from '../../../../public/images/septic-system-overview.jpg';
+import HeroImage from '../../../../public/images/septic-system-overview.webp';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
@@ -208,7 +208,7 @@ export default function SepticRepair() {
             <div>
               <div className="relative w-full h-80 md:h-96 rounded-lg overflow-hidden shadow-md mb-6">
                 <Image
-                  src="/images/septic-system-overview.jpg"
+                  src="/images/septic-system-overview.webp"
                   alt="Septic System Diagram"
                   fill
                   className="object-cover"

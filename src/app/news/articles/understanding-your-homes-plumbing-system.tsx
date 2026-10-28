@@ -10,7 +10,7 @@ export const metadata = {
   title: 'Understanding Your Home’s Plumbing System',
   date: '2025-10-17',
   excerpt: 'Learn the fundamentals of your home’s plumbing system, emergency preparedness, key components, common issues, seasonal risks, and when to call a pro.',
-  image: '/images/home-plumbing-diagram.jpg',
+  image: '/images/home-plumbing-diagram.webp',
   path: `/news/article/${slug}`
 };
 
@@ -41,7 +41,7 @@ export default function ArticleContent() {
         </div>
         <div className="flex md:justify-end justify-center">
           <Image
-            src="/images/home-plumbing-diagram.jpg"
+            src="/images/home-plumbing-diagram.webp"
             alt="Diagram of a home plumbing system"
             className="rounded-lg shadow-md max-w-full h-auto"
             width={360}

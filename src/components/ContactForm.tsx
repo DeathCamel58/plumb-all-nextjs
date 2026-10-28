@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, FormEvent, ReactNode } from "react";
+import React, { useState, useRef, FormEvent, ReactNode } from "react";
 import {RecaptchaWrapper, getRecaptchaToken} from "@/components/RecaptchaWrapper";
 import { getClickIds } from "@/lib/clickIds";
 
@@ -144,6 +144,7 @@ interface ButtonProps {
   type?: "button" | "submit" | "reset";
   onClick?: () => void;
   className?: string;
+  disabled?: boolean;
   children: ReactNode;
 }
 
@@ -151,10 +152,11 @@ const Button: React.FC<ButtonProps> = ({
   type = "button",
   onClick,
   className,
+  disabled,
   children,
 }) => {
   return (
-    <button type={type} onClick={onClick} className={className}>
+    <button type={type} onClick={onClick} className={className} disabled={disabled}>
       {children}
     </button>
   );
@@ -213,6 +215,10 @@ interface ContactFormProps {
 export default function ContactForm({ onDarkBackground = true }: ContactFormProps) {
   const [formData, setFormData] = useState<FormData>(initialState);
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [failed, setFailed] = useState(false);
+  // Blocks repeat clicks right away, before the sending state re-renders
+  const inFlight = useRef(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const {name, value, type} = e.target;
@@ -229,29 +235,42 @@ export default function ContactForm({ onDarkBackground = true }: ContactFormProp
     // Anti-spam honeypot
     if (formData.website) return;
 
-    // Get a fresh recaptcha token now: tokens expire two minutes after they're made
-    const recaptchaToken = await getRecaptchaToken('contact_form');
-
-    // Update formData with the recaptcha token, and any Google Ads click IDs
-    // from the landing page so the lead can be tied back to its ad click
-    const submissionData = {
-      ...formData,
-      recaptchaToken,
-      ...getClickIds(),
-    };
+    // One submission at a time. The reCAPTCHA token and the upload take a few
+    // seconds, and repeat clicks were sending the same lead several times.
+    if (inFlight.current || submitted) return;
+    inFlight.current = true;
+    setSending(true);
+    setFailed(false);
 
     try {
+      // Get a fresh recaptcha token now: tokens expire two minutes after they're made
+      const recaptchaToken = await getRecaptchaToken('contact_form');
+
+      // Update formData with the recaptcha token, and any Google Ads click IDs
+      // from the landing page so the lead can be tied back to its ad click
+      const submissionData = {
+        ...formData,
+        recaptchaToken,
+        ...getClickIds(),
+      };
+
       const response = await fetch("https://integration.plumb-all.com/website/contactForm", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(submissionData),
       });
-      setSubmitted(true);
-      if (response.ok) {
-        trackLead();
+      if (!response.ok) {
+        throw new Error(`Contact form returned ${response.status}`);
       }
+      setSubmitted(true);
+      trackLead();
     } catch (err) {
       console.error("Form submission failed", err);
+      // Let them try again, and give them the phone number in the meantime
+      setFailed(true);
+      inFlight.current = false;
+    } finally {
+      setSending(false);
     }
   };
 
@@ -386,11 +405,19 @@ export default function ContactForm({ onDarkBackground = true }: ContactFormProp
         />
       </FormGroup>
 
+      {failed ? (
+        <p role="alert" className={`text-sm ${onDarkBackground ? 'text-red-300' : 'text-red-700'}`}>
+          Sorry, your message didn&rsquo;t go through. Please try again, or call us at{" "}
+          <a href="tel:+17709143877" className="underline font-semibold">(770) 914-3877</a>.
+        </p>
+      ) : null}
+
       <Button
         type="submit"
-        className="inline-block background-theme-1 text-white px-4 py-2 rounded shadow hover:background-theme-2 transition"
+        disabled={sending || submitted}
+        className="inline-block background-theme-1 text-white px-4 py-2 rounded shadow hover:background-theme-2 transition disabled:opacity-60 disabled:cursor-wait"
       >
-        Submit
+        {sending ? "Sending…" : "Submit"}
       </Button>
     </Form>
   );

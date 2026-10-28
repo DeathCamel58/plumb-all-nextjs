@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Leaking Water Through Ceiling',
   date: '2023-11-01',
   excerpt: 'Discover how to address a water leak through your ceiling caused by an upstairs issue. Learn to identify the source and prevent further damage.',
-  image: '/images/water-leaking-ceiling.jpg',
+  image: '/images/water-leaking-ceiling.webp',
   path: `/news/article/${slug}`
 };
 

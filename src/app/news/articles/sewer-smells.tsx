@@ -10,7 +10,7 @@ export const metadata = {
   title: 'Sewer Smells',
   date: '2021-08-31',
   excerpt: 'Sewer gas smells in your home can be dangerous, leading to health issues and potential fire hazards. Learn about the causes and solutions.',
-  image: '/images/roof-vent.jpg',
+  image: '/images/roof-vent.webp',
   path: `/news/article/${slug}`
 };
 
@@ -83,7 +83,7 @@ export default function ArticleContent() {
         <div>
           <figure className="relative">
             <Image
-              src="/images/sink-underside.jpg"
+              src="/images/sink-underside.webp"
               alt="P Trap Diagram"
               className="rounded-lg border border-gray-200 max-w-full h-auto"
               width={500}

@@ -9,7 +9,7 @@ export const metadata = {
   title: 'How Often Should You Pump Your Septic Tank?',
   date: '2022-11-16',
   excerpt: 'Learn how often your septic tank needs pumping based on household size, and discover the warning signs that it\'s time to schedule a pump-out.',
-  image: '/images/septic-pumping.jpg',
+  image: '/images/septic-pumping.webp',
   path: `/news/article/${slug}`
 };
 

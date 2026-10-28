@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Winter Woes: How to Prevent and Thaw Frozen Pipes',
   date: '2023-12-01',
   excerpt: 'When temperatures drop, your pipes are at risk. Learn how to identify, thaw, and prevent frozen pipes with our comprehensive guide.',
-  image: '/images/frozen-pipe.jpg',
+  image: '/images/frozen-pipe.webp',
   path: `/news/article/${slug}`
 };
 

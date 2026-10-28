@@ -9,7 +9,7 @@ export const metadata = {
   title: 'How to Choose the Right Toilet for Your Home',
   date: '2020-05-06',
   excerpt: 'Choosing a new toilet involves more than just picking a style you like. Learn about the different types, features, and sizing considerations to find the perfect fit.',
-  image: '/images/toilet-install.jpg',
+  image: '/images/toilet-install.webp',
   path: `/news/article/${slug}`
 };
 

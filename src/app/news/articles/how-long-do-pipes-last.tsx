@@ -9,7 +9,7 @@ export const metadata = {
     title: "How Long Do Pipes Last? A Guide to Pipe Lifespan",
     date: "2024-01-10",
     excerpt: "Learn how long different types of plumbing pipes last and the warning signs that it may be time for a replacement.",
-    image: "/images/gray-pipes.jpg",
+    image: "/images/gray-pipes.webp",
     path: `/news/article/${slug}`,
 };
 

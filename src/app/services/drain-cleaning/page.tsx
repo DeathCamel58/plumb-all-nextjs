@@ -10,7 +10,7 @@ import TrustStrip from "@/components/TrustStrip";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import FAQSchema from "@/components/schema/FAQSchema";
-import HeroImage from '../../../../public/images/drain-cleaning.jpg';
+import HeroImage from '../../../../public/images/drain-cleaning.webp';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
@@ -142,7 +142,7 @@ export default function DrainCleaning() {
             <div className="w-full md:w-1/3 px-4 mb-6">
               <figure className="mb-4">
                 <Image
-                  src="/images/hand-drain-cleaning.jpg"
+                  src="/images/hand-drain-cleaning.webp"
                   alt="Drain Cleaning Service"
                   width={412}
                   height={268}
@@ -218,7 +218,7 @@ export default function DrainCleaning() {
               <h3 className="text-2xl font-semibold mb-4">Sectional Machine Cleaning</h3>
               <div className="relative w-full h-64 mb-4 rounded-lg overflow-hidden">
                 <Image
-                  src="/images/drain-cleaning.jpg"
+                  src="/images/drain-cleaning.webp"
                   alt="Drain Cleaning"
                   fill
                   className="object-cover"
@@ -236,7 +236,7 @@ export default function DrainCleaning() {
               </h3>
               <div className="relative w-full h-64 mb-4 rounded-lg overflow-hidden">
                 <Image
-                  src="/images/hydro-jetting-nozzle.jpg"
+                  src="/images/hydro-jetting-nozzle.webp"
                   alt="Hydro-Jetting"
                   fill
                   className="object-cover"

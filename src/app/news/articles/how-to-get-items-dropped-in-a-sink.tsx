@@ -10,7 +10,7 @@ export const metadata = {
   title: 'How to Get Items Dropped in a Sink',
   date: '2022-05-03',
   excerpt: 'We’ve all dropped an item down a p-trap before. In this article we cover a couple techniques you can use to try to retrieve items lost down the drain.',
-  image: '/images/sink-underside.jpg',
+  image: '/images/sink-underside.webp',
   path: `/news/article/${slug}`
 };
 
@@ -46,7 +46,7 @@ export default function ArticleContent() {
       <div className="flex justify-center mb-6">
         <figure className="text-center">
           <Image
-            src="/images/long-pliers.png"
+            src="/images/long-pliers.webp"
             alt="Long pliers that can be used to retrieve items from drains"
             className="rounded-lg max-w-full h-auto"
             width={500}
@@ -89,7 +89,7 @@ export default function ArticleContent() {
       <div className="flex justify-center mb-6">
         <figure className="text-center">
           <Image
-            src="/images/sink-underside.jpg"
+            src="/images/sink-underside.webp"
             alt="Underside of a sink showing the p-trap"
             className="rounded-lg max-w-full h-auto"
             width={500}
@@ -125,7 +125,7 @@ export default function ArticleContent() {
       <div className="flex justify-center mb-6">
         <figure className="text-center">
           <Image
-            src="/images/item-in-p-trap.jpg"
+            src="/images/item-in-p-trap.webp"
             alt="P-Trap with item in it"
             className="rounded-lg max-w-full h-auto"
             width={500}

@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Commercial Plumbing Maintenance: A Checklist for Business Owners',
   date: '2025-01-08',
   excerpt: 'Keep your commercial plumbing running smoothly with this comprehensive maintenance checklist covering inspections, backflow testing, grease traps, and emergency planning.',
-  image: '/images/vans.jpg',
+  image: '/images/vans.webp',
   path: `/news/article/${slug}`
 };
 

@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Why Does My Drain Smell? Common Causes and Fixes',
   date: '2023-05-17',
   excerpt: 'Discover the most common reasons your drain smells bad, from dry P-traps to biofilm buildup, and learn how to eliminate those unpleasant odors for good.',
-  image: '/images/sink-drain.jpg',
+  image: '/images/sink-drain.webp',
   path: `/news/article/${slug}`
 };
 

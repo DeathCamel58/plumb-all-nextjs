@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Water Heater Repair vs. Replacement: How to Decide',
   date: '2026-01-07',
   excerpt: 'Is your water heater worth repairing, or is it time for a replacement? Learn the key factors that help you make the right decision for your home and budget.',
-  image: '/images/water-heater.jpg',
+  image: '/images/water-heater.webp',
   path: `/news/article/${slug}`
 };
 

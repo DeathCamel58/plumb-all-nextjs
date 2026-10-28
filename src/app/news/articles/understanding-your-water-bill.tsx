@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Understanding Your Water Bill: A Homeowner\u0027s Guide',
   date: '2023-02-22',
   excerpt: 'Learn how to read your water bill, understand usage tiers, spot anomalies that could indicate leaks, and discover ways to reduce your water costs.',
-  image: '/images/running-faucet.jpg',
+  image: '/images/running-faucet.webp',
   path: `/news/article/${slug}`
 };
 

@@ -9,7 +9,7 @@ export const metadata = {
     title: "Water Conservation Tips for Metro Atlanta Homeowners",
     date: "2021-06-30",
     excerpt: "Saving water is good for the environment and your wallet. Discover practical water conservation tips for Metro Atlanta homeowners, from low-flow fixtures to smart outdoor watering strategies.",
-    image: "/images/running-faucet.jpg",
+    image: "/images/running-faucet.webp",
     path: `/news/article/${slug}`,
 };
 

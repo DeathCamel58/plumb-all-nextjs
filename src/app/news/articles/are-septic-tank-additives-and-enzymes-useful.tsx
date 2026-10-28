@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Are Septic Tank Additives and Enzymes Useful?',
   date: '2019-07-09',
   excerpt: 'Many of our customers think that they should put additives into their septic system regularly to keep everything running properly, but this isn\'t the case.',
-  image: '/images/septic-system-overview.jpg',
+  image: '/images/septic-system-overview.webp',
   path: `/news/article/${slug}`
 };
 

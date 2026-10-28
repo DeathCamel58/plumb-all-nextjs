@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Water Heater Temperature: Finding the Right Setting',
   date: '2023-08-23',
   excerpt: 'Find out the ideal water heater temperature setting for safety, energy efficiency, and bacteria prevention, plus how to adjust your thermostat.',
-  image: '/images/water-heater.jpg',
+  image: '/images/water-heater.webp',
   path: `/news/article/${slug}`
 };
 

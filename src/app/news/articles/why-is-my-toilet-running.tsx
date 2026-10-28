@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Why Is My Toilet Running and How Do I Fix It?',
   date: '2024-08-28',
   excerpt: 'Discover the most common reasons your toilet keeps running and learn step-by-step fixes for flapper issues, fill valve problems, and more.',
-  image: '/images/toilet-flapper.jpg',
+  image: '/images/toilet-flapper.webp',
   path: `/news/article/${slug}`
 };
 

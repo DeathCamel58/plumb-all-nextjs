@@ -9,7 +9,7 @@ export const metadata = {
   title: 'How to Find a Plumbing Leak',
   date: '2022-07-05',
   excerpt: 'It can be difficult to find plumbing leaks at home. Here’s how to find a leak before the high water bill hits you.',
-  image: '/images/water-heater-wrench.jpg',
+  image: '/images/water-heater-wrench.webp',
   path: `/news/article/${slug}`
 };
 

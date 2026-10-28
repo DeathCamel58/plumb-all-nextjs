@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Hard Water and Your Plumbing: Problems and Solutions',
   date: '2026-03-04',
   excerpt: 'Hard water affects many Metro Atlanta homes, causing mineral buildup that damages pipes, appliances, and fixtures over time. Learn how to identify and address hard water issues.',
-  image: '/images/running-faucet.jpg',
+  image: '/images/running-faucet.webp',
   path: `/news/article/${slug}`
 };
 

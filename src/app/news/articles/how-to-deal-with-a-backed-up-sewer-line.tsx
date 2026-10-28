@@ -9,7 +9,7 @@ export const metadata = {
   title: 'How to Deal With a Backed-Up Sewer Line',
   date: '2025-03-26',
   excerpt: 'Learn how to recognize the signs of a sewer line backup, what immediate steps to take, and how professional solutions can restore your plumbing system.',
-  image: '/images/drain-cleaning.jpg',
+  image: '/images/drain-cleaning.webp',
   path: `/news/article/${slug}`
 };
 

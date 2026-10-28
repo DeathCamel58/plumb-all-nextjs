@@ -9,7 +9,7 @@ export const metadata = {
   title: 'How to Protect Your Pipes From Freezing',
   date: '2020-12-02',
   excerpt: 'Frozen pipes can burst and cause thousands of dollars in damage. Learn proven methods to protect your pipes during cold weather and what to do if they freeze.',
-  image: '/images/frozen-pipe.jpg',
+  image: '/images/frozen-pipe.webp',
   path: `/news/article/${slug}`
 };
 

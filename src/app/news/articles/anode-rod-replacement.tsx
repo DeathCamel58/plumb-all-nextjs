@@ -9,7 +9,7 @@ export const metadata = {
     title: "Anode Rod Replacement: Extending Your Water Heater\u0027s Life",
     date: "2022-08-17",
     excerpt: "The anode rod is your water heater\u0027s secret weapon against corrosion. Learn what anode rods do, how to tell when they need replacing, and how this simple maintenance task can add years to your water heater\u0027s life.",
-    image: "/images/water-heater-wrench.jpg",
+    image: "/images/water-heater-wrench.webp",
     path: `/news/article/${slug}`,
 };
 

@@ -9,7 +9,7 @@ export const metadata = {
   title: 'Tankless Water Heater Maintenance Tips',
   date: '2024-11-20',
   excerpt: 'Keep your tankless water heater running efficiently with these essential maintenance tips, including descaling, filter cleaning, and annual service schedules.',
-  image: '/images/tankless-water-heaters.jpg',
+  image: '/images/tankless-water-heaters.webp',
   path: `/news/article/${slug}`
 };
 
