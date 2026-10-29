@@ -40,7 +40,7 @@ export default function Emergencies() {
       <FAQSchema
         faqs={[
           { question: "What counts as a plumbing emergency?", answer: "Burst pipes, sewage backups, gas leaks, overflowing toilets, no hot water, and major water leaks are all plumbing emergencies that require immediate attention." },
-          { question: "How fast can you respond?", answer: "We have multiple crews on standby 24/7 and prioritize emergency calls. In most cases, a technician can be at your location within the hour in the Metro Atlanta area." },
+          { question: "How fast can you respond?", answer: "We have an on-call crew 24/7 and prioritize emergency calls. A real person answers day or night, and most calls are served the same day across south Metro Atlanta." },
           { question: "Do you charge extra for after-hours service?", answer: "We offer transparent, upfront pricing for all emergency calls. Contact us and we'll provide a clear quote before any work begins." },
         ]}
       />
@@ -72,11 +72,11 @@ export default function Emergencies() {
             </div>
 
             <div className="w-full md:w-2/3 px-4 mb-6">
-              <p className="mb-4 text-lg">If you need a plumber now, don&#39;t wait — Plumb-All dispatches urgent plumbers near you around the clock. We have multiple plumbing crews on standby 24/7, ready to respond to your emergency with lightning-fast speed.</p>
+              <p className="mb-4 text-lg">If you need a plumber now, don&#39;t wait — Plumb-All dispatches urgent plumbers near you around the clock. We have an on-call crew 24/7, ready to respond to your emergency.</p>
 
               <p className="mb-4 text-lg">Whether you&#39;re searching for &#34;plumbers near me now&#34; at 2 AM or need an urgent plumber on a holiday weekend, we answer every call and send a technician fast. Burst pipes, sewage backups, no hot water — we handle it all.</p>
 
-              <p className="mb-4 text-lg">Trust Plumb-All for the fastest emergency plumber response times in Metro Atlanta — when you need help the most, we deliver.</p>
+              <p className="mb-4 text-lg">Trust Plumb-All for fast, reliable emergency plumbing in Metro Atlanta — when you need help the most, we deliver.</p>
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@ export default function Emergencies() {
         <div className="mb-16 bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-2xl font-semibold mb-4 text-center">Need Emergency Plumbing Service?</h2>
           <p className="text-center mb-6">
-            Our expert technicians are on standby 24/7, ready to resolve your plumbing emergency.
+            Our on-call crew is available 24/7, ready to resolve your plumbing emergency.
           </p>
           <CTACall
             headerText="Contact us now for immediate assistance"
@@ -106,7 +106,7 @@ export default function Emergencies() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <h3 className="text-xl font-semibold mb-3">Rapid Response Team</h3>
-                <p className="mb-4 text-lg">Our dedicated emergency response team is available 24/7, with multiple crews on standby ready to address your plumbing crisis. We understand that plumbing emergencies don&#39;t wait for business hours, and neither do we.</p>
+                <p className="mb-4 text-lg">Our emergency team is available 24/7, with an on-call crew ready to address your plumbing crisis. We understand that plumbing emergencies don&#39;t wait for business hours, and neither do we.</p>
 
                 <h3 className="text-xl font-semibold mb-3">Highly Rated Service</h3>
                 <p className="text-lg">By choosing Plumb-All, you&#39;re selecting a highly rated <Link href="/services/plumber" className="text-theme-3 hover:underline">plumber</Link> in your area. We&#39;re fully licensed and insured with a 4.6 star rating on <a rel="noreferrer noopener" href="https://g.page/r/Cbrr7EyVgUNcEBA" target="_blank" className="text-theme-3 hover:underline">Google Maps</a>, which demonstrates our commitment to customer satisfaction and quality workmanship.</p>
@@ -194,7 +194,7 @@ export default function Emergencies() {
             </div>
             <div className="mb-6">
               <h3 className="text-xl font-semibold mb-2">How fast can you respond?</h3>
-              <p>We have multiple crews on standby 24/7 and prioritize emergency calls. In most cases, a technician can be at your location within the hour in the Metro Atlanta area.</p>
+              <p>We have an on-call crew 24/7 and prioritize emergency calls. A real person answers day or night, and most calls are served the same day across south Metro Atlanta.</p>
             </div>
             <div>
               <h3 className="text-xl font-semibold mb-2">Do you charge extra for after-hours service?</h3>

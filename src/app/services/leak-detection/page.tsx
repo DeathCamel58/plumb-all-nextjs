@@ -143,24 +143,24 @@ export default function LeakDetection() {
             <p className="mb-4 text-lg">Blocked or clogged water lines are much more prone to cracking or rotting out, which can turn into a major repair. We recommend a more proactive approach of having lines cleaned at the first signs of trouble such as slowed draining and gurgling.</p>
           </div>
 
-          {/* Well Pumps */}
+          {/* Acoustic Leak Detection */}
           <div className="bg-white p-6 rounded-lg shadow-md">
             <div className="flex items-center mb-6">
               <div className="w-12 h-12 rounded-full background-theme-3 flex items-center justify-center text-white mr-4">
                 <FaWrench className="text-2xl" />
               </div>
-              <h3 className="text-2xl font-semibold">Well Pumps</h3>
+              <h3 className="text-2xl font-semibold">Acoustic Leak Detection</h3>
             </div>
-            <p className="mb-4 text-lg">If your home water supply is dependent on well water, we understand the frustration and urgency of a malfunctioning well pump. We&#39;re here to help. If you are experiencing any of the following symptoms, don&#39;t hesitate to <a href="tel:+17709143877" className="text-theme-3 hover:underline">give us a call</a> to come out and investigate the issue.</p>
-            <ul className="list-disc pl-5 space-y-2">
-              <li>Short cycling pump</li>
-              <li>Dirty water</li>
-              <li>Loud noises</li>
-              <li>Air &#34;hissing&#34; from the faucet</li>
-              <li>Inconsistent or no water pressure</li>
-              <li>Lost air in the water tank</li>
-              <li>Extra high electric bills</li>
+            <p className="mb-4 text-lg">Water escaping a pressurized pipe makes a sound. Our technicians use acoustic leak detection equipment to listen through concrete slabs, walls and soil and narrow a hidden leak down to a precise spot, so the repair starts in the right place with less digging and less damage.</p>
+            <p className="mb-4 text-lg">We find leaks in:</p>
+            <ul className="list-disc pl-5 space-y-2 mb-4">
+              <li>Slab leaks under concrete floors</li>
+              <li>Water service lines in the yard</li>
+              <li>Pipes behind walls and ceilings</li>
+              <li>Supply lines under sinks, toilets and appliances</li>
+              <li>Drain and sewer lines, using the sewer camera on every truck</li>
             </ul>
+            <p className="text-lg">Estimates are free and on-site, and we quote the price before any work begins. <a href="tel:+17709143877" className="text-theme-3 hover:underline">Give us a call</a> — a real person answers 24/7.</p>
           </div>
         </div>
 

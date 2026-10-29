@@ -114,7 +114,7 @@ export default function PlumbingInstallation() {
             <div>
               <h3 className="text-xl font-semibold mb-4">Our Commitment</h3>
               <p className="mb-6">
-                No matter what you want done, whether a new installation, or an <Link href="/services/emergencies" className="text-theme-3 hover:underline">emergency repair</Link>, we are here to help. We keep our crews on standby 24/7 to be available when you need us most. We would love to hear from you even if you&#39;re not sure about moving forward on your project yet.
+                No matter what you want done, whether a new installation, or an <Link href="/services/emergencies" className="text-theme-3 hover:underline">emergency repair</Link>, we are here to help. We keep an on-call crew 24/7 to be available when you need us most. We would love to hear from you even if you&#39;re not sure about moving forward on your project yet.
               </p>
             </div>
 
