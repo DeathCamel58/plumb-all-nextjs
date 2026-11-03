@@ -9,6 +9,8 @@ import TrustStrip from "@/components/TrustStrip";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import HeroImage from '../../../../public/images/toilet-install.webp';
+import ServiceReviews from '@/components/ServiceReviews';
+import JobPhotoGallery from '@/components/JobPhotoGallery';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
@@ -235,6 +237,15 @@ export default function ToiletInstallation() {
             </div>
           </div>
         </div>
+
+        {/* Job Photos */}
+        <JobPhotoGallery
+          title="Recent Toilet Jobs"
+          slugs={['toilet-flange-corroded-fayetteville', 'toilet-flange-repaired-fayetteville', 'toilet-reset-fayetteville', 'toilet-tank-new-valves-riverdale', 'toilet-shut-off-valve-new-atlanta', 'toilet-clog-objects-riverdale']}
+        />
+
+        {/* Customer Reviews */}
+        <ServiceReviews service="toilet-installation" />
 
         {/* Call to Action */}
         <div className="w-full mb-8 bg-gray-50 p-8 rounded-lg shadow-sm">

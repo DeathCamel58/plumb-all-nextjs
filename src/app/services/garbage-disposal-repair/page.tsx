@@ -9,6 +9,7 @@ import TrustStrip from "@/components/TrustStrip";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import HeroImage from '../../../../public/images/garbage-disposal.webp';
+import ServiceReviews from '@/components/ServiceReviews';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
@@ -262,6 +263,9 @@ export default function GarbageDisposalRepair() {
             </p>
           </div>
         </div>
+
+        {/* Customer Reviews */}
+        <ServiceReviews service="garbage-disposal-repair" />
 
         {/* Call to Action */}
         <div className="w-full mb-8 bg-gray-50 p-8 rounded-lg shadow-sm">

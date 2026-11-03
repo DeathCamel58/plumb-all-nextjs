@@ -11,6 +11,8 @@ import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import FAQSchema from "@/components/schema/FAQSchema";
 import HeroImage from '../../../../public/images/water-heater-wrench.webp';
+import ServiceReviews from '@/components/ServiceReviews';
+import JobPhotoGallery from '@/components/JobPhotoGallery';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
@@ -212,6 +214,15 @@ export default function WaterHeaterReplacement() {
             </p>
           </div>
         </div>
+
+        {/* Job Photos */}
+        <JobPhotoGallery
+          title="Recent Water Heater Installs"
+          slugs={['water-heaters-attic-jonesboro', 'water-heater-expansion-tank-jonesboro', 'water-heater-copper-piping-jonesboro', 'water-heater-shut-off-jonesboro', 'water-heater-vent-morrow', 'water-heaters-closet-morrow']}
+        />
+
+        {/* Customer Reviews */}
+        <ServiceReviews service="water-heater-replacement" />
 
         {/* FAQ Section */}
         <div className="w-full mb-16">

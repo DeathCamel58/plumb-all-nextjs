@@ -157,7 +157,7 @@ export const septicTowns: SepticTown[] = [
     nearby: ['jonesboro-ga', 'stockbridge-ga', 'mcdonough-ga'],
     photos: [
       'septic-broken-baffle-jonesboro',
-      'septic-outlet-baffle-replaced-hampton',
+      'septic-new-inlet-pipe-hampton',
       'septic-pumping-technician-jonesboro',
       'septic-line-red-clay-jonesboro',
     ],
@@ -200,7 +200,7 @@ export const septicTowns: SepticTown[] = [
     photos: [
       'septic-root-intrusion-hampton',
       'septic-tank-trench-hampton',
-      'septic-outlet-baffle-replaced-hampton',
+      'septic-new-inlet-pipe-hampton',
       'septic-outlet-line-gravel-hampton-1',
       'septic-inlet-tee-hampton-1',
       'sewer-camera-inspection-3',

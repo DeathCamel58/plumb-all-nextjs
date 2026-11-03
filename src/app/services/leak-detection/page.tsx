@@ -11,6 +11,8 @@ import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import FAQSchema from "@/components/schema/FAQSchema";
 import HeroImage from '../../../../public/images/spraying-pipe.webp';
+import ServiceReviews from '@/components/ServiceReviews';
+import JobPhotoGallery from '@/components/JobPhotoGallery';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
@@ -163,6 +165,15 @@ export default function LeakDetection() {
             <p className="text-lg">Estimates are free and on-site, and we quote the price before any work begins. <a href="tel:+17709143877" className="text-theme-3 hover:underline">Give us a call</a> — a real person answers 24/7.</p>
           </div>
         </div>
+
+        {/* Job Photos */}
+        <JobPhotoGallery
+          title="Leaks We've Found and Fixed"
+          slugs={['slab-leak-marked-lithonia', 'slab-leak-exposed-riverdale', 'slab-leak-failed-pipe-lithonia', 'slab-leak-repaired-riverdale', 'cpvc-repair-behind-wall-hampton']}
+        />
+
+        {/* Customer Reviews */}
+        <ServiceReviews service="leak-detection" />
 
         {/* FAQ Section */}
         <div className="w-full mb-16">

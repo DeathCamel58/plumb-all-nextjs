@@ -13,6 +13,7 @@ import FAQSchema from "@/components/schema/FAQSchema";
 import { getJobPhoto } from '@/lib/jobPhotos';
 import { serviceAreaTowns } from '@/lib/serviceArea';
 import HeroImage from '../../../../public/images/jobs/sewer-line-trench-cleanout-jonesboro.webp';
+import ServiceReviews from '@/components/ServiceReviews';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
@@ -64,7 +65,6 @@ const steps = [
 
 const galleryPhotos = [
   'sewer-camera-inspection-2',
-  'sewer-camera-inspection-4',
   'sewer-line-new-pvc-jonesboro',
   'sewer-line-cleanout-atlanta',
   'sewer-line-new-pipe-jonesboro',
@@ -274,6 +274,9 @@ export default function SewerLineRepair() {
             </div>
           </div>
         </div>
+
+        {/* Customer Reviews */}
+        <ServiceReviews service="sewer-line-repair" />
 
         {/* FAQ Section */}
         <div className="w-full mb-16">

@@ -9,6 +9,8 @@ import TrustStrip from "@/components/TrustStrip";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import HeroImage from '../../../../public/images/toilet.webp';
+import ServiceReviews from '@/components/ServiceReviews';
+import JobPhotoGallery from '@/components/JobPhotoGallery';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
@@ -242,6 +244,15 @@ export default function BathroomPlumbing() {
             </div>
           </div>
         </div>
+
+        {/* Job Photos */}
+        <JobPhotoGallery
+          title="Recent Bathroom Plumbing Jobs"
+          slugs={['tub-valve-repair-mcdonough', 'sink-new-trap-shut-offs-jonesboro', 'toilet-flange-repaired-fayetteville', 'toilet-tank-new-valves-riverdale', 'toilet-shut-off-valve-new-atlanta']}
+        />
+
+        {/* Customer Reviews */}
+        <ServiceReviews service="bathroom-plumbing" />
 
         {/* Call to Action */}
         <div className="w-full mb-8 bg-gray-50 p-8 rounded-lg shadow-sm">

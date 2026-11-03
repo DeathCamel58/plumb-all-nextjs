@@ -12,6 +12,8 @@ import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import FAQSchema from "@/components/schema/FAQSchema";
 import HeroImage from '../../../../public/images/septic-pumping.webp';
+import ServiceReviews from '@/components/ServiceReviews';
+import JobPhotoGallery from '@/components/JobPhotoGallery';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
@@ -270,6 +272,15 @@ export default function SepticTankPumping() {
             </div>
           </div>
         </div>
+
+        {/* Job Photos */}
+        <JobPhotoGallery
+          title="Recent Septic Pumping Jobs"
+          slugs={['septic-pumping-technician-jonesboro', 'septic-pump-truck-jonesboro', 'septic-tank-scum-layer-jonesboro', 'septic-pumping-mcdonough-2', 'septic-tank-lid-open-jonesboro', 'septic-risers-mcdonough']}
+        />
+
+        {/* Customer Reviews */}
+        <ServiceReviews service="septic-tank-pumping" />
 
         {/* FAQ Section */}
         <div className="w-full mb-16">

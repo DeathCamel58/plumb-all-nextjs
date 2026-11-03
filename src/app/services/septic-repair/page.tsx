@@ -12,6 +12,8 @@ import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import FAQSchema from "@/components/schema/FAQSchema";
 import HeroImage from '../../../../public/images/septic-system-overview.webp';
+import ServiceReviews from '@/components/ServiceReviews';
+import JobPhotoGallery from '@/components/JobPhotoGallery';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
@@ -250,6 +252,15 @@ export default function SepticRepair() {
             </p>
           </div>
         </div>
+
+        {/* Job Photos */}
+        <JobPhotoGallery
+          title="Recent Septic Repairs"
+          slugs={['septic-broken-baffle-jonesboro', 'septic-tank-new-baffle-jonesboro', 'septic-new-inlet-pipe-hampton', 'septic-line-repair-jonesboro-1', 'septic-pump-replacement-mcdonough', 'septic-cleanout-installed-jonesboro']}
+        />
+
+        {/* Customer Reviews */}
+        <ServiceReviews service="septic-repair" />
 
         {/* FAQ Section */}
         <div className="w-full mb-16">

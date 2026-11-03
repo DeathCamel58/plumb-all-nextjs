@@ -13,6 +13,7 @@ import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import FAQSchema from "@/components/schema/FAQSchema";
 import { getJobPhoto } from '@/lib/jobPhotos';
 import HeroImage from '../../../../public/images/jobs/septic-tank-open-hero-hampton.webp';
+import ServiceReviews from '@/components/ServiceReviews';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
@@ -253,6 +254,9 @@ export default function SepticInspection() {
             </div>
           </div>
         </div>
+
+        {/* Customer Reviews */}
+        <ServiceReviews service="septic-inspection" />
 
         {/* FAQ Section */}
         <div className="w-full mb-16">

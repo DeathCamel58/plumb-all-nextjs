@@ -11,6 +11,8 @@ import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import FAQSchema from "@/components/schema/FAQSchema";
 import HeroImage from '../../../../public/images/drain-cleaning.webp';
+import ServiceReviews from '@/components/ServiceReviews';
+import JobPhotoGallery from '@/components/JobPhotoGallery';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
@@ -276,6 +278,15 @@ export default function DrainCleaning() {
             </p>
           </div>
         </div>
+
+        {/* Job Photos */}
+        <JobPhotoGallery
+          title="Recent Drain Cleaning Jobs"
+          slugs={['commercial-sewer-drain-clogged-hampton', 'commercial-sewer-debris-pulled-hampton', 'commercial-floor-drain-cabling-morrow', 'toilet-clog-objects-riverdale', 'bathroom-sink-drain-riverdale', 'sewer-camera-inspection-2']}
+        />
+
+        {/* Customer Reviews */}
+        <ServiceReviews service="drain-cleaning" />
 
         {/* FAQ Section */}
         <div className="w-full mb-16">

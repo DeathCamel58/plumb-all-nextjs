@@ -9,6 +9,8 @@ import TrustStrip from "@/components/TrustStrip";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import HeroImage from '../../../../public/images/gray-pipes.webp';
+import ServiceReviews from '@/components/ServiceReviews';
+import JobPhotoGallery from '@/components/JobPhotoGallery';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
@@ -141,6 +143,15 @@ export default function PlumbingInstallation() {
             Plumbing installation can be a significant investment. <Link href="/financing" className="text-theme-3 hover:underline font-semibold">Flexible financing options</Link> are available to help make your project affordable.
           </p>
         </div>
+
+        {/* Job Photos */}
+        <JobPhotoGallery
+          title="Recent Installations"
+          slugs={['water-heater-copper-piping-jonesboro', 'kitchen-faucet-install-mcdonough', 'toilet-tank-new-valves-riverdale', 'water-heaters-attic-jonesboro', 'toilet-shut-off-valve-new-atlanta']}
+        />
+
+        {/* Customer Reviews */}
+        <ServiceReviews service="plumbing-installation" />
 
         {/* Final CTA */}
         <div className="bg-gray-50 p-8 rounded-lg shadow-sm">

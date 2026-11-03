@@ -12,6 +12,7 @@ import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import FAQSchema from "@/components/schema/FAQSchema";
 import HeroImage from '../../../../public/images/septic-system-overview.webp';
+import ServiceReviews from '@/components/ServiceReviews';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
@@ -272,6 +273,9 @@ export default function AlternativeSeptic() {
             </div>
           </div>
         </div>
+
+        {/* Customer Reviews */}
+        <ServiceReviews service="alternative-septic" />
 
         {/* FAQ Section */}
         <div className="w-full mb-16">

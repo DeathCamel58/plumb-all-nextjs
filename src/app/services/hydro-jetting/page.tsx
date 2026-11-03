@@ -10,6 +10,8 @@ import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import FAQSchema from "@/components/schema/FAQSchema";
 import HeroImage from '../../../../public/images/hydro-jetting-nozzle.webp';
+import ServiceReviews from '@/components/ServiceReviews';
+import JobPhotoGallery from '@/components/JobPhotoGallery';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
@@ -174,6 +176,15 @@ export default function HydroJetting() {
             />
           </div>
         </div>
+
+        {/* Job Photos */}
+        <JobPhotoGallery
+          title="From Our Drain and Sewer Jobs"
+          slugs={['septic-root-intrusion-hampton', 'septic-cleanout-installed-jonesboro', 'sewer-camera-inspection-3']}
+        />
+
+        {/* Customer Reviews */}
+        <ServiceReviews service="hydro-jetting" />
 
         {/* FAQ Section */}
         <div className="w-full mb-16">

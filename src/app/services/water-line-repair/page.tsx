@@ -9,6 +9,8 @@ import TrustStrip from "@/components/TrustStrip";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import HeroImage from '../../../../public/images/vans.webp';
+import ServiceReviews from '@/components/ServiceReviews';
+import JobPhotoGallery from '@/components/JobPhotoGallery';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
@@ -247,6 +249,15 @@ export default function WaterLineRepairServices() {
             </div>
           </div>
         </div>
+
+        {/* Job Photos */}
+        <JobPhotoGallery
+          title="Recent Water Line Repairs"
+          slugs={['water-service-line-trench-jonesboro', 'water-line-trench-meter-jonesboro', 'slab-leak-repaired-riverdale']}
+        />
+
+        {/* Customer Reviews */}
+        <ServiceReviews service="water-line-repair" />
 
         {/* Call to Action */}
         <div className="w-full mb-8 bg-gray-50 p-8 rounded-lg shadow-sm">

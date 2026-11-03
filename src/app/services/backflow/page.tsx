@@ -11,6 +11,7 @@ import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import FAQSchema from "@/components/schema/FAQSchema";
 import HeroImage from '../../../../public/images/backflow.webp';
+import JobPhotoGallery from '@/components/JobPhotoGallery';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
@@ -184,6 +185,12 @@ export default function Backflow() {
             </div>
           </div>
         </div>
+
+        {/* Job Photos */}
+        <JobPhotoGallery
+          title="Recent Backflow Tests"
+          slugs={['backflow-test-hookup-peachtree-city', 'backflow-test-gauge-peachtree-city', 'backflow-test-kit-peachtree-city', 'backflow-preventer-meter-box-peachtree-city', 'backflow-assembly-in-ground-stockbridge']}
+        />
 
         {/* FAQ Section */}
         <div className="w-full mb-16">

@@ -9,6 +9,8 @@ import TrustStrip from "@/components/TrustStrip";
 import ServiceSchema from "@/components/schema/ServiceSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
 import HeroImage from '../../../../public/images/sink-repair.webp';
+import ServiceReviews from '@/components/ServiceReviews';
+import JobPhotoGallery from '@/components/JobPhotoGallery';
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
@@ -242,6 +244,15 @@ export default function SinkRepair() {
             </div>
           </div>
         </div>
+
+        {/* Job Photos */}
+        <JobPhotoGallery
+          title="Recent Sink Repairs"
+          slugs={['sink-drain-corroded-jonesboro', 'sink-new-trap-shut-offs-jonesboro', 'sink-new-drain-supply-jonesboro', 'bathroom-sink-drain-riverdale', 'sink-drain-repair-mcdonough']}
+        />
+
+        {/* Customer Reviews */}
+        <ServiceReviews service="sink-repair" />
 
         {/* Call to Action */}
         <div className="w-full mb-8 bg-gray-50 p-8 rounded-lg shadow-sm">
