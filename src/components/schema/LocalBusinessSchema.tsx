@@ -14,8 +14,10 @@ export default function LocalBusinessSchema() {
     priceRange: '$$',
     address: {
       '@type': 'PostalAddress',
+      streetAddress: '218 N McDonough St',
       addressLocality: 'Jonesboro',
       addressRegion: 'GA',
+      postalCode: '30236',
       addressCountry: 'US',
     },
     geo: {

@@ -23,6 +23,14 @@ export default function ServiceSchema({
       '@id': 'https://plumb-all.com/#organization',
       name: 'Plumb-All',
       telephone: '+1-770-914-3877',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '218 N McDonough St',
+        addressLocality: 'Jonesboro',
+        addressRegion: 'GA',
+        postalCode: '30236',
+        addressCountry: 'US',
+      },
     },
     areaServed: city ? {
       '@type': 'City',

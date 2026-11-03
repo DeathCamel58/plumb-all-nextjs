@@ -53,6 +53,18 @@ export default function Footer() {
               </div>
 
               <div className="flex items-center space-x-3">
+                <span className="text-theme-1 font-medium">Address:</span>
+                <a
+                  href="https://g.page/r/Cbrr7EyVgUNcEBA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-theme-0 hover:text-theme-1 hover:underline transition-colors duration-200 font-medium"
+                >
+                  218 N McDonough St, Jonesboro, GA 30236
+                </a>
+              </div>
+
+              <div className="flex items-center space-x-3">
                 <span className="text-theme-1 font-medium">Email:</span>
                 <a
                   href="mailto:info@plumb-all.com"
