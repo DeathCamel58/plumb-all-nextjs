@@ -43,7 +43,7 @@ export default function SepticRepair() {
           { question: "My septic alarm is going off. What should I do?", answer: "Cut back on water use (hold off on laundry, the dishwasher, and long showers) and call us. The alarm usually means the water level in the tank or pump chamber is too high, often from a failed pump, a stuck float, or a clog. Waiting it out can lead to a sewage backup." },
           { question: "Can a failing drain field be repaired?", answer: "Sometimes. It depends on what caused it. We inspect the system and tell you whether a repair will work or the field needs replacing, with an upfront price either way." },
           { question: "Do you offer financing for septic repairs?", answer: "Yes. Flexible financing is available through Wisetack on larger repairs and replacements." },
-          { question: "What areas do you serve?", answer: "Plumb-All provides septic service across South Metro Atlanta, including Jonesboro, Fayetteville, Peachtree City, Tyrone, McDonough, Stockbridge, Hampton, Locust Grove, Griffin, and Newnan." },
+          { question: "What areas do you serve?", answer: "Plumb-All provides septic service across South Metro Atlanta, including Jonesboro, Fayetteville, Peachtree City, Tyrone, McDonough, Stockbridge, Hampton, Ellenwood, Locust Grove, Griffin, and Newnan." },
         ]}
       />
       {/* Header Image */}
@@ -274,7 +274,7 @@ export default function SepticRepair() {
             </div>
             <div>
               <h3 className="text-xl font-semibold mb-2">What areas do you serve?</h3>
-              <p>Plumb-All provides septic service across South Metro Atlanta, including Jonesboro, Fayetteville, Peachtree City, Tyrone, McDonough, Stockbridge, Hampton, Locust Grove, Griffin, and Newnan.</p>
+              <p>Plumb-All provides septic service across South Metro Atlanta, including <Link href="/septic-service/jonesboro-ga" className="text-theme-3 hover:underline">Jonesboro</Link>, <Link href="/septic-service/fayetteville-ga" className="text-theme-3 hover:underline">Fayetteville</Link>, Peachtree City, Tyrone, <Link href="/septic-service/mcdonough-ga" className="text-theme-3 hover:underline">McDonough</Link>, <Link href="/septic-service/stockbridge-ga" className="text-theme-3 hover:underline">Stockbridge</Link>, <Link href="/septic-service/hampton-ga" className="text-theme-3 hover:underline">Hampton</Link>, <Link href="/septic-service/ellenwood-ga" className="text-theme-3 hover:underline">Ellenwood</Link>, Locust Grove, Griffin, and Newnan.</p>
             </div>
           </div>
         </div>

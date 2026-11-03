@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next'
 import {getAllArticles} from "@/app/news/articles";
 import path from "path";
 import fs from "fs";
+import {septicTowns} from "@/lib/septicTowns";
 
 export const dynamic = 'force-static';
 
@@ -9,6 +10,7 @@ export const dynamic = 'force-static';
 function getPriority(url: string): number {
   if (url === '') return 1.0; // Homepage
   if (url.startsWith('/services/')) return 0.8; // Service pages
+  if (url.startsWith('/septic-service/')) return 0.8; // Septic town pages
   if (url === '/services') return 0.8; // Services index
   if (['/about-our-process', '/financing', '/contact'].includes(url)) return 0.7; // Non-service pages
   if (url === '/news') return 0.5; // News listing
@@ -56,6 +58,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: '/news', changeFrequency: 'weekly' },
   ];
 
+  // Add the septic town pages
+  for (const town of septicTowns) {
+    pages.push({ url: `/septic-service/${town.slug}`, changeFrequency: 'monthly' });
+  }
+
   // Add all the news articles
   const articles = await getAllArticles();
   for (const article of articles) {
@@ -86,7 +93,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       const parentDirectory = process.cwd();
       const pathIfArticle = path.join(parentDirectory, `src/app/news/articles/${page.url.slice(13)}.tsx`);
       const pathIfPage = path.join(parentDirectory, `src/app/${page.url}/page.tsx`);
-      const tsxFile = isArticle ? pathIfArticle: pathIfPage;
+      const pathIfTown = path.join(parentDirectory, 'src/lib/septicTowns.ts');
+      const tsxFile = isArticle ? pathIfArticle : page.url.startsWith('/septic-service/') ? pathIfTown : pathIfPage;
 
       const fsStats = fs.statSync(tsxFile);
       const mTime = fsStats.mtime;

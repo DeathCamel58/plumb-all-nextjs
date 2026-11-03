@@ -1,6 +1,7 @@
 import React from 'react';
 import CTACall from '@/components/cta/CTACall';
 import Link from 'next/link';
+import SepticTownLinks from '@/components/SepticTownLinks';
 import { FaClock, FaTruck, FaWrench, FaTools, FaShieldAlt, FaCheckCircle, FaHome, FaBuilding } from 'react-icons/fa';
 import {Metadata} from "next";
 import {generateMetadataDict} from "@/components/header/metadata";
@@ -240,6 +241,9 @@ export default function Services() {
                 </div>
               ))}
             </div>
+            <p className="text-lg text-center">
+              Septic service by town: <SepticTownLinks />.
+            </p>
           </div>
 
           {/* Commercial Services */}

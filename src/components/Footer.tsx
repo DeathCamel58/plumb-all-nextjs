@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import SepticTownLinks from '@/components/SepticTownLinks'
 
 const footerMenuItems = [
   { label: 'Home', url: '/' },
@@ -83,6 +84,10 @@ export default function Footer() {
             <Link href="/terms-and-conditions" className="text-theme-0 hover:text-theme-1 hover:underline">
               Terms and Conditions
             </Link>
+          </p>
+          <p className="text-sm mt-4">
+            Septic service in{' '}
+            <SepticTownLinks linkClassName="text-theme-0 hover:text-theme-1 hover:underline" />.
           </p>
         </div>
       </div>

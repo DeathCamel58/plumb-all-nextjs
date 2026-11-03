@@ -4,10 +4,13 @@ export default function ServiceSchema({
   name,
   description,
   url,
+  city,
 }: {
   name: string;
   description: string;
   url: string;
+  /** Town the service page covers; defaults to the Metro Atlanta radius */
+  city?: string;
 }) {
   const schema = {
     '@context': 'https://schema.org',
@@ -21,7 +24,10 @@ export default function ServiceSchema({
       name: 'Plumb-All',
       telephone: '+1-770-914-3877',
     },
-    areaServed: {
+    areaServed: city ? {
+      '@type': 'City',
+      name: `${city}, GA`,
+    } : {
       '@type': 'GeoCircle',
       geoMidpoint: {
         '@type': 'GeoCoordinates',

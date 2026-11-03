@@ -24,7 +24,7 @@ export default function ArticleContent() {
       </p>
 
       <p className="mb-6">
-        At Plumb-All, we&#39;ve helped countless homeowners in Jonesboro, Georgia, and the surrounding areas maintain their septic systems. In this guide, we&#39;ll break down how often you should pump your septic tank, the factors that affect pumping frequency, and the warning signs that it&#39;s time to call in the professionals.
+        At Plumb-All, we&#39;ve helped countless homeowners in <Link href="/septic-service/jonesboro-ga" className="text-theme-3 hover:underline">Jonesboro, Georgia</Link>, and the surrounding areas maintain their septic systems. In this guide, we&#39;ll break down how often you should pump your septic tank, the factors that affect pumping frequency, and the warning signs that it&#39;s time to call in the professionals.
       </p>
 
       <h3 className="text-2xl font-bold mt-8 mb-4">General Pumping Guidelines by Household Size</h3>
