@@ -122,7 +122,7 @@ export default function ArticleContent() {
             </p>
 
             <p className="mb-6">
-                Regular inspections are one of the smartest investments you can make in your home&#39;s long-term health. Learn more about the benefits in our guide on&nbsp;<Link href="/news/article/why-you-should-schedule-regular-plumbing-inspections" className="text-theme-3 hover:underline">why you should schedule regular plumbing inspections</Link>.
+                Regular inspections are one of the smartest investments you can make in your home&#39;s long-term health. Learn more about the benefits in our guide on&nbsp;<Link href="/news/article/why-schedule-plumbing-inspections" className="text-theme-3 hover:underline">why you should schedule regular plumbing inspections</Link>.
             </p>
 
             <h3 className="text-2xl font-bold mt-8 mb-4">Keep Your Home Protected This Spring</h3>

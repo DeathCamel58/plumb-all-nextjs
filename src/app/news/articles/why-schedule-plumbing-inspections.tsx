@@ -7,8 +7,8 @@ const slug = 'why-schedule-plumbing-inspections';
 export const metadata = {
   slug: slug,
   title: 'Why You Should Schedule Regular Plumbing Inspections',
-  date: '2025-08-18',
-  excerpt: 'Learn why plumbing inspections are essential for Atlanta homeowners. Preventive maintenance can save in repairs, and protect your home from water damage.',
+  date: '2026-11-03',
+  excerpt: 'Why regular plumbing inspections matter for Atlanta-area homeowners: what a plumber checks, how often to schedule one, the warning signs, and how inspections prevent costly water damage.',
   image: '/images/flush-water-heater.webp',
   path: `/news/article/${slug}`
 };
@@ -23,7 +23,7 @@ export default function ArticleContent() {
         <p className="font-medium text-gray-700">
           <strong>Did you know?</strong> A single burst pipe can cause thousands of dollars in water damage, but
           regular plumbing inspections can catch potential problems before they become costly disasters. In Metro
-          Atlanta, where hard water and clay soil create unique challenges, preventive maintenance is your best defense.
+          Atlanta, where clay soil, tree roots and aging pipes create unique challenges, preventive maintenance is your best defense.
         </p>
       </div>
 
@@ -40,19 +40,18 @@ export default function ArticleContent() {
       <div className="bg-red-50 p-5 rounded-lg mb-6 border border-red-200">
         <h4 className="text-xl font-semibold mb-4 text-red-800">💰 What Plumbing Problems Really Cost</h4>
         <p className="text-gray-700 mb-4">
-          According to insurance industry data, the average water damage claim costs over $10,000. Here&#39;s what
-          common plumbing failures can cost Metro Atlanta homeowners:
+          According to insurance industry data, the average water damage claim runs over $10,000. The failures that
+          cause the biggest bills usually start small:
         </p>
         <div className="space-y-3">
           <ul className="list-disc pl-5 space-y-2 text-gray-700">
-            <li><strong>Burst pipe repair and water damage:</strong> $5,000 - $15,000+</li>
-            <li><strong>Sewer line replacement:</strong> $3,000 - $8,000</li>
-            <li><strong>Water heater failure and flooding:</strong> $2,000 - $6,000</li>
-            <li><strong>Foundation damage from leaks:</strong> $10,000 - $25,000+</li>
-            <li><strong>Mold remediation:</strong> $3,000 - $10,000</li>
+            <li><strong>A slow leak</strong> behind a wall or under a slab that turns into rot, mold and ruined floors</li>
+            <li><strong>A cracked sewer line</strong> that backs up into the house</li>
+            <li><strong>An aging water heater</strong> that finally lets go and floods the room</li>
+            <li><strong>A failing septic system</strong> that needs a new drain field instead of a repair</li>
           </ul>
           <p className="text-red-700 font-semibold mt-4">
-            Compare this to a professional inspection costing $150-$300 that could prevent these disasters.
+            An inspection costs a small fraction of any of these, and it&#39;s how they get caught early.
           </p>
         </div>
       </div>
@@ -104,6 +103,28 @@ export default function ArticleContent() {
           </ul>
         </div>
       </div>
+
+      <h3 className="text-2xl font-semibold mb-4">Small Problems an Inspection Catches</h3>
+      <ul className="list-disc pl-6 space-y-2 mb-6">
+        <li>
+          <strong>Hidden leaks.</strong> An unexplained jump in your water bill often means a leak you can&#39;t see.
+          Our <Link href="/services/leak-detection" className="text-theme-3 hover:underline">leak detection</Link> finds
+          leaks under slabs, in walls and in the yard. Learn more about{' '}
+          <Link href="/news/article/how-to-find-a-plumbing-leak" className="text-theme-3 hover:underline">finding plumbing leaks</Link>.
+        </li>
+        <li>
+          <strong>Dripping faucets and running toilets.</strong> They waste gallons every day and add to your bill, and
+          they&#39;re usually a quick fix once someone looks.
+        </li>
+        <li>
+          <strong>High water pressure.</strong> Pressure above about 60 PSI wears out fixtures, appliances and water
+          heaters early. We check it and adjust or replace the pressure-reducing valve if needed.
+        </li>
+        <li>
+          <strong>Septic problems.</strong> Septic tanks need pumping every 3 to 5 years and an inspection at least every
+          3 years. See our <Link href="/services/septic-inspection" className="text-theme-3 hover:underline">septic inspections</Link>.
+        </li>
+      </ul>
 
       <h3 className="text-2xl font-semibold mb-4">What&#39;s Included in a Professional Plumbing Inspection</h3>
 
@@ -170,14 +191,14 @@ export default function ArticleContent() {
             </p>
             <ul className="list-disc pl-5 space-y-1 text-gray-700">
               <li>Homes 10+ years old</li>
-              <li>Properties with hard water issues</li>
+              <li>Homes on well water, where hard water builds up scale</li>
               <li>Houses with mature landscaping (tree roots)</li>
               <li>Homes that have experienced previous plumbing problems</li>
               <li>Properties with pipes vulnerable to <Link href="/news/article/coping-with-frozen-pipes-a-guide-to-protecting-your-home" className="text-theme-3 hover:underline">winter freezing</Link></li>
             </ul>
           </div>
           <div>
-            <h5 className="font-semibold text-yellow-700 mb-2">Bi-Annual Inspections (High-Risk Properties)</h5>
+            <h5 className="font-semibold text-yellow-700 mb-2">Twice-a-Year Inspections (High-Risk Properties)</h5>
             <p className="text-gray-700 mb-2">
               Consider twice-yearly inspections if your home has:
             </p>
@@ -233,10 +254,11 @@ export default function ArticleContent() {
 
       <div className="space-y-4 mb-6">
         <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
-          <h4 className="text-lg font-semibold mb-2 text-blue-800">🏔️ Hard Water Impact</h4>
+          <h4 className="text-lg font-semibold mb-2 text-blue-800">💧 Well Water</h4>
           <p className="text-gray-700">
-            Atlanta&#39;s hard water accelerates mineral buildup in pipes and fixtures. Regular inspections can identify
-            scaling issues before they cause complete blockages or equipment failure.
+            City water in Metro Atlanta is generally soft, but many homes in the rural parts of South Metro are on private
+            wells, where hard water builds up scale in pipes, fixtures and water heaters. Regular inspections catch it
+            before it causes blockages or equipment failure.
           </p>
         </div>
 
@@ -262,7 +284,7 @@ export default function ArticleContent() {
       <div className="bg-green-50 p-5 rounded-lg mb-6 border border-green-200">
         <h4 className="text-xl font-semibold mb-4 text-green-800">💡 The Smart Homeowner&#39;s Choice</h4>
         <p className="text-gray-700 mb-4">
-          Consider this simple math: A professional plumbing inspection costs $150-$300 annually. Compare that to:
+          A routine inspection costs far less than almost any plumbing emergency. Here&#39;s what you get:
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
@@ -287,6 +309,17 @@ export default function ArticleContent() {
           </div>
         </div>
       </div>
+
+      <p className="mb-6">
+        Between inspections, a few habits help too: know where your{' '}
+        <Link href="/news/article/how-to-find-water-shut-off-valve" className="text-theme-3 hover:underline">main water shut-off valve</Link> is,{' '}
+        <Link href="/news/article/flushing-your-water-heater" className="text-theme-3 hover:underline">flush your water heater</Link> once a year,
+        and keep an eye on the{' '}
+        <Link href="/news/article/10-factors-that-affect-water-quality" className="text-theme-3 hover:underline">factors that affect water quality</Link>.
+        If you&#39;d rather not keep track, a{' '}
+        <Link href="/services/plumbing-service-agreement" className="text-theme-3 hover:underline">plumbing service agreement</Link> puts
+        inspections on a schedule for you.
+      </p>
 
       <h3 className="text-2xl font-semibold mb-4">Take Action: Protect Your Home Today</h3>
 
