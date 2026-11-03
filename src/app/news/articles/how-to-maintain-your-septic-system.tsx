@@ -1,15 +1,16 @@
 import React from 'react';
 import CTACall from "@/components/cta/CTACall";
 import Link from 'next/link';
+import JobPhotoFigure from "@/components/JobPhotoFigure";
 
 // Article metadata
 const slug = 'how-to-maintain-your-septic-system';
 export const metadata = {
   slug: slug,
   title: 'How To Maintain Your Septic System',
-  date: '2022-07-05',
-  excerpt: 'Your septic system cleanly disposes of waste and is at the heart of your plumbing system. When cared for, it can last for years. Here’s how to maintain it.',
-  image: '/images/eljen-install.webp',
+  date: '2026-11-03',
+  excerpt: 'How a septic system works, and the maintenance that keeps it running for decades: pumping, inspections, water use, what not to flush, and protecting the drain field.',
+  image: '/images/jobs/septic-risers-hero-mcdonough.webp',
   path: `/news/article/${slug}`
 };
 
@@ -17,83 +18,66 @@ export const metadata = {
 export default function ArticleContent() {
   return (
     <article className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-bold mb-6">How To Maintain Your Septic System</h2>
-
       <p className="mb-6">
-        A septic system treats household wastewater and leaches environmentally friendly water into your yard.
-        These systems don&#39;t cost much for maintenance and are easy to maintain. With proper care,
-        we&#39;ve seen them last for decades.
+        A septic system treats all of your home&#39;s wastewater right in your yard. It doesn&#39;t need much,
+        but what it needs, it needs on schedule. With regular care, septic systems last for decades. Neglected,
+        they fail early, and a new drain field or tank is one of the most expensive repairs a homeowner can face.
       </p>
 
-      <p className="mb-6">
-        However, septic system failures are also very common. These often happen due to the negligence
-        of the owners with regard to the system&#39;s maintenance. A septic system failure can cause serious
-        groundwater pollution and can be expensive to repair.
-      </p>
-
-      <div className="bg-blue-50 p-4 rounded-lg mb-6 border-l-4 border-theme-3">
-        <p className="font-medium text-gray-700">
-          <strong>Did you know?</strong> A properly maintained septic system can last 25-30 years or more,
-          while a neglected system might fail in just 10-15 years. Regular maintenance not only extends
-          the life of your system but also protects your property value and the environment.
-        </p>
-      </div>
-
-      <p className="mb-6">
-        For that reason, it is vital to maintain it properly. Following are a few ways through which
-        you can easily carry out septic maintenance.
-      </p>
-
-      <h2 className="text-2xl font-bold mt-8 mb-4">Use Water Efficiently</h2>
-
-      <p className="mb-6">
-        Water conservation should be practiced. You can increase the life of your drain field,
-        reduce the likelihood of system failure, and avoid costly repairs simply by reducing
-        and balancing your water use.
-      </p>
-
-      <p className="mb-6">
-        Following are a few things you can do in order to reduce water use:
-      </p>
-
-      <div className="bg-gray-50 p-5 rounded-lg mb-6 border border-gray-200">
-        <ul className="list-disc pl-6 space-y-2">
-          <li>Make your showers shorter</li>
-          <li>Make use of devices like high-efficiency toilets and faucet aerators that help in saving water</li>
-          <li>Identify and repair leaky toilets as soon as possible - it&#39;s one of the main causes of water waste</li>
-          <li>Spread out your laundry loads throughout the week instead of doing them all in one day</li>
-          <li>Install water-efficient appliances when replacing old ones</li>
+      <div className="bg-blue-50 p-5 rounded-lg mb-8 border-l-4 border-theme-3 not-prose">
+        <h2 className="text-2xl font-bold mb-3">Septic Maintenance at a Glance</h2>
+        <ul className="list-disc pl-6 space-y-1">
+          <li><strong>Pump the tank</strong> every 3 to 5 years for most households.</li>
+          <li><strong>Have it inspected</strong> at least every 3 years, and about once a year if your system has a pump, floats or an alarm.</li>
+          <li><strong>Only flush</strong> human waste and toilet paper.</li>
+          <li><strong>Spread out water use</strong>, especially laundry.</li>
+          <li><strong>Protect the drain field</strong>: no parking, building or planting trees on it.</li>
         </ul>
       </div>
 
+      <h2 className="text-3xl font-bold mb-4">How a Septic System Works</h2>
+      <p className="mb-4">
+        Everything that goes down a drain in your house, from the toilets, showers, kitchen and laundry, flows into the
+        septic tank. In the tank, solids settle to the bottom as sludge, grease and light material float to the top as
+        scum, and bacteria break down the organic waste.
+      </p>
       <p className="mb-6">
-        These are a few of the ways through which you can easily save a lot of water. You need to identify
-        where your water is being used the most and then try to reduce that usage as much as possible.
+        Baffles at the tank&#39;s inlet and outlet keep the sludge and scum inside. The liquid in the middle flows out to the
+        drain field, a set of perforated pipes in gravel trenches, where it soaks into the soil and is filtered naturally.
+        Most maintenance comes down to two things: keeping solids out of the drain field, and not sending it more water
+        than the soil can take.
       </p>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">Get Your Septic System Inspected</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <JobPhotoFigure slug="septic-tank-scum-layer-jonesboro" caption="An open tank with a thick scum layer, ready to be pumped" />
+        <JobPhotoFigure slug="septic-broken-baffle-jonesboro" caption="A broken baffle and line found during a repair. Failed baffles let solids reach the drain field." />
+      </div>
 
+      <h2 className="text-3xl font-bold mb-4">1. Pump Your Tank on Schedule</h2>
+      <p className="mb-4">
+        Most households need <Link href="/services/septic-tank-pumping" className="text-theme-3 hover:underline">septic tank pumping</Link> every
+        3 to 5 years. How often depends on the size of the tank, how many people live in the house, and how much water you
+        use. A garbage disposal adds solids to the tank, so homes with one usually need pumping sooner.
+      </p>
       <p className="mb-6">
-        Your septic system needs to be inspected at least once every <a
-        href="https://www.epa.gov/septic/how-care-your-septic-system#inspect"
-        className="text-theme-1 hover:text-theme-2 transition">three years</a>.
-        Even though other systems do need an inspection once every year, getting your septic system
-        inspected once every three years is more than enough.
+        Don&#39;t wait for a backup. Once sludge builds up past the outlet, solids flow into the drain field and clog it,
+        and that damage can&#39;t be pumped out.
       </p>
 
-      <div className="bg-yellow-50 p-4 rounded-lg mb-6 border-l-4 border-yellow-400">
+      <div className="bg-blue-50 p-4 rounded-lg mb-8 border-l-4 border-theme-3">
         <p className="font-medium text-gray-700">
-          <strong>Pro Tip:</strong> Although some homeowners attempt to inspect their system themselves,
-          we strongly advise against this due to health hazards from raw sewage. Additionally, most
-          homeowners don&#39;t have access to sewer inspection cameras needed to properly examine the
-          septic leach field.
+          <strong>Important:</strong> We often get calls from homeowners who just want a pump-out. If the drain field is
+          already failing, pumping is only a temporary fix: the tank fills right back up because the water has nowhere to
+          go. If your plumber recommends more than a pump, ask them to show you why.
         </p>
       </div>
 
-      <p className="mb-6">
-        Having a proper inspection of the system can help you prevent major issues and problems
-        associated with poor maintenance of septic systems. Professional inspectors can identify
-        early warning signs before they develop into costly problems.
+      <h2 className="text-3xl font-bold mb-4">2. Get Your Septic System Inspected</h2>
+      <p className="mb-4">
+        The <a href="https://www.epa.gov/septic/how-care-your-septic-system" className="text-theme-3 hover:underline">EPA
+        recommends</a> having a septic system inspected at least every 3 years. Systems with mechanical parts, like a pump
+        tank, float switches or a high-water alarm, should be checked about once a year. An inspection catches small
+        problems, like a broken baffle or a rising sludge level, before they turn into a backup.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
@@ -103,85 +87,70 @@ export default function ArticleContent() {
             <li>Slow drains throughout the house</li>
             <li>Gurgling sounds in the plumbing</li>
             <li>Sewage odors inside or outside</li>
-            <li>Wet, spongy ground around the drain field</li>
+            <li>Wet, spongy ground over the drain field</li>
             <li>Unusually lush, green grass over the drain field</li>
+            <li>A high-water alarm going off</li>
           </ul>
         </div>
         <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
-          <h3 className="text-lg font-semibold mb-2">What Professional Inspectors Check</h3>
+          <h3 className="text-lg font-semibold mb-2">What an Inspection Checks</h3>
           <ul className="list-disc pl-5 space-y-1">
-            <li>Tank sludge and scum levels</li>
-            <li>Signs of leakage or backup</li>
-            <li>Condition of baffles and dividers</li>
-            <li>Drain field performance</li>
-            <li>Potential root intrusions</li>
+            <li>Sludge and scum levels in the tank</li>
+            <li>Condition of the baffles and the tank itself</li>
+            <li>Signs of leaks or backup</li>
+            <li>How well the drain field is draining</li>
+            <li>Pumps, floats and alarms, if you have them</li>
           </ul>
         </div>
       </div>
-
-      <h2 className="text-2xl font-bold mt-8 mb-4">Pump Your Tank</h2>
-
-      <p className="mb-6">
-        When necessary, pump out your septic tank. Waiting until a problem arises is surely not a good idea.
-        Septic tanks are generally pumped every three to five years for a typical household.
+      <p className="mb-8">
+        Don&#39;t open the tank yourself: the gases inside are dangerous, and a proper look at the lines takes a sewer camera.
+        Learn more about our <Link href="/services/septic-inspection" className="text-theme-3 hover:underline">septic inspections</Link>,
+        including inspection letters for home sales.
       </p>
 
-      <p className="mb-6">
-        Regular pumping can avoid costly failures like a backed-up sewage line or a clogged drain field.
-        When you use a garbage disposal, more solids will enter the septic tank, necessitating more
-        frequent pumping.
+      <h2 className="text-3xl font-bold mb-4">3. Clean the Effluent Filter and Add Risers</h2>
+      <p className="mb-4">
+        Many newer tanks have an <strong>effluent filter</strong> in the outlet that catches small solids before they reach
+        the drain field. It needs to be cleaned, usually whenever the tank is pumped or inspected. A clogged filter backs
+        water up into the house.
       </p>
-
-      <div className="bg-blue-50 p-4 rounded-lg mb-6 border-l-4 border-theme-3">
-        <p className="font-medium text-gray-700">
-          <strong>Important:</strong> We commonly have clients call who just want to get their septic tank pumped.
-          Unfortunately, this can be a temporary fix, as the septic system is designed to drain liquids into
-          the drain field, and the drain field can fail. Make sure to follow your plumber&#39;s advice if they&#39;re
-          recommending more than just a pump.
-        </p>
+      <p className="mb-6">
+        If your tank lids are buried, every service visit starts with digging them up. A <strong>riser</strong> brings the
+        lid up to ground level, so pumping and inspections are quicker and cost less.
+      </p>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <JobPhotoFigure slug="septic-effluent-filter-cleaning-jonesboro" caption="An effluent filter pulled from the tank outlet for cleaning" />
+        <JobPhotoFigure slug="septic-risers-mcdonough" caption="Risers bring the tank lids up to ground level" />
       </div>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">Protect The Drain field</h2>
-
-      <p className="mb-6">
-        Although drain fields do not require much maintenance, the small pores in the drain field can get
-        clogged with biomat, and keep the drain field from working properly. <Link
-        href="/news/article/when-is-hydro-jetting-needed/"
-        className="text-theme-1 hover:text-theme-2 transition">Hydro-jetting</Link> can open these pores up
-        again to make sure that your septic tank is draining properly.
+      <h2 className="text-3xl font-bold mb-4">4. Use Water Efficiently</h2>
+      <p className="mb-4">
+        The average person uses roughly 50 to 60 gallons of water a day, and every gallon ends up in the septic tank. Too
+        much water at once pushes waste through the tank before it can settle, and can flood the drain field.
       </p>
-
-      <div className="bg-gray-50 p-5 rounded-lg mb-6 border border-gray-200">
-        <h3 className="text-xl font-semibold mb-3">Drain field Protection Tips</h3>
+      <div className="bg-gray-50 p-5 rounded-lg mb-8 border border-gray-200">
         <ul className="list-disc pl-6 space-y-2">
-          <li>Never park or drive vehicles over the drain field</li>
-          <li>Avoid planting trees or shrubs near the drain field (roots can damage the system)</li>
-          <li>Direct roof drains, sump pumps, and other rainwater drainage systems away from the drain field</li>
-          <li>Keep livestock away from the area</li>
-          <li>Don&#39;t build structures (like sheds, patios, or pools) over the drain field</li>
+          <li><strong>Spread out laundry</strong> over the week instead of doing it all in one day.</li>
+          <li><strong>Fix running toilets and leaky faucets</strong> right away. A running toilet can send hundreds of gallons a day into the tank.</li>
+          <li>Take shorter showers.</li>
+          <li>Use high-efficiency toilets, faucet aerators and washing machines.</li>
         </ul>
       </div>
 
-      <p className="mb-6">
-        Take care to not move heavy equipment or vehicles on top of the drain field to ensure it lasts
-        a long time. The soil around your drain field should remain undisturbed to maintain proper
-        filtration and treatment.
+      <h2 className="text-3xl font-bold mb-4">5. Be Careful What Goes Down the Drain</h2>
+      <p className="mb-4">
+        <strong>Human waste and toilet paper are the only things that should be flushed.</strong> Your septic system relies
+        on bacteria to break down waste, and other items either clog the tank and lines or kill the bacteria. Skip septic
+        additives too; they can upset the tank&#39;s natural balance and do more harm than good. See <Link href="/news/article/are-septic-tank-additives-and-enzymes-useful" className="text-theme-3 hover:underline">are septic tank additives useful?</Link>
       </p>
-
-      <h2 className="text-2xl font-bold mt-8 mb-4">What Not To Flush</h2>
-
-      <p className="mb-6">
-        Your septic system relies on natural bacteria to break down waste. Certain items can disrupt this
-        process or clog your system when flushed or poured down drains.
-      </p>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
         <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
           <h3 className="text-lg font-semibold mb-2">Never Flush These Items</h3>
           <ul className="list-disc pl-5 space-y-1">
-            <li>Wipes (even those labeled &#34;flushable&#34;)</li>
+            <li>Wipes (even &#34;flushable&#34; ones)</li>
             <li>Paper towels or tissues</li>
-            <li>Feminine hygiene products</li>
+            <li>Diapers and feminine hygiene products</li>
             <li>Dental floss</li>
             <li>Cat litter</li>
             <li>Cigarette butts</li>
@@ -192,39 +161,61 @@ export default function ArticleContent() {
           <h3 className="text-lg font-semibold mb-2">Never Pour These Down Drains</h3>
           <ul className="list-disc pl-5 space-y-1">
             <li><Link href="/news/article/why-pouring-grease-down-your-drain-is-a-recipe-for-trouble" className="text-theme-3 hover:underline">Cooking oil or grease</Link></li>
-            <li>Paint or paint thinners</li>
+            <li>Coffee grounds</li>
+            <li>Paint or paint thinner</li>
             <li>Harsh household chemicals</li>
             <li>Gasoline or motor oil</li>
             <li>Pesticides or fertilizers</li>
-            <li>Antifreeze</li>
-            <li>Excessive amounts of drain cleaners</li>
+            <li>Large amounts of drain cleaner</li>
           </ul>
         </div>
       </div>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">Bottom Line</h2>
+      <h2 className="text-3xl font-bold mb-4">6. Protect the Drain Field</h2>
+      <p className="mb-4">
+        The drain field is the most expensive part of the system to replace. Over time, a layer of buildup called biomat
+        can clog the soil around the pipes. <Link href="/news/article/when-is-hydro-jetting-needed" className="text-theme-3 hover:underline">Hydro-jetting</Link> can
+        often clear the lines and restore drainage before a full replacement is needed.
+      </p>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        <div className="md:col-span-2 bg-gray-50 p-5 rounded-lg border border-gray-200">
+          <h3 className="text-xl font-semibold mb-3">Drain Field Do&#39;s and Don&#39;ts</h3>
+          <ul className="list-disc pl-6 space-y-2">
+            <li>Don&#39;t park or drive on it, and keep heavy equipment off it.</li>
+            <li>Don&#39;t build sheds, patios or pools over it.</li>
+            <li>Don&#39;t plant trees or large shrubs nearby; roots grow into the lines.</li>
+            <li>Point gutters, sump pumps and other runoff away from it.</li>
+            <li>Don&#39;t overwater it with sprinklers; a soggy field can&#39;t absorb wastewater.</li>
+          </ul>
+        </div>
+        <JobPhotoFigure slug="septic-root-intrusion-hampton" caption="Roots pulled out of a septic line" />
+      </div>
 
-      <p className="mb-6">
-        If you are serious about your septic system and want it to last for a long period of time,
-        follow the aforementioned tips. Proper septic maintenance will not only help you save a lot
-        of money but will also allow you to protect the environment and reduce groundwater pollution.
+      <h2 className="text-3xl font-bold mb-4">7. Keep Your Records</h2>
+      <p className="mb-8">
+        Keep a record of every pumping, inspection and repair, along with a sketch of where the tank and drain field are.
+        It helps your plumber spot problems sooner, and buyers will ask for it if you ever sell your home.
       </p>
 
-      <p className="mb-6">
-        Remember that prevention is always less expensive than repair or replacement. By implementing
-        these maintenance practices, you&#39;re making a smart investment in your property and ensuring
-        your septic system functions efficiently for years to come.
+      <h2 className="text-3xl font-bold mb-4">Bottom Line</h2>
+      <p className="mb-4">
+        Septic maintenance is cheap compared to septic repair. Pump on schedule, have the system inspected, watch what
+        goes down the drain, and protect the drain field, and your system can serve you for decades.
       </p>
-
       <p className="mb-6">
-        If you&#39;re experiencing issues with your septic system or it&#39;s time for an inspection or pumping,
-        don&#39;t hesitate to contact Plumb-All. Our experienced technicians can provide professional
-        service to keep your system in optimal condition.
+        Plumb-All handles septic pumping, inspections, repairs and new systems across South Metro Atlanta, including{' '}
+        <Link href="/septic-service/jonesboro-ga" className="text-theme-3 hover:underline">Jonesboro</Link>,{' '}
+        <Link href="/septic-service/fayetteville-ga" className="text-theme-3 hover:underline">Fayetteville</Link>,{' '}
+        <Link href="/septic-service/mcdonough-ga" className="text-theme-3 hover:underline">McDonough</Link>,{' '}
+        <Link href="/septic-service/stockbridge-ga" className="text-theme-3 hover:underline">Stockbridge</Link>,{' '}
+        <Link href="/septic-service/hampton-ga" className="text-theme-3 hover:underline">Hampton</Link> and{' '}
+        <Link href="/septic-service/ellenwood-ga" className="text-theme-3 hover:underline">Ellenwood</Link>. If you&#39;re due
+        for a pumping or seeing any of the warning signs, give us a call.
       </p>
 
       <div className="bg-theme-4/10 p-6 rounded-lg mt-10 mb-8">
         <CTACall
-          headerText="Decided that we're the right fit for you?"
+          headerText="Time to have your septic system checked?"
           buttonText="Call us at 844 PLUMB-ALL"
         />
       </div>

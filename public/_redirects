@@ -19,7 +19,7 @@
 /flushing-your-water-heater/ /news/article/flushing-your-water-heater 301
 /septic-systems/ /news/article/septic-systems 301
 /does-home-insurance-cover-plumbing/ /news/article/does-home-insurance-cover-plumbing 301
-/how-to-maintain-a-septic-system/ /news/article/how-to-maintain-a-septic-system 301
+/how-to-maintain-a-septic-system/ /news/article/how-to-maintain-your-septic-system 301
 /how-to-find-water-shut-off-valve/ /news/article/how-to-find-water-shut-off-valve 301
 /why-do-faucets-leak/ /news/article/why-do-faucets-leak 301
 /how-to-find-a-plumbing-leak-2/ /news/article/how-to-find-a-plumbing-leak 301
@@ -101,7 +101,7 @@
 /flushing-your-water-heater /news/article/flushing-your-water-heater 301
 /septic-systems /news/article/septic-systems 301
 /does-home-insurance-cover-plumbing /news/article/does-home-insurance-cover-plumbing 301
-/how-to-maintain-a-septic-system /news/article/how-to-maintain-a-septic-system 301
+/how-to-maintain-a-septic-system /news/article/how-to-maintain-your-septic-system 301
 /how-to-find-water-shut-off-valve /news/article/how-to-find-water-shut-off-valve 301
 /why-do-faucets-leak /news/article/why-do-faucets-leak 301
 /how-to-find-a-plumbing-leak-2 /news/article/how-to-find-a-plumbing-leak 301
@@ -138,3 +138,7 @@
 /about.html /about-our-process 301
 /privacy.html /privacy-policy 301
 /terms /terms-and-conditions 301
+
+# Merged into how-to-maintain-your-septic-system (2026-11-03)
+/news/article/how-to-maintain-a-septic-system /news/article/how-to-maintain-your-septic-system 301
+/news/article/how-to-maintain-a-septic-system/ /news/article/how-to-maintain-your-septic-system 301
