@@ -6,7 +6,7 @@ const linkClass = 'hover:text-theme-3 transition';
 export default function TrustStrip() {
   const items: React.ReactNode[] = [
     <a key="reviews" href="https://g.page/r/Cbrr7EyVgUNcEBA" target="_blank" rel="noopener noreferrer" className={linkClass}>
-      4.6<span className="text-yellow-400">★</span> · 332 reviews
+      4.6<span className="text-yellow-400">★</span> · 334 reviews
     </a>,
     <a key="expertise" href="https://www.expertise.com/ga/fayetteville/plumbing" target="_blank" rel="noopener noreferrer" className={linkClass}>
       Expertise 2026

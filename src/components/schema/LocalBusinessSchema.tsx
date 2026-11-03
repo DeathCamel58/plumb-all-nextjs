@@ -43,7 +43,7 @@ export default function LocalBusinessSchema() {
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '4.6',
-      reviewCount: '332',
+      reviewCount: '334',
       bestRating: '5',
     },
     sameAs: [
