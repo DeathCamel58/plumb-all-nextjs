@@ -64,6 +64,7 @@ export default function LocalBusinessSchema() {
       'https://www.yelp.com/biz/plumb-all-jonesboro',
       'https://nextdoor.com/page/plumb-all-jonesboro-ga',
       'https://www.facebook.com/plumball.jonesboro',
+      'https://phccga.memberclicks.net/index.php?option=com_community&view=profile&userid=2007416173&directory_search_id=2001417#/profile',
     ],
   };
 

@@ -313,7 +313,7 @@ export default function Home() {
             </a>
 
             <a
-              href="https://phccga.memberclicks.net/index.php?option=com_community&view=profile&userid=2007416173&uuid=01785e52-bf79-428e-ab88-84a9f3e49098&current_page=1&directory_search_id=2001417"
+              href="https://phccga.memberclicks.net/index.php?option=com_community&view=profile&userid=2007416173&directory_search_id=2001417#/profile"
               className="inline-block transform transition duration-300 hover:scale-105"
               target="_blank"
               rel="noopener noreferrer"

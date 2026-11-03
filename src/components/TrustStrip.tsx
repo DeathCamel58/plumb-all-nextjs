@@ -11,7 +11,9 @@ export default function TrustStrip() {
     <a key="expertise" href="https://www.expertise.com/ga/fayetteville/plumbing" target="_blank" rel="noopener noreferrer" className={linkClass}>
       Expertise 2026
     </a>,
-    'PHCC',
+    <a key="phcc" href="https://phccga.memberclicks.net/index.php?option=com_community&view=profile&userid=2007416173&directory_search_id=2001417#/profile" target="_blank" rel="noopener noreferrer" className={linkClass}>
+      PHCC
+    </a>,
     'Master & Journeyman',
     'Since 2003',
     <Link key="wisetack" href="/financing" className={linkClass}>Wisetack</Link>,
