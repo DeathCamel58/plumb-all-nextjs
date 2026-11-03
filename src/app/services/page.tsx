@@ -91,6 +91,11 @@ const septicServices = [
     description: "Regular pumping to remove accumulated solids and prevent system failure, extending the life of your septic system.",
   },
   {
+    title: "Septic Tank Inspection",
+    path: "/services/septic-inspection",
+    description: "Inspections for home buyers, sellers and homeowners, with a written inspection letter for home sales.",
+  },
+  {
     title: "Septic Drain Field Repair",
     path: "/services/septic-repair",
     description: "Expert repair of failing drain fields to restore proper function and prevent costly system replacements.",

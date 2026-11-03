@@ -61,7 +61,7 @@ export default function SepticSystem() {
         <div className="w-full mb-12 text-center">
           <h2 className="text-4xl font-bold mb-6">Complete Septic System Services — One Licensed Team</h2>
           <p className="text-xl max-w-4xl mx-auto mb-6">
-            Whether you need a new septic system installed, your existing septic system inspected, pumped, or repaired, Plumb-All has served Metro Atlanta homeowners and businesses since 2003. Our licensed technicians handle every part of your septic system — tank, drain field, distribution box, and alternative systems — with upfront pricing and no surprise fees.
+            Whether you need a new septic system installed, your existing septic system <Link href="/services/septic-inspection" className="text-theme-3 hover:underline">inspected</Link>, pumped, or repaired, Plumb-All has served Metro Atlanta homeowners and businesses since 2003. Our licensed technicians handle every part of your septic system — tank, drain field, distribution box, and alternative systems — with upfront pricing and no surprise fees.
           </p>
           <p className="text-xl max-w-4xl mx-auto mb-6">
             Call us at (770) 914-3877 or <Link href="/contact" className="text-theme-3 hover:underline">request a free quote online</Link> and we&#39;ll get your septic system sorted fast.

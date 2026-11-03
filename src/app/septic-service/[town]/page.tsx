@@ -42,6 +42,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 const services = [
   { name: 'Septic Tank Pumping', href: '/services/septic-tank-pumping', text: 'Routine pump-outs every 3–5 years, with a check of the baffles and sludge level.' },
+  { name: 'Septic Inspections', href: '/services/septic-inspection', text: 'Inspections and written inspection letters for home sales.' },
   { name: 'Septic Repair', href: '/services/septic-repair', text: 'Baffles, lines, pumps, alarms and drain field repairs.' },
   { name: 'Septic Systems', href: '/services/septic-system', text: 'New and replacement tanks and conventional drain fields.' },
   { name: 'Eljen & Alternative Systems', href: '/services/alternative-septic', text: 'Options for small lots and soil that won’t pass for a conventional field.' },

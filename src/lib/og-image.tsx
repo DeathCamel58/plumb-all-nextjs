@@ -119,6 +119,7 @@ export async function getAllOgImageConfigs(): Promise<OgImageParams[]> {
     { title: 'Plumbing Repair', image: '/images/spraying-pipe.jpg' },
     { title: 'Plumbing Service Agreement', image: '/images/spraying-pipe.jpg' },
     { title: 'Residential Services', image: '/images/slab-leak.jpg' },
+    { title: 'Septic Inspection', image: '/images/septic-system-overview.jpg' },
     { title: 'Septic Repair', image: '/images/septic-system-overview.jpg' },
     { title: 'Septic System', image: '/images/septic-system-overview.jpg' },
     { title: 'Septic Tank Pumping', image: '/images/septic-pumping.jpg' },

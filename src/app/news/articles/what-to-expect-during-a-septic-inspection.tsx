@@ -24,7 +24,7 @@ export default function ArticleContent() {
         system. Whether you&#39;re purchasing a new property, selling your current one, or simply staying on top of
         routine maintenance, understanding what happens during a septic inspection can help you feel prepared and
         confident. At&nbsp;<Link href="/" className="text-theme-3 hover:underline">Plumb-All</Link>, we perform
-        thorough septic inspections throughout Metro Atlanta so homeowners can make informed decisions about their systems.
+        thorough <Link href="/services/septic-inspection" className="text-theme-3 hover:underline">septic inspections</Link> throughout Metro Atlanta so homeowners can make informed decisions about their systems.
       </p>
 
       <h3 className="text-2xl font-bold mt-8 mb-4">When Do You Need a Septic Inspection?</h3>
