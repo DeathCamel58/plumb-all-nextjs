@@ -1,4 +1,5 @@
 import React from 'react';
+import { areaServedSchema } from '@/lib/serviceArea';
 
 export default function ServiceSchema({
   name,
@@ -35,15 +36,7 @@ export default function ServiceSchema({
     areaServed: city ? {
       '@type': 'City',
       name: `${city}, GA`,
-    } : {
-      '@type': 'GeoCircle',
-      geoMidpoint: {
-        '@type': 'GeoCoordinates',
-        latitude: 33.749,
-        longitude: -84.388,
-      },
-      geoRadius: '50000',
-    },
+    } : areaServedSchema,
   };
 
   return (

@@ -1,4 +1,5 @@
 import React from 'react';
+import { areaServedSchema } from '@/lib/serviceArea';
 
 export default function LocalBusinessSchema() {
   const schema = {
@@ -8,7 +9,10 @@ export default function LocalBusinessSchema() {
     name: 'Plumb-All',
     url: 'https://plumb-all.com',
     logo: 'https://plumb-all.com/logo/wide-logo.png',
-    image: 'https://plumb-all.com/images/vans.webp',
+    image: [
+      'https://plumb-all.com/images/our-team.webp',
+      'https://plumb-all.com/images/vans.webp',
+    ],
     telephone: '+1-770-914-3877',
     email: 'info@plumb-all.com',
     priceRange: '$$',
@@ -25,15 +29,7 @@ export default function LocalBusinessSchema() {
       latitude: 33.5218,
       longitude: -84.3538,
     },
-    areaServed: {
-      '@type': 'GeoCircle',
-      geoMidpoint: {
-        '@type': 'GeoCoordinates',
-        latitude: 33.749,
-        longitude: -84.388,
-      },
-      geoRadius: '50000',
-    },
+    areaServed: areaServedSchema,
     // Plumbers are on call 24/7 (matches "Open 24 hours" on the Business Profile)
     openingHoursSpecification: [
       {
@@ -65,6 +61,9 @@ export default function LocalBusinessSchema() {
     },
     sameAs: [
       'https://g.page/r/Cbrr7EyVgUNcEBA',
+      'https://www.yelp.com/biz/plumb-all-jonesboro',
+      'https://nextdoor.com/page/plumb-all-jonesboro-ga',
+      'https://www.facebook.com/plumball.jonesboro',
     ],
   };
 

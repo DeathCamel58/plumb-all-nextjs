@@ -99,7 +99,7 @@ export async function generateOgImage(params: OgImageParams) {
 export async function getAllOgImageConfigs(): Promise<OgImageParams[]> {
   const configs: OgImageParams[] = [
     // Static pages
-    { title: 'Home Page', image: '/images/formbg.jpg' },
+    { title: 'Home Page', image: '/images/our-team.jpg' },
     { title: 'About Us', image: '/images/our-team.jpg' },
     { title: 'Contact Us', image: '/images/our-team.jpg' },
     { title: 'Financing', image: '/logo/plumb-all-banner.png' },

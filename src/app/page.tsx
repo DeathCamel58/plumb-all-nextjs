@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {FaHome, FaBuilding, FaCheck, FaTimes, FaThumbsUp, FaTools, FaPhone, FaShieldAlt, FaAward, FaClock} from 'react-icons/fa';
+import {FaHome, FaBuilding, FaWater, FaCheck, FaTimes, FaThumbsUp, FaTools, FaPhone, FaShieldAlt, FaAward, FaClock} from 'react-icons/fa';
 import React from "react";
 import ContactForm from "@/components/ContactForm";
 import Link from "next/link";
@@ -9,12 +9,14 @@ import HomeTestimonials from "@/components/HomeTestimonials";
 import {generateMetadataDict} from "@/components/header/metadata";
 import LocalBusinessSchema from "@/components/schema/LocalBusinessSchema";
 import BreadcrumbSchema from "@/components/schema/BreadcrumbSchema";
+import { serviceAreaTowns } from "@/lib/serviceArea";
+import { septicTowns } from "@/lib/septicTowns";
 
 // Generate metadata for the page
 export async function generateMetadata(): Promise<Metadata> {
-  const title = 'Top Rated Atlanta Plumbers';
-  const description = 'Plumb-All\'s expert plumbers have been tackling all types of plumbing and septic problems in South Atlanta since 2003.';
-  const ogImageUrl = 'og-home-page-formbg';
+  const title = 'Plumber & Septic Service in Jonesboro, GA';
+  const description = 'Plumbing and septic service in Jonesboro and South Metro Atlanta since 2003: repairs, water heaters, drains and septic. Plumbers on call 24/7.';
+  const ogImageUrl = 'og-home-page-our-team';
   const path = '/';
 
   return generateMetadataDict(title, description, ogImageUrl, path);
@@ -30,8 +32,8 @@ export default function Home() {
       <section className="relative w-full">
         <div className="w-full h-[500px] relative">
           <Image
-            src="/images/pipes.webp"
-            alt="Plumbing pipes background"
+            src="/images/vans.webp"
+            alt="Plumb-All plumbing and septic service vans in Jonesboro, GA"
             fill
             className="object-cover object-center"
             sizes="100vw"
@@ -39,8 +41,8 @@ export default function Home() {
           />
           <div className="absolute inset-0 home-bg-dark-50 flex items-center justify-center">
             <div className="text-white text-center max-w-3xl px-4">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">Atlanta&#39;s Premier Plumbing & Septic Experts</h1>
-              <p className="text-xl md:text-2xl mb-8">Solving all your plumbing needs since 2003</p>
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">Plumbing & Septic Experts in Jonesboro and South Metro Atlanta</h1>
+              <p className="text-xl md:text-2xl mb-8">Serving Clayton, Henry, Fayette and nearby counties since 2003 · Plumbers available 24/7</p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="tel:+17709143877"
@@ -66,11 +68,11 @@ export default function Home() {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Expert Services</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From residential plumbing to commercial systems, we provide comprehensive solutions for all your needs.
+              Plumbing and septic for homes and businesses, from a leaking pipe to a new drain field.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
               <div className="h-20 background-theme-1 flex items-center justify-center">
                 <FaHome className="text-5xl text-white" />
@@ -82,6 +84,24 @@ export default function Home() {
                 </p>
                 <Link
                   href="/services/residential"
+                  className="inline-block background-theme-1 text-white px-4 py-2 rounded hover:background-theme-2 transition"
+                >
+                  Learn More
+                </Link>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+              <div className="h-20 background-theme-1 flex items-center justify-center">
+                <FaWater className="text-5xl text-white" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-3">Septic</h3>
+                <p className="text-gray-600 mb-4">
+                  Septic pumping, inspections, baffle and drain field repair, risers, and new conventional and Eljen systems.
+                </p>
+                <Link
+                  href="/services/septic-system"
                   className="inline-block background-theme-1 text-white px-4 py-2 rounded hover:background-theme-2 transition"
                 >
                   Learn More
@@ -125,6 +145,82 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          <div className="mt-12 bg-white rounded-lg shadow-md p-6 md:p-8">
+            <h3 className="text-2xl font-bold mb-4 text-center">What We Do Most</h3>
+            <p className="text-lg text-gray-700 mb-4">
+              Plumb-All has handled plumbing and septic work across South Metro Atlanta since 2003, from our shop in
+              Jonesboro. Our most requested services:
+            </p>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-lg">
+              <li><Link href="/services/leak-detection" className="text-theme-3 hover:underline">Leak detection</Link>, including slab and hidden leaks</li>
+              <li><Link href="/services/plumbing-repair" className="text-theme-3 hover:underline">Pipe and plumbing repair</Link></li>
+              <li><Link href="/services/water-heater-replacement" className="text-theme-3 hover:underline">Water heater repair and replacement</Link>, tank and tankless</li>
+              <li><Link href="/services/drain-cleaning" className="text-theme-3 hover:underline">Drain cleaning</Link> and <Link href="/services/hydro-jetting" className="text-theme-3 hover:underline">hydro-jetting</Link></li>
+              <li><Link href="/services/water-line-repair" className="text-theme-3 hover:underline">Water and sewer line repair</Link></li>
+              <li><Link href="/services/septic-tank-pumping" className="text-theme-3 hover:underline">Septic tank pumping</Link> and <Link href="/services/septic-inspection" className="text-theme-3 hover:underline">septic inspections</Link></li>
+              <li><Link href="/services/septic-repair" className="text-theme-3 hover:underline">Septic and drain field repair</Link></li>
+              <li><Link href="/services/eljen-septic" className="text-theme-3 hover:underline">Eljen</Link> and <Link href="/services/alternative-septic" className="text-theme-3 hover:underline">alternative septic systems</Link></li>
+            </ul>
+            <p className="text-lg text-gray-700 mt-4">
+              Plumbers are on call 24/7 for <Link href="/services/emergencies" className="text-theme-3 hover:underline">emergencies</Link>, and
+              we can usually be there within 24 hours anywhere in our service area. See <Link href="/services" className="text-theme-3 hover:underline">all services</Link>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Team */}
+      <section className="w-full py-12 bg-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Meet the Plumb-All Team</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Licensed plumbers and septic technicians working out of our shop in Jonesboro since 2003.
+              When you call, it&#39;s our own team that shows up.
+            </p>
+          </div>
+          <figure>
+            <Image
+              src="/images/our-team.webp"
+              alt="The Plumb-All team with their service trucks outside the Plumb-All office in Jonesboro, GA"
+              width={1440}
+              height={961}
+              sizes="(min-width: 1152px) 1120px, 100vw"
+              className="w-full aspect-[16/7] object-cover object-[center_40%] rounded-lg shadow-md"
+              loading="lazy"
+            />
+            <figcaption className="text-sm text-gray-500 text-center mt-2">
+              The Plumb-All team at our shop, 218 N McDonough St, Jonesboro
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      {/* Areas We Serve */}
+      <section className="w-full py-12 bg-white">
+        <div className="max-w-6xl mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Areas We Serve</h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
+            Plumb-All is based at 218 N McDonough St in Jonesboro. Our plumbers and septic crews cover South Metro Atlanta,
+            including:
+          </p>
+          <ul className="flex flex-wrap justify-center gap-3">
+            {serviceAreaTowns.map((town) => {
+              const septicPage = septicTowns.find((t) => t.name === town);
+              return (
+                <li key={town}>
+                  {septicPage ? (
+                    <Link href={`/septic-service/${septicPage.slug}`} className="inline-block border border-gray-300 rounded-full px-4 py-2 font-semibold text-theme-3 hover:underline">
+                      {town}, GA
+                    </Link>
+                  ) : (
+                    <span className="inline-block border border-gray-200 rounded-full px-4 py-2 font-semibold text-gray-700">{town}, GA</span>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </section>
 
