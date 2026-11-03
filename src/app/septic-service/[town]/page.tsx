@@ -15,6 +15,7 @@ import Image from 'next/image';
 import { septicTowns, getSepticTown } from '@/lib/septicTowns';
 import { getJobPhoto } from '@/lib/jobPhotos';
 import HeroImage from '../../../../public/images/septic-pumping.webp';
+import ServiceReviews from '@/components/ServiceReviews';
 
 export const dynamicParams = false;
 
@@ -229,6 +230,9 @@ export default async function SepticTownPage({ params }: Props) {
             Or <Link href="/contact" className="text-theme-3 hover:underline">request a quote online</Link>
           </p>
         </div>
+
+        {/* Customer Reviews */}
+        <ServiceReviews service={`septic-service/${town.slug}`} title="What Our Septic Customers Say" />
 
         {/* FAQ Section */}
         <div className="w-full mb-16">

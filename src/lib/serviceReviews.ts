@@ -76,4 +76,25 @@ export const serviceReviews: Record<string, ServiceReview[]> = {
   'alternative-septic': [
     { text: 'Contacted Plumb-All about installing Eljen septic system. Ryan came out and provided specifics and pricing on installation. They coordinated acquiring all of the required permits and tests needed.', date: 'October 2023' },
   ],
+  // Septic town pages: septic reviews (reviews rarely name a town, so these aren't tied to the town)
+  'septic-service/jonesboro-ga': [
+    { text: 'The county requested an outline of my property’s septic drainfield… Steve showed up the next day bright and early. After probing and marking the drainfield with flags, he drew an outline of the field lines including the distances from the house for reference.', date: 'February 2024' },
+    { text: 'Plumb-All did a fantastic job on my septic line to sewer line transition in a timely fashion! Very courteous and knowledgeable about his work! We are highly pleased.', date: 'January 2019' },
+  ],
+  'septic-service/fayetteville-ga': [
+    { text: 'Dylan was professional, quick, smart, and knowledgeable in his tasked in repair of my septic system… He called to let me know what time he will arrive and if he will be late and why. He took the time to explain not only what needs to be done. But why and how it works.', date: 'February 2024' },
+  ],
+  'septic-service/ellenwood-ga': [
+    { text: 'I had my septic system serviced and repaired by Plumb All and let me tell you, these guys know what they are doing!… It was done right and in a timely manner… This was done 5 months ago, system is working flawlessly.', date: 'March 2021' },
+  ],
+  'septic-service/hampton-ga': [
+    { text: 'We were having a septic issue, they sent an amazing young man by the name of Stephen out the next morning (on a Saturday). He was very knowledgeable, explained everything in great detail. I highly recommend this company!!', date: 'April 2024' },
+  ],
+  'septic-service/stockbridge-ga': [
+    { text: 'Zack was there within 15 minutes of my call and Randy took over the job and was thorough, honest, and hard working in the summer heat… While I obviously hate paying thousands of dollars for something like septic system, I know they did a great job and tried to save me money where they could.', date: 'July 2019' },
+  ],
+  'septic-service/mcdonough-ga': [
+    { text: 'They serviced my mom’s septic tank on Wednesday. They thoroughly explained the procedures and provided pictures. I highly recommend Plumb-All.', date: 'April 2019' },
+    { text: 'They came out same day I called… They told me what my problems were and I never felt forced to pay for anything I didn’t want. They worked all day until job was done.', date: 'August 2025' },
+  ],
 };
