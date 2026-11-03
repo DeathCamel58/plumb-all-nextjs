@@ -1,14 +1,38 @@
 import React from 'react';
 import CTACall from "@/components/cta/CTACall";
 import Link from "next/link";
+import FAQSchema from "@/components/schema/FAQSchema";
+
+const faqs = [
+  {
+    question: 'How is backflow detected?',
+    answer: 'Usually with a backflow test. A certified tester connects a differential pressure gauge to the test ports on your backflow preventer and checks that each check valve holds and the relief valve opens when it should. Between tests, warning signs include discolored, cloudy or bad-tasting water, water dripping from the backflow device, and a sudden drop in water pressure.',
+  },
+  {
+    question: 'How often is backflow testing required in Georgia?',
+    answer: 'Georgia requires water systems to run cross-connection control programs, and your local water provider sets the testing schedule. Most require backflow assemblies to be tested every year, and they will send a notice when yours is due.',
+  },
+  {
+    question: 'Who can test a backflow preventer in Georgia?',
+    answer: 'Only a tester certified through Georgia\'s backflow prevention assembly tester program. The tester submits the results to your water provider.',
+  },
+  {
+    question: 'How long does a backflow test take?',
+    answer: 'Usually 15 to 30 minutes per device. The water is shut off briefly while the device is tested.',
+  },
+  {
+    question: 'What happens if my backflow preventer fails the test?',
+    answer: 'It has to be repaired or replaced and retested before a passing report can be filed. Worn rubber parts and springs can often be replaced on the spot; older devices sometimes need to be replaced.',
+  },
+];
 
 // Article metadata
 const slug = 'what-is-backflow-testing';
 export const metadata = {
   slug: slug,
-  title: 'What Is Backflow Testing and Why Does It Matter?',
-  date: '2025-12-17',
-  excerpt: 'Backflow testing protects your drinking water from contamination. Learn what it is, how often it\'s required, and what to expect during a backflow test.',
+  title: 'Backflow Detection and Testing: What to Know',
+  date: '2026-11-03',
+  excerpt: 'How backflow is detected and tested, the warning signs of a failing backflow preventer, how often Georgia water providers require testing, and what happens during a test.',
   image: '/images/backflow.webp',
   path: `/news/article/${slug}`
 };
@@ -17,6 +41,21 @@ export const metadata = {
 export default function ArticleContent() {
   return (
     <article className="prose prose-lg max-w-none">
+      <FAQSchema faqs={faqs} />
+      <div className="bg-blue-50 p-5 rounded-lg mb-8 border-l-4 border-theme-3 not-prose">
+        <h2 className="text-2xl font-bold mb-3">Quick Answer</h2>
+        <p className="mb-3">
+          <strong>Backflow</strong> is when water flows backward from an irrigation system, pool, boiler or business
+          process into the drinking water supply. A <strong>backflow preventer</strong> stops it, and a{' '}
+          <strong>backflow test</strong> is how it&#39;s detected: a certified tester checks the device with a pressure
+          gauge kit to make sure it&#39;s still working.
+        </p>
+        <p>
+          Most Georgia water providers require backflow preventers to be <strong>tested every year</strong>, with the
+          results filed by a certified tester.
+        </p>
+      </div>
+
       <h2 className="text-3xl font-bold mb-6">What Is Backflow Testing and Why Does It Matter?</h2>
 
       <p className="mb-6">
@@ -64,14 +103,30 @@ export default function ArticleContent() {
         These devices contain internal components that wear over time, which is exactly why regular testing is so important. A failing backflow preventer looks like it&#39;s working from the outside but may not actually be protecting your water supply.
       </p>
 
+      <h3 className="text-2xl font-bold mt-8 mb-4">How Is Backflow Detected?</h3>
+
+      <p className="mb-4">
+        Backflow usually happens without any warning you can see, which is why testing matters. There are two ways it
+        gets caught:
+      </p>
+      <ul className="list-disc pl-6 space-y-2 mb-6">
+        <li><strong>A backflow test (the reliable way).</strong> A certified tester uses a differential pressure gauge kit on the device&#39;s test ports to confirm each check valve holds and the relief valve opens when it should. A device can look fine from the outside and still fail.</li>
+        <li><strong>Warning signs.</strong> Discolored, cloudy or bad-tasting water, water dripping or spraying from the relief valve, or a sudden drop in pressure. If you notice any of these, have the device tested right away.</li>
+      </ul>
+
       <h3 className="text-2xl font-bold mt-8 mb-4">Georgia Requirements for Annual Testing</h3>
 
       <p className="mb-6">
-        In Georgia, backflow prevention devices must be tested annually by a certified backflow tester. The Georgia Environmental Protection Division (EPD) and local water authorities in the Metro Atlanta area require property owners to submit proof of testing each year. Failure to comply can result in fines, water service disconnection, or both.
+        Georgia&#39;s drinking water rules require water systems to run cross-connection control programs, and backflow
+        testing must be done by a tester certified through the state&#39;s backflow prevention assembly tester program.
+        Your local water provider (for example, Clayton County Water Authority or Henry County Water Authority) sets the
+        testing schedule and tracks the results. Most require every assembly to be tested once a year, and missing the
+        deadline can lead to fines or a water shutoff.
       </p>
 
       <p className="mb-6">
-        Most jurisdictions in the Metro Atlanta area&#8212;including counties like Cobb, Gwinnett, Fulton, and DeKalb&#8212;require annual testing for all commercial properties and residential properties that have irrigation systems, pools, fire sprinkler systems, or other cross-connections.
+        Testing is typically required for commercial properties and for homes with an irrigation system, pool, fire
+        sprinkler system or other cross-connection. Your water provider&#39;s notice will tell you which devices are due.
       </p>
 
       <div className="bg-blue-50 p-4 rounded-lg mb-6 border-l-4 border-theme-3">
@@ -142,10 +197,30 @@ export default function ArticleContent() {
         </p>
       </div>
 
+      <h3 className="text-2xl font-bold mt-8 mb-4">How Plumb-All Handles Backflow Testing</h3>
+      <div className="mb-6 not-prose">
+        <ul className="list-disc pl-6 space-y-2 text-lg">
+          <li>A <strong>certified backflow tester</strong> tests your device with a calibrated test kit.</li>
+          <li>We <strong>file the test report with your water provider</strong>, so you don&#39;t have to.</li>
+          <li>We test devices from <strong>1/2&#34; up to 2&#34; and larger</strong>, for homes and businesses.</li>
+          <li>If a device fails, we quote the repair or replacement and retest it.</li>
+        </ul>
+      </div>
+
+      <div className="bg-white p-5 rounded-lg mb-8 border border-gray-200 not-prose">
+        <h3 className="text-2xl font-bold mb-4">Backflow Testing FAQ</h3>
+        {faqs.map((faq) => (
+          <div key={faq.question} className="mb-4 last:mb-0">
+            <h4 className="text-lg font-semibold mb-1">{faq.question}</h4>
+            <p className="text-gray-700">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+
       <h3 className="text-2xl font-bold mt-8 mb-4">Protect Your Water with Professional Backflow Testing</h3>
 
       <p className="mb-6">
-        Backflow testing isn&#39;t just a regulatory checkbox&#8212;it&#39;s a critical safeguard for your family&#39;s or employees&#39; health. At Plumb-All, our certified backflow testers serve homeowners and businesses across Metro Atlanta with fast, thorough testing and same-day repairs when needed. We handle the test, the paperwork, and the peace of mind.
+        Backflow testing isn&#39;t just a regulatory checkbox&#8212;it&#39;s a critical safeguard for your family&#39;s or employees&#39; health. At Plumb-All, our certified backflow testers serve homeowners and businesses across South Metro Atlanta with thorough testing, and repairs or replacement when a device fails. We handle the test, the paperwork, and the peace of mind.
       </p>
 
       <div className="bg-theme-4/10 p-6 rounded-lg mt-10 mb-8">

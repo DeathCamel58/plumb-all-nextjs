@@ -99,7 +99,7 @@ export default function ArticleContent() {
 
       <h4 className="text-xl font-bold mt-6 mb-3">Video Camera Inspection</h4>
       <p className="mb-6">
-        The first step in resolving a sewer backup is identifying the cause and location of the blockage. A plumber inserts a waterproof camera into the sewer line, providing real-time video of the pipe&#39;s interior. This reveals roots, buildup, breaks, collapses, and other issues, allowing the plumber to recommend the most effective solution.
+        The first step in resolving a sewer backup is identifying the cause and location of the blockage. A plumber inserts a <Link href="/news/article/sewer-line-camera-inspections" className="text-theme-3 hover:underline">waterproof camera</Link> into the sewer line, providing real-time video of the pipe&#39;s interior. This reveals roots, buildup, breaks, collapses, and other issues, allowing the plumber to recommend the most effective solution.
       </p>
 
       <h4 className="text-xl font-bold mt-6 mb-3">Mechanical Drain Cleaning</h4>

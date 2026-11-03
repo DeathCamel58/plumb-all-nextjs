@@ -202,7 +202,7 @@ export default function Backflow() {
 
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-3">How often is backflow testing required?</h3>
-              <p className="text-lg">Most jurisdictions require annual backflow testing. Your local water authority may send notices when testing is due. Plumb-All can help you stay compliant.</p>
+              <p className="text-lg">Most jurisdictions require <Link href="/news/article/what-is-backflow-testing" className="text-theme-3 hover:underline">annual backflow testing</Link>. Your local water authority may send notices when testing is due. Plumb-All can help you stay compliant.</p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">

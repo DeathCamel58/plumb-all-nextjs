@@ -117,7 +117,7 @@ export default function ArticleContent() {
 
       <p className="mb-6">
         When a plumber suspects sewer line damage, the first diagnostic step is usually a sewer camera
-        inspection. A small, waterproof camera is fed through the sewer line, providing a real-time video
+        inspection. A small, <Link href="/news/article/sewer-line-camera-inspections" className="text-theme-3 hover:underline">waterproof camera</Link> is fed through the sewer line, providing a real-time video
         feed of the pipe&#39;s interior. This technology allows the plumber to see exactly what&#39;s causing
         the problem — whether it&#39;s tree roots, a collapsed section, a grease buildup, or a bellied pipe —
         without any digging. The camera also records the location and depth of the problem, which is essential

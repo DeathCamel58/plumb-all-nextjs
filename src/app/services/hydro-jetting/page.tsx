@@ -187,7 +187,7 @@ export default function HydroJetting() {
           <div className="space-y-6">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-semibold mb-3">Is hydro jetting safe for old pipes?</h3>
-              <p className="text-lg">Hydro jetting is safe for most pipe materials when performed by experienced professionals. Our technicians assess your pipes with a camera inspection first to ensure hydro jetting is appropriate.</p>
+              <p className="text-lg">Hydro jetting is safe for most pipe materials when performed by experienced professionals. Our technicians assess your pipes with a <Link href="/news/article/sewer-line-camera-inspections" className="text-theme-3 hover:underline">camera inspection</Link> first to ensure hydro jetting is appropriate.</p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">

@@ -89,7 +89,7 @@ export default function ArticleContent() {
 
       <ul className="list-disc pl-6 space-y-2 mb-6">
         <li><strong>Stop using water:</strong> Minimize water usage to prevent further backups while you wait for professional help.</li>
-        <li><strong>Call a professional plumber:</strong> A licensed plumber can perform a video camera inspection to see exactly what&#39;s happening inside your sewer line.</li>
+        <li><strong>Call a professional plumber:</strong> A licensed plumber can perform a <Link href="/news/article/sewer-line-camera-inspections" className="text-theme-3 hover:underline">video camera inspection</Link> to see exactly what&#39;s happening inside your sewer line.</li>
         <li><strong>Get a proper diagnosis:</strong> Based on the camera inspection, your plumber can recommend the best course of action, whether that&#39;s&nbsp;<Link href="/services/hydro-jetting" className="text-theme-3 hover:underline">hydro-jetting</Link>&nbsp;to clear a blockage, trenchless pipe repair, or a full sewer line replacement.</li>
         <li><strong>Don&#39;t attempt DIY fixes:</strong> Chemical drain cleaners and store-bought augers are no match for main sewer line problems and can actually make things worse.</li>
       </ul>

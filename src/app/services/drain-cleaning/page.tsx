@@ -304,7 +304,7 @@ export default function DrainCleaning() {
             </div>
             <div className="mb-6">
               <h3 className="text-xl font-semibold mb-2">What causes recurring clogs?</h3>
-              <p>Common causes include grease buildup, hair accumulation, tree root intrusion, and mineral deposits. Professional cleaning combined with a camera inspection can identify and resolve the root cause.</p>
+              <p>Common causes include grease buildup, hair accumulation, tree root intrusion, and mineral deposits. Professional cleaning combined with a <Link href="/news/article/sewer-line-camera-inspections" className="text-theme-3 hover:underline">camera inspection</Link> can identify and resolve the root cause.</p>
             </div>
             <div className="mb-6">
               <h3 className="text-xl font-semibold mb-2">How much does drain cleaning cost?</h3>

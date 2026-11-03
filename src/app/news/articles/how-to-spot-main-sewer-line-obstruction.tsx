@@ -95,7 +95,7 @@ export default function ArticleContent() {
         <p className="font-medium text-gray-700">
           <strong>Pro Tip:</strong> Professional <Link href="/services/drain-cleaning" className="text-theme-3 hover:underline">drain cleaning</Link> or <Link href="/services/hydro-jetting" className="text-theme-3 hover:underline">hydro jetting</Link> can usually resolve
           the problem. However, if the issue is advanced, a costly replacement may be necessary. Your technician
-          may conduct a camera inspection to identify the source of the problem and discuss service options with you.
+          may conduct a <Link href="/news/article/sewer-line-camera-inspections" className="text-theme-3 hover:underline">camera inspection</Link> to identify the source of the problem and discuss service options with you.
         </p>
       </div>
 
