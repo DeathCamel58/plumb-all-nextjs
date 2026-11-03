@@ -227,7 +227,7 @@ export default function SepticSystem() {
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <FaClock className="text-theme-3 text-3xl mx-auto mb-3" />
               <h3 className="text-lg font-semibold mb-2">Fast Scheduling</h3>
-              <p>Same-week appointments for most septic system service across Metro Atlanta.</p>
+              <p>We can usually be there within 24 hours anywhere in our service area.</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <FaShieldAlt className="text-theme-3 text-3xl mx-auto mb-3" />

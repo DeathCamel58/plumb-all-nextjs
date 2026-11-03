@@ -376,8 +376,8 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-lg">Business Hours</h4>
-                      <p className="text-gray-300">Monday-Friday: 8am-5pm</p>
-                      <p className="text-gray-300">Emergency service available 24/7</p>
+                      <p className="text-gray-300">Plumbers available 24/7</p>
+                      <p className="text-gray-300">Office: Monday–Friday, 8am–4pm</p>
                     </div>
                   </div>
                 </div>

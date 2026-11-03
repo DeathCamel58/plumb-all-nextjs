@@ -52,7 +52,7 @@ export default function SepticTankPumping() {
         image={HeroImage}
         altText="Metro Atlanta Septic Service – Pump Hose"
         title="Septic Tank Pumping Near Me – Metro Atlanta"
-        subtitle="Same-week scheduling · Free estimates · Upfront pricing · Licensed & insured"
+        subtitle="Usually there within 24 hours · Free estimates · Upfront pricing · Licensed & insured"
         showQuoteButton
       />
       <TrustStrip />
@@ -115,7 +115,7 @@ export default function SepticTankPumping() {
             Whether your tank is overdue for pumping, you&#39;re noticing slow drains or odors, or you just want to stay ahead of problems — Plumb-All&#39;s licensed technicians provide fast, reliable septic tank pumping across Metro Atlanta.
           </p>
           <p className="text-xl max-w-4xl mx-auto mb-6">
-            We serve homeowners, <Link href="/services/commercial" className="text-theme-3 hover:underline">businesses</Link>, and property managers with same-week scheduling, upfront pricing, and no surprise fees.
+            We serve homeowners, <Link href="/services/commercial" className="text-theme-3 hover:underline">businesses</Link>, and property managers, usually within 24 hours, with upfront pricing and no surprise fees.
           </p>
         </div>
 
@@ -160,7 +160,7 @@ export default function SepticTankPumping() {
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <FaClock className="text-theme-3 text-3xl mx-auto mb-3" />
               <h3 className="text-lg font-semibold mb-2">Fast Scheduling</h3>
-              <p>Same-week appointments available for most services across Metro Atlanta.</p>
+              <p>We can usually be there within 24 hours anywhere in our service area.</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <FaShieldAlt className="text-theme-3 text-3xl mx-auto mb-3" />

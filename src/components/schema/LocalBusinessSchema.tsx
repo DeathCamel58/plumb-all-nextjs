@@ -34,14 +34,29 @@ export default function LocalBusinessSchema() {
       },
       geoRadius: '50000',
     },
+    // Plumbers are on call 24/7 (matches "Open 24 hours" on the Business Profile)
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-        opens: '08:00',
-        closes: '17:00',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+        opens: '00:00',
+        closes: '23:59',
       },
     ],
+    // The office is staffed Mon–Fri 8–4
+    department: {
+      '@type': 'LocalBusiness',
+      name: 'Plumb-All Office',
+      telephone: '+1-770-914-3877',
+      openingHoursSpecification: [
+        {
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+          opens: '08:00',
+          closes: '16:00',
+        },
+      ],
+    },
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '4.6',
