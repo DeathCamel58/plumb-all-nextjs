@@ -1,14 +1,34 @@
 import React from 'react';
 import CTACall from "@/components/cta/CTACall";
 import Link from "next/link";
+import FAQSchema from "@/components/schema/FAQSchema";
+
+const faqs = [
+  {
+    question: 'Why do my drains back up when it rains hard in Atlanta?',
+    answer: 'Usually because rainwater is getting into your sewer line. Cracked or separated pipes, root-damaged joints and missing cleanout caps let groundwater and runoff in, and the line overflows during a storm. A city sewer main that is overloaded can also push water back toward the house. On a septic system, a soaked drain field can\'t absorb any more water, so it backs up toward the house. A camera inspection shows which one it is.',
+  },
+  {
+    question: 'Does clay soil shifting really crack sewer pipes in Georgia?',
+    answer: 'It can. Georgia\'s red clay swells when it\'s wet and shrinks in dry spells, and that movement stresses buried pipes. Older clay and cast iron sewer lines are the most likely to crack or separate at the joints, which also lets roots in. A sewer camera inspection shows offsets, cracks and roots before they cause a backup.',
+  },
+  {
+    question: 'Does hard water shorten water heater life in metro Atlanta?',
+    answer: 'Usually not on city water. Most metro Atlanta utilities supply soft water; Clayton County Water Authority, for example, reports hardness around 25 mg/L (about 1.5 grains per gallon). Hard water is more of a concern for homes on private wells. Either way, flushing the tank once a year and checking the anode rod helps a tank water heater last.',
+  },
+  {
+    question: 'What are the signs of a failing water heater?',
+    answer: 'Rusty or discolored hot water, rumbling or popping from the tank, water pooling around the base, running out of hot water faster than usual, and age: most tank water heaters last around 8 to 12 years. A leaking tank should be replaced, not repaired.',
+  },
+];
 
 // Article metadata
 const slug = 'common-plumbing-issues';
 export const metadata = {
   slug: slug,
   title: 'Common Plumbing Issues in the Metro Atlanta Area',
-  date: '2025-08-12',
-  excerpt: 'Discover some common plumbing problems affecting Atlanta homeowners. From hard water to seasonal pipe issues, learn how to address these plumbing challenges.',
+  date: '2026-11-03',
+  excerpt: 'Common plumbing problems in metro Atlanta homes: drains that back up in heavy rain, clay soil cracking sewer pipes, water heater wear, tree roots and aging pipes, and what to do about them.',
   image: '/images/spraying-pipe.webp',
   path: `/news/article/${slug}`
 };
@@ -21,29 +41,41 @@ export default function ArticleContent() {
 
       <div className="bg-blue-50 p-4 rounded-lg mb-8 border-l-4 border-theme-3">
         <p className="font-medium text-gray-700">
-          <strong>Did you know?</strong> Metro Atlanta&#39;s unique climate, hard water conditions, and aging
-          infrastructure contribute to specific plumbing challenges. The region&#39;s clay soil, temperature
-          fluctuations, and mineral-rich water can cause issues that homeowners in other areas rarely encounter.
+          <strong>Did you know?</strong> Metro Atlanta&#39;s red clay soil, heavy storms, temperature swings and
+          aging pipes cause plumbing problems that homeowners in other areas rarely see.
         </p>
       </div>
 
       <p className="text-lg text-gray-700 mb-6">
         Living in the Metro Atlanta area comes with its own set of plumbing challenges. From the red clay soil that can
-        shift and damage pipes to the hard water that clogs fixtures, Atlanta homeowners face unique issues that require
+        shift and damage pipes to heavy storms that overwhelm sewer lines, Atlanta homeowners face unique issues that require
         local expertise. Understanding these common problems can help you identify issues early and prevent costly repairs.
       </p>
 
-      <h3 className="text-2xl font-semibold mb-4">1. Hard Water Problems</h3>
+      <FAQSchema faqs={faqs} />
+      <div className="bg-white p-5 rounded-lg mb-8 border border-gray-200 not-prose">
+        <h3 className="text-2xl font-semibold mb-4">Quick Answers</h3>
+        {faqs.map((faq) => (
+          <div key={faq.question} className="mb-4 last:mb-0">
+            <h4 className="text-lg font-semibold mb-1">{faq.question}</h4>
+            <p className="text-gray-700">{faq.answer}</p>
+          </div>
+        ))}
+      </div>
+
+      <h3 className="text-2xl font-semibold mb-4">1. Hard Water: Mostly a Well-Water Problem</h3>
 
       <div className="bg-red-50 p-5 rounded-lg mb-6 border border-red-200">
-        <h4 className="text-xl font-semibold mb-4 text-red-800">⚠ Atlanta&#39;s Hard Water Challenge</h4>
+        <h4 className="text-xl font-semibold mb-4 text-red-800">⚠ City Water vs. Well Water</h4>
         <p className="text-gray-700 mb-4">
-          Metro Atlanta has some of the hardest water in Georgia, with mineral content often exceeding 7 grains per gallon.
-          This high mineral content, primarily calcium and magnesium, causes numerous plumbing issues throughout the region.
+          Most metro Atlanta homes on city water get soft water. It comes mainly from rivers and reservoirs, and Clayton
+          County Water Authority, for example, reports hardness around 25 mg/L (about 1.5 grains per gallon). Homes on
+          private wells, common in the rural parts of South Metro Atlanta, can have much harder water, with more calcium
+          and magnesium, and that&#39;s where hard-water problems show up.
         </p>
         <div className="space-y-3">
           <div>
-            <h5 className="font-semibold text-red-700 mb-2">Common Hard Water Symptoms:</h5>
+            <h5 className="font-semibold text-red-700 mb-2">Signs Your Water Is Hard:</h5>
             <ul className="list-disc pl-5 space-y-1 text-gray-700">
               <li>White, chalky buildup on faucets and showerheads</li>
               <li>Reduced water pressure due to mineral deposits</li>
@@ -167,14 +199,14 @@ export default function ArticleContent() {
       <h3 className="text-2xl font-semibold mb-4">6. Water Heater Issues</h3>
 
       <p className="mb-4">
-        Atlanta&#39;s hard water and temperature fluctuations create specific challenges for water heaters, often
-        shortening their lifespan and reducing efficiency.
+        Water heaters work hard in Atlanta, through cold winter snaps and heavy summer use. Most tank water heaters last
+        around 8 to 12 years, and a little maintenance helps yours reach the long end of that.
       </p>
 
       <div className="bg-blue-50 p-4 rounded-lg mb-6 border-l-4 border-theme-3">
         <p className="font-medium text-gray-700">
-          <strong>Local Tip:</strong> Atlanta&#39;s hard water can reduce a water heater&#39;s lifespan by 2-3 years
-          compared to areas with soft water. Regular maintenance and&nbsp;
+          <strong>Local Tip:</strong> On soft city water, sediment builds up slowly, but it still builds up. If
+          you&#39;re on well water, it builds up much faster. Regular maintenance and&nbsp;
           <Link href="/news/article/flushing-your-water-heater" className="text-theme-3 hover:underline">annual flushing</Link>
           &nbsp;are essential for optimal performance.
         </p>
@@ -184,7 +216,7 @@ export default function ArticleContent() {
         <div>
           <h4 className="text-lg font-semibold mb-2">Sediment Buildup</h4>
           <p className="text-gray-700">
-            Hard water minerals settle at the bottom of water heater tanks, reducing efficiency and causing premature failure.
+            Sediment and minerals settle at the bottom of the tank, reducing efficiency and causing premature failure.
             You may notice rumbling sounds, reduced hot water capacity, or&nbsp;
             <Link href="/news/article/warning-signs-that-your-water-heater-requires-attention" className="text-theme-3 hover:underline">other warning signs</Link>
             &nbsp;that indicate sediment problems.
@@ -193,8 +225,8 @@ export default function ArticleContent() {
         <div>
           <h4 className="text-lg font-semibold mb-2">Anode Rod Corrosion</h4>
           <p className="text-gray-700">
-            Atlanta&#39;s mineral-rich water accelerates anode rod corrosion, which is your water heater&#39;s primary
-            defense against tank corrosion. Regular replacement is crucial for extending tank life.
+            The anode rod corrodes on purpose, so the steel tank doesn&#39;t. Once it&#39;s used up, the tank starts to rust.
+            Having it checked every few years and replaced when needed extends tank life.
           </p>
         </div>
       </div>
@@ -202,8 +234,8 @@ export default function ArticleContent() {
       <h3 className="text-2xl font-semibold mb-4">7. Clogged Drains and Sewer Backups</h3>
 
       <p className="mb-4">
-        Metro Atlanta&#39;s combination of hard water, tree roots, and aging infrastructure makes drain clogs and sewer
-        backups more common than in many other regions.
+        Metro Atlanta&#39;s combination of tree roots, shifting clay soil, heavy rain, and aging infrastructure makes drain
+        clogs and sewer backups more common than in many other regions.
       </p>
 
       <div className="bg-yellow-50 p-5 rounded-lg mb-6 border border-yellow-200">
@@ -212,14 +244,14 @@ export default function ArticleContent() {
           <div>
             <h5 className="font-semibold text-yellow-700 mb-2">Kitchen Sink Clogs</h5>
             <p className="text-gray-700">
-              Hard water combines with grease and food particles to create stubborn clogs that are difficult to clear
-              with conventional methods.
+              Grease and food particles build up inside kitchen drain lines and create stubborn clogs that are hard to clear
+              with a plunger or store-bought drain cleaner.
             </p>
           </div>
           <div>
             <h5 className="font-semibold text-yellow-700 mb-2">Bathroom Drain Problems</h5>
             <p className="text-gray-700">
-              Mineral deposits from hard water combine with soap and hair to create thick, sticky clogs in bathroom drains.
+              Soap scum and hair combine to create thick, sticky clogs in bathroom sink and tub drains.
             </p>
           </div>
           <div>
@@ -240,12 +272,12 @@ export default function ArticleContent() {
         <h4 className="text-xl font-semibold mb-4 text-green-800">✓ Proactive Maintenance for Atlanta Homes</h4>
         <div className="space-y-4">
           <div>
-            <h5 className="font-semibold text-green-700 mb-2">Hard Water Solutions</h5>
+            <h5 className="font-semibold text-green-700 mb-2">If You&#39;re on Well Water</h5>
             <ul className="list-disc pl-5 space-y-1 text-gray-700">
-              <li>Install a whole-house water softener system</li>
-              <li>Clean faucet aerators and showerheads monthly</li>
-              <li>Use vinegar to dissolve mineral buildup</li>
-              <li>Consider a tankless water heater to reduce sediment issues</li>
+              <li>Have your water tested for hardness</li>
+              <li>Install a whole-house water softener if it&#39;s hard</li>
+              <li>Use vinegar to dissolve mineral buildup on faucet aerators and showerheads</li>
+              <li>Flush your water heater every year</li>
             </ul>
           </div>
           <div>
@@ -298,8 +330,8 @@ export default function ArticleContent() {
       <p className="mb-6">
         Don&#39;t let common Metro Atlanta plumbing issues turn into major problems. Our experienced local
         <Link href="/services/plumber" className="text-theme-3 hover:underline"> plumbers</Link> understand the unique
-        challenges facing Atlanta homeowners and can provide effective solutions. Whether you&#39;re dealing with hard water
-        damage, root intrusion, or aging pipes, we have the expertise to help. For emergency repairs or preventive
+        challenges facing Atlanta homeowners and can provide effective solutions. Whether you&#39;re dealing with sewer
+        backups, root intrusion, or aging pipes, we have the expertise to help. For emergency repairs or preventive
         maintenance, call us at <a href="tel:+17709143877" className="text-theme-1 hover:text-theme-2 transition">
         (770) 914-3877</a>.
       </p>
