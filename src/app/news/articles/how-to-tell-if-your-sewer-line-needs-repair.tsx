@@ -128,7 +128,7 @@ export default function ArticleContent() {
 
       <p className="mb-6">
         Depending on the type and severity of the damage, your plumber may recommend one of several repair
-        approaches.
+        approaches. See how we handle <Link href="/services/sewer-line-repair" className="text-theme-3 hover:underline">sewer line repair</Link>.
       </p>
 
       <h4 className="text-xl font-bold mt-6 mb-3">Hydro Jetting</h4>

@@ -94,7 +94,7 @@ export default function ArticleContent() {
       <div className="bg-yellow-50 p-4 rounded-lg mb-6 border-l-4 border-yellow-400">
         <p className="font-medium text-gray-700">
           <strong>Pro Tip:</strong> Professional <Link href="/services/drain-cleaning" className="text-theme-3 hover:underline">drain cleaning</Link> or <Link href="/services/hydro-jetting" className="text-theme-3 hover:underline">hydro jetting</Link> can usually resolve
-          the problem. However, if the issue is advanced, a costly replacement may be necessary. Your technician
+          the problem. However, if the issue is advanced, a <Link href="/services/sewer-line-repair" className="text-theme-3 hover:underline">sewer line repair or replacement</Link> may be necessary. Your technician
           may conduct a <Link href="/news/article/sewer-line-camera-inspections" className="text-theme-3 hover:underline">camera inspection</Link> to identify the source of the problem and discuss service options with you.
         </p>
       </div>

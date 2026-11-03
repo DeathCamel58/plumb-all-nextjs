@@ -43,6 +43,11 @@ const residentialServices = [
     description: "Expert water line repair and replacement services. We diagnose and fix water line leaks, breaks, and corrosion with minimal disruption to your property.",
   },
   {
+    title: "Sewer Line Repair & Camera Inspection",
+    path: "/services/sewer-line-repair",
+    description: "Sewer camera inspection to find roots, breaks and sags, then spot repair or full sewer line replacement with an upfront quote.",
+  },
+  {
     title: "Faucet Repair",
     path: "/services/faucet-repair",
     description: "Faucet dripping? We fix and replace all makes—kitchen, bathroom, outdoor & more. Our experts show a high level of attention to detail when determining the best repair solution.",

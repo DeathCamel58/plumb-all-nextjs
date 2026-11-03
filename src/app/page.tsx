@@ -157,7 +157,7 @@ export default function Home() {
               <li><Link href="/services/plumbing-repair" className="text-theme-3 hover:underline">Pipe and plumbing repair</Link></li>
               <li><Link href="/services/water-heater-replacement" className="text-theme-3 hover:underline">Water heater repair and replacement</Link>, tank and tankless</li>
               <li><Link href="/services/drain-cleaning" className="text-theme-3 hover:underline">Drain cleaning</Link> and <Link href="/services/hydro-jetting" className="text-theme-3 hover:underline">hydro-jetting</Link></li>
-              <li><Link href="/services/water-line-repair" className="text-theme-3 hover:underline">Water and sewer line repair</Link></li>
+              <li><Link href="/services/water-line-repair" className="text-theme-3 hover:underline">Water line</Link> and <Link href="/services/sewer-line-repair" className="text-theme-3 hover:underline">sewer line repair</Link></li>
               <li><Link href="/services/septic-tank-pumping" className="text-theme-3 hover:underline">Septic tank pumping</Link> and <Link href="/services/septic-inspection" className="text-theme-3 hover:underline">septic inspections</Link></li>
               <li><Link href="/services/septic-repair" className="text-theme-3 hover:underline">Septic and drain field repair</Link></li>
               <li><Link href="/services/eljen-septic" className="text-theme-3 hover:underline">Eljen</Link> and <Link href="/services/alternative-septic" className="text-theme-3 hover:underline">alternative septic systems</Link></li>

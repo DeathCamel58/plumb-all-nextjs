@@ -82,6 +82,13 @@ export const jobPhotos: JobPhoto[] = [
   { slug: 'pressure-reducing-valve-jonesboro', town: 'Jonesboro', alt: 'Pressure-reducing valve on the main water line', width: 1050, height: 1400, smWidth: 480, smHeight: 640 },
   { slug: 'toilet-shut-off-valve-old-atlanta', town: 'Atlanta', alt: 'Old toilet shut-off valve and supply line', width: 1050, height: 1400, smWidth: 480, smHeight: 640 },
   { slug: 'toilet-shut-off-valve-new-atlanta', town: 'Atlanta', alt: 'New quarter-turn toilet shut-off valve and braided supply line', width: 1050, height: 1400, smWidth: 480, smHeight: 640 },
+  { slug: 'sewer-line-cleanout-atlanta', town: 'Atlanta', alt: 'New sewer line with a cleanout riser in the trench', width: 1050, height: 1400, smWidth: 480, smHeight: 640 },
+  { slug: 'sewer-line-repair-dig-atlanta', town: 'Atlanta', alt: 'Sewer line exposed for repair', width: 1050, height: 1400, smWidth: 480, smHeight: 640 },
+  { slug: 'sewer-line-new-pvc-jonesboro', town: 'Jonesboro', alt: 'New PVC sewer pipe tied into the existing line', width: 1050, height: 1400, smWidth: 480, smHeight: 640 },
+  { slug: 'sewer-line-trench-cleanout-jonesboro', town: 'Jonesboro', alt: 'Sewer line replacement trench with a new cleanout', width: 1400, height: 1157, smWidth: 640, smHeight: 529 },
+  { slug: 'sewer-line-new-pipe-jonesboro', town: 'Jonesboro', alt: 'New sewer pipe bedded in the trench', width: 1050, height: 1400, smWidth: 480, smHeight: 640 },
+  { slug: 'building-drain-replacement-jonesboro-1', town: 'Jonesboro', alt: 'New PVC building drain under the house', width: 1050, height: 1400, smWidth: 480, smHeight: 640 },
+  { slug: 'building-drain-replacement-jonesboro-2', town: 'Jonesboro', alt: 'New drain fittings in the crawl space', width: 1050, height: 1400, smWidth: 480, smHeight: 640 },
 ];
 
 export function getJobPhoto(slug: string): JobPhoto | undefined {

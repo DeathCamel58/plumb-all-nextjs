@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     question: 'How long does a sewer camera inspection take?',
-    answer: 'Most residential inspections take under an hour. Our standard inspection covers the first 100 feet of line, which reaches the city sewer or septic tank on most homes.',
+    answer: 'It depends on how long the line is and what the camera finds. We run the camera as far as we need to find the problem.',
   },
   {
     question: 'Should I get another camera inspection after my sewer line is cleaned?',
@@ -87,7 +87,7 @@ export default function ArticleContent() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
         <ol className="md:col-span-2 list-decimal pl-6 space-y-3">
           <li><strong>Access the line</strong> through a cleanout, or another access point if there isn&#39;t one.</li>
-          <li><strong>Run the camera</strong> through the line while you watch the live feed with us. Our standard inspection covers the first 100 feet and takes under an hour.</li>
+          <li><strong>Run the camera</strong> through the line while you watch the live feed with us, as far down the line as the problem goes.</li>
           <li><strong>Locate the problem.</strong> A locator picks up the camera head through the ground, so we can mark exactly where and how deep a problem is before anyone digs.</li>
           <li><strong>Explain the options</strong> and quote the repair before any work starts.</li>
         </ol>
@@ -108,8 +108,8 @@ export default function ArticleContent() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
         <ul className="md:col-span-2 list-disc pl-6 space-y-2">
           <li><strong>Roots or buildup:</strong> <Link href="/services/hydro-jetting" className="text-theme-3 hover:underline">hydro-jetting</Link> to scour the line clean.</li>
-          <li><strong>A single broken or bellied section:</strong> a spot repair of just that section.</li>
-          <li><strong>A line failing end to end:</strong> sewer line replacement. See also <Link href="/news/article/what-is-trenchless-sewer-repair" className="text-theme-3 hover:underline">trenchless sewer repair</Link>.</li>
+          <li><strong>A single broken or bellied section:</strong> a <Link href="/services/sewer-line-repair" className="text-theme-3 hover:underline">spot repair</Link> of just that section.</li>
+          <li><strong>A line failing end to end:</strong> <Link href="/services/sewer-line-repair" className="text-theme-3 hover:underline">sewer line replacement</Link>. See also <Link href="/news/article/what-is-trenchless-sewer-repair" className="text-theme-3 hover:underline">trenchless sewer repair</Link>.</li>
           <li><strong>A septic line problem:</strong> see <Link href="/news/article/septic-system-cleaning" className="text-theme-3 hover:underline">septic line cleaning</Link> and <Link href="/services/septic-repair" className="text-theme-3 hover:underline">septic repair</Link>.</li>
         </ul>
         <JobPhotoFigure slug="septic-root-intrusion-hampton" caption="Roots pulled from a line after a camera inspection found them" />
