@@ -1,16 +1,16 @@
 import React from 'react';
 import CTACall from "@/components/cta/CTACall";
-import Image from "next/image";
 import Link from "next/link";
+import JobPhotoFigure from "@/components/JobPhotoFigure";
 
 // Article metadata
 const slug = 'how-to-find-water-shut-off-valve';
 export const metadata = {
   slug: slug,
-  title: 'How to Find Your Water Shut Off Valve',
-  date: '2022-09-06',
-  excerpt: 'Learn how to locate your water shut off valve to prevent damage during plumbing emergencies. This essential knowledge can save you from costly water damage.',
-  image: '/images/shut-off-valve.webp',
+  title: 'How to Find Your Home Water Shut-Off Valve',
+  date: '2026-11-03',
+  excerpt: 'Where to find your home\'s main water shut-off valve, what gate and ball valves look like (with photos from real jobs), and how to turn the water off fast.',
+  image: '/images/jobs/main-water-shut-off-hero-hampton.webp',
   path: `/news/article/${slug}`
 };
 
@@ -18,188 +18,157 @@ export const metadata = {
 export default function ArticleContent() {
   return (
     <article className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-bold mb-6">How to Find Your Water Shut Off Valve</h2>
-
-      <p className="mb-6">
-        Have you ever arrived home to discover water pooling on your floor? A minor plumbing issue can
-        rapidly escalate into a full-blown emergency. One of the most effective actions you can take in
-        this situation is to shut off your home&#39;s water supply. To do this, you&#39;ll need to know where
-        your water shut off valve is located. Being able to quickly shut off your water is essential to
-        prevent a bad situation from becoming worse.
-      </p>
-
-      <div className="bg-blue-50 p-4 rounded-lg mb-6 border-l-4 border-theme-3">
-        <p className="font-medium text-gray-700">
-          <strong>Did you know?</strong> Water damage is one of the most common and costly types of home
-          insurance claims. Knowing how to quickly shut off your water can potentially save thousands of
-          dollars in damage and prevent the growth of harmful mold.
+      <div className="bg-blue-50 p-5 rounded-lg mb-8 border-l-4 border-theme-3 not-prose">
+        <h2 className="text-2xl font-bold mb-3">Quick Answer</h2>
+        <p className="mb-3">
+          Your main water shut-off valve is usually <strong>where the water line enters your house</strong>,
+          most often on the side of the house facing the street. Check the crawl space, garage, basement,
+          utility closet, near the water heater, or behind a small access panel in a wall.
+        </p>
+        <p className="mb-3">
+          <strong>To turn it off:</strong> turn a round wheel handle clockwise until it stops. Turn a lever
+          handle a quarter turn, so it sits crossways to the pipe.
+        </p>
+        <p>
+          Can&#39;t find it, or water is still running? Call <a href="tel:+17709143877" className="text-theme-3 hover:underline font-semibold">(770) 914-3877</a>. A real person answers 24/7.
         </p>
       </div>
 
+      <h2 className="text-3xl font-bold mb-4">Water Leak Right Now? Do This First</h2>
+      <ol className="list-decimal pl-6 space-y-2 mb-8">
+        <li><strong>Shut off the main water valve</strong> (how to find it is below).</li>
+        <li><strong>Turn off power to the water heater</strong> (or set a gas water heater to &#34;pilot&#34;) if the water will be off for more than a short time.</li>
+        <li><strong>Open a faucet</strong> on the lowest floor to drain the pressure out of the pipes.</li>
+        <li><strong>Turn off electricity</strong> to any area where water is near outlets or appliances, if you can do it safely.</li>
+        <li><strong>Call a plumber.</strong> Our <Link href="/services/emergencies" className="text-theme-3 hover:underline">emergency plumbers</Link> are available 24/7.</li>
+      </ol>
+
+      <h2 className="text-3xl font-bold mb-4">What Does a Water Shut-Off Valve Look Like?</h2>
       <p className="mb-6">
-        The first step is to locate your water shut off valve. Depending on your property, you might find
-        the valve inside your home or outside. Some properties have the valve near the property line or
-        underground in a covered box. If the water shut off valve is inside your home, common locations
-        include the crawl space, basement, or near the foundation.
+        Most homes have one of two kinds of main shut-off valve. Here&#39;s what each looks like, with photos
+        from our own jobs.
       </p>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">What Does a Water Shut Off Valve Look Like?</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div>
+          <h3 className="text-xl font-semibold mb-2">Ball Valve (Lever Handle)</h3>
+          <p className="mb-4">
+            A straight lever, often red or yellow. <strong>When the lever runs along the pipe, the water is
+            on.</strong> Turn it a quarter turn so it sits crossways to the pipe to shut the water off. Ball
+            valves are what we install today, because they close fully and rarely stick.
+          </p>
+          <JobPhotoFigure
+            slug="main-water-shut-off-ball-valve-hampton"
+            caption="Main shut-off ball valve (red lever, bottom right) with a pressure-reducing valve, behind a wall access panel. The lever runs along the pipe, so the water is on."
+          />
+        </div>
+        <div>
+          <h3 className="text-xl font-semibold mb-2">Gate Valve (Round Wheel Handle)</h3>
+          <p className="mb-4">
+            A round handle, like a small steering wheel. Turn it <strong>clockwise</strong> until it stops,
+            which can take several turns. Gate valves are common in older homes. If one hasn&#39;t been
+            turned in years it can stick or break, so don&#39;t force it.
+          </p>
+          <JobPhotoFigure slug="gate-valve-wheel-handle-rex" />
+        </div>
+      </div>
 
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 items-start">
+        <div className="md:col-span-2 bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-400">
+          <p className="font-medium text-gray-700">
+            <strong>Don&#39;t confuse it with the pressure-reducing valve.</strong> Many homes have a bell-shaped
+            brass valve right next to the main shut-off. That&#39;s a pressure-reducing valve (PRV). It controls
+            your water pressure; it doesn&#39;t shut the water off, so leave its adjustment screw alone.
+          </p>
+        </div>
+        <JobPhotoFigure slug="pressure-reducing-valve-jonesboro" caption="Pressure-reducing valve (not a shut-off)" />
+      </div>
+
+      <h2 className="text-3xl font-bold mb-4">Where to Find the Main Shut-Off Inside Your Home</h2>
+      <p className="mb-4">
+        Start on the side of the house that faces the street, since that&#39;s usually where the water line
+        comes in. Then check these spots:
+      </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-        <div className="col-span-2">
-          <p className="mb-4">
-            To find your water shut off valve, you need to know what you&#39;re looking for. The main water
-            shut off valve typically looks like a pipe with either a wheel handle or a lever. The majority
-            of plumbing emergencies can be prevented or minimized if you quickly turn off the main water supply.
-          </p>
-
-          <p className="mb-4">
-            Main shut off valves usually come in two types:
-          </p>
-
-          <ul className="list-disc pl-6 space-y-2 mb-4">
-            <li><strong>Gate valve:</strong> Features a round, wheel-like handle that requires multiple turns to fully close</li>
-            <li><strong>Ball valve:</strong> Has a straight lever handle that turns 90 degrees to completely shut off the water</li>
+        <div className="md:col-span-2">
+          <ul className="list-disc pl-6 space-y-2">
+            <li><strong>Crawl space:</strong> common in Georgia homes. Look near the foundation wall where the pipe comes through. Bring a flashlight.</li>
+            <li><strong>Garage:</strong> on the wall facing the street, often low, near a hose bib or the water heater.</li>
+            <li><strong>Utility closet or near the water heater:</strong> follow the cold-water pipe back toward where it enters the house.</li>
+            <li><strong>Behind an access panel:</strong> a small removable panel in a closet or hallway wall, like the one in the photo above.</li>
+            <li><strong>Basement:</strong> along the front wall, near where the main line comes through.</li>
+            <li><strong>Under the kitchen sink:</strong> in some older homes.</li>
           </ul>
         </div>
-
-        <div className="col-span-1">
-          <figure className="mb-4">
-            <Image
-              src="/images/water-shut-off-valve.webp"
-              alt="Water Shut Off Valve"
-              className="rounded-lg shadow-md max-w-full h-auto"
-              width={500}
-              height={350}
-            />
-            <figcaption className="text-sm text-gray-600 text-center mt-2">A typical water shut off valve</figcaption>
-          </figure>
-        </div>
+        <JobPhotoFigure slug="gate-valve-copper-line-jonesboro" />
       </div>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">Finding Indoor Water Shut Off Valves</h2>
-
-      <p className="mb-6">
-        Typically, the main shut off valve will be located inside the perimeter of your house at the point
-        where water enters your home. Start your search on the side of the house that faces the street, as
-        water generally begins at the street and enters your home through a straight line. This method is
-        most effective when your water supply is connected to a municipal system.
+      <h2 className="text-3xl font-bold mb-4">Outside: The Valve at the Water Meter</h2>
+      <p className="mb-4">
+        If you can&#39;t find a shut-off inside, look for the water meter box, usually a plastic or metal lid in
+        the ground near the street or property line. There&#39;s a valve next to the meter that can stop water
+        to the whole house.
       </p>
-
-      <div className="bg-gray-50 p-5 rounded-lg mb-6 border border-gray-200">
-        <h3 className="text-xl font-semibold mb-3">Common Indoor Locations for Main Water Shut Off Valves</h3>
-        <ul className="list-disc pl-6 space-y-2">
-          <li><strong>Near the water meter:</strong> Often located in the same area as your water meter</li>
-          <li><strong>Basement:</strong> Check along exterior walls, especially on the street-facing side</li>
-          <li><strong>Crawl space:</strong> May require a flashlight to locate</li>
-          <li><strong>Utility room:</strong> Near water heaters or washing machines</li>
-          <li><strong>Under the kitchen sink:</strong> In some older homes</li>
-          <li><strong>Near the foundation:</strong> Where the main water line enters the house</li>
-        </ul>
-      </div>
-
-      <div className="bg-yellow-50 p-4 rounded-lg mb-6 border-l-4 border-yellow-400">
-        <p className="font-medium text-gray-700">
-          <strong>Pro Tip:</strong> Once you&#39;ve located your main water shut off valve, consider labeling it
-          clearly and ensuring all household members know its location. In an emergency, every second counts.
-        </p>
-      </div>
-
-      <h2 className="text-2xl font-bold mt-8 mb-4">Finding Outdoor Water Shut Off Valves</h2>
-
-      <p className="mb-6">
-        If you can&#39;t locate the main shut off valve inside your home, it may be outside. Outdoor shut off
-        valves are typically found:
-      </p>
-
-      <ul className="list-disc pl-8 mb-6 space-y-2">
-        <li>Near the property line or close to the street</li>
-        <li>In an underground box with a metal or plastic cover (sometimes marked &#34;water&#34;)</li>
-        <li>Along the perimeter of the house, often on the street-facing side</li>
-        <li>Near the water meter if it&#39;s located outside</li>
+      <ul className="list-disc pl-6 space-y-2 mb-8">
+        <li>It usually takes a <strong>meter key</strong> (sold at hardware stores) to turn.</li>
+        <li>That valve belongs to your water utility. In an emergency it&#39;s your backup, but some utilities prefer you call them to use it.</li>
+        <li>If your only shut-off is at the street, it&#39;s worth having an easy-to-reach valve added at the house (see below).</li>
       </ul>
 
-      <p className="mb-6">
-        Outdoor shut off valves may require a special tool called a &#34;water key&#34; to operate. These can be
-        purchased at most hardware stores and are a worthwhile investment for emergency preparedness.
+      <h2 className="text-3xl font-bold mb-4">Shut-Off Valves for Toilets, Sinks and Appliances</h2>
+      <p className="mb-4">
+        If only one fixture is leaking, you don&#39;t need to shut off the whole house. Most fixtures have their
+        own small valve:
       </p>
-
-      <h2 className="text-2xl font-bold mt-8 mb-4">Check Your Property Inspection Report</h2>
-
-      <p className="mb-6">
-        If you&#39;re unable to locate your water shut off valve after searching the entire property, check
-        your property inspection report. This document is typically provided during the final phases of
-        buying a house. The plumbing section of the report should indicate the exact location of the shut
-        off valve, and may even include a picture.
-      </p>
-
-      <div className="bg-gray-50 p-5 rounded-lg mb-6 border border-gray-200">
-        <h3 className="text-xl font-semibold mb-3">Other Resources for Finding Your Shut Off Valve</h3>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         <ul className="list-disc pl-6 space-y-2">
-          <li><strong>Home blueprints:</strong> May show the location of main plumbing lines and valves</li>
-          <li><strong>Previous homeowners:</strong> If possible, contact them for information</li>
-          <li><strong>Neighbors with similar homes:</strong> Their valve locations may be similar</li>
-          <li><strong>Local water utility:</strong> May have records or be able to send someone to help locate it</li>
-          <li><strong>Professional <Link href="/services/plumber" className="text-theme-3 hover:underline">plumber</Link>:</strong> Can quickly locate and mark all important valves</li>
+          <li><strong>Toilet:</strong> on the wall or floor behind the toilet, where the supply line connects.</li>
+          <li><strong>Sinks:</strong> under the sink, one for hot and one for cold.</li>
+          <li><strong>Washing machine:</strong> two valves on the wall behind it.</li>
+          <li><strong>Water heater:</strong> on the cold-water pipe going into the top of the tank.</li>
+          <li><strong>Dishwasher and ice maker:</strong> usually under the kitchen sink, or behind the fridge.</li>
         </ul>
+        <div className="grid grid-cols-2 gap-4">
+          <JobPhotoFigure slug="toilet-shut-off-valve-old-atlanta" caption="Old toilet shut-off valve" />
+          <JobPhotoFigure slug="toilet-shut-off-valve-new-atlanta" caption="New quarter-turn toilet shut-off" />
+        </div>
       </div>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">Individual Fixture Shut Off Valves</h2>
+      <h2 className="text-3xl font-bold mb-4">Still Can&#39;t Find It?</h2>
+      <ul className="list-disc pl-6 space-y-2 mb-8">
+        <li>Check your <strong>home inspection report</strong> from when you bought the house. The plumbing section often shows where the main shut-off is.</li>
+        <li>Ask a neighbor with a similar house where theirs is.</li>
+        <li>Call your water utility. They can tell you where the meter is.</li>
+        <li>Or call us, and we&#39;ll find it and label it for you.</li>
+      </ul>
 
-      <p className="mb-6">
-        In addition to your main water shut off valve, most fixtures in your home have individual shut off
-        valves. These allow you to stop water flow to a specific fixture without affecting the rest of your home.
+      <h2 className="text-3xl font-bold mb-4">Valve Stuck, Leaking, or Hard to Reach? We Can Fix That</h2>
+      <p className="mb-4">
+        A shut-off that won&#39;t turn, drips, or sits behind a pile of boxes in the crawl space won&#39;t help
+        you in an emergency. Plumb-All can:
       </p>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-        <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
-          <h3 className="text-lg font-semibold mb-2">Common Fixture Shut Off Valve Locations</h3>
-          <ul className="list-disc pl-5 space-y-1">
-            <li><strong>Toilets:</strong> Look for an oval-shaped handle on a pipe behind or beside the toilet</li>
-            <li><strong>Sinks:</strong> Check under the sink for small valves on the water supply lines</li>
-            <li><strong>Washing machine:</strong> Look for two valves (hot and cold) behind the machine</li>
-            <li><strong>Water heater:</strong> The cold water supply line should have a shut off valve</li>
-            <li><strong>Dishwasher:</strong> Often shares a valve with the kitchen sink or has one under the sink</li>
-          </ul>
-        </div>
-        <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
-          <h3 className="text-lg font-semibold mb-2">When to Use Individual Shut Off Valves</h3>
-          <ul className="list-disc pl-5 space-y-1">
-            <li>When replacing or repairing a specific fixture</li>
-            <li>If a single fixture is leaking or malfunctioning</li>
-            <li>During fixture maintenance or cleaning</li>
-            <li>To isolate a problem area without disrupting water to the entire home</li>
-            <li>When winterizing unused fixtures to prevent freezing</li>
-          </ul>
-        </div>
-      </div>
-
-      <h2 className="text-2xl font-bold mt-8 mb-4">Why Finding Your Water Shut Off Valve Is Important</h2>
-
+      <ul className="list-disc pl-6 space-y-2 mb-6">
+        <li><strong>Replace an old gate valve</strong> with a full-port ball valve that closes with a quarter turn.</li>
+        <li><strong>Add an easy-to-reach main shut-off</strong> inside the house, or a new valve box outside.</li>
+        <li><strong>Install a smart whole-home water shutoff</strong> that shuts the water off automatically when it detects a leak, and lets you turn it off from your phone.</li>
+        <li>Replace worn toilet and sink shut-off valves while we&#39;re there.</li>
+      </ul>
       <p className="mb-6">
-        Water continuously flowing through your house during a plumbing emergency can quickly cause
-        extensive damage. If the water is coming from your home&#39;s water supply, taking quick action can
-        prevent these damages and avoid bigger problems. Knowing how to find your water shut off valve
-        will help you quickly turn it off and protect your home until a proper solution can be implemented.
+        Leaks that keep coming back may need <Link href="/services/leak-detection" className="text-theme-3 hover:underline">leak detection</Link> or{' '}
+        <Link href="/services/water-line-repair" className="text-theme-3 hover:underline">water line repair</Link>. See all our{' '}
+        <Link href="/services/plumbing-repair" className="text-theme-3 hover:underline">plumbing repair services</Link>.
       </p>
 
       <div className="bg-blue-50 p-4 rounded-lg mb-6 border-l-4 border-theme-3">
         <p className="font-medium text-gray-700">
-          <strong>Important:</strong> Test your main water shut off valve periodically to ensure it works
-          properly. Valves that haven&#39;t been turned for years can become stuck or difficult to operate.
-          If your valve is hard to turn or appears corroded, have a professional plumber service or replace it.
+          <strong>Tip:</strong> Once you find your main shut-off, tag it so everyone in the house can find it
+          fast, and turn it off and back on once a year so it doesn&#39;t seize.
         </p>
       </div>
-
-      <p className="mb-6">
-        In a plumbing emergency, every second counts. Water damage can quickly escalate from a minor
-        inconvenience to a major restoration project. By familiarizing yourself with your home&#39;s water
-        shut off valve locations now, you&#39;ll be prepared to act quickly when it matters most.
-      </p>
 
       <div className="bg-theme-4/10 p-6 rounded-lg mt-10 mb-8">
         <CTACall
-          headerText="Need help locating or servicing your water shut off valve?"
+          headerText="Need help finding or replacing your water shut-off valve?"
           buttonText="Call us at 844 PLUMB-ALL"
         />
       </div>

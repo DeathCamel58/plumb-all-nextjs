@@ -93,7 +93,7 @@ export default function ArticleContent() {
       <div className="bg-gray-50 p-6 rounded-lg mb-8 border border-gray-200">
         <h3 className="text-xl font-semibold mb-3">New Homeowner&#39;s Plumbing Checklist</h3>
         <ul className="list-disc pl-6 space-y-2">
-          <li>Locate and label your main water shut-off valve</li>
+          <li>Locate and label your <Link href="/news/article/how-to-find-water-shut-off-valve" className="text-theme-3 hover:underline">main water shut-off valve</Link></li>
           <li>Identify individual shut-off valves for each fixture</li>
           <li>Purchase both a cup plunger and a flange plunger</li>
           <li>Check your water heater&#39;s temperature setting</li>

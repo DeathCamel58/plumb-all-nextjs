@@ -76,6 +76,12 @@ export const jobPhotos: JobPhoto[] = [
   { slug: 'septic-pump-line-repair-stockbridge-1', town: 'Stockbridge', alt: 'Repairing a septic pump line', width: 1050, height: 1400, smWidth: 480, smHeight: 640 },
   { slug: 'septic-pump-line-repair-stockbridge-2', town: 'Stockbridge', alt: 'Septic pump line exposed for repair', width: 1050, height: 1400, smWidth: 480, smHeight: 640 },
   { slug: 'septic-pump-line-repair-stockbridge-3', town: 'Stockbridge', alt: 'Repaired septic pump line in the trench', width: 1050, height: 1400, smWidth: 480, smHeight: 640 },
+  { slug: 'main-water-shut-off-ball-valve-hampton', town: 'Hampton', alt: 'Red-lever ball valve and pressure-reducing valve on the main water line, behind a wall access panel', width: 1050, height: 1400, smWidth: 480, smHeight: 640 },
+  { slug: 'gate-valve-wheel-handle-rex', town: 'Rex', alt: 'Older gate valve with a round wheel handle', width: 1050, height: 1400, smWidth: 480, smHeight: 640 },
+  { slug: 'gate-valve-copper-line-jonesboro', town: 'Jonesboro', alt: 'Gate valve on a copper water line next to the water heater', width: 1050, height: 1400, smWidth: 480, smHeight: 640 },
+  { slug: 'pressure-reducing-valve-jonesboro', town: 'Jonesboro', alt: 'Pressure-reducing valve on the main water line', width: 1050, height: 1400, smWidth: 480, smHeight: 640 },
+  { slug: 'toilet-shut-off-valve-old-atlanta', town: 'Atlanta', alt: 'Old toilet shut-off valve and supply line', width: 1050, height: 1400, smWidth: 480, smHeight: 640 },
+  { slug: 'toilet-shut-off-valve-new-atlanta', town: 'Atlanta', alt: 'New quarter-turn toilet shut-off valve and braided supply line', width: 1050, height: 1400, smWidth: 480, smHeight: 640 },
 ];
 
 export function getJobPhoto(slug: string): JobPhoto | undefined {

@@ -42,7 +42,7 @@ export default function ArticleContent() {
 
       <h4 className="text-xl font-bold mt-6 mb-3">Shut Off and Drain Outdoor Faucets</h4>
       <p className="mb-6">
-        After disconnecting your hoses, locate the interior shutoff valve for each outdoor faucet. Most homes
+        After disconnecting your hoses, locate the interior <Link href="/news/article/how-to-find-water-shut-off-valve" className="text-theme-3 hover:underline">shutoff valve</Link> for each outdoor faucet. Most homes
         have individual shutoff valves for exterior hose bibs, typically located in the basement or crawl
         space near where the pipe exits the house. Turn off each shutoff valve, then open the outdoor faucet
         to drain any remaining water from the line. Leave the outdoor faucet in the open position so any

@@ -58,7 +58,7 @@ export default function ArticleContent() {
       <ul className="list-disc pl-6 space-y-2 mb-6">
         <li>Replace washing machine hoses if they&#39;re more than five years old</li>
         <li>Clean garbage disposal blades and check for leaks beneath the unit</li>
-        <li>Test your main water shut-off valve to make sure it turns easily</li>
+        <li>Test your <Link href="/news/article/how-to-find-water-shut-off-valve" className="text-theme-3 hover:underline">main water shut-off valve</Link> to make sure it turns easily</li>
         <li>Inspect irrigation system connections and sprinkler heads</li>
         <li>Check toilet flappers and fill valves for signs of wear</li>
       </ul>

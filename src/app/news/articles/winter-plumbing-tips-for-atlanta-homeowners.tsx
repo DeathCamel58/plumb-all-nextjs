@@ -133,7 +133,7 @@ export default function ArticleContent() {
       </p>
 
       <ol className="list-decimal pl-6 space-y-2 mb-6">
-        <li><strong>Shut off the main water supply immediately.</strong> Every member of your household should know where the main shut-off valve is located.</li>
+        <li><strong>Shut off the main water supply immediately.</strong> Every member of your household should know where the <Link href="/news/article/how-to-find-water-shut-off-valve" className="text-theme-3 hover:underline">main shut-off valve</Link> is located.</li>
         <li><strong>Turn off the electricity</strong> in any areas affected by flooding to prevent electrical shock.</li>
         <li><strong>Call a professional plumber</strong> right away for&nbsp;<Link href="/services/plumbing-repair" className="text-theme-3 hover:underline">emergency plumbing repair</Link>.</li>
         <li><strong>Begin removing standing water</strong> as quickly as possible to minimize damage to flooring, walls, and belongings.</li>

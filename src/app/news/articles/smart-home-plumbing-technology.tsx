@@ -57,7 +57,7 @@ export default function ArticleContent() {
       <h3 className="text-2xl font-bold mt-8 mb-4">Automatic Water Shut-Off Valves</h3>
 
       <p className="mb-6">
-        Smart leak detectors tell you there&#39;s a problem. Automatic shut-off valves do something about it. These devices install on your main water supply line and can close the valve remotely or automatically in response to a detected leak, stopping the flow of water before significant damage occurs.
+        Smart leak detectors tell you there&#39;s a problem. Automatic shut-off valves do something about it. These devices install on your <Link href="/news/article/how-to-find-water-shut-off-valve" className="text-theme-3 hover:underline">main water supply line</Link> and can close the valve remotely or automatically in response to a detected leak, stopping the flow of water before significant damage occurs.
       </p>
 
       <h4 className="text-xl font-bold mt-6 mb-3">Types of Smart Shut-Off Valves</h4>
