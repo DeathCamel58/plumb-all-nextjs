@@ -297,6 +297,17 @@ export default function Home() {
           </div>
 
           <div className="flex flex-wrap justify-center items-center gap-12">
+            {/* Badge text is white, so it needs a dark backdrop */}
+            <div className="rounded-xl bg-gray-900 p-4 shadow-md">
+              <Image
+                src="/images/businessrate-award-2026.webp"
+                alt="BusinessRate Best of 2026 Award Winner"
+                width={600}
+                height={477}
+                className="w-44 h-auto"
+              />
+            </div>
+
             <a
               href="https://www.expertise.com/ga/fayetteville/plumbing"
               className="inline-block transform transition duration-300 hover:scale-105"
@@ -305,7 +316,7 @@ export default function Home() {
             >
               <Image
                 src="/images/Expertise-logo.svg"
-                alt="Best Plumbers in Fayetteville Award"
+                alt="Expertise.com Best Plumbing in Fayetteville Award"
                 width={200}
                 height={200}
                 className="w-52 object-cover"

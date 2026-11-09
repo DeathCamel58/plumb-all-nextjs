@@ -59,6 +59,10 @@ export default function LocalBusinessSchema() {
       reviewCount: '334',
       bestRating: '5',
     },
+    award: [
+      'BusinessRate Best of 2026 Award Winner',
+      'Expertise.com Best Plumbing in Fayetteville 2026',
+    ],
     sameAs: [
       'https://g.page/r/Cbrr7EyVgUNcEBA',
       'https://www.yelp.com/biz/plumb-all-jonesboro',
